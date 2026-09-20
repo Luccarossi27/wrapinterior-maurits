@@ -1,6 +1,6 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Barlow_Semi_Condensed, Manrope } from 'next/font/google'
+import { Manrope, Plus_Jakarta_Sans } from 'next/font/google'
 import { LanguageProvider } from '@/lib/i18n/provider'
 import { dictionaries, defaultLocale } from '@/lib/i18n/dictionaries'
 import './globals.css'
@@ -11,11 +11,11 @@ const manrope = Manrope({
   display: 'swap',
 })
 
-const barlow = Barlow_Semi_Condensed({
+const plusJakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  variable: '--font-barlow',
+  variable: '--font-plus-jakarta',
   display: 'swap',
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '500', '600', '700', '800'],
 })
 
 const meta = dictionaries[defaultLocale].meta
@@ -47,7 +47,7 @@ export default function RootLayout({
   return (
     <html
       lang={defaultLocale}
-      className={`bg-background ${manrope.variable} ${barlow.variable}`}
+      className={`bg-background ${manrope.variable} ${plusJakarta.variable}`}
     >
       <body className="font-sans antialiased">
         <LanguageProvider>{children}</LanguageProvider>
