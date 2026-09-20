@@ -4,6 +4,7 @@ import { ArrowRight, Camera, MapPin, MessageCircle } from 'lucide-react'
 import { whatsappLink } from '@/lib/i18n/dictionaries'
 import { useLanguage } from '@/lib/i18n/provider'
 import { BeforeAfterSlider } from '@/components/before-after-slider'
+import { BrandLockup } from '@/components/logo'
 import { Reveal } from '@/components/reveal'
 
 export function Hero() {
@@ -19,6 +20,10 @@ export function Hero() {
       <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-5 pb-14 pt-12 sm:px-8 lg:grid-cols-[1.05fr_1fr] lg:gap-14 lg:pb-24 lg:pt-20">
         <div>
           <Reveal>
+            <BrandLockup className="mb-7" />
+          </Reveal>
+
+          <Reveal delay={0.03}>
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-3.5 py-1.5 text-xs font-medium text-moss backdrop-blur">
               <MapPin className="size-3.5 text-brass" />
               {t.hero.eyebrow}

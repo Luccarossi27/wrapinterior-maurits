@@ -28,12 +28,12 @@ export function SiteHeader() {
   }, [open])
 
   const links = [
-    { href: '#portfolio', label: t.nav.portfolio },
-    { href: '#process', label: t.nav.process },
-    { href: '#pricing', label: t.nav.pricing },
-    { href: '#reviews', label: t.nav.reviews },
-    { href: '#faq', label: t.nav.faq },
-    { href: '#contact', label: t.nav.contact },
+    { href: '/#portfolio', label: t.nav.portfolio },
+    { href: '/#process', label: t.nav.process },
+    { href: '/#pricing', label: t.nav.pricing },
+    { href: '/reviews', label: t.nav.reviews },
+    { href: '/#faq', label: t.nav.faq },
+    { href: '/#contact', label: t.nav.contact },
   ]
 
   return (
