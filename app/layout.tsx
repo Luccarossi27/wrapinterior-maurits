@@ -1,15 +1,14 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Archivo, DM_Sans } from 'next/font/google'
+import { Archivo, Manrope } from 'next/font/google'
 import { LanguageProvider } from '@/lib/i18n/provider'
 import { dictionaries, defaultLocale } from '@/lib/i18n/dictionaries'
 import './globals.css'
 
-const dmSans = DM_Sans({
+const manrope = Manrope({
   subsets: ['latin'],
-  variable: '--font-dm-sans',
+  variable: '--font-manrope',
   display: 'swap',
-  weight: ['400', '500', '600', '700'],
 })
 
 const archivo = Archivo({
@@ -17,6 +16,7 @@ const archivo = Archivo({
   variable: '--font-archivo',
   display: 'swap',
   weight: ['400', '500', '600', '700'],
+  display: 'swap',
 })
 
 const meta = dictionaries[defaultLocale].meta
@@ -48,7 +48,7 @@ export default function RootLayout({
   return (
     <html
       lang={defaultLocale}
-      className={`bg-background ${dmSans.variable} ${archivo.variable}`}
+      className={`bg-background ${manrope.variable} ${archivo.variable}`}
     >
       <body className="font-sans antialiased">
         <LanguageProvider>{children}</LanguageProvider>
