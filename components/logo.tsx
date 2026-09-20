@@ -1,40 +1,7 @@
-import { cn } from '@/lib/utils'
-
-/**
- * Wrap Interior building mark — a peaked roofline (charcoal) beside three
- * stepped brass panels, recreated as vector art so it stays crisp and adapts
- * to any background instead of shipping the black-background raster.
- */
-export function BuildingMark({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 48 44"
-      className={className}
-      fill="none"
-      aria-hidden="true"
-      focusable="false"
-    >
-      {/* left wall + roof peak */}
-      <path
-        d="M6 41 L6 18 L18 5 L30 18"
-        className="stroke-ink"
-        strokeWidth="4.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      {/* three stepped brass panels */}
-      <rect x="31" y="14" width="3.6" height="27" rx="1" className="fill-brass" />
-      <rect x="37" y="18" width="3.6" height="23" rx="1" className="fill-brass" />
-      <rect x="43" y="22" width="3.6" height="19" rx="1" className="fill-brass" />
-    </svg>
-  )
-}
-
 export function Logo({
   className,
   onNavigate,
   href = '/',
-  subtitle = false,
 }: {
   className?: string
   onNavigate?: () => void
@@ -46,46 +13,16 @@ export function Logo({
       href={href}
       onClick={onNavigate}
       className={cn(
-        'group inline-flex items-center gap-2.5 rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-brass focus-visible:ring-offset-2 focus-visible:ring-offset-background',
+        'group inline-flex items-center rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-brass focus-visible:ring-offset-2 focus-visible:ring-offset-background',
         className,
       )}
       aria-label="Wrap Interior — home"
     >
-      <BuildingMark className="size-9 shrink-0 transition-transform group-hover:-translate-y-0.5" />
-      <span className="flex flex-col leading-none">
-        <span className="text-base font-semibold uppercase tracking-[0.2em] text-ink">
-          Wrap Interior
-        </span>
-        {subtitle ? (
-          <span className="mt-1 text-[9px] font-medium uppercase tracking-[0.22em] text-moss">
-            Kitchen &amp; Home Interior Wrapping
-          </span>
-        ) : null}
-      </span>
+      <img
+        src="/wrap-interior-logo.png"
+        alt="Wrap Interior"
+        className="h-9 w-auto shrink-0 object-contain"
+      />
     </a>
-  )
-}
-
-/**
- * Larger, non-interactive lockup for hero / marketing contexts. Includes the
- * subtitle and Costa Blanca line to mirror the full brand logo.
- */
-export function BrandLockup({ className }: { className?: string }) {
-  return (
-    <div className={cn('flex flex-col items-start', className)}>
-      <div className="flex items-center gap-3">
-        <BuildingMark className="size-12 shrink-0" />
-        <span className="text-xl font-semibold uppercase tracking-[0.22em] text-ink sm:text-2xl">
-          Wrap Interior
-        </span>
-      </div>
-      <span className="mt-2 text-[10px] font-medium uppercase tracking-[0.28em] text-moss">
-        Kitchen &amp; Home Interior Wrapping
-      </span>
-      <span className="mt-2 flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.3em] text-brass">
-        <span aria-hidden="true" className="h-px w-6 bg-brass" />
-        Costa Blanca
-      </span>
-    </div>
   )
 }
