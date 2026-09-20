@@ -22,7 +22,7 @@ export function Logo({
       <img
         src="/wrap-interior.png"
         alt="Wrap Interior"
-        className="h-14 w-auto shrink-0 object-contain"
+        className="h-20 w-auto shrink-0 object-contain"
       />
     </a>
   )
