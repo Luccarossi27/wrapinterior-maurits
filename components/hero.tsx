@@ -11,7 +11,7 @@ export function Hero() {
 
   return (
     <section id="top" className="relative overflow-hidden">
-      {/* soft coastal wash, not a filler blob */}
+      {/* Soft coastal wash */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(120%_90%_at_85%_-10%,var(--color-sand),transparent_55%)]"
@@ -19,27 +19,35 @@ export function Hero() {
 
       <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-5 pb-14 pt-12 sm:px-8 lg:grid-cols-[1.05fr_1fr] lg:gap-14 lg:pb-24 lg:pt-20">
         <div>
+          {/* Location / brand marker */}
           <Reveal delay={0.03}>
-            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-3.5 py-1.5 text-xs font-medium text-moss backdrop-blur">
-              <MapPin className="size-3.5 text-brass" />
-              {t.hero.eyebrow}
-            </span>
+            <div className="flex items-center gap-3">
+              <span className="h-px w-8 bg-brass" />
+
+              <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-moss">
+                <MapPin className="size-3.5 text-brass" />
+                {t.hero.eyebrow}
+              </span>
+            </div>
           </Reveal>
 
+          {/* Main heading */}
           <Reveal delay={0.05}>
-            <h1 className="mt-5 text-balance font-serif text-4xl font-semibold leading-[1.05] tracking-tight text-ink sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 max-w-2xl text-balance font-serif text-[2.9rem] font-bold uppercase leading-[0.94] tracking-[-0.045em] text-ink sm:text-5xl lg:text-[4.65rem]">
               {t.hero.h1}
             </h1>
           </Reveal>
 
+          {/* Supporting copy */}
           <Reveal delay={0.1}>
-            <p className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
+            <p className="mt-6 max-w-xl text-pretty text-base leading-[1.7] text-muted-foreground sm:text-lg">
               {t.hero.sub}
             </p>
           </Reveal>
 
+          {/* CTAs */}
           <Reveal delay={0.15}>
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
                 href={whatsappLink(t.finalCta.microcopy)}
                 target="_blank"
@@ -60,8 +68,9 @@ export function Hero() {
             </div>
           </Reveal>
 
+          {/* Trust / service points */}
           <Reveal delay={0.2}>
-            <ul className="mt-8 flex flex-wrap gap-x-5 gap-y-2.5">
+            <ul className="mt-9 flex flex-wrap gap-x-6 gap-y-3 border-t border-border pt-5">
               {t.hero.chips.map((chip, i) => (
                 <li
                   key={chip}
@@ -72,6 +81,7 @@ export function Hero() {
                   ) : (
                     <span className="size-1.5 rounded-full bg-brass" />
                   )}
+
                   {chip}
                 </li>
               ))}
@@ -79,6 +89,7 @@ export function Hero() {
           </Reveal>
         </div>
 
+        {/* Before / After */}
         <Reveal delay={0.15}>
           <BeforeAfterSlider
             priority
