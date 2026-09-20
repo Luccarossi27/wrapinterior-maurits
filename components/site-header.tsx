@@ -13,12 +13,12 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false)
 
   const links = [
-    { href: '/#portfolio', label: t.nav.portfolio },
-    { href: '/#process', label: t.nav.process },
-    { href: '/#pricing', label: t.nav.pricing },
+    { href: '/portfolio', label: t.nav.portfolio },
+    { href: '/werkwijze', label: t.nav.process },
+    { href: '/prijzen', label: t.nav.pricing },
     { href: '/reviews', label: t.nav.reviews },
-    { href: '/#faq', label: t.nav.faq },
-    { href: '/#contact', label: t.nav.contact },
+    { href: '/faq', label: t.nav.faq },
+    { href: '/contact', label: t.nav.contact },
   ]
 
   useEffect(() => {
@@ -73,10 +73,9 @@ export function SiteHeader() {
         </div>
       </div>
 
-      {/* Mobile drawer */}
       <div
         className={cn(
-          'fixed inset-0 top-[61px] z-40 origin-top bg-pine transition-all duration-300 lg:hidden',
+          'fixed inset-0 top-[96px] z-40 origin-top bg-pine transition-all duration-300 lg:hidden',
           open
             ? 'pointer-events-auto opacity-100'
             : 'pointer-events-none opacity-0',
