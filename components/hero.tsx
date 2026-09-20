@@ -4,7 +4,7 @@ import { ArrowRight, Camera, MapPin, MessageCircle } from 'lucide-react'
 import { whatsappLink } from '@/lib/i18n/dictionaries'
 import { useLanguage } from '@/lib/i18n/provider'
 import { BeforeAfterSlider } from '@/components/before-after-slider'
-import { Logo } from '@/components/logo'
+import { BrandLockup } from '@/components/logo'
 import { Reveal } from '@/components/reveal'
 
 export function Hero() {
