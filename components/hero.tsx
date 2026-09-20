@@ -33,7 +33,7 @@ export function Hero() {
 
           {/* Main heading */}
           <Reveal delay={0.05}>
-            <h1 className="mt-6 max-w-2xl text-balance font-serif text-[2.9rem] font-bold uppercase leading-[0.94] tracking-[-0.045em] text-ink sm:text-5xl lg:text-[4.65rem]">
+            <h1 className="mt-6 max-w-2xl text-balance font-serif text-[2.45rem] font-semibold uppercase leading-[0.98] tracking-[-0.025em] text-ink sm:text-[3.25rem] lg:text-[4rem]">
               {t.hero.h1}
             </h1>
           </Reveal>
