@@ -1,21 +1,22 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Inter, Fraunces } from 'next/font/google'
+import { Cormorant_Garamond, Manrope } from 'next/font/google'
 import { LanguageProvider } from '@/lib/i18n/provider'
 import { dictionaries, defaultLocale } from '@/lib/i18n/dictionaries'
 import './globals.css'
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-manrope',
   display: 'swap',
 })
 
-const fraunces = Fraunces({
+const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
-  variable: '--font-fraunces',
+  variable: '--font-cormorant',
   display: 'swap',
-  axes: ['opsz'],
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
 })
 
 const meta = dictionaries[defaultLocale].meta
@@ -45,7 +46,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang={defaultLocale} className={`bg-background ${inter.variable} ${fraunces.variable}`}>
+    <html
+      lang={defaultLocale}
+      className={`bg-background ${manrope.variable} ${cormorant.variable}`}
+    >
       <body className="font-sans antialiased">
         <LanguageProvider>{children}</LanguageProvider>
         {process.env.NODE_ENV === 'production' && <Analytics />}
