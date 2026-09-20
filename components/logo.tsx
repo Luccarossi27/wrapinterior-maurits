@@ -1,6 +1,11 @@
 ```tsx
 import { cn } from '@/lib/utils'
 
+/**
+ * Wrap Interior building mark — a peaked roofline (charcoal) beside three
+ * stepped brass panels, recreated as vector art so it stays crisp and adapts
+ * to any background instead of shipping the black-background raster.
+ */
 export function BuildingMark({ className }: { className?: string }) {
   return (
     <svg
@@ -10,6 +15,7 @@ export function BuildingMark({ className }: { className?: string }) {
       aria-hidden="true"
       focusable="false"
     >
+      {/* left wall + roof peak */}
       <path
         d="M6 41 L6 18 L18 5 L30 18"
         className="stroke-ink"
@@ -17,6 +23,8 @@ export function BuildingMark({ className }: { className?: string }) {
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
+      {/* three stepped brass panels */}
       <rect
         x="31"
         y="14"
@@ -75,11 +83,16 @@ export function Logo({
   )
 }
 
+/**
+ * Larger, non-interactive lockup for hero / marketing contexts.
+ * This remains unchanged so the Hero component can continue importing it.
+ */
 export function BrandLockup({ className }: { className?: string }) {
   return (
     <div className={cn('flex flex-col items-start', className)}>
       <div className="flex items-center gap-3">
         <BuildingMark className="size-12 shrink-0" />
+
         <span className="text-xl font-semibold uppercase tracking-[0.22em] text-ink sm:text-2xl">
           Wrap Interior
         </span>
@@ -90,7 +103,10 @@ export function BrandLockup({ className }: { className?: string }) {
       </span>
 
       <span className="mt-2 flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.3em] text-brass">
-        <span aria-hidden="true" className="h-px w-6 bg-brass" />
+        <span
+          aria-hidden="true"
+          className="h-px w-6 bg-brass"
+        />
         Costa Blanca
       </span>
     </div>
