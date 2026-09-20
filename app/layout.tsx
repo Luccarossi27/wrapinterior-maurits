@@ -1,6 +1,6 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Cormorant_Garamond, Manrope } from 'next/font/google'
+import { Archivo, Manrope } from 'next/font/google'
 import { LanguageProvider } from '@/lib/i18n/provider'
 import { dictionaries, defaultLocale } from '@/lib/i18n/dictionaries'
 import './globals.css'
@@ -11,12 +11,12 @@ const manrope = Manrope({
   display: 'swap',
 })
 
-const cormorant = Cormorant_Garamond({
+const archivo = Archivo({
   subsets: ['latin'],
-  variable: '--font-cormorant',
+  variable: '--font-archivo',
   display: 'swap',
   weight: ['400', '500', '600', '700'],
-  style: ['normal', 'italic'],
+  display: 'swap',
 })
 
 const meta = dictionaries[defaultLocale].meta
@@ -48,7 +48,7 @@ export default function RootLayout({
   return (
     <html
       lang={defaultLocale}
-      className={`bg-background ${manrope.variable} ${cormorant.variable}`}
+      className={`bg-background ${manrope.variable} ${archivo.variable}`}
     >
       <body className="font-sans antialiased">
         <LanguageProvider>{children}</LanguageProvider>
