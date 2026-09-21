@@ -1,6 +1,5 @@
 'use client'
 
-import { ArrowRight, Camera, MapPin, MessageCircle } from 'lucide-react'
 import { whatsappLink } from '@/lib/i18n/dictionaries'
 import { useLanguage } from '@/lib/i18n/provider'
 import { BeforeAfterSlider } from '@/components/before-after-slider'
@@ -19,17 +18,6 @@ export function Hero() {
 
       <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-5 pb-14 pt-12 sm:px-8 lg:grid-cols-[1.05fr_1fr] lg:gap-14 lg:pb-24 lg:pt-20">
         <div>
-          {/* Location / brand marker */}
-          <Reveal delay={0.03}>
-            <div className="flex items-center gap-3">
-              <span className="h-px w-8 bg-brass" />
-
-              <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-moss">
-                <MapPin className="size-3.5 text-brass" />
-                {t.hero.eyebrow}
-              </span>
-            </div>
-          </Reveal>
 
           {/* Main heading */}
           <Reveal delay={0.05}>
