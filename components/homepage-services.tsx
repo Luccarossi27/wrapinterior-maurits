@@ -15,17 +15,19 @@ export function HomepageServices() {
 
           {/* Before / After */}
           <Reveal>
-            <BeforeAfterSlider
-              beforeSrc="/images/griffioen-d1-before.JPEG"
-              afterSrc="/images/griffioen-d1-after.jpg"
-              beforeAlt={t.homepageServices.imageBeforeAlt}
-              afterAlt={t.homepageServices.imageAfterAlt}
-              beforeLabel={t.hero.beforeLabel}
-              afterLabel={t.hero.afterLabel}
-              dragHint={t.hero.dragHint}
-              aspectRatio="aspect-[3/4]"
-            />
-          </Reveal>
+  <div className="mx-auto w-full max-w-sm lg:max-w-[380px]">
+    <BeforeAfterSlider
+      beforeSrc="/images/YOUR-WARDROBE-BEFORE.jpg"
+      afterSrc="/images/YOUR-WARDROBE-AFTER.jpg"
+      beforeAlt={t.homepageServices.imageBeforeAlt}
+      afterAlt={t.homepageServices.imageAfterAlt}
+      beforeLabel={t.hero.beforeLabel}
+      afterLabel={t.hero.afterLabel}
+      dragHint={t.hero.dragHint}
+      aspectRatio="aspect-[3/4]"
+    />
+  </div>
+</Reveal>
 
           {/* Copy */}
           <div>
