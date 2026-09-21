@@ -16,16 +16,16 @@ export function SiteFooter() {
         <div className="grid gap-8 md:grid-cols-[1.4fr_1fr_1fr] md:gap-10">
           {/* Brand */}
           <div>
-            <Logo />
+  <Logo />
 
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-paper/65">
-              {t.footer.tagline}
-            </p>
+  <p className="mt-3 max-w-xs font-serif text-sm font-medium uppercase tracking-[0.08em] text-paper/80">
+    FRESH INTERIORS. WITHOUT THE RENOVATION.
+  </p>
 
-            <div className="mt-5">
-              <LanguageSwitcher />
-            </div>
-          </div>
+  <div className="mt-5">
+    <LanguageSwitcher />
+  </div>
+</div>
 
           {/* Service area */}
           <div>
