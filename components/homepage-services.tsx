@@ -23,6 +23,7 @@ export function HomepageServices() {
               beforeLabel={t.hero.beforeLabel}
               afterLabel={t.hero.afterLabel}
               dragHint={t.hero.dragHint}
+              aspectRatio="aspect-[3/4]"
             />
           </Reveal>
 

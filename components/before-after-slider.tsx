@@ -14,6 +14,7 @@ export function BeforeAfterSlider({
   dragHint,
   priority = false,
   className,
+  aspectRatio = 'aspect-[4/3]',
 }: {
   beforeSrc: string
   afterSrc: string
@@ -24,6 +25,7 @@ export function BeforeAfterSlider({
   dragHint: string
   priority?: boolean
   className?: string
+  aspectRatio?: string
 }) {
   const [pos, setPos] = useState(52)
   const containerRef = useRef<HTMLDivElement>(null)
@@ -41,7 +43,8 @@ export function BeforeAfterSlider({
     <div
       ref={containerRef}
       className={cn(
-        'relative aspect-[4/3] w-full touch-none select-none overflow-hidden rounded-3xl border border-border bg-muted shadow-xl',
+        'relative w-full touch-none select-none overflow-hidden rounded-3xl border border-border bg-muted shadow-xl',
+        aspectRatio,
         className,
       )}
       onPointerDown={(e) => {
@@ -69,6 +72,7 @@ export function BeforeAfterSlider({
         className="object-cover"
         draggable={false}
       />
+
       <span className="absolute right-3 top-3 rounded-full bg-pine/90 px-3 py-1 text-xs font-semibold text-paper backdrop-blur">
         {afterLabel}
       </span>
@@ -87,6 +91,7 @@ export function BeforeAfterSlider({
           className="object-cover grayscale-[0.15]"
           draggable={false}
         />
+
         <span className="absolute left-3 top-3 rounded-full bg-ink/80 px-3 py-1 text-xs font-semibold text-paper backdrop-blur">
           {beforeLabel}
         </span>
@@ -106,9 +111,21 @@ export function BeforeAfterSlider({
           aria-label={dragHint}
           className="absolute h-full w-[100vw] cursor-ew-resize opacity-0"
         />
+
         <span className="pointer-events-none flex size-11 items-center justify-center rounded-full border-2 border-paper bg-pine text-paper shadow-lg">
-          <svg viewBox="0 0 24 24" className="size-5" fill="none" aria-hidden="true">
-            <path d="m9 7-5 5 5 5M15 7l5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          <svg
+            viewBox="0 0 24 24"
+            className="size-5"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="m9 7-5 5 5 5M15 7l5 5-5 5"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </span>
       </div>
