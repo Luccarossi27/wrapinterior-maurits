@@ -37,7 +37,7 @@ export function FinalCta() {
   }
 
   return (
-    <section id="contact" className="border-t border-border bg-pine text-paper">
+    <section id="contact" className="border-t border-border bg-background text-ink">
       <div className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
         <div className="grid gap-10 lg:grid-cols-[1.05fr_1fr] lg:items-center lg:gap-16">
           {/* Left side */}
@@ -49,22 +49,22 @@ export function FinalCta() {
             </Reveal>
 
             <Reveal delay={0.05}>
-              <h2 className="mt-3 max-w-2xl text-balance font-serif text-3xl font-semibold leading-tight tracking-tight text-paper sm:text-4xl lg:text-5xl">
+              <h2 className="mt-3 max-w-2xl text-balance font-serif text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl lg:text-5xl">
                 {t.finalCta.heading}
               </h2>
             </Reveal>
 
             <Reveal delay={0.1}>
-              <p className="mt-5 max-w-lg text-pretty text-base leading-relaxed text-paper/75 sm:text-lg">
+              <p className="mt-5 max-w-lg text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
                 {t.finalCta.sub}
               </p>
             </Reveal>
 
             <Reveal delay={0.15}>
-              <div className="mt-6 flex max-w-lg items-start gap-3 rounded-2xl border border-paper/10 bg-paper/5 px-4 py-4">
+              <div className="mt-6 flex max-w-lg items-start gap-3 rounded-2xl border border-border bg-sand/50 px-4 py-4">
                 <Camera className="mt-0.5 size-5 shrink-0 text-brass" />
 
-                <p className="text-sm leading-relaxed text-paper/75">
+                <p className="text-sm leading-relaxed text-muted-foreground">
                   {t.finalCta.microcopy}
                 </p>
               </div>
@@ -76,7 +76,7 @@ export function FinalCta() {
                   href={whatsappLink(t.finalCta.microcopy)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center justify-center gap-2 rounded-full bg-paper px-6 py-3.5 text-base font-semibold text-pine transition-transform hover:-translate-y-0.5 hover:bg-sand"
+                  className="group inline-flex items-center justify-center gap-2 rounded-full bg-pine px-6 py-3.5 text-base font-semibold text-paper transition-transform hover:-translate-y-0.5 hover:bg-ink"
                 >
                   <MessageCircle className="size-5" />
                   {t.cta.sendPhotos}
@@ -85,7 +85,7 @@ export function FinalCta() {
 
                 <a
                   href={`tel:${contact.phoneHref}`}
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-paper/25 px-6 py-3.5 text-base font-semibold text-paper transition-colors hover:bg-paper/10"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-6 py-3.5 text-base font-semibold text-ink transition-colors hover:border-pine hover:bg-sand"
                 >
                   <Phone className="size-5" />
                   {t.cta.call}
@@ -96,7 +96,7 @@ export function FinalCta() {
 
           {/* Quote form */}
           <Reveal delay={0.15}>
-            <div className="rounded-3xl border border-paper/10 bg-background p-5 text-ink shadow-2xl sm:p-7">
+            <div className="rounded-3xl border border-border bg-card p-5 text-ink shadow-2xl sm:p-7">
               <div className="relative mb-6 h-36 overflow-hidden rounded-2xl sm:h-40">
                 <Image
                   src="/images/portrait-team.png"

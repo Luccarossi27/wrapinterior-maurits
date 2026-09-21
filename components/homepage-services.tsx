@@ -28,7 +28,7 @@ export function HomepageServices() {
   const { t } = useLanguage()
 
   return (
-    <section className="border-t border-border bg-background">
+    <section className="border-t border-border bg-sand">
       <div className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 lg:py-24">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div>
