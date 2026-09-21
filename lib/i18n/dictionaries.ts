@@ -146,7 +146,7 @@ type Dict = {
     }
   }
   footer: {
-    tagline: '',
+    tagline: string,
     serviceAreaTitle: string
     serviceArea: string
     languagesTitle: string
