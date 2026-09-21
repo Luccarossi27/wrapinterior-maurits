@@ -78,17 +78,20 @@ export function GallerySection() {
               delay={(i % 2) * 0.06}
             >
               <article>
-                <BeforeAfterSlider
-                  beforeSrc={item.media.before}
-                  afterSrc={item.media.after}
-                  beforeAlt={item.alt}
-                  afterAlt={item.alt}
-                  beforeLabel={t.hero.beforeLabel}
-                  afterLabel={t.hero.afterLabel}
-                  dragHint={t.hero.dragHint}
-                  autoAspectRatio
-                  fit="contain"
-                />
+                <div className="mx-auto w-full max-w-[560px]">
+                  <BeforeAfterSlider
+                    beforeSrc={item.media.before}
+                    afterSrc={item.media.after}
+                    beforeAlt={item.alt}
+                    afterAlt={item.alt}
+                    beforeLabel={t.hero.beforeLabel}
+                    afterLabel={t.hero.afterLabel}
+                    dragHint={t.hero.dragHint}
+                    autoAspectRatio
+                    fit="contain"
+                    className="max-h-[560px]"
+                  />
+                </div>
 
                 <div className="pt-5">
                   <h3 className="font-serif text-xl font-semibold text-ink">
