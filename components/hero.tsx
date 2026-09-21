@@ -82,10 +82,10 @@ export function Hero() {
         <Reveal delay={0.15}>
           <BeforeAfterSlider
             priority
-            beforeSrc="/images/hero-kitchen-before.png"
-            afterSrc="/images/hero-kitchen-after.png"
+            beforeSrc="/images/ben-before.jpeg"
+            afterSrc="/images/ben-after.jpeg"
             beforeAlt="Dated kitchen fronts before interior wrapping"
-            afterAlt="The same kitchen after wrapping the fronts in matte sage green film"
+            afterAlt="The same kitchen after wrapping the fronts in wooden film"
             beforeLabel={t.hero.beforeLabel}
             afterLabel={t.hero.afterLabel}
             dragHint={t.hero.dragHint}
