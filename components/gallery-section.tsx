@@ -52,8 +52,11 @@ export function GallerySection() {
   }))
 
   return (
-    <section id="portfolio" className="border-t border-border bg-secondary/40">
-      <div className="mx-auto w-full max-w-6xl px-5 pt-4 pb-20 sm:px-8 lg:pt-10 lg:pb-28">
+    <section
+      id="portfolio"
+      className="border-t border-border bg-secondary/40"
+    >
+      <div className="mx-auto w-full max-w-6xl px-5 pb-20 pt-4 sm:px-8 lg:pb-28 lg:pt-10">
         <div className="max-w-2xl">
           <Reveal>
             <h2 className="text-balance font-serif text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
@@ -70,7 +73,10 @@ export function GallerySection() {
 
         <div className="mt-10 grid gap-10 lg:grid-cols-2 lg:gap-x-10 lg:gap-y-16">
           {items.map((item, i) => (
-            <Reveal key={item.title} delay={(i % 2) * 0.06}>
+            <Reveal
+              key={item.title}
+              delay={(i % 2) * 0.06}
+            >
               <article>
                 <BeforeAfterSlider
                   beforeSrc={item.media.before}
@@ -80,7 +86,8 @@ export function GallerySection() {
                   beforeLabel={t.hero.beforeLabel}
                   afterLabel={t.hero.afterLabel}
                   dragHint={t.hero.dragHint}
-                  aspectRatio="aspect-[4/3]"
+                  autoAspectRatio
+                  fit="contain"
                 />
 
                 <div className="pt-5">
@@ -91,21 +98,6 @@ export function GallerySection() {
                   <p className="mt-1 text-sm text-muted-foreground">
                     {item.location}
                   </p>
-
-                  <dl className="mt-4 grid grid-cols-1 gap-1.5 border-t border-border pt-4 text-sm">
-                    <Row
-                      label={t.gallery.scopeLabel}
-                      value={item.scope}
-                    />
-                    <Row
-                      label={t.gallery.finishLabel}
-                      value={item.finish}
-                    />
-                    <Row
-                      label={t.gallery.durationLabel}
-                      value={item.duration}
-                    />
-                  </dl>
                 </div>
               </article>
             </Reveal>
@@ -113,14 +105,5 @@ export function GallerySection() {
         </div>
       </div>
     </section>
-  )
-}
-
-function Row({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="flex justify-between gap-3">
-      <dt className="text-muted-foreground">{label}</dt>
-      <dd className="text-right font-medium text-ink">{value}</dd>
-    </div>
   )
 }

@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 
@@ -15,6 +15,8 @@ export function BeforeAfterSlider({
   priority = false,
   className,
   aspectRatio = 'aspect-[4/3]',
+  autoAspectRatio = false,
+  fit = 'cover',
 }: {
   beforeSrc: string
   afterSrc: string
@@ -26,34 +28,88 @@ export function BeforeAfterSlider({
   priority?: boolean
   className?: string
   aspectRatio?: string
+  autoAspectRatio?: boolean
+  fit?: 'cover' | 'contain'
 }) {
   const [pos, setPos] = useState(52)
+  const [imageRatio, setImageRatio] = useState<number | null>(null)
+
   const containerRef = useRef<HTMLDivElement>(null)
   const dragging = useRef(false)
+
+  useEffect(() => {
+    if (!autoAspectRatio) return
+
+    let cancelled = false
+
+    const loadImage = (src: string) =>
+      new Promise<{ width: number; height: number }>((resolve, reject) => {
+        const img = new window.Image()
+
+        img.onload = () => {
+          resolve({
+            width: img.naturalWidth,
+            height: img.naturalHeight,
+          })
+        }
+
+        img.onerror = reject
+        img.src = src
+      })
+
+    Promise.all([loadImage(beforeSrc), loadImage(afterSrc)])
+      .then(([before, after]) => {
+        if (cancelled) return
+
+        const beforeRatio = before.width / before.height
+        const afterRatio = after.width / after.height
+
+        setImageRatio(Math.max(beforeRatio, afterRatio))
+      })
+      .catch(() => {
+        // Keep the fallback aspect ratio if image dimensions cannot be loaded.
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [beforeSrc, afterSrc, autoAspectRatio])
 
   const setFromClientX = useCallback((clientX: number) => {
     const el = containerRef.current
     if (!el) return
+
     const rect = el.getBoundingClientRect()
     const next = ((clientX - rect.left) / rect.width) * 100
+
     setPos(Math.min(100, Math.max(0, next)))
   }, [])
+
+  const imageFitClass =
+    fit === 'contain' ? 'object-contain' : 'object-cover'
 
   return (
     <div
       ref={containerRef}
       className={cn(
         'relative w-full touch-none select-none overflow-hidden rounded-3xl border border-border bg-muted shadow-xl',
-        aspectRatio,
+        autoAspectRatio ? 'aspect-[4/3]' : aspectRatio,
         className,
       )}
+      style={
+        autoAspectRatio && imageRatio
+          ? { aspectRatio: String(imageRatio) }
+          : undefined
+      }
       onPointerDown={(e) => {
         dragging.current = true
         ;(e.target as Element).setPointerCapture?.(e.pointerId)
         setFromClientX(e.clientX)
       }}
       onPointerMove={(e) => {
-        if (dragging.current) setFromClientX(e.clientX)
+        if (dragging.current) {
+          setFromClientX(e.clientX)
+        }
       }}
       onPointerUp={() => {
         dragging.current = false
@@ -62,14 +118,13 @@ export function BeforeAfterSlider({
         dragging.current = false
       }}
     >
-      {/* After (base layer) */}
       <Image
         src={afterSrc || '/placeholder.svg'}
         alt={afterAlt}
         fill
         priority={priority}
         sizes="(max-width: 1024px) 100vw, 640px"
-        className="object-cover"
+        className={imageFitClass}
         draggable={false}
       />
 
@@ -77,7 +132,6 @@ export function BeforeAfterSlider({
         {afterLabel}
       </span>
 
-      {/* Before (clipped overlay) */}
       <div
         className="absolute inset-0"
         style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}
@@ -88,7 +142,7 @@ export function BeforeAfterSlider({
           fill
           priority={priority}
           sizes="(max-width: 1024px) 100vw, 640px"
-          className="object-cover grayscale-[0.15]"
+          className={cn(imageFitClass, 'grayscale-[0.15]')}
           draggable={false}
         />
 
@@ -97,10 +151,12 @@ export function BeforeAfterSlider({
         </span>
       </div>
 
-      {/* Handle */}
       <div
         className="absolute inset-y-0 z-10 flex w-0.5 items-center justify-center bg-paper"
-        style={{ left: `${pos}%`, transform: 'translateX(-50%)' }}
+        style={{
+          left: `${pos}%`,
+          transform: 'translateX(-50%)',
+        }}
       >
         <input
           type="range"
