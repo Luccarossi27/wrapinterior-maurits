@@ -30,8 +30,8 @@
   --color-brass: var(--brass);
   --color-sand: var(--sand);
 
-  /* Typography */
---font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+/* Typography */
+--font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
 --font-serif: var(--font-oswald), ui-sans-serif, system-ui, sans-serif;
 
   --radius-sm: calc(var(--radius) * 0.6);
