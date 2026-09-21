@@ -191,7 +191,7 @@ export const dictionaries: Record<Locale, Dict> = {
     hero: {
       eyebrow: 'Interieurfolie zonder verbouwen — Jávea & Costa Blanca',
       h1: 'FRISSE INTERIEURS. ZONDER DE VERBOUWING.',
-      sub: 'Geef je keuken, meubels, deuren of badkamerkasten een compleet nieuwe uitstraling — zonder de kosten, rommel of overlast van een volledige renovatie. Premium interieurfolie is een slim en kosteneffectief alternatief voor vervanging en geeft je bestaande interieur een tweede leven met een verfijnde, duurzame afwerking. \nGevestigd in Jávea, werkzaam aan de Costa Blanca.',
+      sub: 'Geef je keuken, meubels, deuren of badkamerkasten een compleet nieuwe uitstraling, zonder de kosten, rommel of overlast van een volledige renovatie. Premium interieurfolie is een slim en kosteneffectief alternatief voor vervanging en geeft je bestaande interieur een tweede leven met een verfijnde, duurzame afwerking. \nGevestigd in Jávea, werkzaam aan de Costa Blanca.',
       chips: [
         'Vanaf €1.400 incl. IVA',
         'Honderden kleuren & structuren',
@@ -514,7 +514,7 @@ export const dictionaries: Record<Locale, Dict> = {
     hero: {
       eyebrow: 'Interior wrapping without renovation — Jávea & Costa Blanca',
       h1: 'FRESH INTERIORS. WITHOUT THE RENOVATION.',
-      sub: 'Give your kitchen, furniture, doors or bathroom cabinets a completely new look — without the cost, mess or disruption of a full renovation. Premium interior film is a smart, cost-effective alternative to replacement, giving your existing interiors a second life with a refined, durable finish. \nBased in Jávea, covering the Costa Blanca.',
+      sub: 'Give your kitchen, furniture, doors or bathroom cabinets a completely new look, without the cost, mess or disruption of a full renovation. Premium interior film is a smart, cost-effective alternative to replacement, giving your existing interiors a second life with a refined, durable finish. \nBased in Jávea, covering the Costa Blanca.',
       chips: [
         'From €1,400 incl. VAT',
         'Hundreds of colours & textures',
