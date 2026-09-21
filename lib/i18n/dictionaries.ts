@@ -190,7 +190,7 @@ export const dictionaries: Record<Locale, Dict> = {
     },
     hero: {
       eyebrow: 'Interieurfolie zonder verbouwen — Jávea & Costa Blanca',
-      h1: 'Nieuwe keukenlook zonder verbouwen.',
+      h1: 'FRISSE INTERIEURS. ZONDER DE VERBOUWING.',
       sub: 'Premium interieurfolie voor keukens, meubels, deuren en badkamermeubels in Jávea, Moraira, Calpe en de Costa Blanca. Strakke afwerking, meestal binnen enkele dagen klaar.',
       chips: [
         'Vanaf €1.400 incl. IVA',
@@ -513,9 +513,9 @@ export const dictionaries: Record<Locale, Dict> = {
     },
     hero: {
       eyebrow: 'Interior wrapping without renovation — Jávea & Costa Blanca',
-      h1: 'A brand-new kitchen look, without renovating.',
+      h1: 'FRESH INTERIORS. WITHOUT THE RENOVATION.',
       sub: 'Premium interior film for kitchens, furniture, doors and bathroom cabinets in Jávea, Moraira, Calpe and across the Costa Blanca. A crisp finish, usually completed within a few days.',
-      chips: [
+      chips: [FC
         'From €1,400 incl. VAT',
         'Hundreds of colours & textures',
         'No demolition or mess',
@@ -836,7 +836,7 @@ export const dictionaries: Record<Locale, Dict> = {
     },
     hero: {
       eyebrow: 'Vinilado de interiores sin obras — Jávea y Costa Blanca',
-      h1: 'Una cocina como nueva, sin obras.',
+      h1: 'INTERIORES RENOVADOS. SIN OBRAS.',
       sub: 'Vinilo premium para cocinas, muebles, puertas y muebles de baño en Jávea, Moraira, Calpe y toda la Costa Blanca. Acabado impecable, normalmente en pocos días.',
       chips: [
         'Desde 1.400 € IVA incl.',
