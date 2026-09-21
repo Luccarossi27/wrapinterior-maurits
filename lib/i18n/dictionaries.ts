@@ -79,12 +79,16 @@ type Dict = {
     }[]
   }
   materials: {
-    heading: string
-    sub: string
-    note: string
-    finishLabel: string
-    swatches: { name: string; finish: string }[]
-  }
+  heading: string
+  sub: string
+  note: string
+  sampleCta: string
+  categories: {
+    name: string
+    description: string
+    finishes: string[]
+  }[]
+}
   process: {
     heading: string
     sub: string
@@ -270,23 +274,53 @@ gallery: {
   ],
 },
     materials: {
-      heading: 'Materialen & structuren',
-      sub: 'Honderden kleuren en structuren — van effen mat tot overtuigend hout en steen.',
-      note: 'Onze folies zijn gekozen op duurzaamheid aan de kust: bestand tegen zon, warmte en vocht. Vraag naar stalen voor uw project.',
-      finishLabel: 'Afwerking',
-      swatches: [
-        { name: 'Salie groen', finish: 'Super-mat' },
-        { name: 'Pijnboom groen', finish: 'Mat' },
-        { name: 'Gebroken wit', finish: 'Mat' },
-        { name: 'Warm eiken', finish: 'Houtstructuur' },
-        { name: 'Walnoot', finish: 'Houtstructuur' },
-        { name: 'Natuursteen', finish: 'Steenstructuur' },
-        { name: 'Beton', finish: 'Mineraal mat' },
-        { name: 'Linnen', finish: 'Textiel-look' },
-        { name: 'Leder', finish: 'Softtouch' },
-        { name: 'Antraciet', finish: 'Super-mat' },
-      ],
+  heading: 'MATERIALEN & TEXTUREN',
+  sub: 'Kies uit een uitgebreide collectie interieurfolie met realistische hout-, steen-, metaal- en andere decoratieve afwerkingen.',
+  note: 'Materialen & texturen',
+  sampleCta: 'Resimdo biedt meer dan 300 decors. We kunnen je helpen de juiste afwerking voor jouw project te kiezen en indien gewenst een fysiek staal te regelen.',
+  categories: [
+    {
+      name: 'Hout',
+      description: 'Realistische houtdecors met zichtbare nerven en verschillende natuurlijke en geschilderde uitstraling.',
+      finishes: ['Eiken', 'Walnoot', 'Natuurlijk', 'Rustiek', 'Geschilderd hout'],
     },
+    {
+      name: 'Steen & marmer',
+      description: 'Steenachtige oppervlakken met realistische structuren voor een hoogwaardige, eigentijdse uitstraling.',
+      finishes: ['Marmer', 'Steen', 'Beton', 'Natuur', 'Pleister'],
+    },
+    {
+      name: 'Effen kleuren',
+      description: 'Een brede keuze aan effen kleuren, van zachte neutrale tinten tot diepe en uitgesproken kleuren.',
+      finishes: ['Mat', 'Zijdeglans', 'Soft Touch', 'Licht', 'Verzadigd'],
+    },
+    {
+      name: 'Metaal',
+      description: 'Metaalachtige decors voor moderne, industriële en verfijnde interieurs.',
+      finishes: ['Goud', 'Zilver', 'Brons', 'Geborsteld', 'Metaalachtig'],
+    },
+    {
+      name: 'Textiel',
+      description: 'Voelbare textieldecors met een verfijnde, geweven uitstraling.',
+      finishes: ['Stof', 'Geweven', 'Tactiel', 'Mat', 'Zijdeglans'],
+    },
+    {
+      name: 'Leer',
+      description: 'Leerachtige structuren die meubels en andere interieurelementen een rijkere uitstraling geven.',
+      finishes: ['Leer', 'Tactiel', 'Mat', 'Structuur'],
+    },
+    {
+      name: 'Geschilderd hout',
+      description: 'Geschilderde houtlooks die de karakteristieke structuur van hout combineren met een kleurafwerking.',
+      finishes: ['Painted Wood', 'Painted Nature', 'Zacht', 'Natuurlijk'],
+    },
+    {
+      name: 'Decoratief',
+      description: 'Bijzondere patronen en abstracte decors voor opvallende en persoonlijke interieuraccenten.',
+      finishes: ['Abstract', 'Patronen', 'Unique Look', 'Decoratief'],
+    },
+  ],
+},
     process: {
       heading: 'Onze werkwijze',
       sub: 'Zes zorgvuldige stappen. De afwerking bepaalt het resultaat.',
@@ -537,23 +571,53 @@ gallery: {
   ],
 },
     materials: {
-      heading: 'Materials & textures',
-      sub: 'Hundreds of colours and textures — from solid matte to convincing wood and stone.',
-      note: 'Our films are chosen for coastal durability: resistant to sun, heat and moisture. Ask for samples for your project.',
-      finishLabel: 'Finish',
-      swatches: [
-        { name: 'Sage green', finish: 'Super-matte' },
-        { name: 'Pine green', finish: 'Matte' },
-        { name: 'Off-white', finish: 'Matte' },
-        { name: 'Warm oak', finish: 'Wood texture' },
-        { name: 'Walnut', finish: 'Wood texture' },
-        { name: 'Natural stone', finish: 'Stone texture' },
-        { name: 'Concrete', finish: 'Mineral matte' },
-        { name: 'Linen', finish: 'Textile look' },
-        { name: 'Leather', finish: 'Soft touch' },
-        { name: 'Anthracite', finish: 'Super-matte' },
-      ],
+  heading: 'MATERIALS & TEXTURES',
+  sub: 'Choose from an extensive collection of interior films with realistic wood, stone, metal and decorative finishes.',
+  note: 'Materials & textures',
+  sampleCta: 'Resimdo offers more than 300 decors. We can help you choose the right finish for your project and arrange a physical sample where needed.',
+  categories: [
+    {
+      name: 'Wood',
+      description: 'Realistic wood decors with visible grain and a range of natural and painted appearances.',
+      finishes: ['Oak', 'Walnut', 'Natural', 'Rustic', 'Painted wood'],
     },
+    {
+      name: 'Stone & marble',
+      description: 'Stone-inspired surfaces with realistic structures for a refined, contemporary finish.',
+      finishes: ['Marble', 'Stone', 'Concrete', 'Natural', 'Plaster'],
+    },
+    {
+      name: 'Single colours',
+      description: 'A broad choice of solid colours, from soft neutrals to deeper and more expressive tones.',
+      finishes: ['Matte', 'Satin', 'Soft Touch', 'Pale', 'Saturated'],
+    },
+    {
+      name: 'Metal',
+      description: 'Metal-inspired decors for modern, industrial and refined interiors.',
+      finishes: ['Gold', 'Silver', 'Bronze', 'Brushed', 'Metallic'],
+    },
+    {
+      name: 'Textile',
+      description: 'Tactile textile decors with a refined woven and fabric-inspired appearance.',
+      finishes: ['Fabric', 'Woven', 'Tactile', 'Matte', 'Satin'],
+    },
+    {
+      name: 'Leather',
+      description: 'Leather-inspired textures that give furniture and other interiors a richer appearance.',
+      finishes: ['Leather', 'Tactile', 'Matte', 'Textured'],
+    },
+    {
+      name: 'Painted wood',
+      description: 'Painted wood effects combining the characteristic structure of wood with a coloured finish.',
+      finishes: ['Painted Wood', 'Painted Nature', 'Soft', 'Natural'],
+    },
+    {
+      name: 'Decorative',
+      description: 'Distinctive patterns and abstract decors for more expressive and personalised interiors.',
+      finishes: ['Abstract', 'Patterns', 'Unique Look', 'Decorative'],
+    },
+  ],
+},
     process: {
       heading: 'Our process',
       sub: 'Six careful steps. The finish defines the result.',
@@ -804,23 +868,53 @@ gallery: {
   ],
 },
     materials: {
-      heading: 'Materiales y texturas',
-      sub: 'Cientos de colores y texturas — del liso mate a maderas y piedras muy realistas.',
-      note: 'Elegimos vinilos por su durabilidad en la costa: resistentes al sol, el calor y la humedad. Pide muestras para tu proyecto.',
-      finishLabel: 'Acabado',
-      swatches: [
-        { name: 'Verde salvia', finish: 'Súper mate' },
-        { name: 'Verde pino', finish: 'Mate' },
-        { name: 'Blanco roto', finish: 'Mate' },
-        { name: 'Roble cálido', finish: 'Textura madera' },
-        { name: 'Nogal', finish: 'Textura madera' },
-        { name: 'Piedra natural', finish: 'Textura piedra' },
-        { name: 'Hormigón', finish: 'Mineral mate' },
-        { name: 'Lino', finish: 'Efecto textil' },
-        { name: 'Cuero', finish: 'Tacto suave' },
-        { name: 'Antracita', finish: 'Súper mate' },
-      ],
+  heading: 'MATERIALES Y TEXTURAS',
+  sub: 'Elige entre una amplia colección de films decorativos con acabados realistas de madera, piedra, metal y otros efectos decorativos.',
+  note: 'Materiales y texturas',
+  sampleCta: 'Resimdo ofrece más de 300 decoraciones. Podemos ayudarte a elegir el acabado adecuado para tu proyecto y gestionar una muestra física cuando sea necesario.',
+  categories: [
+    {
+      name: 'Madera',
+      description: 'Decoraciones de madera realistas con vetas visibles y diferentes acabados naturales y lacados.',
+      finishes: ['Roble', 'Nogal', 'Natural', 'Rústico', 'Madera pintada'],
     },
+    {
+      name: 'Piedra y mármol',
+      description: 'Superficies inspiradas en piedra con estructuras realistas para un acabado contemporáneo y sofisticado.',
+      finishes: ['Mármol', 'Piedra', 'Hormigón', 'Natural', 'Yeso'],
+    },
+    {
+      name: 'Colores lisos',
+      description: 'Una amplia selección de colores lisos, desde tonos neutros suaves hasta colores más intensos.',
+      finishes: ['Mate', 'Satinado', 'Soft Touch', 'Claros', 'Intensos'],
+    },
+    {
+      name: 'Metal',
+      description: 'Decoraciones inspiradas en metales para interiores modernos, industriales y sofisticados.',
+      finishes: ['Dorado', 'Plateado', 'Bronce', 'Cepillado', 'Metálico'],
+    },
+    {
+      name: 'Textil',
+      description: 'Decoraciones textiles táctiles con un aspecto tejido y refinado.',
+      finishes: ['Tejido', 'Tramado', 'Táctil', 'Mate', 'Satinado'],
+    },
+    {
+      name: 'Cuero',
+      description: 'Texturas inspiradas en el cuero para aportar una apariencia más rica a muebles y otros elementos.',
+      finishes: ['Cuero', 'Táctil', 'Mate', 'Texturizado'],
+    },
+    {
+      name: 'Madera pintada',
+      description: 'Efectos de madera pintada que combinan la estructura característica de la madera con un acabado de color.',
+      finishes: ['Painted Wood', 'Painted Nature', 'Suave', 'Natural'],
+    },
+    {
+      name: 'Decorativo',
+      description: 'Patrones distintivos y diseños abstractos para interiores más expresivos y personalizados.',
+      finishes: ['Abstracto', 'Patrones', 'Unique Look', 'Decorativo'],
+    },
+  ],
+},
     process: {
       heading: 'Nuestro proceso',
       sub: 'Seis pasos cuidadosos. El acabado define el resultado.',
