@@ -1,5 +1,6 @@
 'use client'
 
+import { ArrowRight, Camera, MessageCircle } from 'lucide-react'
 import { whatsappLink } from '@/lib/i18n/dictionaries'
 import { useLanguage } from '@/lib/i18n/provider'
 import { BeforeAfterSlider } from '@/components/before-after-slider'
