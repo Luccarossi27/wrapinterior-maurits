@@ -1,8 +1,8 @@
 'use client'
 
-import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { useLanguage } from '@/lib/i18n/provider'
+import { BeforeAfterSlider } from '@/components/before-after-slider'
 import { Reveal } from '@/components/reveal'
 
 export function HomepageServices() {
@@ -12,18 +12,21 @@ export function HomepageServices() {
     <section id="what-we-wrap" className="bg-sand text-ink">
       <div className="mx-auto w-full max-w-6xl px-5 py-16 sm:px-8 sm:py-20 lg:py-24">
         <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16">
+
+          {/* Before / After */}
           <Reveal>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
-              <Image
-                src="/images/griffioen-d1-after.jpg"
-                alt={t.homepageServices.imageAlt}
-                fill
-                sizes="(max-width: 1024px) 100vw, 560px"
-                className="object-cover"
-              />
-            </div>
+            <BeforeAfterSlider
+              beforeSrc="/images/griffioen-d1-before.JPEG"
+              afterSrc="/images/griffioen-d1-after.jpg"
+              beforeAlt={t.homepageServices.imageBeforeAlt}
+              afterAlt={t.homepageServices.imageAfterAlt}
+              beforeLabel={t.hero.beforeLabel}
+              afterLabel={t.hero.afterLabel}
+              dragHint={t.hero.dragHint}
+            />
           </Reveal>
 
+          {/* Copy */}
           <div>
             <Reveal>
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brass">
