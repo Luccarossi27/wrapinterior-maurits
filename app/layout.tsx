@@ -1,13 +1,13 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { DM_Sans, Oswald } from 'next/font/google'
+import { IBM_Plex_Mono, Oswald } from 'next/font/google'
 import { LanguageProvider } from '@/lib/i18n/provider'
 import { dictionaries, defaultLocale } from '@/lib/i18n/dictionaries'
 import './globals.css'
 
-const dmSans = DM_Sans({
+const plexMono = IBM_Plex_Mono({
   subsets: ['latin'],
-  variable: '--font-dm-sans',
+  variable: '--font-plex-mono',
   display: 'swap',
   weight: ['400', '500', '600', '700'],
 })
@@ -48,7 +48,7 @@ export default function RootLayout({
   return (
     <html
       lang={defaultLocale}
-      className={`bg-background ${dmSans.variable} ${oswald.variable}`}
+      className={`bg-background ${plexMono.variable} ${oswald.variable}`}
     >
       <body className="font-sans antialiased">
         <LanguageProvider>{children}</LanguageProvider>
