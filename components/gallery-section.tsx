@@ -71,14 +71,14 @@ export function GallerySection() {
           </Reveal>
         </div>
 
-        <div className="mt-10 grid gap-10 lg:grid-cols-2 lg:gap-x-10 lg:gap-y-16">
+        <div className="mt-10 grid gap-12 lg:grid-cols-2 lg:gap-x-14 lg:gap-y-20">
           {items.map((item, i) => (
             <Reveal
               key={item.title}
               delay={(i % 2) * 0.06}
             >
               <article>
-                <div className="mx-auto w-full max-w-[560px]">
+                <div className="mx-auto w-full max-w-[440px]">
                   <BeforeAfterSlider
                     beforeSrc={item.media.before}
                     afterSrc={item.media.after}
@@ -89,11 +89,10 @@ export function GallerySection() {
                     dragHint={t.hero.dragHint}
                     autoAspectRatio
                     fit="contain"
-                    className="max-h-[560px]"
                   />
                 </div>
 
-                <div className="pt-5">
+                <div className="mx-auto max-w-[440px] pt-4">
                   <h3 className="font-serif text-xl font-semibold text-ink">
                     {item.title}
                   </h3>
