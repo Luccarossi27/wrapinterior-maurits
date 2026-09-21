@@ -225,7 +225,7 @@ export const dictionaries: Record<Locale, Dict> = {
         'Meubels',
       ],
       link: 'Ontdek transformaties',
-      imageAlt: 'Keuken getransformeerd met premium interieurfolie',
+      imageAlt: 'Kastdeur getransformeerd met premium interieurfolie',
     },
     gallery: {
       heading: 'Voor & na',
@@ -518,7 +518,7 @@ export const dictionaries: Record<Locale, Dict> = {
         'Furniture',
       ],
       link: 'Explore Transformations',
-      imageAlt: 'Kitchen transformed with premium interior wrapping film',
+      imageAlt: 'Wardrobe door transformed with premium interior wrapping film',
     },
     gallery: {
       heading: 'Before & after',
@@ -811,7 +811,7 @@ export const dictionaries: Record<Locale, Dict> = {
         'Mobiliario',
       ],
       link: 'Descubre transformaciones',
-      imageAlt: 'Cocina transformada con film decorativo premium',
+      imageAlt: 'Puerta de armario transformada con film decorativo premium',
     },
     gallery: {
       heading: 'Antes y después',

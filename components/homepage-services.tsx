@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { useLanguage } from '@/lib/i18n/provider'
@@ -10,12 +12,10 @@ export function HomepageServices() {
     <section id="what-we-wrap" className="bg-sand text-ink">
       <div className="mx-auto w-full max-w-6xl px-5 py-16 sm:px-8 sm:py-20 lg:py-24">
         <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16">
-
-          {/* Image */}
           <Reveal>
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
               <Image
-                src="/images/kitchen-wrap.jpg"
+                src="/images/griffioen-d1-after.jpg"
                 alt={t.homepageServices.imageAlt}
                 fill
                 sizes="(max-width: 1024px) 100vw, 560px"
@@ -24,7 +24,6 @@ export function HomepageServices() {
             </div>
           </Reveal>
 
-          {/* Content */}
           <div>
             <Reveal>
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brass">
