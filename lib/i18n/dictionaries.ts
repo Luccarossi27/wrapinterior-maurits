@@ -191,7 +191,7 @@ export const dictionaries: Record<Locale, Dict> = {
     hero: {
       eyebrow: 'Interieurfolie zonder verbouwen — Jávea & Costa Blanca',
       h1: 'FRISSE INTERIEURS. ZONDER DE VERBOUWING.',
-      sub: 'Premium interieurfolie voor keukens, meubels, deuren en badkamermeubels in Jávea, Moraira, Calpe en de Costa Blanca. Strakke afwerking, meestal binnen enkele dagen klaar.',
+      sub: 'Geef je keuken, meubels, deuren of badkamerkasten een compleet nieuwe uitstraling — zonder de kosten, rommel of overlast van een volledige renovatie. Premium interieurfolie is een slim en kosteneffectief alternatief voor vervanging en geeft je bestaande interieur een tweede leven met een verfijnde, duurzame afwerking. Gevestigd in Jávea, werkzaam aan de Costa Blanca.',
       chips: [
         'Vanaf €1.400 incl. IVA',
         'Honderden kleuren & structuren',
@@ -514,7 +514,7 @@ export const dictionaries: Record<Locale, Dict> = {
     hero: {
       eyebrow: 'Interior wrapping without renovation — Jávea & Costa Blanca',
       h1: 'FRESH INTERIORS. WITHOUT THE RENOVATION.',
-      sub: 'Premium interior film for kitchens, furniture, doors and bathroom cabinets in Jávea, Moraira, Calpe and across the Costa Blanca. A crisp finish, usually completed within a few days.',
+      sub: 'Give your kitchen, furniture, doors or bathroom cabinets a completely new look — without the cost, mess or disruption of a full renovation. Premium interior film is a smart, cost-effective alternative to replacement, giving your existing interiors a second life with a refined, durable finish. Based in Jávea, covering the Costa Blanca.',
       chips: [
         'From €1,400 incl. VAT',
         'Hundreds of colours & textures',
@@ -837,7 +837,7 @@ export const dictionaries: Record<Locale, Dict> = {
     hero: {
       eyebrow: 'Vinilado de interiores sin obras — Jávea y Costa Blanca',
       h1: 'INTERIORES RENOVADOS. SIN OBRAS.',
-      sub: 'Vinilo premium para cocinas, muebles, puertas y muebles de baño en Jávea, Moraira, Calpe y toda la Costa Blanca. Acabado impecable, normalmente en pocos días.',
+      sub: 'Dale un aspecto completamente nuevo a tu cocina, muebles, puertas o armarios de baño, sin los costes, el desorden ni las molestias de una reforma completa. El revestimiento con film decorativo premium es una alternativa inteligente y rentable a la sustitución, dando una segunda vida a tus interiores con un acabado elegante y duradero. Con base en Jávea, trabajamos en toda la Costa Blanca.',
       chips: [
         'Desde 1.400 € IVA incl.',
         'Cientos de colores y texturas',
