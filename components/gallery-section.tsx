@@ -79,16 +79,16 @@ export function GallerySection() {
             >
               <article>
                 <BeforeAfterSlider
-  beforeSrc={item.media.before}
-  afterSrc={item.media.after}
-  beforeAlt={item.alt}
-  afterAlt={item.alt}
-  beforeLabel={t.hero.beforeLabel}
-  afterLabel={t.hero.afterLabel}
-  dragHint={t.hero.dragHint}
-  fit="cover"
-  aspectRatio="aspect-[4/3] h-[300px] sm:h-[360px] lg:h-[400px]"
-/>
+                  beforeSrc={item.media.before}
+                  afterSrc={item.media.after}
+                  beforeAlt={item.alt}
+                  afterAlt={item.alt}
+                  beforeLabel={t.hero.beforeLabel}
+                  afterLabel={t.hero.afterLabel}
+                  dragHint={t.hero.dragHint}
+                  fit="contain"
+                  aspectRatio="aspect-[4/3] h-[300px] sm:h-[360px] lg:h-[400px]"
+                />
 
                 <div className="pt-4">
                   <h3 className="font-serif text-xl font-semibold text-ink">
