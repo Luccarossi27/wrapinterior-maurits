@@ -837,7 +837,7 @@ export const dictionaries: Record<Locale, Dict> = {
     hero: {
       eyebrow: 'Vinilado de interiores sin obras — Jávea y Costa Blanca',
       h1: 'INTERIORES RENOVADOS. SIN OBRAS.',
-      sub: 'Dale un aspecto completamente nuevo a tu cocina, muebles, puertas o armarios de baño, sin los costes, el desorden ni las molestias de una reforma completa.\n\nEl revestimiento con film decorativo premium es una alternativa inteligente y rentable a la sustitución, dando una segunda vida a tus interiores con un acabado elegante y duradero. \n\nCon base en Jávea, trabajamos en toda la Costa Blanca.',
+      sub: 'Dale un aspecto completamente nuevo a tu cocina, muebles, puertas o armarios de baño, sin los costes, el desorden ni las molestias de una reforma completa. El revestimiento con film decorativo premium es una alternativa inteligente y rentable a la sustitución, dando una segunda vida a tus interiores con un acabado elegante y duradero. \nCon base en Jávea, trabajamos en toda la Costa Blanca.',
       chips: [
         'Desde 1.400 € IVA incl.',
         'Cientos de colores y texturas',
