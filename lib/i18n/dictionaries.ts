@@ -58,26 +58,25 @@ type Dict = {
     note: string
     items: { value: string; label: string }[]
   }
-  homepageServices: {
+    homepageServices: {
     eyebrow: string
     heading: string
     sub: string
     items: string[]
     link: string
     imageBeforeAlt: string
-imageAfterAlt: string
+    imageAfterAlt: string
   }
   gallery: {
-  heading: string
-  sub: string
-  locationLabel: string
-  beforeAfter: string
-  items: {
-    title: string
-    location: string
-    alt: string
-  }[]
-}
+    heading: string
+    sub: string
+    locationLabel: string
+    beforeAfter: string
+    items: {
+      title: string
+      location: string
+      alt: string
+    }[]
   }
   materials: {
     heading: string
@@ -220,7 +219,7 @@ export const dictionaries: Record<Locale, Dict> = {
       ],
       link: 'Ontdek transformaties',
       imageBeforeAlt: 'Kastdeur vóór het wrappen',
-imageAfterAlt: 'Kastdeur getransformeerd met premium interieurfolie',
+      imageAfterAlt: 'Kastdeur getransformeerd met premium interieurfolie',
     },
 gallery: {
   heading: 'Voor & na',
@@ -492,7 +491,7 @@ gallery: {
       ],
       link: 'Explore Transformations',
       imageBeforeAlt: 'Wardrobe door before interior wrapping',
-imageAfterAlt: 'Wardrobe door transformed with premium interior wrapping film',
+      imageAfterAlt: 'Wardrobe door transformed with premium interior wrapping film',
     },
 gallery: {
   heading: 'Before & after',
@@ -764,7 +763,7 @@ gallery: {
       ],
       link: 'Descubre transformaciones',
       imageBeforeAlt: 'Puerta de armario antes del vinilado',
-imageAfterAlt: 'Puerta de armario transformada con film decorativo premium',
+      imageAfterAlt: 'Puerta de armario transformada con film decorativo premium',
     },
 gallery: {
   heading: 'Antes y después',
@@ -959,12 +958,13 @@ gallery: {
       },
     },
     footer: {
-      tagline: '',
-      serviceArea: `${areas} y toda la Costa Blanca / provincia de Alicante.`,
-      languagesTitle: 'Idiomas',
-      contactTitle: 'Contacto',
-      legal: 'Privacidad · Cookies · Precios IVA incl. · [VERIFY] Empresa/CIF',
-      rights: 'Todos los derechos reservados.',
-    },
+  tagline: '',
+  serviceAreaTitle: 'Zona de servicio',
+  serviceArea: `${areas} y toda la Costa Blanca / provincia de Alicante.`,
+  languagesTitle: 'Idiomas',
+  contactTitle: 'Contacto',
+  legal: 'Privacidad · Cookies · Precios IVA incl. · [VERIFY] Empresa/CIF',
+  rights: 'Todos los derechos reservados.',
+},
   },
 }
