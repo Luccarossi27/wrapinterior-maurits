@@ -71,28 +71,26 @@ export function GallerySection() {
           </Reveal>
         </div>
 
-        <div className="mt-10 grid gap-12 lg:grid-cols-2 lg:gap-x-14 lg:gap-y-20">
+        <div className="mt-10 grid gap-12 lg:grid-cols-2 lg:gap-x-14 lg:gap-y-16">
           {items.map((item, i) => (
             <Reveal
               key={item.title}
               delay={(i % 2) * 0.06}
             >
               <article>
-                <div className="mx-auto w-full max-w-[440px]">
-                  <BeforeAfterSlider
-                    beforeSrc={item.media.before}
-                    afterSrc={item.media.after}
-                    beforeAlt={item.alt}
-                    afterAlt={item.alt}
-                    beforeLabel={t.hero.beforeLabel}
-                    afterLabel={t.hero.afterLabel}
-                    dragHint={t.hero.dragHint}
-                    autoAspectRatio
-                    fit="contain"
-                  />
-                </div>
+                <BeforeAfterSlider
+                  beforeSrc={item.media.before}
+                  afterSrc={item.media.after}
+                  beforeAlt={item.alt}
+                  afterAlt={item.alt}
+                  beforeLabel={t.hero.beforeLabel}
+                  afterLabel={t.hero.afterLabel}
+                  dragHint={t.hero.dragHint}
+                  fit="contain"
+                  aspectRatio="aspect-[4/3] h-[300px] sm:h-[360px] lg:h-[400px]"
+                />
 
-                <div className="mx-auto max-w-[440px] pt-4">
+                <div className="pt-4">
                   <h3 className="font-serif text-xl font-semibold text-ink">
                     {item.title}
                   </h3>
