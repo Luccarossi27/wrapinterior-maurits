@@ -1,12 +1,8 @@
 import { SiteHeader } from '@/components/site-header'
 import { Hero } from '@/components/hero'
 import { ProofBar } from '@/components/proof-bar'
-import { ServicesSection } from '@/components/services-section'
-import { PortfolioPreview } from '@/components/portfolio-preview'
-import { ProcessPreview } from '@/components/process-preview'
-import { PricingPreview } from '@/components/pricing-preview'
-import { ReviewsPreview } from '@/components/reviews-preview'
-import { FaqPreview } from '@/components/faq-preview'
+import { HomepageServices } from '@/components/homepage-services'
+import { HomepageExplore } from '@/components/homepage-explore'
 import { FinalCta } from '@/components/final-cta'
 import { SiteFooter } from '@/components/site-footer'
 import { MobileActionBar } from '@/components/mobile-action-bar'
@@ -21,14 +17,8 @@ export default function HomePage() {
       <main id="main">
         <Hero />
         <ProofBar />
-        <ServicesSection />
-
-        <PortfolioPreview />
-        <ProcessPreview />
-        <PricingPreview />
-        <ReviewsPreview />
-        <FaqPreview />
-
+        <HomepageServices />
+        <HomepageExplore />
         <FinalCta />
       </main>
 
