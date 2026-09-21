@@ -10,7 +10,7 @@ export function PricingSection() {
   const { t } = useLanguage()
 
   return (
-    <section id="pricing" className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
+    <section id="pricing" className="mx-auto w-full max-w-6xl px-5 pt-4 pb-20 sm:px-8 lg:pt-10 lg:pb-28">
       <div className="mx-auto max-w-2xl text-center">
         <Reveal>
           <h2 className="text-balance font-serif text-3xl font-semibold tracking-tight text-ink sm:text-4xl">

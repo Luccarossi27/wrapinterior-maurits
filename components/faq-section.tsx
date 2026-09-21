@@ -11,7 +11,7 @@ export function FaqSection() {
   const [open, setOpen] = useState<number | null>(0)
 
   return (
-    <section id="faq" className="mx-auto w-full max-w-3xl px-5 py-20 sm:px-8 lg:py-28">
+    <section id="faq" className="mx-auto w-full max-w-3xl px-5 pt-4 pb-20 sm:px-8 lg:pt-10 lg:pb-28">
       <Reveal>
         <h2 className="text-balance text-center font-serif text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
           {t.faq.heading}

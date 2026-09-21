@@ -9,7 +9,7 @@ export function ReviewsSection() {
 
   return (
     <section id="reviews" className="border-t border-border bg-secondary/40">
-      <div className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
+      <div className="mx-auto w-full max-w-6xl px-5 pt-4 pb-20 sm:px-8 lg:pt-10 lg:pb-28">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
             <Reveal>

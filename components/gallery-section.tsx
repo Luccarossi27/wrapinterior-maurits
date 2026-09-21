@@ -36,7 +36,7 @@ export function GallerySection() {
 
   return (
     <section id="portfolio" className="border-t border-border bg-secondary/40">
-      <div className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
+      <div className="mx-auto w-full max-w-6xl px-5 pt-4 pb-20 sm:px-8 lg:pt-10 lg:pb-28">
         <div className="max-w-2xl">
           <Reveal>
             <h2 className="text-balance font-serif text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
