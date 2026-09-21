@@ -15,11 +15,11 @@ export function SiteFooter() {
       <div className="mx-auto w-full max-w-6xl px-5 py-10 sm:px-8 sm:py-12">
         <div className="grid gap-8 md:grid-cols-[1.4fr_1fr_1fr] md:gap-10">
           {/* Brand */}
-          <div>
+          <div className="flex flex-col items-center text-center">
   <Logo />
 
-  <p className="mt-3 max-w-xs font-serif text-sm font-medium uppercase tracking-[0.08em] text-paper/80">
-    FRESH INTERIORS. WITHOUT THE RENOVATION.
+  <p className="mt-3 max-w-xs font-serif text-sm font-medium leading-snug text-paper/80">
+    Fresh interiors. Without the renovation.
   </p>
 
   <div className="mt-5">
