@@ -274,7 +274,7 @@ gallery: {
       alt: 'Interieur vóór en na het wrappen',
     },
   ],
-},
+}
     materials: {
       heading: 'Materialen & structuren',
       sub: 'Honderden kleuren en structuren — van effen mat tot overtuigend hout en steen.',
@@ -546,7 +546,7 @@ gallery: {
       alt: 'Interior before and after wrapping',
     },
   ],
-},
+}
     materials: {
       heading: 'Materials & textures',
       sub: 'Hundreds of colours and textures — from solid matte to convincing wood and stone.',
@@ -818,7 +818,7 @@ gallery: {
       alt: 'Interior antes y después del vinilado',
     },
   ],
-},
+}
     materials: {
       heading: 'Materiales y texturas',
       sub: 'Cientos de colores y texturas — del liso mate a maderas y piedras muy realistas.',
