@@ -183,7 +183,7 @@ export const dictionaries: Record<Locale, Dict> = {
     cta: {
       whatsappQuote: 'WhatsApp offerte',
       sendPhotos: "Offerte aanvragen via WhatsApp",
-      viewProjects: 'Bekijk voor/na projecten',
+      viewProjects: 'Ontdek transformaties',
       call: 'Bellen',
       prices: 'Prijzen',
       getQuote: 'Offerte aanvragen',
@@ -506,7 +506,7 @@ export const dictionaries: Record<Locale, Dict> = {
     cta: {
       whatsappQuote: 'WhatsApp quote',
       sendPhotos: 'Get quote via WhatsApp',
-      viewProjects: 'View before/after projects',
+      viewProjects: 'Explore Transformations',
       call: 'Call',
       prices: 'Pricing',
       getQuote: 'Request a quote',
@@ -829,7 +829,7 @@ export const dictionaries: Record<Locale, Dict> = {
     cta: {
       whatsappQuote: 'Presupuesto WhatsApp',
       sendPhotos: 'Pedir presupuesto por WhatsApp',
-      viewProjects: 'Ver proyectos antes/después',
+      viewProjects: 'Descubre transformaciones',
       call: 'Llamar',
       prices: 'Precios',
       getQuote: 'Pedir presupuesto',
