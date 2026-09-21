@@ -11,67 +11,91 @@ export function SiteFooter() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-border bg-background">
-      <div className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8">
-        <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr]">
+    <footer className="bg-pine text-paper">
+      <div className="mx-auto w-full max-w-6xl px-5 py-10 sm:px-8 sm:py-12">
+        <div className="grid gap-8 md:grid-cols-[1.4fr_1fr_1fr] md:gap-10">
+          {/* Brand */}
           <div>
-            <Logo subtitle />
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
+            <Logo />
+
+            <p className="mt-3 max-w-xs text-sm leading-relaxed text-paper/65">
               {t.footer.tagline}
             </p>
-            <div className="mt-6">
-              <h3 className="text-sm font-semibold text-ink">
-                {t.footer.languagesTitle}
-              </h3>
-              <LanguageSwitcher className="mt-3" />
+
+            <div className="mt-5">
+              <LanguageSwitcher />
             </div>
           </div>
 
+          {/* Service area */}
           <div>
-            <h3 className="text-sm font-semibold text-ink">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.16em] text-brass">
               {t.footer.serviceAreaTitle}
             </h3>
-            <p className="mt-4 flex gap-2 text-sm leading-relaxed text-muted-foreground">
+
+            <div className="mt-3 flex gap-2.5 text-sm leading-relaxed text-paper/75">
               <MapPin className="mt-0.5 size-4 shrink-0 text-brass" />
-              {t.footer.serviceArea}
-            </p>
+
+              <div>
+                <p className="font-medium text-paper">
+                  Based in Jávea
+                </p>
+                <p className="mt-0.5">
+                  Covering the Costa Blanca
+                </p>
+              </div>
+            </div>
           </div>
 
+          {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold text-ink">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.16em] text-brass">
               {t.footer.contactTitle}
             </h3>
-            <ul className="mt-4 space-y-3 text-sm">
+
+            <ul className="mt-3 space-y-2.5 text-sm">
               <li>
                 <a
                   href={`tel:${contact.phoneHref}`}
-                  className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-pine"
+                  className="flex items-center gap-2.5 text-paper/75 transition-colors hover:text-paper"
                 >
-                  <Phone className="size-4 text-brass" />
+                  <Phone className="size-4 shrink-0 text-brass" />
                   {contact.phoneDisplay}
                 </a>
               </li>
+
               <li>
                 <a
                   href={`mailto:${contact.email}`}
-                  className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-pine"
+                  className="flex items-center gap-2.5 text-paper/75 transition-colors hover:text-paper"
                 >
-                  <Mail className="size-4 text-brass" />
+                  <Mail className="size-4 shrink-0 text-brass" />
                   {contact.email}
                 </a>
+              </li>
+
+              <li className="flex gap-2.5 text-paper/60">
+                <MapPin className="mt-0.5 size-4 shrink-0 text-brass" />
+                <span>
+                  Avinguda del Trenc d'Alba, 6
+                  <br />
+                  03730 Xàbia, Alicante
+                </span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-2 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-8 flex flex-col gap-2 border-t border-white/10 pt-5 text-xs text-paper/45 sm:flex-row sm:items-center sm:justify-between">
           <p>
             &copy; {year} Wrap Interior. {t.footer.rights}
           </p>
+
           <p>{t.footer.legal}</p>
         </div>
       </div>
-      {/* spacer so the mobile action bar never covers footer content */}
+
+      {/* Spacer so the mobile action bar never covers footer content */}
       <div className="h-20 md:hidden" aria-hidden="true" />
     </footer>
   )

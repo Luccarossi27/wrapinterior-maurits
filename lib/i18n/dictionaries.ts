@@ -3,17 +3,16 @@ export type Locale = 'nl' | 'en' | 'es'
 export const locales: Locale[] = ['nl', 'en', 'es']
 export const defaultLocale: Locale = 'nl'
 
-// Central contact placeholders — replace with verified values.
 export const contact = {
-  // [VERIFY] Replace with the real WhatsApp number in international format (no + or spaces).
-  whatsapp: '34600000000',
-  // [VERIFY] Replace with the real phone number.
-  phoneDisplay: '+34 600 000 000',
-  phoneHref: '+34600000000',
-  // [VERIFY] Replace with the real business email.
-  email: 'hola@wrap-interior.example',
+  whatsapp: '34675153105',
+  phoneDisplay: '+34 675 153 105',
+  phoneHref: '+34675153105',
+  email: 'info@wrap-interior.com',
   city: 'Jávea',
   region: 'Costa Blanca, Alicante',
+  address: "Avinguda del Trenc d'Alba, 6",
+  postcode: '03730',
+  province: 'Alicante',
 } as const
 
 export function whatsappLink(message: string) {
