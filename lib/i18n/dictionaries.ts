@@ -515,7 +515,7 @@ export const dictionaries: Record<Locale, Dict> = {
       eyebrow: 'Interior wrapping without renovation — Jávea & Costa Blanca',
       h1: 'FRESH INTERIORS. WITHOUT THE RENOVATION.',
       sub: 'Premium interior film for kitchens, furniture, doors and bathroom cabinets in Jávea, Moraira, Calpe and across the Costa Blanca. A crisp finish, usually completed within a few days.',
-      chips: [FC
+      chips: [
         'From €1,400 incl. VAT',
         'Hundreds of colours & textures',
         'No demolition or mess',
