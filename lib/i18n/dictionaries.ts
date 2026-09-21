@@ -248,11 +248,6 @@ gallery: {
       alt: 'Deuren vóór en na het wrappen',
     },
     {
-      title: 'Griffioen — Deuren 2',
-      location: 'Costa Blanca',
-      alt: 'Deuren vóór en na het wrappen',
-    },
-    {
       title: 'Griffioen — Deuren 3',
       location: 'Costa Blanca',
       alt: 'Deuren vóór en na het wrappen',
@@ -520,11 +515,6 @@ gallery: {
       alt: 'Doors before and after wrapping',
     },
     {
-      title: 'Griffioen — Doors 2',
-      location: 'Costa Blanca',
-      alt: 'Doors before and after wrapping',
-    },
-    {
       title: 'Griffioen — Doors 3',
       location: 'Costa Blanca',
       alt: 'Doors before and after wrapping',
@@ -788,11 +778,6 @@ gallery: {
     },
     {
       title: 'Griffioen — Puertas 1',
-      location: 'Costa Blanca',
-      alt: 'Puertas antes y después del vinilado',
-    },
-    {
-      title: 'Griffioen — Puertas 2',
       location: 'Costa Blanca',
       alt: 'Puertas antes y después del vinilado',
     },

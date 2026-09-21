@@ -22,10 +22,6 @@ const galleryMedia = [
     after: '/images/griffioen-d1-after.jpg',
   },
   {
-    before: '/images/griffioen-d2-before.jpg',
-    after: '/images/griffioen-d2-after.jpg',
-  },
-  {
     before: '/images/griffioen-d3-before.jpg',
     after: '/images/griffioen-d3-after.jpg',
   },
