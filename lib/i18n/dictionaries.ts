@@ -64,7 +64,8 @@ type Dict = {
     sub: string
     items: string[]
     link: string
-    imageAlt: string
+    imageBeforeAlt: string
+imageAfterAlt: string
   }
   gallery: {
     heading: string
