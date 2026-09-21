@@ -58,13 +58,13 @@ type Dict = {
     note: string
     items: { value: string; label: string }[]
   }
-  services: {
+  homepageServices: {
+    eyebrow: string
     heading: string
     sub: string
-    cards: { title: string; benefit: string; bestFor: string; finishes: string }[]
-    cardCta: string
-    bestForLabel: string
-    finishesLabel: string
+    items: string[]
+    link: string
+    imageAlt: string
   }
   gallery: {
     heading: string
@@ -212,50 +212,20 @@ export const dictionaries: Record<Locale, Dict> = {
         { value: '[4,9/5]', label: 'Google beoordeling' },
       ],
     },
-    services: {
-      heading: 'Wat we wrappen',
-      sub: 'Eén techniek, een compleet vernieuwd interieur — precies afgewerkt en snel geplaatst.',
-      cardCta: 'Vraag naar deze service',
-      bestForLabel: 'Ideaal voor',
-      finishesLabel: 'Afwerkingen',
-      cards: [
-        {
-          title: 'Keuken wrappen',
-          benefit: 'Een compleet nieuwe keukenlook zonder de keuken te vervangen.',
-          bestFor: 'Verouderde maar goede keukens',
-          finishes: 'Mat, super-mat, hout, steen',
-        },
-        {
-          title: 'Meubels wrappen',
-          benefit: 'Geef dressoirs, tafels en kasten een tweede leven.',
-          bestFor: 'Vaste en losse meubels',
-          finishes: 'Eiken, walnoot, effen kleuren',
-        },
-        {
-          title: 'Deuren & kozijnen',
-          benefit: 'Egale, strakke deuren die passen bij het interieur.',
-          bestFor: 'Binnendeuren en kozijnen',
-          finishes: 'Mat wit, warm grijs, hout',
-        },
-        {
-          title: 'Badkamermeubels',
-          benefit: 'Vochtbestendige folie voor een frisse badkamer.',
-          bestFor: 'Wastafelmeubels en kasten',
-          finishes: 'Mat, steen, effen kleuren',
-        },
-        {
-          title: 'Kasten & wardrobes',
-          benefit: 'Inbouwkasten die weer helemaal van nu zijn.',
-          bestFor: 'Inbouw- en schuifkasten',
-          finishes: 'Hout, effen, textiel-look',
-        },
-        {
-          title: 'Hotels & verhuur',
-          benefit: 'Snelle interieur-refresh met minimale sluitingstijd.',
-          bestFor: 'Boutique hotels & vakantieverhuur',
-          finishes: 'Op maat, duurzaam',
-        },
+        homepageServices: {
+      eyebrow: 'Wat we wrappen',
+      heading: 'MEER DAN ALLEEN KEUKENS.',
+      sub: 'Premium interieurfolie kan bestaande oppervlakken in je hele woning transformeren — van keukens en kasten tot deuren en andere interieurelementen, zonder ze te vervangen.',
+      items: [
+        'Keukens',
+        'Kasten',
+        'Inloopkasten',
+        'Deuren',
+        'Badkamers',
+        'Meubels',
       ],
+      link: 'Ontdek transformaties',
+      imageAlt: 'Keuken getransformeerd met premium interieurfolie',
     },
     gallery: {
       heading: 'Voor & na',
@@ -535,50 +505,20 @@ export const dictionaries: Record<Locale, Dict> = {
         { value: '[4.9/5]', label: 'Google rating' },
       ],
     },
-    services: {
-      heading: 'What we wrap',
-      sub: 'One technique, a completely renewed interior — precisely finished and quickly installed.',
-      cardCta: 'Ask about this service',
-      bestForLabel: 'Best for',
-      finishesLabel: 'Finishes',
-      cards: [
-        {
-          title: 'Kitchen wrapping',
-          benefit: 'A completely new kitchen look without replacing the kitchen.',
-          bestFor: 'Dated but sound kitchens',
-          finishes: 'Matte, super-matte, wood, stone',
-        },
-        {
-          title: 'Furniture wrapping',
-          benefit: 'Give sideboards, tables and cabinets a second life.',
-          bestFor: 'Built-in and free-standing furniture',
-          finishes: 'Oak, walnut, solid colours',
-        },
-        {
-          title: 'Doors & frames',
-          benefit: 'Even, crisp doors that match your interior.',
-          bestFor: 'Interior doors and frames',
-          finishes: 'Matte white, warm grey, wood',
-        },
-        {
-          title: 'Bathroom cabinets',
-          benefit: 'Moisture-resistant film for a fresh bathroom.',
-          bestFor: 'Vanity units and cabinets',
-          finishes: 'Matte, stone, solid colours',
-        },
-        {
-          title: 'Wardrobes & closets',
-          benefit: 'Built-in wardrobes brought fully up to date.',
-          bestFor: 'Built-in and sliding wardrobes',
-          finishes: 'Wood, solid, textile look',
-        },
-        {
-          title: 'Hotels & rentals',
-          benefit: 'A fast interior refresh with minimal downtime.',
-          bestFor: 'Boutique hotels & holiday rentals',
-          finishes: 'Bespoke, durable',
-        },
+    homepageServices: {
+      eyebrow: 'What we wrap',
+      heading: 'MORE THAN JUST KITCHENS.',
+      sub: 'Premium interior film can transform existing surfaces throughout your home — giving kitchens, cabinetry, doors and other interiors a completely new look without replacing them.',
+      items: [
+        'Kitchens',
+        'Cabinetry',
+        'Wardrobes',
+        'Doors',
+        'Bathrooms',
+        'Furniture',
       ],
+      link: 'Explore Transformations',
+      imageAlt: 'Kitchen transformed with premium interior wrapping film',
     },
     gallery: {
       heading: 'Before & after',
@@ -858,50 +798,20 @@ export const dictionaries: Record<Locale, Dict> = {
         { value: '[4,9/5]', label: 'valoración en Google' },
       ],
     },
-    services: {
-      heading: 'Qué viniladamos',
-      sub: 'Una técnica, un interior totalmente renovado — con acabado preciso e instalación rápida.',
-      cardCta: 'Consultar este servicio',
-      bestForLabel: 'Ideal para',
-      finishesLabel: 'Acabados',
-      cards: [
-        {
-          title: 'Vinilado de cocinas',
-          benefit: 'Una cocina totalmente nueva sin sustituirla.',
-          bestFor: 'Cocinas anticuadas pero en buen estado',
-          finishes: 'Mate, súper mate, madera, piedra',
-        },
-        {
-          title: 'Vinilado de muebles',
-          benefit: 'Da una segunda vida a aparadores, mesas y armarios.',
-          bestFor: 'Muebles fijos y exentos',
-          finishes: 'Roble, nogal, colores lisos',
-        },
-        {
-          title: 'Puertas y marcos',
-          benefit: 'Puertas lisas y precisas a juego con el interior.',
-          bestFor: 'Puertas interiores y marcos',
-          finishes: 'Blanco mate, gris cálido, madera',
-        },
-        {
-          title: 'Muebles de baño',
-          benefit: 'Vinilo resistente a la humedad para un baño renovado.',
-          bestFor: 'Muebles de lavabo y armarios',
-          finishes: 'Mate, piedra, colores lisos',
-        },
-        {
-          title: 'Armarios y vestidores',
-          benefit: 'Armarios empotrados totalmente actualizados.',
-          bestFor: 'Armarios empotrados y correderos',
-          finishes: 'Madera, liso, efecto textil',
-        },
-        {
-          title: 'Hoteles y alquiler',
-          benefit: 'Renovación rápida del interior con mínimo cierre.',
-          bestFor: 'Hoteles boutique y alquiler vacacional',
-          finishes: 'A medida, duradero',
-        },
+    homepageServices: {
+      eyebrow: 'Qué vinilamos',
+      heading: 'MUCHO MÁS QUE COCINAS.',
+      sub: 'El film decorativo premium puede transformar superficies existentes en toda tu vivienda — desde cocinas y armarios hasta puertas y otros elementos del interior, sin necesidad de sustituirlos.',
+      items: [
+        'Cocinas',
+        'Muebles',
+        'Armarios',
+        'Puertas',
+        'Baños',
+        'Mobiliario',
       ],
+      link: 'Descubre transformaciones',
+      imageAlt: 'Cocina transformada con film decorativo premium',
     },
     gallery: {
       heading: 'Antes y después',
