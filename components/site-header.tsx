@@ -31,7 +31,7 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-pine">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5 py-1 sm:px-8">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5 py-1.5 sm:px-8">
         <Logo />
 
         <nav
