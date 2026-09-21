@@ -1,38 +1,55 @@
 'use client'
 
-import { useMemo, useState } from 'react'
-import Image from 'next/image'
-import { MapPin } from 'lucide-react'
 import { useLanguage } from '@/lib/i18n/provider'
 import { Reveal } from '@/components/reveal'
-import { cn } from '@/lib/utils'
+import { BeforeAfterSlider } from '@/components/before-after-slider'
 
-// Language-independent metadata, aligned by index with the dictionary items.
 const galleryMedia = [
-  { src: '/images/hero-kitchen-after.png', tags: ['kitchen', 'color'] },
-  { src: '/images/project-furniture.png', tags: ['furniture', 'wood'] },
-  { src: '/images/project-door.png', tags: ['doors', 'color'] },
-  { src: '/images/project-bathroom.png', tags: ['bathroom', 'color'] },
-  { src: '/images/project-wardrobe.png', tags: ['furniture', 'wood'] },
-  { src: '/images/project-island.png', tags: ['kitchen', 'stone'] },
+  {
+    before: '/images/ben-before.jpeg',
+    after: '/images/ben-after.jpeg',
+  },
+  {
+    before: '/images/bernard-before.jpg',
+    after: '/images/bernard-after.jpg',
+  },
+  {
+    before: '/images/chantal-before.JPEG',
+    after: '/images/chantal-after.jpg',
+  },
+  {
+    before: '/images/griffioen-d1-before.JPEG',
+    after: '/images/griffioen-d1-after.jpg',
+  },
+  {
+    before: '/images/griffioen-d2-before.jpg',
+    after: '/images/griffioen-d2-after.jpg',
+  },
+  {
+    before: '/images/griffioen-d3-before.jpg',
+    after: '/images/griffioen-d3-after.jpg',
+  },
+  {
+    before: '/images/griffioen-k-before.jpeg',
+    after: '/images/griffioen-k-after.jpeg',
+  },
+  {
+    before: '/images/hans-before.jpg',
+    after: '/images/hans-after.jpg',
+  },
+  {
+    before: '/images/minja-before.jpg',
+    after: '/images/minja-after.JPEG',
+  },
 ]
 
 export function GallerySection() {
   const { t } = useLanguage()
-  const [active, setActive] = useState('all')
 
-  const items = useMemo(
-    () =>
-      t.gallery.items.map((item, i) => ({
-        ...item,
-        media: galleryMedia[i] ?? galleryMedia[0],
-      })),
-    [t],
-  )
-
-  const filtered = items.filter(
-    (item) => active === 'all' || item.media.tags.includes(active),
-  )
+  const items = t.gallery.items.map((item, i) => ({
+    ...item,
+    media: galleryMedia[i],
+  }))
 
   return (
     <section id="portfolio" className="border-t border-border bg-secondary/40">
@@ -43,6 +60,7 @@ export function GallerySection() {
               {t.gallery.heading}
             </h2>
           </Reveal>
+
           <Reveal delay={0.05}>
             <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground">
               {t.gallery.sub}
@@ -50,59 +68,46 @@ export function GallerySection() {
           </Reveal>
         </div>
 
-        <Reveal delay={0.1}>
-          <div className="mt-8 flex flex-wrap gap-2" role="tablist" aria-label={t.gallery.heading}>
-            {t.gallery.filters.map((filter) => {
-              const isActive = active === filter.key
-              return (
-                <button
-                  key={filter.key}
-                  type="button"
-                  role="tab"
-                  aria-selected={isActive}
-                  onClick={() => setActive(filter.key)}
-                  className={cn(
-                    'rounded-full border px-4 py-1.5 text-sm font-medium transition-colors',
-                    isActive
-                      ? 'border-pine bg-pine text-paper'
-                      : 'border-border bg-card text-muted-foreground hover:border-pine hover:text-pine',
-                  )}
-                >
-                  {filter.label}
-                </button>
-              )
-            })}
-          </div>
-        </Reveal>
+        <div className="mt-10 grid gap-10 lg:grid-cols-2 lg:gap-x-10 lg:gap-y-16">
+          {items.map((item, i) => (
+            <Reveal key={item.title} delay={(i % 2) * 0.06}>
+              <article>
+                <BeforeAfterSlider
+                  beforeSrc={item.media.before}
+                  afterSrc={item.media.after}
+                  beforeAlt={item.alt}
+                  afterAlt={item.alt}
+                  beforeLabel={t.hero.beforeLabel}
+                  afterLabel={t.hero.afterLabel}
+                  dragHint={t.hero.dragHint}
+                  aspectRatio="aspect-[4/3]"
+                />
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((item, i) => (
-            <Reveal key={item.title} delay={(i % 3) * 0.06}>
-              <figure className="group overflow-hidden rounded-3xl border border-border bg-card">
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <Image
-                    src={item.media.src || '/placeholder.svg'}
-                    alt={item.alt}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <figcaption className="absolute inset-x-0 bottom-0 flex items-center gap-1.5 bg-gradient-to-t from-ink/80 to-transparent px-4 pb-3 pt-10 text-sm font-medium text-paper">
-                    <MapPin className="size-3.5 text-brass" />
-                    {item.location}
-                  </figcaption>
-                </div>
-                <div className="p-5">
-                  <h3 className="font-serif text-lg font-semibold text-ink">
+                <div className="pt-5">
+                  <h3 className="font-serif text-xl font-semibold text-ink">
                     {item.title}
                   </h3>
-                  <dl className="mt-3 grid grid-cols-1 gap-1.5 text-sm">
-                    <Row label={t.gallery.scopeLabel} value={item.scope} />
-                    <Row label={t.gallery.finishLabel} value={item.finish} />
-                    <Row label={t.gallery.durationLabel} value={item.duration} />
+
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    {item.location}
+                  </p>
+
+                  <dl className="mt-4 grid grid-cols-1 gap-1.5 border-t border-border pt-4 text-sm">
+                    <Row
+                      label={t.gallery.scopeLabel}
+                      value={item.scope}
+                    />
+                    <Row
+                      label={t.gallery.finishLabel}
+                      value={item.finish}
+                    />
+                    <Row
+                      label={t.gallery.durationLabel}
+                      value={item.duration}
+                    />
                   </dl>
                 </div>
-              </figure>
+              </article>
             </Reveal>
           ))}
         </div>

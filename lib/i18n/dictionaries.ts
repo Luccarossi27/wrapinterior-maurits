@@ -68,23 +68,16 @@ type Dict = {
 imageAfterAlt: string
   }
   gallery: {
-    heading: string
-    sub: string
-    filters: { key: string; label: string }[]
-    locationLabel: string
-    scopeLabel: string
-    finishLabel: string
-    durationLabel: string
-    beforeAfter: string
-    items: {
-      cat: string
-      title: string
-      location: string
-      scope: string
-      finish: string
-      duration: string
-      alt: string
-    }[]
+  heading: string
+  sub: string
+  locationLabel: string
+  beforeAfter: string
+  items: {
+    title: string
+    location: string
+    alt: string
+  }[]
+}
   }
   materials: {
     heading: string
@@ -229,81 +222,59 @@ export const dictionaries: Record<Locale, Dict> = {
       imageBeforeAlt: 'Kastdeur vóór het wrappen',
 imageAfterAlt: 'Kastdeur getransformeerd met premium interieurfolie',
     },
-    gallery: {
-      heading: 'Voor & na',
-      sub: 'Echte transformaties, strak afgewerkt. Filter op type, materiaal of locatie.',
-      locationLabel: 'Locatie',
-      scopeLabel: 'Omvang',
-      finishLabel: 'Afwerking',
-      durationLabel: 'Duur',
-      beforeAfter: 'Voor / na',
-      filters: [
-        { key: 'all', label: 'Alles' },
-        { key: 'kitchen', label: 'Keuken' },
-        { key: 'furniture', label: 'Meubels' },
-        { key: 'doors', label: 'Deuren' },
-        { key: 'bathroom', label: 'Badkamer' },
-        { key: 'wood', label: 'Hout' },
-        { key: 'stone', label: 'Steen' },
-        { key: 'color', label: 'Kleur' },
-      ],
-      items: [
-        {
-          cat: 'kitchen',
-          title: 'Keuken in mat salie',
-          location: 'Jávea',
-          scope: '14 fronten',
-          finish: 'Super-mat saliegroen',
-          duration: '3 dagen',
-          alt: 'Keuken met matte saliegroene gewrapte fronten in een lichte villa in Jávea',
-        },
-        {
-          cat: 'furniture',
-          title: 'Dressoir in walnoot',
-          location: 'Moraira',
-          scope: 'Losse kast',
-          finish: 'Walnoot houtlook',
-          duration: '1 dag',
-          alt: 'Dressoir gewrapt in warme walnoot houtfolie in een lichte woonkamer',
-        },
-        {
-          cat: 'doors',
-          title: 'Binnendeuren mat wit',
-          location: 'Calpe',
-          scope: '6 deuren + kozijnen',
-          finish: 'Mat gebroken wit',
-          duration: '2 dagen',
-          alt: 'Binnendeur en kozijn gewrapt in mat gebroken wit in een lichte hal',
-        },
-        {
-          cat: 'bathroom',
-          title: 'Badkamermeubel salie',
-          location: 'Benissa',
-          scope: 'Wastafelmeubel',
-          finish: 'Mat saliegroen',
-          duration: '1 dag',
-          alt: 'Badkamermeubel gewrapt in matte saliegroene folie met stenen blad',
-        },
-        {
-          cat: 'furniture',
-          title: 'Inbouwkast eiken',
-          location: 'Altea',
-          scope: 'Schuifkast',
-          finish: 'Eiken houtlook',
-          duration: '2 dagen',
-          alt: 'Inbouwkast met schuifdeuren gewrapt in warme eiken houtfolie',
-        },
-        {
-          cat: 'kitchen',
-          title: 'Keukeneiland beton-look',
-          location: 'Dénia',
-          scope: 'Eiland + fronten',
-          finish: 'Mat beton-look',
-          duration: '3 dagen',
-          alt: 'Keukeneiland gewrapt in matte beton-look folie in een open villa-keuken',
-        },
-      ],
+gallery: {
+  heading: 'Voor & na',
+  sub: 'Echte transformaties. Sleep de schuifregelaar om het verschil te zien.',
+  locationLabel: 'Locatie',
+  beforeAfter: 'Voor / na',
+  items: [
+    {
+      title: 'Ben',
+      location: 'Costa Blanca',
+      alt: 'Interieur vóór en na het wrappen',
     },
+    {
+      title: 'Bernard',
+      location: 'Costa Blanca',
+      alt: 'Interieur vóór en na het wrappen',
+    },
+    {
+      title: 'Chantal',
+      location: 'Costa Blanca',
+      alt: 'Interieur vóór en na het wrappen',
+    },
+    {
+      title: 'Griffioen — Deuren 1',
+      location: 'Costa Blanca',
+      alt: 'Deuren vóór en na het wrappen',
+    },
+    {
+      title: 'Griffioen — Deuren 2',
+      location: 'Costa Blanca',
+      alt: 'Deuren vóór en na het wrappen',
+    },
+    {
+      title: 'Griffioen — Deuren 3',
+      location: 'Costa Blanca',
+      alt: 'Deuren vóór en na het wrappen',
+    },
+    {
+      title: 'Griffioen — Keuken',
+      location: 'Costa Blanca',
+      alt: 'Keuken vóór en na het wrappen',
+    },
+    {
+      title: 'Hans',
+      location: 'Costa Blanca',
+      alt: 'Interieur vóór en na het wrappen',
+    },
+    {
+      title: 'Minja',
+      location: 'Costa Blanca',
+      alt: 'Interieur vóór en na het wrappen',
+    },
+  ],
+},
     materials: {
       heading: 'Materialen & structuren',
       sub: 'Honderden kleuren en structuren — van effen mat tot overtuigend hout en steen.',
@@ -523,81 +494,59 @@ imageAfterAlt: 'Kastdeur getransformeerd met premium interieurfolie',
       imageBeforeAlt: 'Wardrobe door before interior wrapping',
 imageAfterAlt: 'Wardrobe door transformed with premium interior wrapping film',
     },
-    gallery: {
-      heading: 'Before & after',
-      sub: 'Real transformations, crisply finished. Filter by type, material or location.',
-      locationLabel: 'Location',
-      scopeLabel: 'Scope',
-      finishLabel: 'Finish',
-      durationLabel: 'Duration',
-      beforeAfter: 'Before / after',
-      filters: [
-        { key: 'all', label: 'All' },
-        { key: 'kitchen', label: 'Kitchen' },
-        { key: 'furniture', label: 'Furniture' },
-        { key: 'doors', label: 'Doors' },
-        { key: 'bathroom', label: 'Bathroom' },
-        { key: 'wood', label: 'Wood' },
-        { key: 'stone', label: 'Stone' },
-        { key: 'color', label: 'Colour' },
-      ],
-      items: [
-        {
-          cat: 'kitchen',
-          title: 'Kitchen in matte sage',
-          location: 'Jávea',
-          scope: '14 fronts',
-          finish: 'Super-matte sage green',
-          duration: '3 days',
-          alt: 'Kitchen with matte sage-green wrapped fronts in a bright Jávea villa',
-        },
-        {
-          cat: 'furniture',
-          title: 'Walnut sideboard',
-          location: 'Moraira',
-          scope: 'Free-standing cabinet',
-          finish: 'Walnut wood look',
-          duration: '1 day',
-          alt: 'Sideboard wrapped in warm walnut wood-look film in a bright living room',
-        },
-        {
-          cat: 'doors',
-          title: 'Matte white interior doors',
-          location: 'Calpe',
-          scope: '6 doors + frames',
-          finish: 'Matte off-white',
-          duration: '2 days',
-          alt: 'Interior door and frame wrapped in matte off-white in a bright hallway',
-        },
-        {
-          cat: 'bathroom',
-          title: 'Sage bathroom vanity',
-          location: 'Benissa',
-          scope: 'Vanity unit',
-          finish: 'Matte sage green',
-          duration: '1 day',
-          alt: 'Bathroom vanity wrapped in matte sage-green film with a stone top',
-        },
-        {
-          cat: 'furniture',
-          title: 'Oak built-in wardrobe',
-          location: 'Altea',
-          scope: 'Sliding wardrobe',
-          finish: 'Oak wood look',
-          duration: '2 days',
-          alt: 'Built-in wardrobe with sliding doors wrapped in warm oak wood-look film',
-        },
-        {
-          cat: 'kitchen',
-          title: 'Concrete-look island',
-          location: 'Dénia',
-          scope: 'Island + fronts',
-          finish: 'Matte concrete look',
-          duration: '3 days',
-          alt: 'Kitchen island wrapped in matte concrete-look film in an open villa kitchen',
-        },
-      ],
+gallery: {
+  heading: 'Before & after',
+  sub: 'Real transformations. Drag the slider to see the difference.',
+  locationLabel: 'Location',
+  beforeAfter: 'Before / after',
+  items: [
+    {
+      title: 'Ben',
+      location: 'Costa Blanca',
+      alt: 'Interior before and after wrapping',
     },
+    {
+      title: 'Bernard',
+      location: 'Costa Blanca',
+      alt: 'Interior before and after wrapping',
+    },
+    {
+      title: 'Chantal',
+      location: 'Costa Blanca',
+      alt: 'Interior before and after wrapping',
+    },
+    {
+      title: 'Griffioen — Doors 1',
+      location: 'Costa Blanca',
+      alt: 'Doors before and after wrapping',
+    },
+    {
+      title: 'Griffioen — Doors 2',
+      location: 'Costa Blanca',
+      alt: 'Doors before and after wrapping',
+    },
+    {
+      title: 'Griffioen — Doors 3',
+      location: 'Costa Blanca',
+      alt: 'Doors before and after wrapping',
+    },
+    {
+      title: 'Griffioen — Kitchen',
+      location: 'Costa Blanca',
+      alt: 'Kitchen before and after wrapping',
+    },
+    {
+      title: 'Hans',
+      location: 'Costa Blanca',
+      alt: 'Interior before and after wrapping',
+    },
+    {
+      title: 'Minja',
+      location: 'Costa Blanca',
+      alt: 'Interior before and after wrapping',
+    },
+  ],
+},
     materials: {
       heading: 'Materials & textures',
       sub: 'Hundreds of colours and textures — from solid matte to convincing wood and stone.',
