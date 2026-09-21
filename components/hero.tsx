@@ -29,7 +29,7 @@ export function Hero() {
 
           {/* Supporting copy */}
           <Reveal delay={0.1}>
-            <p className="mt-6 max-w-xl text-pretty text-base leading-[1.7] text-muted-foreground sm:text-lg">
+            <p className="mt-6 max-w-xl text-pretty text-base leading-[1.7] text-muted-foreground sm:text-lg whitespace-pre-line">
               {t.hero.sub}
             </p>
           </Reveal>
