@@ -146,7 +146,7 @@ type Dict = {
     }
   }
   footer: {
-    tagline: string
+    tagline: '',
     serviceAreaTitle: string
     serviceArea: string
     languagesTitle: string
@@ -472,7 +472,7 @@ export const dictionaries: Record<Locale, Dict> = {
       },
     },
     footer: {
-      tagline: 'Interieurfolie zonder verbouwen — Jávea & Costa Blanca.',
+      tagline: '',
       serviceAreaTitle: 'Werkgebied',
       serviceArea: `${areas} en de wijdere Costa Blanca / provincie Alicante.`,
       languagesTitle: 'Talen',
@@ -795,7 +795,7 @@ export const dictionaries: Record<Locale, Dict> = {
       },
     },
     footer: {
-      tagline: 'Interior wrapping without renovation — Jávea & Costa Blanca.',
+      tagline: '',
       serviceAreaTitle: 'Service area',
       serviceArea: `${areas} and the wider Costa Blanca / Alicante province.`,
       languagesTitle: 'Languages',
@@ -1118,8 +1118,7 @@ export const dictionaries: Record<Locale, Dict> = {
       },
     },
     footer: {
-      tagline: 'Vinilado de interiores sin obras — Jávea y Costa Blanca.',
-      serviceAreaTitle: 'Zona de servicio',
+      tagline: '',
       serviceArea: `${areas} y toda la Costa Blanca / provincia de Alicante.`,
       languagesTitle: 'Idiomas',
       contactTitle: 'Contacto',
