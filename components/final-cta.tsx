@@ -38,7 +38,7 @@ export function FinalCta() {
 
   return (
     <section id="contact" className="border-t border-border bg-background text-ink">
-      <div className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
+      <div className="mx-auto w-full max-w-6xl px-5 pt-4 pb-20 sm:px-8 lg:pt-10 lg:pb-28">
         <div className="grid gap-10 lg:grid-cols-[1.05fr_1fr] lg:items-center lg:gap-16">
           {/* Left side */}
           <div>
