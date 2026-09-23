@@ -14,8 +14,8 @@ import { whatsappLink } from '@/lib/i18n/dictionaries'
 import { Reveal } from '@/components/reveal'
 import {
   materials,
-  type MaterialCategory,
   type Material,
+  type MaterialCategory,
 } from '@/data/materials'
 
 const categories: Array<'All' | MaterialCategory> = [
@@ -32,22 +32,24 @@ const categories: Array<'All' | MaterialCategory> = [
 
 const colours = [
   'All',
+  'Silver',
   'Beige',
   'White',
   'Yellow',
   'Green',
+  'Gold',
   'Light Brown',
   'Grey',
   'Orange',
   'Blue',
+  'Bronze',
   'Dark Brown',
   'Black',
   'Red',
   'Pink',
-  'Brown',
   'Light Green',
+  'Brown',
   'Light Blue',
-  'Gold',
 ]
 
 const finishes = [
@@ -56,11 +58,13 @@ const finishes = [
   'Satin',
   'Gloss',
   'Soft Touch',
+  'Metallic',
 ]
 
 const textures = [
   'All',
   'Smooth',
+  'Real Touch',
   'Textured',
   'High Gloss',
   'Soft Touch',
@@ -68,6 +72,32 @@ const textures = [
 
 const colourFamilies = [
   'All',
+  'Unique Look',
+  'Unique',
+  'Painted Stone',
+  'Painted Wood',
+  'Washed',
+  'Chalked',
+  'Plaster',
+  'Industrial',
+  'Natural',
+  'Marble',
+  'Fabric',
+  'Wild',
+  'Elegance',
+  'Gold',
+  'Silver',
+  'Brushed',
+  'Rustic',
+  'Parquet',
+  'Fox',
+  'Bright',
+  'Pale',
+  'Saturated',
+  'Dark',
+  'White Timber',
+  'Black Timber',
+  'Chalk',
   'Soft Touch',
   'White Series',
   'Black Series',
@@ -78,9 +108,12 @@ const colourFamilies = [
   'Summer',
   'Neon',
   'Tides',
+  'Brazen',
+  'Shimmer',
+  'Raw',
 ]
 
-const ITEMS_PER_PAGE = 24
+const ITEMS_PER_PAGE = 12
 
 export function MaterialsSection() {
   const { t } = useLanguage()
@@ -92,7 +125,8 @@ export function MaterialsSection() {
   const [colourFamily, setColourFamily] = useState('All')
   const [search, setSearch] = useState('')
   const [filtersOpen, setFiltersOpen] = useState(false)
-  const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE)
+  const [visibleCount, setVisibleCount] =
+    useState(ITEMS_PER_PAGE)
   const [selectedMaterial, setSelectedMaterial] =
     useState<Material | null>(null)
 
@@ -100,6 +134,8 @@ export function MaterialsSection() {
     const query = search.trim().toLowerCase()
 
     return materials.filter((material) => {
+      if (!material.available) return false
+
       const categoryMatch =
         category === 'All' ||
         material.category === category
@@ -197,7 +233,6 @@ export function MaterialsSection() {
       className="border-t border-border bg-paper text-ink"
     >
       <div className="mx-auto w-full max-w-6xl px-5 pb-20 pt-8 sm:px-8 sm:pb-28 sm:pt-12 lg:pt-16">
-        {/* Intro */}
         <Reveal>
           <div className="max-w-3xl">
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-brass">
@@ -214,7 +249,6 @@ export function MaterialsSection() {
           </div>
         </Reveal>
 
-        {/* Search */}
         <Reveal delay={0.05}>
           <div className="relative mt-10 max-w-2xl">
             <Search className="pointer-events-none absolute left-4 top-1/2 size-5 -translate-y-1/2 text-muted-foreground" />
@@ -247,7 +281,6 @@ export function MaterialsSection() {
           </div>
         </Reveal>
 
-        {/* Category navigation */}
         <Reveal delay={0.08}>
           <div className="mt-8 overflow-x-auto pb-2">
             <div className="flex min-w-max gap-2">
@@ -276,7 +309,6 @@ export function MaterialsSection() {
           </div>
         </Reveal>
 
-        {/* Mobile filter trigger */}
         <div className="mt-6 lg:hidden">
           <button
             type="button"
@@ -304,7 +336,6 @@ export function MaterialsSection() {
           </button>
         </div>
 
-        {/* Filters */}
         <div
           className={[
             'mt-6',
@@ -366,7 +397,6 @@ export function MaterialsSection() {
           </div>
         </div>
 
-        {/* Results header */}
         <div className="mt-10 flex flex-wrap items-center justify-between gap-3">
           <p className="text-sm text-muted-foreground">
             {filteredMaterials.length} {t.materials.results}
@@ -384,7 +414,6 @@ export function MaterialsSection() {
           ) : null}
         </div>
 
-        {/* Material grid */}
         <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
           {visibleMaterials.map((material, index) => (
             <Reveal
@@ -439,7 +468,6 @@ export function MaterialsSection() {
           ))}
         </div>
 
-        {/* No results */}
         {filteredMaterials.length === 0 && (
           <div className="rounded-3xl border border-dashed border-border bg-card px-6 py-16 text-center">
             <p className="font-serif text-xl font-semibold uppercase">
@@ -457,7 +485,6 @@ export function MaterialsSection() {
           </div>
         )}
 
-        {/* Load more */}
         {hasMore && (
           <div className="mt-10 text-center">
             <button
@@ -474,12 +501,10 @@ export function MaterialsSection() {
           </div>
         )}
 
-        {/* Screen colour note */}
         <p className="mx-auto mt-10 max-w-2xl text-center text-xs leading-relaxed text-muted-foreground">
           {t.materials.disclaimer}
         </p>
 
-        {/* CTA */}
         <Reveal delay={0.1}>
           <div className="mt-12 overflow-hidden rounded-3xl bg-pine px-6 py-8 text-paper sm:px-10 sm:py-10">
             <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
@@ -507,7 +532,6 @@ export function MaterialsSection() {
         </Reveal>
       </div>
 
-      {/* Material detail modal */}
       {selectedMaterial && (
         <div
           className="fixed inset-0 z-[100] flex items-center justify-center bg-ink/70 p-4 backdrop-blur-sm"

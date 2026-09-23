@@ -18,6 +18,7 @@ export type Material = {
   finish: string
   texture: string
   image: string
+  available: boolean
 }
 
 export const materials: Material[] = [
@@ -32,8 +33,8 @@ export const materials: Material[] = [
     texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ZX125-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+    available: false,
   },
-
   {
     id: 'ignis-w276',
     name: 'Ignis',
@@ -45,8 +46,8 @@ export const materials: Material[] = [
     texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/W276-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+    available: false,
   },
-
   {
     id: 'logium-wd001',
     name: 'Logium 2.0',
@@ -58,8 +59,8 @@ export const materials: Material[] = [
     texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/WD001-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
   },
-
   {
     id: 'braeloft-wd022',
     name: 'Braeloft',
@@ -71,8 +72,8 @@ export const materials: Material[] = [
     texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/WD022-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
   },
-
   {
     id: 'spruns-wd017',
     name: 'Spruns',
@@ -84,8 +85,8 @@ export const materials: Material[] = [
     texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/WD017-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
   },
-
   {
     id: 'norvia-st061',
     name: 'Norvia',
@@ -97,8 +98,8 @@ export const materials: Material[] = [
     texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ST061-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
   },
-
   {
     id: 'lumira-st062',
     name: 'Lumira',
@@ -110,8 +111,8 @@ export const materials: Material[] = [
     texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ST062-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
   },
-
   {
     id: 'pale-aura-st063',
     name: 'Pale Aura',
@@ -123,8 +124,8 @@ export const materials: Material[] = [
     texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ST063-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
   },
-
   {
     id: 'syra-gold-me403',
     name: 'Syra Gold',
@@ -136,8 +137,8 @@ export const materials: Material[] = [
     texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ME403-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+    available: true,
   },
-
   {
     id: 'syra-besh-me404',
     name: 'Syra Besh',
@@ -149,8 +150,8 @@ export const materials: Material[] = [
     texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ME404-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
   },
-
   {
     id: 'corten-me005',
     name: 'Corten',
@@ -162,8 +163,8 @@ export const materials: Material[] = [
     texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ME005-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
   },
-
   {
     id: 'mora-le012',
     name: 'Mora',
@@ -175,8 +176,8 @@ export const materials: Material[] = [
     texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/LE012-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
   },
-
   {
     id: 'riva-le013',
     name: 'Riva',
@@ -188,5 +189,6 @@ export const materials: Material[] = [
     texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/LE013-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
   },
 ]
