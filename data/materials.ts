@@ -379,4 +379,88 @@ export const materials: Material[] = [
       'https://www.resimdo.nl/shop/media/image/SC015-Uebersicht-Walltile-3000x2250_72dpi.jpg',
     available: true,
   },
+
+   {
+    id: 'ibis-w823',
+    name: 'Ibis',
+    code: 'W823',
+    category: 'Wood',
+    colour: 'Dark Brown',
+    colourFamily: 'Dark',
+    finish: 'Matte',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/W823-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+    available: true,
+  },
+
+  {
+    id: 'eris-pz615',
+    name: 'Eris',
+    code: 'PZ615',
+    category: 'Wood',
+    colour: 'Dark Brown',
+    colourFamily: 'Dark',
+    finish: 'Matte',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/PZ615-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+    available: true,
+  },
+
+  {
+    id: 'arbor-pz010',
+    name: 'Arbor',
+    code: 'PZ010',
+    category: 'Wood',
+    colour: 'Dark Brown',
+    colourFamily: 'Dark',
+    finish: 'Matte',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/PZ010-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+    available: true,
+  },
+
+  {
+    id: 'milkshake-w944',
+    name: 'Milkshake',
+    code: 'W944',
+    category: 'Wood',
+    colour: 'Beige',
+    colourFamily: 'Pale',
+    finish: 'Matte',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/W944-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+    available: true,
+  },
+
+  {
+    id: 'vetus-2-st156',
+    name: 'Vetus 2.0',
+    code: 'ST156',
+    category: 'Stone',
+    colour: 'Grey',
+    colourFamily: 'Dark',
+    finish: 'High Gloss',
+    texture: 'Smooth',
+    image:
+      'https://www.resimdo.nl/shop/media/image/ST156-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+    available: true,
+  },
+
+  {
+    id: 'calidum-2-wd307',
+    name: 'Calidum 2.0',
+    code: 'WD307',
+    category: 'Wood',
+    colour: 'Brown',
+    colourFamily: 'Natural',
+    finish: 'Satin',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/WD307-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+    available: true,
+  }, 
 ]
