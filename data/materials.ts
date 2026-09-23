@@ -656,7 +656,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.nl/shop/media/image/TE003-Uebersicht-Wand-3000x2250.jpg',
+  'https://www.resimdo.nl/shop/media/image/TE003-Uebersicht-Walltile-3000x2250.jpg',
   available: true,
 },
 
@@ -684,7 +684,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.nl/shop/media/image/PW108-Uebersicht-Wand-3000x2250.jpg',
+  'https://www.resimdo.nl/shop/media/image/PW108-Uebersicht-Walltile-3000x2250.jpg',
   available: true,
 },
 
@@ -712,7 +712,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.nl/shop/media/image/WD206-Uebersicht-Wand-3000x2250.jpg',
+  'https://www.resimdo.nl/shop/media/image/ZX144-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 
@@ -726,7 +726,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.nl/shop/media/image/WD212-Uebersicht-Wand-3000x2250.jpg',
+  'https://www.resimdo.nl/shop/media/image/WD212-Uebersicht-Walltile-3000x2250.jpg',
   available: true,
 },
 
@@ -782,7 +782,7 @@ export const materials: Material[] = [
   finish: 'Satin',
   texture: 'Textured',
   image:
-    'https://www.resimdo.nl/shop/media/image/SC056-Uebersicht-Walltile-3000x2250.jpg',
+  'https://www.resimdo.nl/shop/media/image/SC056-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 
@@ -810,7 +810,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.nl/shop/media/image/NS403-Uebersicht-Walltile-3000x2250.jpg',
+  'https://www.resimdo.nl/shop/media/image/NS403-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 
@@ -838,7 +838,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.nl/shop/media/image/W879-Uebersicht-Walltile-3000x2250.jpg',
+  'https://www.resimdo.nl/shop/media/image/W879-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 ]
