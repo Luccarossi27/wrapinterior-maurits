@@ -969,62 +969,6 @@ export const materials: Material[] = [
 },
 
 {
-  id: 'papilo-vella-lux-sc017',
-  name: 'Papilo Vella Lux',
-  code: 'SC017',
-  category: 'Solid Colour',
-  colour: 'Beige',
-  colourFamily: 'Soft Touch',
-  finish: 'Matte',
-  texture: 'Soft Touch',
-  image:
-    'https://www.resimdo.nl/shop/media/image/SC017-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-  available: true,
-},
-
-{
-  id: 'papilo-ossa-lux-sc019',
-  name: 'Papilo Ossa Lux',
-  code: 'SC019',
-  category: 'Solid Colour',
-  colour: 'White',
-  colourFamily: 'Soft Touch',
-  finish: 'Matte',
-  texture: 'Soft Touch',
-  image:
-    'https://www.resimdo.nl/shop/media/image/SC019-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-  available: true,
-},
-
-{
-  id: 'papilo-brisa-lux-sc021',
-  name: 'Papilo Brisa Lux',
-  code: 'SC021',
-  category: 'Solid Colour',
-  colour: 'Light Grey',
-  colourFamily: 'Soft Touch',
-  finish: 'Matte',
-  texture: 'Soft Touch',
-  image:
-    'https://www.resimdo.nl/shop/media/image/SC021-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-  available: true,
-},
-
-{
-  id: 'papilo-tidal-lux-sc032',
-  name: 'Papilo Tidal Lux',
-  code: 'SC032',
-  category: 'Solid Colour',
-  colour: 'Blue',
-  colourFamily: 'Tides',
-  finish: 'Matte',
-  texture: 'Soft Touch',
-  image:
-    'https://www.resimdo.nl/shop/media/image/SC032-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-  available: true,
-},
-
-{
   id: 'litus-2-st102',
   name: 'Litus 2.0',
   code: 'ST102',
@@ -1038,17 +982,4 @@ export const materials: Material[] = [
   available: true,
 },
 
-{
-  id: 'papilo-turtle-lux-sc030',
-  name: 'Papilo Turtle Lux',
-  code: 'SC030',
-  category: 'Solid Colour',
-  colour: 'Green',
-  colourFamily: 'Forest',
-  finish: 'Matte',
-  texture: 'Soft Touch',
-  image:
-    'https://www.resimdo.nl/shop/media/image/SC030-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-  available: true,
-},
 ]
