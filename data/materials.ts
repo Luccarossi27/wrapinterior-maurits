@@ -1775,7 +1775,7 @@ export const materials: Material[] = [
   finish: "Metallic",
   texture: "Textured",
   image:
-    "https://www.resimdo.de/shop/media/image/ME403-Uebersicht-Rolle-3000x2250_72dpi.jpg",
+    "https://www.resimdo.es/shop/media/image/ME403-Uebersicht-Walltile-3000x2250_72dpi.jpg",
   available: true,
 },
 {
@@ -1788,7 +1788,7 @@ export const materials: Material[] = [
   finish: "Metallic",
   texture: "Textured",
   image:
-    "https://www.resimdo.de/shop/media/image/ME404-Uebersicht-Rolle-3000x2250_72dpi.jpg",
+    "https://www.resimdo.es/shop/media/image/ME404-Uebersicht-Walltile-3000x2250_72dpi.jpg",
   available: true,
 },
 {
@@ -1814,7 +1814,7 @@ export const materials: Material[] = [
   finish: "Satin-matt",
   texture: "Woven / Textured",
   image:
-    "https://www.resimdo.de/shop/media/image/TE009-Uebersicht-Rolle-3000x2250.jpg",
+    "https://www.resimdo.es/shop/media/image/TE009-Uebersicht-Walltile-3000x2250.jpg",
   available: true,
 },
 {
@@ -1827,7 +1827,7 @@ export const materials: Material[] = [
   finish: "Satin-matt",
   texture: "Woven / Textured",
   image:
-    "https://www.resimdo.de/shop/media/image/TE010-Uebersicht-Rolle-3000x2250.jpg",
+    "https://www.resimdo.es/shop/media/image/TE010-Uebersicht-Walltile-3000x2250.jpg",
   available: true,
 },
 {
@@ -1840,7 +1840,7 @@ export const materials: Material[] = [
   finish: "Satin-matt",
   texture: "Woven / Textured",
   image:
-    "https://www.resimdo.de/shop/media/image/TE011-Uebersicht-Rolle-3000x2250.jpg",
+    "https://www.resimdo.es/shop/media/image/TE011-Uebersicht-Walltile-3000x2250.jpg",
   available: true,
 },
 {
@@ -1853,7 +1853,7 @@ export const materials: Material[] = [
   finish: "Matt",
   texture: "Woven / Textured",
   image:
-    "https://www.resimdo.de/shop/media/image/TE012-Uebersicht-Rolle-3000x2250.jpg",
+    "https://www.resimdo.es/shop/media/image/TE012-Uebersicht-Walltile-3000x2250.jpg",
   available: true,
 },
 ]
