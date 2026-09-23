@@ -376,7 +376,7 @@ export const materials: Material[] = [
     finish: 'Matte',
     texture: 'Soft Touch',
     image:
-  'https://www.resimdo.nl/shop/media/image/SC015-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  'https://www.resimdo.nl/shop/media/image/SC015-Uebersicht-Walltile-3000x2250.jpg',
     available: true,
   },
 
@@ -463,4 +463,144 @@ export const materials: Material[] = [
   'https://www.resimdo.nl/shop/media/image/WD307-Uebersicht-Walltile-3000x2250.jpg',
     available: true,
   }, 
+
+  {
+  id: 'woven-luma-te010',
+  name: 'Woven Luma',
+  code: 'TE010',
+  category: 'Textile',
+  colour: 'White',
+  colourFamily: 'Fabric',
+  finish: 'Satin',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/TE010-Uebersicht-Walltile-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'woven-fina-te012',
+  name: 'Woven Fina',
+  code: 'TE012',
+  category: 'Textile',
+  colour: 'Beige',
+  colourFamily: 'Fabric',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/TE012-Uebersicht-Walltile-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'woven-tana-te011',
+  name: 'Woven Tana',
+  code: 'TE011',
+  category: 'Textile',
+  colour: 'Grey',
+  colourFamily: 'Fabric',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/TE011-Uebersicht-Walltile-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'woven-sable-te014',
+  name: 'Woven Sable',
+  code: 'TE014',
+  category: 'Textile',
+  colour: 'Dark Brown',
+  colourFamily: 'Fabric',
+  finish: 'Satin',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/TE014-Uebersicht-Walltile-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'fibra-linen-te008',
+  name: 'Fibra Linen',
+  code: 'TE008',
+  category: 'Textile',
+  colour: 'Beige',
+  colourFamily: 'Fabric',
+  finish: 'Satin',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/TE202-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'fibra-stone-te005',
+  name: 'Fibra Stone',
+  code: 'TE005',
+  category: 'Textile',
+  colour: 'Grey',
+  colourFamily: 'Fabric',
+  finish: 'Satin',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/TE203-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'materia-ns820',
+  name: 'Materia',
+  code: 'NS820',
+  category: 'Textile',
+  colour: 'Dark Brown',
+  colourFamily: 'Fabric',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/NS820-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'candor-pw011',
+  name: 'Candor',
+  code: 'PW011',
+  category: 'Painted Wood',
+  colour: 'White',
+  colourFamily: 'Painted Wood',
+  finish: 'Satin',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/PW011-Uebersicht-Walltile-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'albulus-pw012',
+  name: 'Albulus',
+  code: 'PW012',
+  category: 'Painted Wood',
+  colour: 'White',
+  colourFamily: 'Painted Wood',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/PW012-Uebersicht-Walltile-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'pure-alba-ps502',
+  name: 'Pure Alba',
+  code: 'PS502',
+  category: 'Decorative',
+  colour: 'White',
+  colourFamily: 'White Series',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/PS502-Uebersicht-Walltile-3000x2250.jpg',
+  available: true,
+},
 ]
