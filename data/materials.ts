@@ -23,32 +23,6 @@ export type Material = {
 
 export const materials: Material[] = [
   {
-    id: 'arbor-zx125',
-    name: 'Arbor',
-    code: 'ZX125',
-    category: 'Wood',
-    colour: 'Dark Brown',
-    colourFamily: 'Earth',
-    finish: 'Matte',
-    texture: 'Textured',
-    image:
-      'https://www.resimdo.nl/shop/media/image/ZX125-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: false,
-  },
-  {
-    id: 'ignis-w276',
-    name: 'Ignis',
-    code: 'W276',
-    category: 'Wood',
-    colour: 'Brown',
-    colourFamily: 'Earth',
-    finish: 'Matte',
-    texture: 'Textured',
-    image:
-      'https://www.resimdo.nl/shop/media/image/W276-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: false,
-  },
-  {
     id: 'logium-wd001',
     name: 'Logium 2.0',
     code: 'WD001',
@@ -67,7 +41,7 @@ export const materials: Material[] = [
     code: 'WD022',
     category: 'Wood',
     colour: 'Light Brown',
-    colourFamily: 'Earth',
+    colourFamily: 'Rustic',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -80,13 +54,40 @@ export const materials: Material[] = [
     code: 'WD017',
     category: 'Wood',
     colour: 'Brown',
-    colourFamily: 'Earth',
+    colourFamily: 'Rustic',
     finish: 'Matte',
     texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/WD017-Uebersicht-Walltile-3000x2250.jpg',
     available: true,
   },
+  {
+    id: 'caprea-w302',
+    name: 'Caprea',
+    code: 'W302',
+    category: 'Wood',
+    colour: 'Brown',
+    colourFamily: 'Natural',
+    finish: 'Matte',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/W302-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
+  },
+  {
+    id: 'hazel-w931',
+    name: 'Hazel',
+    code: 'W931',
+    category: 'Wood',
+    colour: 'Dark Brown',
+    colourFamily: 'Dark',
+    finish: 'Matte',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/W931-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
+  },
+
   {
     id: 'norvia-st061',
     name: 'Norvia',
@@ -119,7 +120,7 @@ export const materials: Material[] = [
     code: 'ST063',
     category: 'Stone',
     colour: 'White',
-    colourFamily: 'White Series',
+    colourFamily: 'Pale',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -127,12 +128,92 @@ export const materials: Material[] = [
     available: true,
   },
   {
+    id: 'litus-2-st102',
+    name: 'Litus 2.0',
+    code: 'ST102',
+    category: 'Stone',
+    colour: 'Grey',
+    colourFamily: 'Industrial',
+    finish: 'Satin',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/ST102-Uebersicht-Walltile-3000x2250.jpg',
+    available: false,
+  },
+  {
+    id: 'travertine-ns806',
+    name: 'Travertine',
+    code: 'NS806',
+    category: 'Stone',
+    colour: 'Beige',
+    colourFamily: 'Natural',
+    finish: 'Matte',
+    texture: 'Smooth',
+    image:
+      'https://www.resimdo.nl/shop/media/image/NS806-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
+  },
+
+  {
+    id: 'papilo-sand-sc007',
+    name: 'Papilo Sand 2.0',
+    code: 'SC007',
+    category: 'Solid Colour',
+    colour: 'Beige',
+    colourFamily: 'Pale',
+    finish: 'Matte',
+    texture: 'Soft Touch',
+    image:
+      'https://www.resimdo.nl/shop/media/image/SC007-Uebersicht-Walltile-3000x2250.jpg',
+    available: false,
+  },
+  {
+    id: 'autemo-2-spw96',
+    name: 'Autemo 2.0',
+    code: 'SPW96',
+    category: 'Solid Colour',
+    colour: 'White',
+    colourFamily: 'White Series',
+    finish: 'Matte',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/SPW96-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
+  },
+  {
+    id: 'moss-s202',
+    name: 'Moss',
+    code: 'S202',
+    category: 'Solid Colour',
+    colour: 'Green',
+    colourFamily: 'Forest',
+    finish: 'Satin',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/S202-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
+  },
+  {
+    id: 'mint-s214',
+    name: 'Mint',
+    code: 'S214',
+    category: 'Solid Colour',
+    colour: 'Light Green',
+    colourFamily: 'Forest',
+    finish: 'Satin',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/S214-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
+  },
+
+  {
     id: 'syra-gold-me403',
     name: 'Syra Gold',
     code: 'ME403',
     category: 'Metal',
     colour: 'Gold',
-    colourFamily: 'Summer',
+    colourFamily: 'Gold',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -158,13 +239,14 @@ export const materials: Material[] = [
     code: 'ME005',
     category: 'Metal',
     colour: 'Brown',
-    colourFamily: 'Earth',
+    colourFamily: 'Raw',
     finish: 'Matte',
     texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ME005-Uebersicht-Walltile-3000x2250.jpg',
     available: true,
   },
+
   {
     id: 'mora-le012',
     name: 'Mora',
@@ -190,5 +272,61 @@ export const materials: Material[] = [
     image:
       'https://www.resimdo.nl/shop/media/image/LE013-Uebersicht-Walltile-3000x2250.jpg',
     available: true,
+  },
+
+  {
+    id: 'tweed-rf007',
+    name: 'Tweed',
+    code: 'RF007',
+    category: 'Textile',
+    colour: 'Grey',
+    colourFamily: 'Fabric',
+    finish: 'Matte',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/RF007-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
+  },
+
+  {
+    id: 'pictis-caffora-pw109',
+    name: 'Pictis Caffora',
+    code: 'PW109',
+    category: 'Painted Wood',
+    colour: 'Brown',
+    colourFamily: 'Painted Wood',
+    finish: 'Matte',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/PW109-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
+  },
+
+  {
+    id: 'diamond-nix-sc053',
+    name: 'Diamond Nix',
+    code: 'SC053',
+    category: 'Solid Colour',
+    colour: 'White',
+    colourFamily: 'White Series',
+    finish: 'Matte',
+    texture: 'Smooth',
+    image:
+      'https://www.resimdo.nl/shop/media/image/SC053-Uebersicht-Walltile-3000x2250.jpg',
+    available: false,
+  },
+
+  {
+    id: 'lion-2-sc153',
+    name: 'Lion 2.0',
+    code: 'SC153',
+    category: 'Solid Colour',
+    colour: 'Beige',
+    colourFamily: 'Pale',
+    finish: 'Satin',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/SC153-Uebersicht-Walltile-3000x2250.jpg',
+    available: false,
   },
 ]
