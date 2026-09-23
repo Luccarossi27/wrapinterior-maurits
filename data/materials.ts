@@ -1307,7 +1307,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.nl/shop/media/image/W705-Uebersicht-Walltile-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/W705-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 {
@@ -1320,7 +1320,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.nl/shop/media/image/W276-Uebersicht-Walltile-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/W276-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 {
@@ -1350,32 +1350,6 @@ export const materials: Material[] = [
   available: true,
 },
 {
-  id: 'gravis-spw12',
-  name: 'Gravis',
-  code: 'SPW12',
-  category: 'Wood',
-  colour: 'Light Brown',
-  colourFamily: 'Natural',
-  finish: 'Satin',
-  texture: 'Textured',
-  image:
-    'https://www.resimdo.nl/shop/media/image/SPW12-Uebersicht-Walltile-3000x2250.jpg',
-  available: true,
-},
-{
-  id: 'tangerise-sc359',
-  name: 'Tangerise',
-  code: 'SC359',
-  category: 'Solid Colour',
-  colour: 'Orange',
-  colourFamily: 'Saturated',
-  finish: 'Satin',
-  texture: 'Textured',
-  image:
-    'https://www.resimdo.nl/shop/media/image/SC359-Uebersicht-Walltile-3000x2250.jpg',
-  available: true,
-},
-{
   id: 'vikings-zx157',
   name: 'Vikings',
   code: 'ZX157',
@@ -1385,33 +1359,8 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.nl/shop/media/image/ZX157-Uebersicht-Walltile-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/ZX157-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
-{
-  id: 'aurivine-sc218',
-  name: 'Aurivine',
-  code: 'SC218',
-  category: 'Solid Colour',
-  colour: 'Gold',
-  colourFamily: 'Saturated',
-  finish: 'Satin',
-  texture: 'Textured',
-  image:
-    'https://www.resimdo.nl/shop/media/image/SC218-Uebersicht-Walltile-3000x2250.jpg',
-  available: true,
-},
-{
-  id: 'bravelle-sc219',
-  name: 'Bravelle',
-  code: 'SC219',
-  category: 'Solid Colour',
-  colour: 'Beige',
-  colourFamily: 'Pale',
-  finish: 'Satin',
-  texture: 'Textured',
-  image:
-    'https://www.resimdo.nl/shop/media/image/SC219-Uebersicht-Walltile-3000x2250.jpg',
-  available: true,
-},
+
 ]
