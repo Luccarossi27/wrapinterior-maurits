@@ -1059,7 +1059,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.es/shop/media/image/W141-Uebersicht-Walltile-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/W141-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 {
@@ -1072,7 +1072,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.es/shop/media/image/W722-Uebersicht-Walltile-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/W722-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 {
@@ -1085,7 +1085,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.es/shop/media/image/W731-Uebersicht-Walltile-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/W731-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 {
@@ -1098,7 +1098,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.es/shop/media/image/W932-Uebersicht-Walltile-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/W932-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 {
@@ -1137,7 +1137,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.es/shop/media/image/NS804-Uebersicht-Walltile-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/NS804-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 {
@@ -1150,7 +1150,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.es/shop/media/image/W371-Uebersicht-Walltile-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/W371-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 {
@@ -1163,7 +1163,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.es/shop/media/image/W823-Uebersicht-Walltile-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/W823-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 {
@@ -1176,7 +1176,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.es/shop/media/image/SPW18-Uebersicht-Walltile-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/SPW18-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 
