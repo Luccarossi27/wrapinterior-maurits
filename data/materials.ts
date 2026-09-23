@@ -351,4 +351,32 @@ export const materials: Material[] = [
       'https://www.resimdo.nl/shop/media/image/PW111-Uebersicht-Walltile-3000x2250.jpg',
     available: true,
   },
+
+  {
+    id: 'elephant-s143',
+    name: 'Elephant',
+    code: 'S143',
+    category: 'Solid Colour',
+    colour: 'Grey',
+    colourFamily: 'Dark',
+    finish: 'Matte',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/S143-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+    available: true,
+  },
+
+  {
+    id: 'dark-concrete-ns403',
+    name: 'Dark Concrete',
+    code: 'NS403',
+    category: 'Stone',
+    colour: 'Grey',
+    colourFamily: 'Dark',
+    finish: 'Matte',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/NS403-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+    available: true,
+  },
 ]
