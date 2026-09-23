@@ -6,6 +6,8 @@ import {
   ChevronDown,
   MessageCircle,
   RotateCcw,
+  Search,
+  X,
 } from 'lucide-react'
 import { useLanguage } from '@/lib/i18n/provider'
 import { whatsappLink } from '@/lib/i18n/dictionaries'
@@ -13,6 +15,7 @@ import { Reveal } from '@/components/reveal'
 import {
   materials,
   type MaterialCategory,
+  type Material,
 } from '@/data/materials'
 
 const categories: Array<'All' | MaterialCategory> = [
@@ -77,6 +80,8 @@ const colourFamilies = [
   'Tides',
 ]
 
+const ITEMS_PER_PAGE = 24
+
 export function MaterialsSection() {
   const { t } = useLanguage()
 
@@ -85,9 +90,15 @@ export function MaterialsSection() {
   const [finish, setFinish] = useState('All')
   const [texture, setTexture] = useState('All')
   const [colourFamily, setColourFamily] = useState('All')
+  const [search, setSearch] = useState('')
   const [filtersOpen, setFiltersOpen] = useState(false)
+  const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE)
+  const [selectedMaterial, setSelectedMaterial] =
+    useState<Material | null>(null)
 
   const filteredMaterials = useMemo(() => {
+    const query = search.trim().toLowerCase()
+
     return materials.filter((material) => {
       const categoryMatch =
         category === 'All' ||
@@ -109,12 +120,28 @@ export function MaterialsSection() {
         colourFamily === 'All' ||
         material.colourFamily === colourFamily
 
+      const searchMatch =
+        !query ||
+        [
+          material.name,
+          material.code,
+          material.category,
+          material.colour,
+          material.colourFamily,
+          material.finish,
+          material.texture,
+        ]
+          .join(' ')
+          .toLowerCase()
+          .includes(query)
+
       return (
         categoryMatch &&
         colourMatch &&
         finishMatch &&
         textureMatch &&
-        colourFamilyMatch
+        colourFamilyMatch &&
+        searchMatch
       )
     })
   }, [
@@ -123,7 +150,16 @@ export function MaterialsSection() {
     finish,
     texture,
     colourFamily,
+    search,
   ])
+
+  const visibleMaterials = filteredMaterials.slice(
+    0,
+    visibleCount,
+  )
+
+  const hasMore =
+    visibleCount < filteredMaterials.length
 
   const resetFilters = () => {
     setCategory('All')
@@ -131,6 +167,16 @@ export function MaterialsSection() {
     setFinish('All')
     setTexture('All')
     setColourFamily('All')
+    setSearch('')
+    setVisibleCount(ITEMS_PER_PAGE)
+  }
+
+  const updateFilter = (
+    setter: (value: string) => void,
+    value: string,
+  ) => {
+    setter(value)
+    setVisibleCount(ITEMS_PER_PAGE)
   }
 
   const activeFilterCount = [
@@ -141,21 +187,26 @@ export function MaterialsSection() {
     colourFamily,
   ].filter((value) => value !== 'All').length
 
+  const quoteText = selectedMaterial
+    ? `Hi, I'm interested in having my interior wrapped. I'm interested in the ${selectedMaterial.name} (${selectedMaterial.code}) finish. I'd like to send some photos and get a quote.`
+    : t.finalCta.microcopy
+
   return (
     <section
       id="materials"
       className="border-t border-border bg-paper text-ink"
     >
-      <div className="mx-auto w-full max-w-6xl px-5 py-16 sm:px-8 sm:py-20 lg:py-24">
+      <div className="mx-auto w-full max-w-6xl px-5 pb-20 pt-8 sm:px-8 sm:pb-28 sm:pt-12 lg:pt-16">
+        {/* Intro */}
         <Reveal>
           <div className="max-w-3xl">
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-brass">
               {t.materials.eyebrow}
             </p>
 
-            <h2 className="mt-3 font-serif text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+            <h1 className="mt-3 font-serif text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
               {t.materials.heading}
-            </h2>
+            </h1>
 
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
               {t.materials.sub}
@@ -163,9 +214,42 @@ export function MaterialsSection() {
           </div>
         </Reveal>
 
-        {/* Category navigation */}
+        {/* Search */}
         <Reveal delay={0.05}>
-          <div className="mt-10 overflow-x-auto pb-2">
+          <div className="relative mt-10 max-w-2xl">
+            <Search className="pointer-events-none absolute left-4 top-1/2 size-5 -translate-y-1/2 text-muted-foreground" />
+
+            <input
+              type="search"
+              value={search}
+              onChange={(e) => {
+                setSearch(e.target.value)
+                setVisibleCount(ITEMS_PER_PAGE)
+              }}
+              placeholder={t.materials.search}
+              aria-label={t.materials.search}
+              className="h-14 w-full rounded-2xl border border-border bg-card pl-12 pr-12 text-sm text-ink outline-none transition-shadow placeholder:text-muted-foreground focus:border-pine focus:ring-2 focus:ring-pine/10"
+            />
+
+            {search && (
+              <button
+                type="button"
+                onClick={() => {
+                  setSearch('')
+                  setVisibleCount(ITEMS_PER_PAGE)
+                }}
+                aria-label={t.materials.clearSearch}
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-ink"
+              >
+                <X className="size-5" />
+              </button>
+            )}
+          </div>
+        </Reveal>
+
+        {/* Category navigation */}
+        <Reveal delay={0.08}>
+          <div className="mt-8 overflow-x-auto pb-2">
             <div className="flex min-w-max gap-2">
               {categories.map((item) => {
                 const active = category === item
@@ -174,7 +258,9 @@ export function MaterialsSection() {
                   <button
                     key={item}
                     type="button"
-                    onClick={() => setCategory(item)}
+                    onClick={() =>
+                      updateFilter(setCategory, item)
+                    }
                     className={[
                       'rounded-full border px-4 py-2.5 text-sm font-semibold transition-colors',
                       active
@@ -190,11 +276,13 @@ export function MaterialsSection() {
           </div>
         </Reveal>
 
-        {/* Mobile filters */}
+        {/* Mobile filter trigger */}
         <div className="mt-6 lg:hidden">
           <button
             type="button"
-            onClick={() => setFiltersOpen((open) => !open)}
+            onClick={() =>
+              setFiltersOpen((open) => !open)
+            }
             className="flex w-full items-center justify-between rounded-2xl border border-border bg-card px-4 py-3.5 text-sm font-semibold"
           >
             <span className="flex items-center gap-2">
@@ -230,94 +318,108 @@ export function MaterialsSection() {
                 label={t.materials.colour}
                 options={colours}
                 value={colour}
-                onChange={setColour}
+                onChange={(value) =>
+                  updateFilter(setColour, value)
+                }
               />
 
               <FilterGroup
                 label={t.materials.finish}
                 options={finishes}
                 value={finish}
-                onChange={setFinish}
+                onChange={(value) =>
+                  updateFilter(setFinish, value)
+                }
               />
 
               <FilterGroup
                 label={t.materials.texture}
                 options={textures}
                 value={texture}
-                onChange={setTexture}
+                onChange={(value) =>
+                  updateFilter(setTexture, value)
+                }
               />
 
               <FilterGroup
                 label={t.materials.colourFamily}
                 options={colourFamilies}
                 value={colourFamily}
-                onChange={setColourFamily}
+                onChange={(value) =>
+                  updateFilter(setColourFamily, value)
+                }
               />
             </div>
 
-            <div className="mt-6 border-t border-border pt-5">
-              <button
-                type="button"
-                onClick={resetFilters}
-                className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground transition-colors hover:text-pine"
-              >
-                <RotateCcw className="size-4" />
-                {t.materials.clear}
-              </button>
-            </div>
+            {activeFilterCount > 0 && (
+              <div className="mt-6 border-t border-border pt-5">
+                <button
+                  type="button"
+                  onClick={resetFilters}
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground transition-colors hover:text-pine"
+                >
+                  <RotateCcw className="size-4" />
+                  {t.materials.clear}
+                </button>
+              </div>
+            )}
           </div>
         </div>
 
-        {/* Results */}
-        <div className="mt-8 flex items-center justify-between">
+        {/* Results header */}
+        <div className="mt-10 flex flex-wrap items-center justify-between gap-3">
           <p className="text-sm text-muted-foreground">
             {filteredMaterials.length} {t.materials.results}
           </p>
 
-          {activeFilterCount > 0 && (
+          {activeFilterCount > 0 || search ? (
             <button
               type="button"
               onClick={resetFilters}
-              className="hidden items-center gap-1.5 text-sm font-semibold text-pine lg:flex"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-pine"
             >
               <RotateCcw className="size-3.5" />
               {t.materials.clear}
             </button>
-          )}
+          ) : null}
         </div>
 
         {/* Material grid */}
         <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
-          {filteredMaterials.map((material, index) => (
+          {visibleMaterials.map((material, index) => (
             <Reveal
               key={material.id}
               delay={(index % 4) * 0.03}
             >
-              <article className="group overflow-hidden rounded-2xl border border-border bg-card">
+              <button
+                type="button"
+                onClick={() =>
+                  setSelectedMaterial(material)
+                }
+                className="group block w-full overflow-hidden rounded-2xl border border-border bg-card text-left transition-shadow hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-pine/30"
+              >
                 <div className="aspect-[1.15/1] overflow-hidden bg-muted">
                   <img
                     src={material.image}
                     alt={`${material.name} ${material.code}`}
                     loading={index < 8 ? 'eager' : 'lazy'}
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
                   />
                 </div>
 
                 <div className="p-4">
                   <div className="flex items-start justify-between gap-3">
                     <div className="min-w-0">
-                      <h3 className="font-serif text-base font-semibold uppercase leading-tight">
+                      <h2 className="font-serif text-base font-semibold uppercase leading-tight">
                         {material.name}
-                      </h3>
+                      </h2>
 
                       <p className="mt-1 text-xs font-medium text-muted-foreground">
                         {material.code}
                       </p>
                     </div>
 
-                    <span
-                      className="shrink-0 rounded-full bg-secondary px-2 py-1 text-[10px] font-semibold text-ink"
-                    >
+                    <span className="shrink-0 rounded-full bg-secondary px-2 py-1 text-[10px] font-semibold text-ink">
                       {material.category}
                     </span>
                   </div>
@@ -330,18 +432,14 @@ export function MaterialsSection() {
                     <span className="rounded-full bg-secondary px-2 py-1 text-[10px] font-medium">
                       {material.finish}
                     </span>
-
-                    <span className="rounded-full bg-secondary px-2 py-1 text-[10px] font-medium">
-                      {material.texture}
-                    </span>
                   </div>
                 </div>
-              </article>
+              </button>
             </Reveal>
           ))}
         </div>
 
-        {/* Empty state */}
+        {/* No results */}
         {filteredMaterials.length === 0 && (
           <div className="rounded-3xl border border-dashed border-border bg-card px-6 py-16 text-center">
             <p className="font-serif text-xl font-semibold uppercase">
@@ -358,6 +456,28 @@ export function MaterialsSection() {
             </button>
           </div>
         )}
+
+        {/* Load more */}
+        {hasMore && (
+          <div className="mt-10 text-center">
+            <button
+              type="button"
+              onClick={() =>
+                setVisibleCount(
+                  (count) => count + ITEMS_PER_PAGE,
+                )
+              }
+              className="rounded-full border border-pine bg-transparent px-7 py-3.5 text-sm font-bold text-pine transition-colors hover:bg-pine hover:text-paper"
+            >
+              {t.materials.loadMore}
+            </button>
+          </div>
+        )}
+
+        {/* Screen colour note */}
+        <p className="mx-auto mt-10 max-w-2xl text-center text-xs leading-relaxed text-muted-foreground">
+          {t.materials.disclaimer}
+        </p>
 
         {/* CTA */}
         <Reveal delay={0.1}>
@@ -386,6 +506,86 @@ export function MaterialsSection() {
           </div>
         </Reveal>
       </div>
+
+      {/* Material detail modal */}
+      {selectedMaterial && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-ink/70 p-4 backdrop-blur-sm"
+          role="dialog"
+          aria-modal="true"
+          aria-label={selectedMaterial.name}
+          onMouseDown={(e) => {
+            if (e.target === e.currentTarget) {
+              setSelectedMaterial(null)
+            }
+          }}
+        >
+          <div className="relative max-h-[90vh] w-full max-w-2xl overflow-auto rounded-3xl bg-paper shadow-2xl">
+            <button
+              type="button"
+              onClick={() => setSelectedMaterial(null)}
+              aria-label={t.materials.close}
+              className="absolute right-4 top-4 z-10 flex size-10 items-center justify-center rounded-full bg-ink/80 text-paper backdrop-blur transition-colors hover:bg-pine"
+            >
+              <X className="size-5" />
+            </button>
+
+            <div className="aspect-[1.4/1] overflow-hidden bg-muted">
+              <img
+                src={selectedMaterial.image}
+                alt={`${selectedMaterial.name} ${selectedMaterial.code}`}
+                className="h-full w-full object-cover"
+              />
+            </div>
+
+            <div className="p-6 sm:p-8">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-brass">
+                {selectedMaterial.category}
+              </p>
+
+              <h2 className="mt-2 font-serif text-3xl font-semibold uppercase sm:text-4xl">
+                {selectedMaterial.name}
+              </h2>
+
+              <p className="mt-1 text-sm font-medium text-muted-foreground">
+                {selectedMaterial.code}
+              </p>
+
+              <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                <MaterialDetail
+                  label={t.materials.colour}
+                  value={selectedMaterial.colour}
+                />
+
+                <MaterialDetail
+                  label={t.materials.finish}
+                  value={selectedMaterial.finish}
+                />
+
+                <MaterialDetail
+                  label={t.materials.texture}
+                  value={selectedMaterial.texture}
+                />
+
+                <MaterialDetail
+                  label={t.materials.colourFamily}
+                  value={selectedMaterial.colourFamily}
+                />
+              </div>
+
+              <a
+                href={whatsappLink(quoteText)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full bg-pine px-6 py-4 text-sm font-bold text-paper transition-transform hover:-translate-y-0.5 sm:w-auto"
+              >
+                <MessageCircle className="size-4" />
+                {t.materials.useFinish}
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   )
 }
@@ -429,6 +629,26 @@ function FilterGroup({
           )
         })}
       </div>
+    </div>
+  )
+}
+
+function MaterialDetail({
+  label,
+  value,
+}: {
+  label: string
+  value: string
+}) {
+  return (
+    <div className="rounded-2xl bg-secondary p-3">
+      <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-muted-foreground">
+        {label}
+      </p>
+
+      <p className="mt-1 text-sm font-semibold text-ink">
+        {value}
+      </p>
     </div>
   )
 }

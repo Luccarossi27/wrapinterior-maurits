@@ -14,6 +14,7 @@ export function SiteHeader() {
 
   const links = [
     { href: '/portfolio', label: 'Portfolio' },
+    { href: '/materials', label: t.nav.materials,},
     { href: '/process', label: 'Process' },
     { href: '/pricing', label: 'Pricing' },
     { href: '/reviews', label: 'Reviews' },

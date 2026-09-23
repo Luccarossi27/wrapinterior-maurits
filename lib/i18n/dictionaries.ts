@@ -23,6 +23,7 @@ type Dict = {
   meta: { title: string; description: string }
   nav: {
     portfolio: string
+    materials: string
     process: string
     pricing: string
     reviews: string
@@ -82,6 +83,8 @@ type Dict = {
   eyebrow: string
   heading: string
   sub: string
+  search: string
+  clearSearch: string
   filter: string
   colour: string
   finish: string
@@ -90,6 +93,10 @@ type Dict = {
   clear: string
   results: string
   noResults: string
+  loadMore: string
+  disclaimer: string
+  close: string
+  useFinish: string
   ctaHeading: string
   ctaSub: string
 }
@@ -168,6 +175,7 @@ export const dictionaries: Record<Locale, Dict> = {
     },
     nav: {
       portfolio: 'Portfolio',
+      materials: 'Materialen',
       process: 'Werkwijze',
       pricing: 'Prijzen',
       reviews: 'Reviews',
@@ -280,7 +288,9 @@ gallery: {
 materials: {
   eyebrow: 'Materialen & afwerkingen',
   heading: 'KIES JE AFWERKING.',
-  sub: 'Ontdek een selectie van kleuren, houtstructuren, steenlooks en andere afwerkingen voor jouw interieur.',
+  sub: 'Ontdek onze selectie van kleuren, houtstructuren, steenlooks, metalen en andere afwerkingen voor jouw interieur.',
+  search: 'Zoek op afwerking, kleur of code...',
+  clearSearch: 'Zoekopdracht wissen',
   filter: 'Filters',
   colour: 'Kleur',
   finish: 'Afwerking',
@@ -289,8 +299,12 @@ materials: {
   clear: 'Wis filters',
   results: 'resultaten',
   noResults: 'Geen afwerkingen gevonden.',
+  loadMore: 'Meer laden',
+  disclaimer: 'Kleuren en structuren kunnen op het scherm iets afwijken van het echte materiaal. Fysieke samples zijn op aanvraag beschikbaar.',
+  close: 'Sluiten',
+  useFinish: 'Gebruik deze afwerking voor mijn offerte',
   ctaHeading: 'EEN AFWERKING GEZIEN DIE JE MOOI VINDT?',
-  ctaSub: 'Stuur ons een foto van je interieur en vertel ons welke stijl je aanspreekt. We helpen je de juiste folie voor jouw project te kiezen.',
+  ctaSub: 'Stuur ons een foto van je interieur en vertel ons welke afwerking je aanspreekt. We helpen je de juiste folie voor jouw project te kiezen.',
 },
     process: {
       heading: 'Onze werkwijze',
@@ -432,6 +446,7 @@ materials: {
     },
     nav: {
       portfolio: 'Portfolio',
+      materials: 'Materials',
       process: 'Process',
       pricing: 'Pricing',
       reviews: 'Reviews',
@@ -544,7 +559,9 @@ gallery: {
 materials: {
   eyebrow: 'Materials & finishes',
   heading: 'CHOOSE YOUR FINISH.',
-  sub: 'Explore a selection of colours, woodgrains, stone effects and other finishes available for your interior.',
+  sub: 'Explore our selection of colours, woodgrains, stone effects, metals and other finishes available for your interior.',
+  search: 'Search finishes, colours or codes...',
+  clearSearch: 'Clear search',
   filter: 'Filters',
   colour: 'Colour',
   finish: 'Finish',
@@ -553,8 +570,12 @@ materials: {
   clear: 'Clear filters',
   results: 'results',
   noResults: 'No finishes found.',
+  loadMore: 'Load more',
+  disclaimer: 'Colours and textures may vary slightly on screen. Physical samples are available on request.',
+  close: 'Close',
+  useFinish: 'Use this finish in my quote',
   ctaHeading: 'SEEN A FINISH YOU LIKE?',
-  ctaSub: 'Send us a photo of your interior and tell us which style you like. We’ll help you choose the right film for your project.',
+  ctaSub: 'Send us a photo of your interior and tell us which finish caught your eye. We’ll help you choose the right film for your project.',
 },
     process: {
       heading: 'Our process',
@@ -696,6 +717,7 @@ materials: {
     },
     nav: {
       portfolio: 'Portfolio',
+      materials: 'Materiales',
       process: 'Proceso',
       pricing: 'Precios',
       reviews: 'Opiniones',
@@ -808,7 +830,9 @@ gallery: {
 materials: {
   eyebrow: 'Materiales y acabados',
   heading: 'ELIGE TU ACABADO.',
-  sub: 'Descubre una selección de colores, maderas, efectos piedra y otros acabados disponibles para tu interior.',
+  sub: 'Descubre nuestra selección de colores, maderas, efectos piedra, metales y otros acabados disponibles para tu interior.',
+  search: 'Buscar acabados, colores o códigos...',
+  clearSearch: 'Borrar búsqueda',
   filter: 'Filtros',
   colour: 'Color',
   finish: 'Acabado',
@@ -817,8 +841,12 @@ materials: {
   clear: 'Borrar filtros',
   results: 'resultados',
   noResults: 'No se han encontrado acabados.',
+  loadMore: 'Cargar más',
+  disclaimer: 'Los colores y las texturas pueden variar ligeramente en pantalla. Hay muestras físicas disponibles bajo petición.',
+  close: 'Cerrar',
+  useFinish: 'Usar este acabado en mi presupuesto',
   ctaHeading: '¿HAS VISTO UN ACABADO QUE TE GUSTA?',
-  ctaSub: 'Envíanos una foto de tu interior y dinos qué estilo te gusta. Te ayudaremos a elegir el film adecuado para tu proyecto.',
+  ctaSub: 'Envíanos una foto de tu interior y dinos qué acabado te gusta. Te ayudaremos a elegir el film adecuado para tu proyecto.',
 },
     process: {
       heading: 'Nuestro proceso',
