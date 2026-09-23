@@ -337,4 +337,32 @@ export const materials: Material[] = [
       'https://www.resimdo.nl/shop/media/image/PW106-Uebersicht-Walltile-3000x2250.jpg',
     available: true,
   },
+
+  {
+    id: 'resina-2-w874',
+    name: 'Resina 2.0',
+    code: 'W874',
+    category: 'Wood',
+    colour: 'Brown',
+    colourFamily: 'Natural',
+    finish: 'Satin',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/W874-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
+  },
+
+  {
+    id: 'pictis-alnix-pw111',
+    name: 'Pictis Alnix',
+    code: 'PW111',
+    category: 'Painted Wood',
+    colour: 'White',
+    colourFamily: 'White Series',
+    finish: 'Matte',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/PW111-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
+  },
 ]
