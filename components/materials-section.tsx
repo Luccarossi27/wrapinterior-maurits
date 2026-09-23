@@ -309,32 +309,90 @@ export function MaterialsSection() {
           </div>
         </Reveal>
 
-        <div className="mt-6 lg:hidden">
+        <div className="mt-6">
+  <button
+    type="button"
+    onClick={() => setFiltersOpen((open) => !open)}
+    aria-expanded={filtersOpen}
+    className="flex w-full items-center justify-between rounded-2xl border border-border bg-card px-5 py-4 text-sm font-semibold text-ink transition-colors hover:border-pine hover:text-pine"
+  >
+    <span className="flex items-center gap-3">
+      <span>{t.materials.filter}</span>
+
+      {activeFilterCount > 0 && (
+        <span className="flex size-6 items-center justify-center rounded-full bg-pine text-xs font-bold text-paper">
+          {activeFilterCount}
+        </span>
+      )}
+    </span>
+
+    <ChevronDown
+      className={[
+        'size-4 transition-transform duration-200',
+        filtersOpen ? 'rotate-180' : '',
+      ].join(' ')}
+    />
+  </button>
+
+  {filtersOpen && (
+    <div className="mt-3 rounded-2xl border border-border bg-card p-5 sm:p-6">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <FilterGroup
+          label={t.materials.colour}
+          options={colours}
+          value={colour}
+          onChange={(value) =>
+            updateFilter(setColour, value)
+          }
+        />
+
+        <FilterGroup
+          label={t.materials.finish}
+          options={finishes}
+          value={finish}
+          onChange={(value) =>
+            updateFilter(setFinish, value)
+          }
+        />
+
+        <FilterGroup
+          label={t.materials.texture}
+          options={textures}
+          value={texture}
+          onChange={(value) =>
+            updateFilter(setTexture, value)
+          }
+        />
+
+        <FilterGroup
+          label={t.materials.colourFamily}
+          options={colourFamilies}
+          value={colourFamily}
+          onChange={(value) =>
+            updateFilter(setColourFamily, value)
+          }
+        />
+      </div>
+
+      {activeFilterCount > 0 && (
+        <div className="mt-6 flex items-center justify-between border-t border-border pt-5">
+          <p className="text-xs text-muted-foreground">
+            {activeFilterCount} {t.materials.filter}
+          </p>
+
           <button
             type="button"
-            onClick={() =>
-              setFiltersOpen((open) => !open)
-            }
-            className="flex w-full items-center justify-between rounded-2xl border border-border bg-card px-4 py-3.5 text-sm font-semibold"
+            onClick={resetFilters}
+            className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground transition-colors hover:text-pine"
           >
-            <span className="flex items-center gap-2">
-              {t.materials.filter}
-
-              {activeFilterCount > 0 && (
-                <span className="flex size-6 items-center justify-center rounded-full bg-pine text-xs text-paper">
-                  {activeFilterCount}
-                </span>
-              )}
-            </span>
-
-            <ChevronDown
-              className={[
-                'size-4 transition-transform',
-                filtersOpen ? 'rotate-180' : '',
-              ].join(' ')}
-            />
+            <RotateCcw className="size-4" />
+            {t.materials.clear}
           </button>
         </div>
+      )}
+    </div>
+  )}
+</div>
 
         <div
           className={[
