@@ -309,4 +309,74 @@ export const materials: Material[] = [
     image: imageUrl('SC153'),
     available: false,
   },
+
+    {
+    id: 'rusticata-wd016',
+    name: 'Rusticata',
+    code: 'WD016',
+    category: 'Wood',
+    colour: 'Brown',
+    colourFamily: 'Rustic',
+    finish: 'Satin',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/WD016-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
+  },
+
+  {
+    id: 'agri-2-wd002',
+    name: 'Agri 2.0',
+    code: 'WD002',
+    category: 'Wood',
+    colour: 'Brown',
+    colourFamily: 'Natural',
+    finish: 'Satin',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/WD002-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
+  },
+
+  {
+    id: 'pure-white-s115',
+    name: 'Pure White',
+    code: 'S115',
+    category: 'Solid Colour',
+    colour: 'White',
+    colourFamily: 'White Series',
+    finish: 'Matte',
+    texture: 'Smooth',
+    image:
+      'https://www.resimdo.nl/shop/media/image/S115-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
+  },
+
+  {
+    id: 'cotton-s179',
+    name: 'Cotton',
+    code: 'S179',
+    category: 'Solid Colour',
+    colour: 'White',
+    colourFamily: 'White Series',
+    finish: 'Matte',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/S179-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
+  },
+
+  {
+    id: 'pictis-mud-2-pw106',
+    name: 'Pictis Mud 2.0',
+    code: 'PW106',
+    category: 'Painted Wood',
+    colour: 'Brown',
+    colourFamily: 'Earth',
+    finish: 'Matte',
+    texture: 'Textured',
+    image:
+      'https://www.resimdo.nl/shop/media/image/PW106-Uebersicht-Walltile-3000x2250.jpg',
+    available: true,
+  },
 ]
