@@ -86,6 +86,7 @@ type Dict = {
   colour: string
   finish: string
   texture: string
+  colourFamily: string
   clear: string
   results: string
   noResults: string
@@ -279,15 +280,16 @@ gallery: {
 materials: {
   eyebrow: 'Materialen & afwerkingen',
   heading: 'KIES JE AFWERKING.',
-  sub: 'Ontdek een selectie van kleuren, houtstructuren, steenlooks en andere afwerkingen die beschikbaar zijn voor jouw interieur.',
+  sub: 'Ontdek een selectie van kleuren, houtstructuren, steenlooks en andere afwerkingen voor jouw interieur.',
   filter: 'Filters',
   colour: 'Kleur',
   finish: 'Afwerking',
   texture: 'Structuur',
+  colourFamily: 'Kleurfamilie',
   clear: 'Wis filters',
   results: 'resultaten',
   noResults: 'Geen afwerkingen gevonden.',
-  ctaHeading: 'Een afwerking gezien die je mooi vindt?',
+  ctaHeading: 'EEN AFWERKING GEZIEN DIE JE MOOI VINDT?',
   ctaSub: 'Stuur ons een foto van je interieur en vertel ons welke stijl je aanspreekt. We helpen je de juiste folie voor jouw project te kiezen.',
 },
     process: {
@@ -547,10 +549,11 @@ materials: {
   colour: 'Colour',
   finish: 'Finish',
   texture: 'Texture',
+  colourFamily: 'Colour family',
   clear: 'Clear filters',
   results: 'results',
   noResults: 'No finishes found.',
-  ctaHeading: 'Seen a finish you like?',
+  ctaHeading: 'SEEN A FINISH YOU LIKE?',
   ctaSub: 'Send us a photo of your interior and tell us which style you like. We’ll help you choose the right film for your project.',
 },
     process: {
@@ -810,10 +813,11 @@ materials: {
   colour: 'Color',
   finish: 'Acabado',
   texture: 'Textura',
+  colourFamily: 'Familia de color',
   clear: 'Borrar filtros',
   results: 'resultados',
   noResults: 'No se han encontrado acabados.',
-  ctaHeading: '¿Has visto un acabado que te gusta?',
+  ctaHeading: '¿HAS VISTO UN ACABADO QUE TE GUSTA?',
   ctaSub: 'Envíanos una foto de tu interior y dinos qué estilo te gusta. Te ayudaremos a elegir el film adecuado para tu proyecto.',
 },
     process: {
