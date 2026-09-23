@@ -34,7 +34,7 @@ export const materials: Material[] = [
     colourFamily: 'Earth',
     finish: 'Matte',
     texture: 'Textured',
-    image: imageUrl('WD001'),
+    image: 'https://www.resimdo.nl/shop/media/image/WD001-Uebersicht-Walltile-3000x2250.jpg',
     available: true,
   },
   {
@@ -46,7 +46,7 @@ export const materials: Material[] = [
     colourFamily: 'Rustic',
     finish: 'Matte',
     texture: 'Textured',
-    image: imageUrl('WD022'),
+    image: 'https://www.resimdo.nl/shop/media/image/WD022-Uebersicht-Walltile-3000x2250.jpg',
     available: true,
   },
   {
@@ -58,7 +58,7 @@ export const materials: Material[] = [
     colourFamily: 'Rustic',
     finish: 'Matte',
     texture: 'Textured',
-    image: imageUrl('WD017'),
+    image: 'https://www.resimdo.nl/shop/media/image/WD017-Uebersicht-Walltile-3000x2250.jpg',
     available: true,
   },
   {
@@ -95,7 +95,7 @@ export const materials: Material[] = [
     colourFamily: 'Earth',
     finish: 'Matte',
     texture: 'Textured',
-    image: imageUrl('ST061'),
+    image: 'https://www.resimdo.nl/shop/media/image/ST061-Uebersicht-Walltile-3000x2250.jpg',
     available: true,
   },
   {
@@ -107,7 +107,7 @@ export const materials: Material[] = [
     colourFamily: 'Earth',
     finish: 'Matte',
     texture: 'Textured',
-    image: imageUrl('ST062'),
+    image: 'https://www.resimdo.nl/shop/media/image/ST062-Uebersicht-Walltile-3000x2250.jpg',
     available: true,
   },
   {
@@ -119,7 +119,7 @@ export const materials: Material[] = [
     colourFamily: 'Pale',
     finish: 'Matte',
     texture: 'Textured',
-    image: imageUrl('ST063'),
+    image: 'https://www.resimdo.nl/shop/media/image/ST063-Uebersicht-Walltile-3000x2250.jpg',
     available: true,
   },
   {
@@ -229,7 +229,7 @@ export const materials: Material[] = [
     colourFamily: 'Raw',
     finish: 'Matte',
     texture: 'Textured',
-    image: imageUrl('ME005'),
+    image: 'https://www.resimdo.nl/shop/media/image/ME005-Uebersicht-Walltile-3000x2250.jpg',
     available: true,
   },
 
@@ -242,7 +242,7 @@ export const materials: Material[] = [
     colourFamily: 'Earth',
     finish: 'Matte',
     texture: 'Textured',
-    image: imageUrl('LE012'),
+    image: 'https://www.resimdo.nl/shop/media/image/LE012-Uebersicht-Walltile-3000x2250.jpg',
     available: true,
   },
   {
@@ -254,7 +254,7 @@ export const materials: Material[] = [
     colourFamily: 'Earth',
     finish: 'Matte',
     texture: 'Textured',
-    image: imageUrl('LE013'),
+    image: 'https://www.resimdo.nl/shop/media/image/LE013-Uebersicht-Walltile-3000x2250.jpg',
     available: true,
   },
 
@@ -280,7 +280,7 @@ export const materials: Material[] = [
     colourFamily: 'Painted Wood',
     finish: 'Matte',
     texture: 'Textured',
-    image: imageUrl('PW109'),
+    image: 'https://www.resimdo.nl/shop/media/image/PW109-Uebersicht-Walltile-3000x2250.jpg',
     available: true,
   },
 
