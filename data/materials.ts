@@ -649,7 +649,7 @@ export const materials: Material[] = [
 {
   id: 'tweed-day-2-rf003',
   name: 'Tweed Day 2.0',
-  code: 'RF003',
+  code: 'TE003',
   category: 'Textile',
   colour: 'Grey',
   colourFamily: 'Fabric',
@@ -698,7 +698,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.nl/shop/media/image/WD003-Uebersicht-Wand-3000x2250.jpg',
+  'https://www.resimdo.de/shop/media/image/WD003-Uebersicht-Walltile-3000x2250.jpg',
   available: true,
 },
 
@@ -740,7 +740,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.nl/shop/media/image/WD316-Uebersicht-Wand-3000x2250.jpg',
+  'https://www.resimdo.de/shop/media/image/WD316-Uebersicht-Walltile-3000x2250.jpg',
   available: true,
 },
 
@@ -754,7 +754,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Soft Touch',
   image:
-    'https://www.resimdo.nl/shop/media/image/SC157-Wand-3000x2250_72dpi.jpg',
+  'https://www.resimdo.de/shop/media/image/SC157-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 
@@ -768,7 +768,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Soft Touch',
   image:
-    'https://www.resimdo.nl/shop/media/image/SC160-Wand-3000x2250_72dpi.jpg',
+  'https://www.resimdo.de/shop/media/image/SC160-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 
