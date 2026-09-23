@@ -1218,19 +1218,7 @@ export const materials: Material[] = [
     'https://www.resimdo.nl/shop/media/image/SC156-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
-{
-  id: 'fractura-grit-2-st252',
-  name: 'Fractura Grit 2.0',
-  code: 'ST252',
-  category: 'Stone',
-  colour: 'Grey',
-  colourFamily: 'Industrial',
-  finish: 'Matte',
-  texture: 'Textured',
-  image:
-    'https://www.resimdo.nl/shop/media/image/ST252-Uebersicht-Walltile-3000x2250.jpg',
-  available: true,
-},
+
 {
   id: 'glandis-zx126',
   name: 'Glandis',
@@ -1280,20 +1268,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.nl/shop/media/image/PZ613-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-  available: true,
-},
-{
-  id: 'pure-black-wood-ls106',
-  name: 'Pure Black Wood',
-  code: 'LS106',
-  category: 'Wood',
-  colour: 'Black',
-  colourFamily: 'Dark',
-  finish: 'Matte',
-  texture: 'Textured',
-  image:
-    'https://www.resimdo.nl/shop/media/image/LS106-Uebersicht-Walltile-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/ZX134-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 {
@@ -1306,7 +1281,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Soft Touch',
   image:
-    'https://www.resimdo.nl/shop/media/image/SC015-Uebersicht-Walltile-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/SC015-Uebersicht-Walltile-3000x2250.jpg',
   available: true,
 },
 ]
