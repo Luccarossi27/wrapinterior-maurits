@@ -992,22 +992,10 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Soft Touch',
   image:
-    'https://www.resimdo.de/shop/media/image/SC020-Uebersicht-Rolle-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/SC020-Uebersicht-Walltile-3000x2250.jpg',
   available: true,
 },
-{
-  id: 'papilo-sheep-2-sc005',
-  name: 'Papilo Sheep 2.0',
-  code: 'SC005',
-  category: 'Solid Colour',
-  colour: 'White',
-  colourFamily: 'White Series',
-  finish: 'Matte',
-  texture: 'Soft Touch',
-  image:
-    'https://www.resimdo.de/shop/media/image/SC005-Uebersicht-Rolle-3000x2250.jpg',
-  available: true,
-},
+
 {
   id: 'papilo-cotton-lux-sc012',
   name: 'Papilo Cotton Lux',
@@ -1018,7 +1006,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Soft Touch',
   image:
-    'https://www.resimdo.de/shop/media/image/SC012-Uebersicht-Rolle-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/SC012-Uebersicht-Walltile-3000x2250.jpg',
   available: true,
 },
 {
@@ -1031,20 +1019,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Soft Touch',
   image:
-    'https://www.resimdo.de/shop/media/image/SC014-Uebersicht-Rolle-3000x2250.jpg',
-  available: true,
-},
-{
-  id: 'papilo-ivy-lux-sc029',
-  name: 'Papilo Ivy Lux',
-  code: 'SC029',
-  category: 'Solid Colour',
-  colour: 'Green',
-  colourFamily: 'Forest',
-  finish: 'Matte',
-  texture: 'Soft Touch',
-  image:
-    'https://www.resimdo.de/shop/media/image/SC029-Uebersicht-Rolle-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/SC014-Uebersicht-Walltile-3000x2250.jpg',
   available: true,
 },
 {
@@ -1057,46 +1032,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Soft Touch',
   image:
-    'https://www.resimdo.de/shop/media/image/SC013-Uebersicht-Rolle-3000x2250.jpg',
-  available: true,
-},
-{
-  id: 'papilo-mist-lux-sc027',
-  name: 'Papilo Mist Lux',
-  code: 'SC027',
-  category: 'Solid Colour',
-  colour: 'Beige',
-  colourFamily: 'Pale',
-  finish: 'Matte',
-  texture: 'Soft Touch',
-  image:
-    'https://www.resimdo.de/shop/media/image/SC027-Uebersicht-Rolle-3000x2250.jpg',
-  available: true,
-},
-{
-  id: 'papilo-breeze-sc031',
-  name: 'Papilo Breeze',
-  code: 'SC031',
-  category: 'Solid Colour',
-  colour: 'Blue',
-  colourFamily: 'Tides',
-  finish: 'Matte',
-  texture: 'Soft Touch',
-  image:
-    'https://www.resimdo.de/shop/media/image/SC031-Uebersicht-Rolle-3000x2250.jpg',
-  available: true,
-},
-{
-  id: 'papilo-azlo-lux-sc023',
-  name: 'Papilo Azlo Lux',
-  code: 'SC023',
-  category: 'Solid Colour',
-  colour: 'Beige',
-  colourFamily: 'Pale',
-  finish: 'Matte',
-  texture: 'Soft Touch',
-  image:
-    'https://www.resimdo.de/shop/media/image/SC023-Uebersicht-Rolle-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/SC013-Uebersicht-Walltile-3000x2250.jpg',
   available: true,
 },
 {
@@ -1109,7 +1045,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Soft Touch',
   image:
-    'https://www.resimdo.de/shop/media/image/SC018-Uebersicht-Rolle-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/SC018-Uebersicht-Walltile-3000x2250.jpg',
   available: true,
 },
 
