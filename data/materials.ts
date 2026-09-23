@@ -365,4 +365,18 @@ export const materials: Material[] = [
       'https://www.resimdo.nl/shop/media/image/NS403-Uebersicht-Walltile-3000x2250_72dpi.jpg',
     available: true,
   },
+
+  {
+    id: 'papilo-snow-lux-sc015',
+    name: 'Papilo Snow Lux',
+    code: 'SC015',
+    category: 'Solid Colour',
+    colour: 'White',
+    colourFamily: 'White Series',
+    finish: 'Matte',
+    texture: 'Soft Touch',
+    image:
+      'https://www.resimdo.nl/shop/media/image/SC015-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+    available: true,
+  },
 ]
