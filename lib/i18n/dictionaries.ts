@@ -300,7 +300,8 @@ materials: {
   results: 'resultaten',
   noResults: 'Geen afwerkingen gevonden.',
   loadMore: 'Meer laden',
-  disclaimer: 'Kleuren en structuren kunnen op het scherm iets afwijken van het echte materiaal. Fysieke samples zijn op aanvraag beschikbaar.',
+  disclaimer:
+  'Kleuren en structuren kunnen op het scherm iets afwijken van het echte materiaal. Fysieke samples zijn op aanvraag beschikbaar. Alle afwerkingen zijn onder voorbehoud van beschikbaarheid.',
   close: 'Sluiten',
   useFinish: 'Gebruik deze afwerking voor mijn offerte',
   ctaHeading: 'EEN AFWERKING GEZIEN DIE JE MOOI VINDT?',
@@ -571,7 +572,8 @@ materials: {
   results: 'results',
   noResults: 'No finishes found.',
   loadMore: 'Load more',
-  disclaimer: 'Colours and textures may vary slightly on screen. Physical samples are available on request.',
+  disclaimer:
+  'Colours and textures may vary slightly on screen. Physical samples are available on request. All finishes are subject to availability.',
   close: 'Close',
   useFinish: 'Use this finish in my quote',
   ctaHeading: 'SEEN A FINISH YOU LIKE?',
@@ -842,7 +844,8 @@ materials: {
   results: 'resultados',
   noResults: 'No se han encontrado acabados.',
   loadMore: 'Cargar más',
-  disclaimer: 'Los colores y las texturas pueden variar ligeramente en pantalla. Hay muestras físicas disponibles bajo petición.',
+  disclaimer:
+  'Los colores y las texturas pueden variar ligeramente en pantalla. Hay muestras físicas disponibles bajo petición. Todos los acabados están sujetos a disponibilidad.',
   close: 'Cerrar',
   useFinish: 'Usar este acabado en mi presupuesto',
   ctaHeading: '¿HAS VISTO UN ACABADO QUE TE GUSTA?',
