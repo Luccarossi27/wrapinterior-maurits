@@ -841,4 +841,214 @@ export const materials: Material[] = [
   'https://www.resimdo.nl/shop/media/image/W879-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
+
+{
+  id: 'legatus-spw18',
+  name: 'Legatus',
+  code: 'SPW18',
+  category: 'Wood',
+  colour: 'Light Brown',
+  colourFamily: 'Natural',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/SPW18-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'gold-crack-apz05',
+  name: 'Gold Crack',
+  code: 'APZ05',
+  category: 'Decorative',
+  colour: 'Gold',
+  colourFamily: 'Gold',
+  finish: 'Matte',
+  texture: 'Smooth',
+  image:
+    'https://www.resimdo.nl/shop/media/image/APZ05-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'grit-2-sc156',
+  name: 'Grit 2.0',
+  code: 'SC156',
+  category: 'Solid Colour',
+  colour: 'Beige',
+  colourFamily: 'Earth',
+  finish: 'Satin',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/SC156-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'fractura-grit-2-st252',
+  name: 'Fractura Grit 2.0',
+  code: 'ST252',
+  category: 'Stone',
+  colour: 'Light Grey',
+  colourFamily: 'Industrial',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/ST104-Uebersicht-Walltile-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'glandis-zx126',
+  name: 'Glandis',
+  code: 'ZX126',
+  category: 'Wood',
+  colour: 'Brown',
+  colourFamily: 'Natural',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/ZX126-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'radiant-night-pz613',
+  name: 'Radiant Night',
+  code: 'PZ613',
+  category: 'Wood',
+  colour: 'Dark Brown',
+  colourFamily: 'Dark',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/ZX134-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'solvit-dark-pz904',
+  name: 'Solvit Dark',
+  code: 'PZ904',
+  category: 'Wood',
+  colour: 'Light Brown',
+  colourFamily: 'Natural',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/PZ904-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'bokido-w376',
+  name: 'Bokido',
+  code: 'W376',
+  category: 'Wood',
+  colour: 'Dark Brown',
+  colourFamily: 'Natural',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/W376-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'popcorn-zx148',
+  name: 'Popcorn',
+  code: 'ZX148',
+  category: 'Wood',
+  colour: 'Beige',
+  colourFamily: 'Pale',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/ZX148-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'papilo-vella-lux-sc017',
+  name: 'Papilo Vella Lux',
+  code: 'SC017',
+  category: 'Solid Colour',
+  colour: 'Beige',
+  colourFamily: 'Soft Touch',
+  finish: 'Matte',
+  texture: 'Soft Touch',
+  image:
+    'https://www.resimdo.nl/shop/media/image/SC017-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'papilo-ossa-lux-sc019',
+  name: 'Papilo Ossa Lux',
+  code: 'SC019',
+  category: 'Solid Colour',
+  colour: 'White',
+  colourFamily: 'Soft Touch',
+  finish: 'Matte',
+  texture: 'Soft Touch',
+  image:
+    'https://www.resimdo.nl/shop/media/image/SC019-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'papilo-brisa-lux-sc021',
+  name: 'Papilo Brisa Lux',
+  code: 'SC021',
+  category: 'Solid Colour',
+  colour: 'Light Grey',
+  colourFamily: 'Soft Touch',
+  finish: 'Matte',
+  texture: 'Soft Touch',
+  image:
+    'https://www.resimdo.nl/shop/media/image/SC021-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'papilo-tidal-lux-sc032',
+  name: 'Papilo Tidal Lux',
+  code: 'SC032',
+  category: 'Solid Colour',
+  colour: 'Blue',
+  colourFamily: 'Tides',
+  finish: 'Matte',
+  texture: 'Soft Touch',
+  image:
+    'https://www.resimdo.nl/shop/media/image/SC032-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'litus-2-st102',
+  name: 'Litus 2.0',
+  code: 'ST102',
+  category: 'Stone',
+  colour: 'Grey',
+  colourFamily: 'Industrial',
+  finish: 'Satin',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/ST102-Uebersicht-Walltile-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'papilo-turtle-lux-sc030',
+  name: 'Papilo Turtle Lux',
+  code: 'SC030',
+  category: 'Solid Colour',
+  colour: 'Green',
+  colourFamily: 'Forest',
+  finish: 'Matte',
+  texture: 'Soft Touch',
+  image:
+    'https://www.resimdo.nl/shop/media/image/SC030-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
 ]
