@@ -603,4 +603,242 @@ export const materials: Material[] = [
     'https://www.resimdo.nl/shop/media/image/PS502-Uebersicht-Walltile-3000x2250.jpg',
   available: true,
 },
+
+{
+  id: 'woven-liora-te009',
+  name: 'Woven Liora',
+  code: 'TE009',
+  category: 'Textile',
+  colour: 'Grey',
+  colourFamily: 'Fabric',
+  finish: 'Satin',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/TE009-Uebersicht-Walltile-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'fibra-bride-te001',
+  name: 'Fibra Bride',
+  code: 'TE001',
+  category: 'Textile',
+  colour: 'White',
+  colourFamily: 'Fabric',
+  finish: 'Satin',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/TE201-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'tweed-beige-rf008',
+  name: 'Tweed Beige',
+  code: 'RF008',
+  category: 'Textile',
+  colour: 'Beige',
+  colourFamily: 'Fabric',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/RF008-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'tweed-day-2-rf003',
+  name: 'Tweed Day 2.0',
+  code: 'RF003',
+  category: 'Textile',
+  colour: 'Grey',
+  colourFamily: 'Fabric',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/TE003-Uebersicht-Wand-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'pictis-bone-2-pw103',
+  name: 'Pictis Bone 2.0',
+  code: 'PW103',
+  category: 'Painted Wood',
+  colour: 'Grey',
+  colourFamily: 'Painted Wood',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/PW103-Uebersicht-Walltile-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'pictis-tornado-2-pw108',
+  name: 'Pictis Tornado 2.0',
+  code: 'PW108',
+  category: 'Painted Wood',
+  colour: 'Grey',
+  colourFamily: 'Painted Wood',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/PW108-Uebersicht-Wand-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'animus-2-wd003',
+  name: 'Animus 2.0',
+  code: 'WD003',
+  category: 'Wood',
+  colour: 'Brown',
+  colourFamily: 'Natural',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/WD003-Uebersicht-Wand-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'avia-clara-2-wd206',
+  name: 'Avia Clara 2.0',
+  code: 'WD206',
+  category: 'Wood',
+  colour: 'Light Brown',
+  colourFamily: 'Natural',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/WD206-Uebersicht-Wand-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'bar-2-wd212',
+  name: 'Bar 2.0',
+  code: 'WD212',
+  category: 'Wood',
+  colour: 'Brown',
+  colourFamily: 'Natural',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/WD212-Uebersicht-Wand-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'lepus-2-wd316',
+  name: 'Lepus 2.0',
+  code: 'WD316',
+  category: 'Wood',
+  colour: 'Light Brown',
+  colourFamily: 'Natural',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/WD316-Uebersicht-Wand-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'turtle-2-sc157',
+  name: 'Turtle 2.0',
+  code: 'SC157',
+  category: 'Solid Colour',
+  colour: 'Beige',
+  colourFamily: 'Pale',
+  finish: 'Matte',
+  texture: 'Soft Touch',
+  image:
+    'https://www.resimdo.nl/shop/media/image/SC157-Wand-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'dune-sc160',
+  name: 'Dune',
+  code: 'SC160',
+  category: 'Solid Colour',
+  colour: 'Beige',
+  colourFamily: 'Earth',
+  finish: 'Matte',
+  texture: 'Soft Touch',
+  image:
+    'https://www.resimdo.nl/shop/media/image/SC160-Wand-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'cream-2-sc056',
+  name: 'Cream 2.0',
+  code: 'SC056',
+  category: 'Solid Colour',
+  colour: 'Beige',
+  colourFamily: 'Pale',
+  finish: 'Satin',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/SC056-Uebersicht-Walltile-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'galaxy-2-sc109',
+  name: 'Galaxy 2.0',
+  code: 'SC109',
+  category: 'Solid Colour',
+  colour: 'Dark Brown',
+  colourFamily: 'Dark',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/SC109-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  available: true,
+},
+
+{
+  id: 'dark-concrete-ns403',
+  name: 'Dark Concrete Beton',
+  code: 'NS403',
+  category: 'Stone',
+  colour: 'Grey',
+  colourFamily: 'Industrial',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/NS403-Uebersicht-Walltile-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'scala-light-2-st158',
+  name: 'Scala Light 2.0',
+  code: 'ST158',
+  category: 'Stone',
+  colour: 'White',
+  colourFamily: 'Pale',
+  finish: 'Matte',
+  texture: 'Smooth',
+  image:
+    'https://www.resimdo.nl/shop/media/image/ST158-Uebersicht-Walltile-3000x2250.jpg',
+  available: true,
+},
+
+{
+  id: 'resum-w879',
+  name: 'Resum',
+  code: 'W879',
+  category: 'Wood',
+  colour: 'Brown',
+  colourFamily: 'Natural',
+  finish: 'Matte',
+  texture: 'Textured',
+  image:
+    'https://www.resimdo.nl/shop/media/image/W879-Uebersicht-Walltile-3000x2250.jpg',
+  available: true,
+},
 ]
