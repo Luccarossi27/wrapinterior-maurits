@@ -1736,7 +1736,7 @@ export const materials: Material[] = [
   finish: 'Satin',
   texture: 'Textured',
   image:
-    'https://www.resimdo.nl/shop/media/image/LE007-Uebersicht-Walltile-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/LE301-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 {
@@ -1749,7 +1749,7 @@ export const materials: Material[] = [
   finish: 'Matte',
   texture: 'Textured',
   image:
-    'https://www.resimdo.nl/shop/media/image/W207-Uebersicht-Walltile-3000x2250.jpg',
+    'https://www.resimdo.es/shop/media/image/W207-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   available: true,
 },
 {
