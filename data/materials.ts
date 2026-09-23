@@ -163,7 +163,7 @@ export const materials: Material[] = [
     id: 'autemo-2-spw96',
     name: 'Autemo 2.0',
     code: 'SPW96',
-    category: 'Solid Colour',
+    category: 'Wood',
     colour: 'White',
     colourFamily: 'White Series',
     finish: 'Matte',
@@ -349,20 +349,6 @@ export const materials: Material[] = [
     texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/PW111-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
-  },
-
-  {
-    id: 'elephant-s143',
-    name: 'Elephant',
-    code: 'S143',
-    category: 'Solid Colour',
-    colour: 'Grey',
-    colourFamily: 'Dark',
-    finish: 'Matte',
-    texture: 'Textured',
-    image:
-      'https://www.resimdo.nl/shop/media/image/S143-Uebersicht-Walltile-3000x2250_72dpi.jpg',
     available: true,
   },
 
