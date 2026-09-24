@@ -58,7 +58,7 @@ export function BeforeAfterSlider({
     <div
       ref={containerRef}
       className={cn(
-        'relative w-full touch-none select-none overflow-hidden bg-muted',
+        'relative w-full touch-none select-none overflow-hidden bg-transparent',
         chrome && 'rounded-3xl border border-border shadow-xl',
         aspectRatio,
         className,
