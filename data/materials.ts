@@ -591,7 +591,7 @@ export const materials: Material[] = [
     id: 'pure-alba-ps502',
     name: 'Pure Alba',
     code: 'PS502',
-    category: 'Decorative',
+    category: 'Stone',
     colour: 'White',
     colourFamily: 'White Series',
     finish: 'Matte',
