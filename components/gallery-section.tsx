@@ -1,4 +1,3 @@
-```tsx
 'use client'
 
 import { useLanguage } from '@/lib/i18n/provider'
@@ -44,75 +43,50 @@ export function GallerySection() {
   const { t } = useLanguage()
 
   return (
-    <section
-      id="portfolio"
-      className="border-t border-border bg-background"
-    >
+    <section id="portfolio" className="border-t border-border bg-background">
       <div className="mx-auto w-full max-w-6xl px-5 pb-20 pt-16 sm:px-8 lg:pb-28 lg:pt-20">
-        <div className="flex flex-col gap-6 border-b border-border pb-8 lg:flex-row lg:items-end lg:justify-between">
-          <div className="max-w-2xl">
-            <Reveal>
-              <p className="mb-4 text-xs font-medium uppercase tracking-[0.22em] text-brass">
-                Portfolio
-              </p>
-            </Reveal>
+        <Reveal>
+          <h2 className="font-serif text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+            {t.gallery.heading}
+          </h2>
+        </Reveal>
 
-            <Reveal delay={0.05}>
-              <h2 className="text-balance font-serif text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-                {t.gallery.heading}
-              </h2>
-            </Reveal>
-          </div>
+        <Reveal delay={0.05}>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
+            {t.gallery.sub}
+          </p>
+        </Reveal>
 
-          <Reveal delay={0.1}>
-            <p className="max-w-md text-pretty text-sm leading-relaxed text-muted-foreground lg:text-right">
-              {t.gallery.sub}
-            </p>
-          </Reveal>
-        </div>
-
-        <div className="mt-12 grid gap-x-12 gap-y-16 lg:grid-cols-2 lg:gap-x-16 lg:gap-y-20">
+        <div className="mt-12 grid gap-12 lg:grid-cols-2">
           {t.gallery.items.map((item, i) => {
             const media = galleryMedia[i]
 
             if (!media) return null
 
             return (
-              <Reveal key={item.title} delay={(i % 2) * 0.06}>
-                <article className="group">
-                  <div className="relative">
-                    <BeforeAfterSlider
-                      beforeSrc={media.before}
-                      afterSrc={media.after}
-                      beforeAlt={item.alt}
-                      afterAlt={item.alt}
-                      beforeLabel={t.hero.beforeLabel}
-                      afterLabel={t.hero.afterLabel}
-                      dragHint={t.hero.dragHint}
-                      fit="contain"
-                      aspectRatio="h-[280px] sm:h-[340px] lg:h-[390px]"
-                    />
+              <article key={item.title}>
+                <BeforeAfterSlider
+                  beforeSrc={media.before}
+                  afterSrc={media.after}
+                  beforeAlt={item.alt}
+                  afterAlt={item.alt}
+                  beforeLabel={t.hero.beforeLabel}
+                  afterLabel={t.hero.afterLabel}
+                  dragHint={t.hero.dragHint}
+                  fit="contain"
+                  aspectRatio="aspect-[4/3] h-[300px] sm:h-[360px] lg:h-[400px]"
+                />
 
-                    <div className="absolute bottom-0 left-0 h-px w-0 bg-brass transition-all duration-500 group-hover:w-full" />
-                  </div>
+                <div className="mt-5">
+                  <h3 className="font-serif text-xl font-semibold text-ink">
+                    {item.title}
+                  </h3>
 
-                  <div className="mt-5 flex items-start justify-between gap-6">
-                    <div>
-                      <h3 className="font-serif text-xl font-semibold tracking-tight text-ink">
-                        {item.title}
-                      </h3>
-
-                      <p className="mt-1.5 text-sm text-muted-foreground">
-                        {item.location}
-                      </p>
-                    </div>
-
-                    <span className="pt-1 text-xs tabular-nums text-muted-foreground">
-                      {String(i + 1).padStart(2, '0')}
-                    </span>
-                  </div>
-                </article>
-              </Reveal>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    {item.location}
+                  </p>
+                </div>
+              </article>
             )
           })}
         </div>
@@ -120,4 +94,3 @@ export function GallerySection() {
     </section>
   )
 }
-```
