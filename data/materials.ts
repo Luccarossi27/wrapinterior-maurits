@@ -829,7 +829,7 @@ export const materials: Material[] = [
     id: 'gold-crack-apz05',
     name: 'Gold Crack',
     code: 'APZ05',
-    category: 'Decorative',
+    category: 'Metal',
     colour: 'Gold',
     colourFamily: 'Gold',
     finish: 'Matte',
