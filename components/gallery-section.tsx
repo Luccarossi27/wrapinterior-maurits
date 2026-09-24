@@ -1,4 +1,3 @@
-```tsx
 'use client'
 
 import { useLanguage } from '@/lib/i18n/provider'
@@ -49,7 +48,7 @@ export function GallerySection() {
       className="border-t border-border bg-background"
     >
       <div className="mx-auto w-full max-w-6xl px-5 pb-20 pt-16 sm:px-8 lg:pb-28 lg:pt-20">
-        <div className="flex flex-col gap-6 border-b border-border pb-8 lg:flex-row lg:items-end lg:justify-between">
+        <div className="border-b border-border pb-8">
           <div className="max-w-2xl">
             <Reveal>
               <p className="mb-4 text-xs font-medium uppercase tracking-[0.22em] text-brass">
@@ -65,13 +64,13 @@ export function GallerySection() {
           </div>
 
           <Reveal delay={0.1}>
-            <p className="max-w-md text-pretty text-sm leading-relaxed text-muted-foreground lg:text-right">
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
               {t.gallery.sub}
             </p>
           </Reveal>
         </div>
 
-        <div className="mt-12 grid gap-x-12 gap-y-16 lg:grid-cols-2 lg:gap-x-16 lg:gap-y-20">
+        <div className="mt-12 grid gap-12 lg:grid-cols-2">
           {t.gallery.items.map((item, i) => {
             const media = galleryMedia[i]
 
@@ -92,8 +91,6 @@ export function GallerySection() {
                       fit="contain"
                       aspectRatio="h-[280px] sm:h-[340px] lg:h-[390px]"
                     />
-
-                    <div className="absolute bottom-0 left-0 h-px w-0 bg-brass transition-all duration-500 group-hover:w-full" />
                   </div>
 
                   <div className="mt-5 flex items-start justify-between gap-6">
@@ -120,4 +117,3 @@ export function GallerySection() {
     </section>
   )
 }
-```
