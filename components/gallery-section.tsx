@@ -45,32 +45,31 @@ export function GallerySection() {
   return (
     <section
       id="portfolio"
-      className="border-t border-border bg-background"
+      className="border-t border-border bg-paper text-ink"
     >
-      <div className="mx-auto w-full max-w-6xl px-5 pb-20 pt-16 sm:px-8 lg:pb-28 lg:pt-20">
-        <div className="flex flex-col gap-6 border-b border-border pb-8 lg:flex-row lg:items-end lg:justify-between">
-          <div className="max-w-2xl">
-            <Reveal>
-              <p className="mb-4 text-xs font-medium uppercase tracking-[0.22em] text-brass">
+      <div className="mx-auto w-full max-w-7xl px-5 pb-20 pt-10 sm:px-8 sm:pb-28 sm:pt-14 lg:px-10 lg:pt-20">
+
+        {/* HEADER */}
+        <Reveal>
+          <div className="grid gap-8 border-b border-border pb-10 lg:grid-cols-[1fr_2fr] lg:items-end">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-brass">
                 Portfolio
               </p>
-            </Reveal>
 
-            <Reveal delay={0.05}>
-              <h2 className="text-balance font-serif text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+              <h1 className="mt-3 font-serif text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
                 {t.gallery.heading}
-              </h2>
-            </Reveal>
-          </div>
+              </h1>
+            </div>
 
-          <Reveal delay={0.1}>
-            <p className="max-w-md text-pretty text-sm leading-relaxed text-muted-foreground lg:text-right">
+            <p className="max-w-2xl text-base leading-relaxed text-muted-foreground lg:justify-self-end lg:text-lg">
               {t.gallery.sub}
             </p>
-          </Reveal>
-        </div>
+          </div>
+        </Reveal>
 
-        <div className="mt-12 grid gap-x-12 gap-y-16 lg:grid-cols-2 lg:gap-x-16 lg:gap-y-20">
+        {/* GALLERY GRID */}
+        <div className="mt-12 grid gap-x-10 gap-y-14 lg:mt-16 lg:grid-cols-2 lg:gap-x-14 lg:gap-y-20">
           {t.gallery.items.map((item, i) => {
             const media = galleryMedia[i]
 
@@ -79,7 +78,7 @@ export function GallerySection() {
             return (
               <Reveal key={item.title} delay={(i % 2) * 0.06}>
                 <article className="group">
-                  <div className="relative">
+                  <div className="relative overflow-hidden">
                     <BeforeAfterSlider
                       beforeSrc={media.before}
                       afterSrc={media.after}
@@ -88,26 +87,24 @@ export function GallerySection() {
                       beforeLabel={t.hero.beforeLabel}
                       afterLabel={t.hero.afterLabel}
                       dragHint={t.hero.dragHint}
-                      fit="contain"
-                      aspectRatio="h-[280px] sm:h-[340px] lg:h-[390px]"
+                      fit="cover"
+                      chrome={false}
+                      showLabels={false}
+                      showDragHint={false}
+                      accent="brass"
+                      aspectRatio="h-[300px] sm:h-[380px] lg:h-[440px]"
                     />
 
-                    <div className="absolute bottom-0 left-0 h-px w-0 bg-brass transition-all duration-500 group-hover:w-full" />
+                    <div className="pointer-events-none absolute bottom-0 left-0 h-0.5 w-0 bg-brass transition-all duration-500 group-hover:w-full" />
                   </div>
 
-                  <div className="mt-5 flex items-start justify-between gap-6">
-                    <div>
-                      <h3 className="font-serif text-xl font-semibold tracking-tight text-ink">
-                        {item.title}
-                      </h3>
+                  <div className="mt-5 flex items-baseline justify-between gap-6 border-t border-border pt-4">
+                    <h2 className="font-serif text-xl font-semibold uppercase tracking-tight transition-colors group-hover:text-brass">
+                      {item.title}
+                    </h2>
 
-                      <p className="mt-1.5 text-sm text-muted-foreground">
-                        {item.location}
-                      </p>
-                    </div>
-
-                    <span className="pt-1 text-xs tabular-nums text-muted-foreground">
-                      {String(i + 1).padStart(2, '0')}
+                    <span className="shrink-0 text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground">
+                      {item.location}
                     </span>
                   </div>
                 </article>
