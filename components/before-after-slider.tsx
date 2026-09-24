@@ -16,6 +16,10 @@ export function BeforeAfterSlider({
   className,
   aspectRatio = 'aspect-[4/3]',
   fit = 'cover',
+  chrome = true,
+  showLabels = true,
+  showDragHint = true,
+  accent = 'pine',
 }: {
   beforeSrc: string
   afterSrc: string
@@ -28,6 +32,10 @@ export function BeforeAfterSlider({
   className?: string
   aspectRatio?: string
   fit?: 'cover' | 'contain'
+  chrome?: boolean
+  showLabels?: boolean
+  showDragHint?: boolean
+  accent?: 'pine' | 'brass'
 }) {
   const [pos, setPos] = useState(52)
   const containerRef = useRef<HTMLDivElement>(null)
@@ -50,7 +58,8 @@ export function BeforeAfterSlider({
     <div
       ref={containerRef}
       className={cn(
-        'relative w-full touch-none select-none overflow-hidden rounded-3xl border border-border bg-muted shadow-xl',
+        'relative w-full touch-none select-none overflow-hidden bg-muted',
+        chrome && 'rounded-3xl border border-border shadow-xl',
         aspectRatio,
         className,
       )}
@@ -81,9 +90,11 @@ export function BeforeAfterSlider({
         draggable={false}
       />
 
-      <span className="absolute right-3 top-3 rounded-full bg-pine/90 px-3 py-1 text-xs font-semibold text-paper backdrop-blur">
-        {afterLabel}
-      </span>
+      {showLabels && (
+        <span className="absolute right-3 top-3 rounded-full bg-pine/90 px-3 py-1 text-xs font-semibold text-paper backdrop-blur">
+          {afterLabel}
+        </span>
+      )}
 
       <div
         className="absolute inset-0"
@@ -99,13 +110,18 @@ export function BeforeAfterSlider({
           draggable={false}
         />
 
-        <span className="absolute left-3 top-3 rounded-full bg-ink/80 px-3 py-1 text-xs font-semibold text-paper backdrop-blur">
-          {beforeLabel}
-        </span>
+        {showLabels && (
+          <span className="absolute left-3 top-3 rounded-full bg-ink/80 px-3 py-1 text-xs font-semibold text-paper backdrop-blur">
+            {beforeLabel}
+          </span>
+        )}
       </div>
 
       <div
-        className="absolute inset-y-0 z-10 flex w-0.5 items-center justify-center bg-paper"
+        className={cn(
+          'absolute inset-y-0 z-10 flex w-0.5 items-center justify-center',
+          accent === 'brass' ? 'bg-brass' : 'bg-paper',
+        )}
         style={{
           left: `${pos}%`,
           transform: 'translateX(-50%)',
@@ -121,7 +137,12 @@ export function BeforeAfterSlider({
           className="absolute h-full w-[100vw] cursor-ew-resize opacity-0"
         />
 
-        <span className="pointer-events-none flex size-11 items-center justify-center rounded-full border-2 border-paper bg-pine text-paper shadow-lg">
+        <span
+          className={cn(
+            'pointer-events-none flex size-11 items-center justify-center rounded-full border-2 border-paper shadow-lg',
+            accent === 'brass' ? 'bg-brass text-ink' : 'bg-pine text-paper',
+          )}
+        >
           <svg
             viewBox="0 0 24 24"
             className="size-5"
@@ -139,9 +160,11 @@ export function BeforeAfterSlider({
         </span>
       </div>
 
-      <span className="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 rounded-full bg-background/80 px-3 py-1 text-[11px] font-medium text-muted-foreground backdrop-blur">
-        {dragHint}
-      </span>
+      {showDragHint && (
+        <span className="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 rounded-full bg-background/80 px-3 py-1 text-[11px] font-medium text-muted-foreground backdrop-blur">
+          {dragHint}
+        </span>
+      )}
     </div>
   )
 }
