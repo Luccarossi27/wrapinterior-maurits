@@ -486,20 +486,30 @@ export function MaterialsSection() {
         )}
 
         {hasMore && (
-          <div className="mt-10 text-center">
-            <button
-              type="button"
-              onClick={() =>
-                setVisibleCount(
-                  (count) => count + ITEMS_PER_PAGE,
-                )
-              }
-              className="rounded-full border border-pine bg-transparent px-7 py-3.5 text-sm font-bold text-pine transition-colors hover:bg-pine hover:text-paper"
-            >
-              {t.materials.loadMore}
-            </button>
-          </div>
-        )}
+  <div className="mt-10 flex flex-col items-center gap-3">
+    <button
+      type="button"
+      onClick={() =>
+        setVisibleCount(filteredMaterials.length)
+      }
+      className="rounded-full border border-pine bg-transparent px-7 py-3.5 text-sm font-bold text-pine transition-colors hover:bg-pine hover:text-paper"
+    >
+      Load all materials ↓
+    </button>
+
+    <button
+      type="button"
+      onClick={() =>
+        setVisibleCount(
+          (count) => count + ITEMS_PER_PAGE,
+        )
+      }
+      className="text-xs font-semibold text-muted-foreground underline underline-offset-4 hover:text-pine"
+    >
+      {t.materials.loadMore}
+    </button>
+  </div>
+)}
 
         <p className="mx-auto mt-10 max-w-2xl text-center text-xs leading-relaxed text-muted-foreground">
           {t.materials.disclaimer}
