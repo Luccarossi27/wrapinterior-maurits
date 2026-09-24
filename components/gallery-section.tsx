@@ -49,10 +49,7 @@ export function GallerySection() {
   }))
 
   return (
-    <section
-      id="portfolio"
-      className="border-t border-border bg-background"
-    >
+    <section id="portfolio" className="border-t border-border bg-background">
       <div className="mx-auto w-full max-w-6xl px-5 pb-20 pt-16 sm:px-8 lg:pb-28 lg:pt-20">
         <div className="flex flex-col gap-6 border-b border-border pb-8 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
@@ -78,10 +75,7 @@ export function GallerySection() {
 
         <div className="mt-12 grid gap-x-12 gap-y-16 lg:grid-cols-2 lg:gap-x-16 lg:gap-y-20">
           {items.map((item, i) => (
-            <Reveal
-              key={item.title}
-              delay={(i % 2) * 0.06}
-            >
+            <Reveal key={item.title} delay={(i % 2) * 0.06}>
               <article className="group">
                 <div className="relative">
                   <BeforeAfterSlider
