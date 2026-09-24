@@ -100,7 +100,7 @@ export function GallerySection() {
                       showLabels={false}
                       showDragHint={false}
                       accent="brass"
-                      aspectRatio={media.aspectRatio}
+                      aspectRatio="h-[520px]"
                     />
 
                     <div className="pointer-events-none absolute bottom-0 left-0 h-0.5 w-0 bg-brass transition-all duration-500 group-hover:w-full" />
