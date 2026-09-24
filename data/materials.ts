@@ -2,10 +2,9 @@ export type MaterialCategory =
   | 'Wood'
   | 'Stone'
   | 'Solid Colour'
-  | 'Metal'
+  | 'Metallic'
   | 'Leather'
   | 'Textile'
-  | 'Decorative'
   | 'Painted Wood'
   | 'Abstract'
 
