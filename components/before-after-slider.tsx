@@ -54,13 +54,15 @@ export function BeforeAfterSlider({
   const imageFitClass =
     fit === 'contain' ? 'object-contain' : 'object-cover'
 
+  const ratioClass = aspectRatio
+
   return (
     <div
       ref={containerRef}
       className={cn(
-        'relative w-full touch-none select-none overflow-hidden bg-transparent',
+        'relative mx-auto w-full max-h-[520px] touch-none select-none overflow-hidden bg-transparent',
         chrome && 'rounded-3xl border border-border shadow-xl',
-        aspectRatio,
+        ratioClass,
         className,
       )}
       onPointerDown={(e) => {
