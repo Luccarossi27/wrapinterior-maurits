@@ -54,7 +54,6 @@ export function GallerySection() {
       className="border-t border-border bg-background"
     >
       <div className="mx-auto w-full max-w-6xl px-5 pb-20 pt-16 sm:px-8 lg:pb-28 lg:pt-20">
-        {/* Heading */}
         <div className="flex flex-col gap-6 border-b border-border pb-8 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
             <Reveal>
@@ -77,7 +76,6 @@ export function GallerySection() {
           </Reveal>
         </div>
 
-        {/* Portfolio */}
         <div className="mt-12 grid gap-x-12 gap-y-16 lg:grid-cols-2 lg:gap-x-16 lg:gap-y-20">
           {items.map((item, i) => (
             <Reveal
@@ -85,7 +83,6 @@ export function GallerySection() {
               delay={(i % 2) * 0.06}
             >
               <article className="group">
-                {/* Image */}
                 <div className="relative">
                   <BeforeAfterSlider
                     beforeSrc={item.media.before}
@@ -99,11 +96,9 @@ export function GallerySection() {
                     aspectRatio="h-[280px] sm:h-[340px] lg:h-[390px]"
                   />
 
-                  {/* Fine brass detail */}
                   <div className="absolute bottom-0 left-0 h-px w-0 bg-brass transition-all duration-500 group-hover:w-full" />
                 </div>
 
-                {/* Project information */}
                 <div className="mt-5 flex items-start justify-between gap-6">
                   <div>
                     <h3 className="font-serif text-xl font-semibold tracking-tight text-ink">
