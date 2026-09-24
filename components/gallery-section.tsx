@@ -1,4 +1,3 @@
-```tsx
 'use client'
 
 import { useLanguage } from '@/lib/i18n/provider'
@@ -120,4 +119,3 @@ export function GallerySection() {
     </section>
   )
 }
-```
