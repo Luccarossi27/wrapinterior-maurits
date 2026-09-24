@@ -1901,7 +1901,7 @@ export const materials: Material[] = [
   colourFamily: "Cream",
   finish: "Satin-matt",
   texture: "Textured",
-  image: "https://www.resimdo.de/shop/media/image/SC062-Uebersicht-Rolle-3000x2250.jpg",
+  image: "https://www.resimdo.es/shop/media/image/SC062-Uebersicht-Walltile-3000x2250.jpg",
   available: true,
 },
 {
@@ -1913,7 +1913,7 @@ export const materials: Material[] = [
   colourFamily: "White",
   finish: "Satin-matt",
   texture: "Textured",
-  image: "https://www.resimdo.de/shop/media/image/SC057-Uebersicht-Rolle-3000x2250.jpg",
+  image: "https://www.resimdo.es/shop/media/image/SC057-Uebersicht-Walltile-3000x2250.jpg",
   available: true,
 },
 {
@@ -1925,7 +1925,7 @@ export const materials: Material[] = [
   colourFamily: "White",
   finish: "Satin-matt",
   texture: "Textured",
-  image: "https://www.resimdo.de/shop/media/image/SC051-Uebersicht-Rolle-3000x2250.jpg",
+  image: "https://www.resimdo.es/shop/media/image/SC051-Uebersicht-Walltile-3000x2250.jpg",
   available: true,
 },
 {
@@ -1937,7 +1937,7 @@ export const materials: Material[] = [
   colourFamily: "Pink",
   finish: "Satin-matt",
   texture: "Textured",
-  image: "https://www.resimdo.de/shop/media/image/SC058-Uebersicht-Rolle-3000x2250.jpg",
+  image: "https://www.resimdo.es/shop/media/image/SC058-Uebersicht-Walltile-3000x2250.jpg",
   available: true,
 },
 {
@@ -1949,7 +1949,7 @@ export const materials: Material[] = [
   colourFamily: "Cream",
   finish: "Satin-matt",
   texture: "Textured",
-  image: "https://www.resimdo.de/shop/media/image/SC059-Uebersicht-Rolle-3000x2250.jpg",
+  image: "https://www.resimdo.es/shop/media/image/SC059-Uebersicht-Walltile-3000x2250.jpg",
   available: true,
 },
 ]
