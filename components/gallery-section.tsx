@@ -87,12 +87,11 @@ export function GallerySection() {
                       beforeLabel={t.hero.beforeLabel}
                       afterLabel={t.hero.afterLabel}
                       dragHint={t.hero.dragHint}
-                      fit="cover"
+                      fit="contain"
                       chrome={false}
                       showLabels={false}
                       showDragHint={false}
                       accent="brass"
-                      aspectRatio="h-[300px] sm:h-[380px] lg:h-[440px]"
                     />
 
                     <div className="pointer-events-none absolute bottom-0 left-0 h-0.5 w-0 bg-brass transition-all duration-500 group-hover:w-full" />
