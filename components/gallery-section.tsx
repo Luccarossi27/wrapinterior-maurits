@@ -8,34 +8,42 @@ const galleryMedia = [
   {
     before: '/images/ben-before.jpeg',
     after: '/images/ben-after.jpeg',
+    aspectRatio: 'aspect-[4/3]',
   },
   {
     before: '/images/bernard-before.jpg',
     after: '/images/bernard-after.jpg',
+    aspectRatio: 'aspect-[3/4]',
   },
   {
     before: '/images/chantal-before.JPEG',
     after: '/images/chantal-after.jpg',
+    aspectRatio: 'aspect-[4/3]',
   },
   {
     before: '/images/griffioen-d1-before.JPEG',
     after: '/images/griffioen-d1-after.jpg',
+    aspectRatio: 'aspect-[16/10]',
   },
   {
     before: '/images/griffioen-d3-before.jpg',
     after: '/images/griffioen-d3-after.jpg',
+    aspectRatio: 'aspect-[4/3]',
   },
   {
     before: '/images/griffioen-k-before.jpeg',
     after: '/images/griffioen-k-after.jpeg',
+    aspectRatio: 'aspect-[3/4]',
   },
   {
     before: '/images/hans-before.jpg',
     after: '/images/hans-after.jpg',
+    aspectRatio: 'aspect-[16/10]',
   },
   {
     before: '/images/minja-before.jpg',
     after: '/images/minja-after.JPEG',
+    aspectRatio: 'aspect-[4/5]',
   },
 ]
 
@@ -92,6 +100,7 @@ export function GallerySection() {
                       showLabels={false}
                       showDragHint={false}
                       accent="brass"
+                      aspectRatio={media.aspectRatio}
                     />
 
                     <div className="pointer-events-none absolute bottom-0 left-0 h-0.5 w-0 bg-brass transition-all duration-500 group-hover:w-full" />
