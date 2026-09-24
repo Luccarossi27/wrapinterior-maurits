@@ -40,6 +40,7 @@ const galleryMedia = [
   },
 ]
 
+
 export function GallerySection() {
   const { t } = useLanguage()
 
