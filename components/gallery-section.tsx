@@ -1,4 +1,5 @@
 'use client'
+
 import { cn } from '@/lib/utils'
 import { useLanguage } from '@/lib/i18n/provider'
 import { Reveal } from '@/components/reveal'
@@ -102,12 +103,15 @@ export function GallerySection() {
             return (
               <Reveal key={item.title} delay={(i % 2) * 0.06}>
                 <article className="group">
+
                   <div
-  className={cn(
-    'relative mx-auto overflow-hidden',
-    media.aspectRatio === 'aspect-[4/5]' ? 'w-[55%]' : 'w-[75%]'
-  )}
->
+                    className={cn(
+                      'relative mx-auto overflow-hidden',
+                      media.aspectRatio === 'aspect-[4/5]'
+                        ? 'w-[55%]'
+                        : 'w-[75%]',
+                    )}
+                  >
                     <BeforeAfterSlider
                       beforeSrc={media.before}
                       afterSrc={media.after}
@@ -123,16 +127,19 @@ export function GallerySection() {
                       accent="brass"
                       aspectRatio={media.aspectRatio}
                     />
+                  </div>
 
+                  {/* PROJECT INFORMATION */}
                   <div className="mt-5 flex items-baseline justify-between gap-6 border-t border-border pt-4">
-  <h2 className="font-serif text-xl font-semibold uppercase tracking-tight">
-    {media.colour}
-  </h2>
+                    <h2 className="font-serif text-xl font-semibold uppercase tracking-tight">
+                      {media.colour}
+                    </h2>
 
-  <span className="shrink-0 text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground">
-    {media.code}
-  </span>
-</div>
+                    <span className="shrink-0 text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground">
+                      {media.code}
+                    </span>
+                  </div>
+
                 </article>
               </Reveal>
             )
