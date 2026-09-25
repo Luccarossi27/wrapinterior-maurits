@@ -105,7 +105,7 @@ export function BeforeAfterSlider({
         >
           <span
             className={cn(
-              'absolute right-4 top-4 font-serif text-[10px] font-medium uppercase tracking-[0.18em]',
+              'absolute right-4 top-4 font-serif text-[10px] font-medium uppercase tracking-[0.24em]',
               isEditorial ? 'text-white' : 'text-paper',
             )}
           >
@@ -133,7 +133,7 @@ export function BeforeAfterSlider({
         {showLabels && (
           <span
             className={cn(
-              'pointer-events-none absolute left-4 top-4 z-20 font-serif text-[10px] font-semibold uppercase tracking-[0.22em]',
+              'pointer-events-none absolute left-4 top-4 z-20 font-serif text-[10px] font-semibold uppercase tracking-[0.26em]',
               isEditorial ? 'text-white' : 'text-paper',
             )}
           >
@@ -180,7 +180,7 @@ export function BeforeAfterSlider({
       {showDragHint && (
         <span
           className={cn(
-            'pointer-events-none absolute bottom-4 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap font-serif text-[9px] font-medium uppercase tracking-[0.18em]',
+            'pointer-events-none absolute bottom-4 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap font-serif text-[9px] font-medium uppercase tracking-[0.24em]',
             isEditorial ? 'text-white' : 'text-paper',
           )}
         >
