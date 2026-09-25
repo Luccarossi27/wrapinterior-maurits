@@ -103,7 +103,6 @@ export function GallerySection() {
                       aspectRatio={media.aspectRatio}
                     />
 
-                    <div className="pointer-events-none absolute bottom-0 left-0 h-0.5 w-0 bg-brass transition-all duration-500 group-hover:w-full" />
                   </div>
 
                   <div className="mt-5 flex items-baseline justify-between gap-6 border-t border-border pt-4">

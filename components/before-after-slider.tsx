@@ -105,18 +105,16 @@ export function BeforeAfterSlider({
       />
 
       {/* AFTER LABEL */}
-      {showLabels && (
-        <span
-          className={cn(
-            'pointer-events-none absolute right-4 top-4 z-20 text-[10px] font-bold uppercase tracking-[0.22em]',
-            isEditorial
-              ? 'text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.65)]'
-              : 'text-paper drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]',
-          )}
-        >
-          {afterLabel}
-        </span>
-      )}
+{showLabels && (
+  <span
+    className={cn(
+      'pointer-events-none absolute right-4 top-4 z-20 text-[10px] font-bold uppercase tracking-[0.22em]',
+      isEditorial ? 'text-white' : 'text-paper',
+    )}
+  >
+    {afterLabel}
+  </span>
+)}
 
       {/* BEFORE IMAGE */}
       <div
@@ -134,19 +132,16 @@ export function BeforeAfterSlider({
         />
 
         {/* BEFORE LABEL */}
-        {showLabels && (
-          <span
-            className={cn(
-              'pointer-events-none absolute left-4 top-4 z-20 text-[10px] font-bold uppercase tracking-[0.22em]',
-              isEditorial
-                ? 'text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.65)]'
-                : 'text-paper drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]',
-            )}
-          >
-            {beforeLabel}
-          </span>
-        )}
-      </div>
+{showLabels && (
+  <span
+    className={cn(
+      'pointer-events-none absolute left-4 top-4 z-20 text-[10px] font-bold uppercase tracking-[0.22em]',
+      isEditorial ? 'text-white' : 'text-paper',
+    )}
+  >
+    {beforeLabel}
+  </span>
+)}
 
       {/* MAIN DIVIDER */}
       <div
@@ -178,14 +173,6 @@ export function BeforeAfterSlider({
           className="absolute left-1/2 top-1/2 h-[120%] w-[90px] -translate-x-1/2 -translate-y-1/2 cursor-ew-resize opacity-0"
         />
       </div>
-
-      {/* BOTTOM HOVER LINE */}
-      <div
-        className={cn(
-          'pointer-events-none absolute bottom-0 left-0 right-0 z-20 h-px origin-left scale-x-0 transition-transform duration-500 group-hover/slider:scale-x-100',
-          dividerClass,
-        )}
-      />
 
       {/* DRAG HINT */}
       {showDragHint && (
