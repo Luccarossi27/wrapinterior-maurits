@@ -98,7 +98,7 @@ export function GallerySection() {
                       fit="contain"
                       chrome
                       showLabels
-                      showDragHint={false}
+                      showDragHint
                       accent="brass"
                       aspectRatio={media.aspectRatio}
                     />
