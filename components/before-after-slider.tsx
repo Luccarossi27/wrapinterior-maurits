@@ -163,12 +163,9 @@ export function BeforeAfterSlider({
     isEditorial ? 'bg-black' : 'bg-pine',
   )}
 >
-  <span className="relative flex h-4 w-3 items-center justify-center">
-    {/* LEFT CHEVRON */}
-    <span className="absolute left-0 h-2 w-2 rotate-45 border-b border-l border-white" />
-
-    {/* RIGHT CHEVRON */}
-    <span className="absolute right-0 h-2 w-2 -rotate-[135deg] border-b border-l border-white" />
+  <span className="flex items-center text-[11px] font-light leading-none text-white">
+    <span>←</span>
+    <span>→</span>
   </span>
 </div>
 
