@@ -60,10 +60,6 @@ export function BeforeAfterSlider({
     ? 'bg-black'
     : 'bg-paper'
 
-  const handleClass = isEditorial
-    ? 'border-black bg-white'
-    : 'border-paper bg-pine'
-
   return (
     <div
       ref={containerRef}
@@ -156,12 +152,17 @@ export function BeforeAfterSlider({
         }}
       >
         {/* SLIDER HANDLE */}
-        <div
-          className={cn(
-            'pointer-events-none absolute left-1/2 top-1/2 h-14 w-2 -translate-x-1/2 -translate-y-1/2 border-x-2',
-            handleClass,
-          )}
-        />
+<div
+  className={cn(
+    'pointer-events-none absolute left-1/2 top-1/2 flex h-16 w-8 -translate-x-1/2 -translate-y-1/2 items-center justify-center',
+    isEditorial ? 'bg-black' : 'bg-pine',
+  )}
+>
+  <span className="flex items-center gap-0 text-[14px] font-light leading-none text-white">
+    <span>‹</span>
+    <span>›</span>
+  </span>
+</div>
 
         {/* INVISIBLE DRAG CONTROL */}
         <input
