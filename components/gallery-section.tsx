@@ -96,7 +96,7 @@ export function GallerySection() {
                       afterLabel={t.hero.afterLabel}
                       dragHint={t.hero.dragHint}
                       fit="contain"
-                      chrome={false}
+                      chrome
                       showLabels={false}
                       showDragHint={false}
                       accent="brass"

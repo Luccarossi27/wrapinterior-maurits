@@ -54,12 +54,20 @@ export function BeforeAfterSlider({
   const imageFitClass =
     fit === 'contain' ? 'object-contain' : 'object-cover'
 
+  const lineColor =
+    accent === 'brass' ? 'bg-brass' : 'bg-paper'
+
+  const handleColor =
+    accent === 'brass'
+      ? 'border-brass bg-brass'
+      : 'border-paper bg-paper'
+
   return (
     <div
       ref={containerRef}
       className={cn(
-        'relative w-full touch-none select-none overflow-hidden bg-transparent',
-        chrome && 'rounded-3xl border border-border shadow-xl',
+        'group/slider relative w-full touch-none select-none overflow-hidden bg-transparent',
+        chrome && 'border border-border',
         aspectRatio,
         className,
       )}
@@ -76,10 +84,14 @@ export function BeforeAfterSlider({
       onPointerUp={() => {
         dragging.current = false
       }}
+      onPointerCancel={() => {
+        dragging.current = false
+      }}
       onPointerLeave={() => {
         dragging.current = false
       }}
     >
+      {/* AFTER IMAGE */}
       <Image
         src={afterSrc || '/placeholder.svg'}
         alt={afterAlt}
@@ -90,12 +102,14 @@ export function BeforeAfterSlider({
         draggable={false}
       />
 
+      {/* AFTER LABEL */}
       {showLabels && (
-        <span className="absolute right-3 top-3 rounded-full bg-pine/90 px-3 py-1 text-xs font-semibold text-paper backdrop-blur">
+        <span className="pointer-events-none absolute right-3 top-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-paper drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]">
           {afterLabel}
         </span>
       )}
 
+      {/* BEFORE IMAGE */}
       <div
         className="absolute inset-0"
         style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}
@@ -110,23 +124,34 @@ export function BeforeAfterSlider({
           draggable={false}
         />
 
+        {/* BEFORE LABEL */}
         {showLabels && (
-          <span className="absolute left-3 top-3 rounded-full bg-ink/80 px-3 py-1 text-xs font-semibold text-paper backdrop-blur">
+          <span className="pointer-events-none absolute left-3 top-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-paper drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]">
             {beforeLabel}
           </span>
         )}
       </div>
 
+      {/* EDITORIAL DIVIDER */}
       <div
         className={cn(
-          'absolute inset-y-0 z-10 flex w-0.5 items-center justify-center',
-          accent === 'brass' ? 'bg-brass' : 'bg-paper',
+          'absolute inset-y-0 z-10 w-px',
+          lineColor,
         )}
         style={{
           left: `${pos}%`,
           transform: 'translateX(-50%)',
         }}
       >
+        {/* MINIMAL ARCHITECTURAL HANDLE */}
+        <div
+          className={cn(
+            'pointer-events-none absolute left-1/2 top-1/2 h-12 w-1 -translate-x-1/2 -translate-y-1/2 border-x',
+            handleColor,
+          )}
+        />
+
+        {/* INVISIBLE DRAG CONTROL */}
         <input
           type="range"
           min={0}
@@ -134,34 +159,21 @@ export function BeforeAfterSlider({
           value={Math.round(pos)}
           onChange={(e) => setPos(Number(e.target.value))}
           aria-label={dragHint}
-          className="absolute h-full w-[100vw] cursor-ew-resize opacity-0"
+          className="absolute left-1/2 top-1/2 h-[120%] w-[80px] -translate-x-1/2 -translate-y-1/2 cursor-ew-resize opacity-0"
         />
-
-        <span
-          className={cn(
-            'pointer-events-none flex size-11 items-center justify-center rounded-full border-2 border-paper shadow-lg',
-            accent === 'brass' ? 'bg-brass text-ink' : 'bg-pine text-paper',
-          )}
-        >
-          <svg
-            viewBox="0 0 24 24"
-            className="size-5"
-            fill="none"
-            aria-hidden="true"
-          >
-            <path
-              d="m9 7-5 5 5 5M15 7l5 5-5 5"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </span>
       </div>
 
+      {/* SUBTLE HOVER INDICATOR */}
+      <div
+        className={cn(
+          'pointer-events-none absolute bottom-0 left-0 right-0 z-20 h-px origin-left scale-x-0 transition-transform duration-500 group-hover/slider:scale-x-100',
+          lineColor,
+        )}
+      />
+
+      {/* DRAG HINT */}
       {showDragHint && (
-        <span className="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 rounded-full bg-background/80 px-3 py-1 text-[11px] font-medium text-muted-foreground backdrop-blur">
+        <span className="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 text-[9px] font-medium uppercase tracking-[0.2em] text-paper opacity-80 drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]">
           {dragHint}
         </span>
       )}
