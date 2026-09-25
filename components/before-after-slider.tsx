@@ -54,18 +54,14 @@ export function BeforeAfterSlider({
   const imageFitClass =
     fit === 'contain' ? 'object-contain' : 'object-cover'
 
-  /*
-   * Portfolio/editorial treatment:
-   * accent="brass" now uses a monochrome black/white treatment.
-   *
-   * The existing pine treatment remains available for the Home page.
-   */
   const isEditorial = accent === 'brass'
 
-  const lineClass = isEditorial ? 'bg-black/80' : 'bg-paper'
+  const dividerClass = isEditorial
+    ? 'bg-black'
+    : 'bg-paper'
 
   const handleClass = isEditorial
-    ? 'border-black/80 bg-paper'
+    ? 'border-black bg-white'
     : 'border-paper bg-pine'
 
   return (
@@ -112,9 +108,9 @@ export function BeforeAfterSlider({
       {showLabels && (
         <span
           className={cn(
-            'pointer-events-none absolute right-3 top-3 text-[10px] font-semibold uppercase tracking-[0.2em]',
+            'pointer-events-none absolute right-4 top-4 z-20 text-[10px] font-bold uppercase tracking-[0.22em]',
             isEditorial
-              ? 'text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.55)]'
+              ? 'text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.65)]'
               : 'text-paper drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]',
           )}
         >
@@ -141,9 +137,9 @@ export function BeforeAfterSlider({
         {showLabels && (
           <span
             className={cn(
-              'pointer-events-none absolute left-3 top-3 text-[10px] font-semibold uppercase tracking-[0.2em]',
+              'pointer-events-none absolute left-4 top-4 z-20 text-[10px] font-bold uppercase tracking-[0.22em]',
               isEditorial
-                ? 'text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.55)]'
+                ? 'text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.65)]'
                 : 'text-paper drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]',
             )}
           >
@@ -152,21 +148,21 @@ export function BeforeAfterSlider({
         )}
       </div>
 
-      {/* EDITORIAL DIVIDER */}
+      {/* MAIN DIVIDER */}
       <div
         className={cn(
-          'absolute inset-y-0 z-10 w-px',
-          lineClass,
+          'absolute inset-y-0 z-30 w-[2px]',
+          dividerClass,
         )}
         style={{
           left: `${pos}%`,
           transform: 'translateX(-50%)',
         }}
       >
-        {/* MINIMAL RECTANGULAR HANDLE */}
+        {/* SLIDER HANDLE */}
         <div
           className={cn(
-            'pointer-events-none absolute left-1/2 top-1/2 h-12 w-1 -translate-x-1/2 -translate-y-1/2 border-x',
+            'pointer-events-none absolute left-1/2 top-1/2 h-14 w-2 -translate-x-1/2 -translate-y-1/2 border-x-2',
             handleClass,
           )}
         />
@@ -179,15 +175,15 @@ export function BeforeAfterSlider({
           value={Math.round(pos)}
           onChange={(e) => setPos(Number(e.target.value))}
           aria-label={dragHint}
-          className="absolute left-1/2 top-1/2 h-[120%] w-[80px] -translate-x-1/2 -translate-y-1/2 cursor-ew-resize opacity-0"
+          className="absolute left-1/2 top-1/2 h-[120%] w-[90px] -translate-x-1/2 -translate-y-1/2 cursor-ew-resize opacity-0"
         />
       </div>
 
-      {/* SUBTLE EDITORIAL BOTTOM LINE */}
+      {/* BOTTOM HOVER LINE */}
       <div
         className={cn(
           'pointer-events-none absolute bottom-0 left-0 right-0 z-20 h-px origin-left scale-x-0 transition-transform duration-500 group-hover/slider:scale-x-100',
-          lineClass,
+          dividerClass,
         )}
       />
 
@@ -195,10 +191,10 @@ export function BeforeAfterSlider({
       {showDragHint && (
         <span
           className={cn(
-            'pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 text-[9px] font-medium uppercase tracking-[0.2em]',
+            'pointer-events-none absolute bottom-3 left-1/2 z-20 -translate-x-1/2 text-[9px] font-semibold uppercase tracking-[0.2em]',
             isEditorial
-              ? 'text-white opacity-80 drop-shadow-[0_1px_3px_rgba(0,0,0,0.55)]'
-              : 'text-paper opacity-80 drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]',
+              ? 'text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.65)]'
+              : 'text-paper drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]',
           )}
         >
           {dragHint}
