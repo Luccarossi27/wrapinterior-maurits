@@ -8,17 +8,17 @@ const galleryMedia = [
   {
     before: '/images/ben-before.jpeg',
     after: '/images/ben-after.jpeg',
-    aspectRatio: 'aspect-[4/3]',
+    aspectRatio: 'aspect-[5/4]',
   },
   {
     before: '/images/bernard-before.jpg',
     after: '/images/bernard-after.jpg',
-    aspectRatio: 'aspect-[3/4]',
+    aspectRatio: 'aspect-[5/4]',
   },
   {
     before: '/images/chantal-before.JPEG',
     after: '/images/chantal-after.jpg',
-    aspectRatio: 'aspect-[16/10]',
+    aspectRatio: 'aspect-[4/5]',
   },
   {
     before: '/images/griffioen-d1-before.JPEG',
@@ -28,22 +28,22 @@ const galleryMedia = [
   {
     before: '/images/griffioen-d3-before.jpg',
     after: '/images/griffioen-d3-after.jpg',
-    aspectRatio: 'aspect-[4/3]',
+    aspectRatio: 'aspect-[4/5]',
   },
   {
     before: '/images/griffioen-k-before.jpeg',
     after: '/images/griffioen-k-after.jpeg',
-    aspectRatio: 'aspect-[4/3]',
+    aspectRatio: 'aspect-[4/5]',
   },
   {
     before: '/images/hans-before.jpg',
     after: '/images/hans-after.jpg',
-    aspectRatio: 'aspect-[16/10]',
+    aspectRatio: 'aspect-[5/4]',
   },
   {
     before: '/images/minja-before.jpg',
     after: '/images/minja-after.JPEG',
-    aspectRatio: 'aspect-[3/4]',
+    aspectRatio: 'aspect-[4/5]',
   },
 ]
 
