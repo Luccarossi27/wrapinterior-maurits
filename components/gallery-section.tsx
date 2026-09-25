@@ -86,7 +86,7 @@ export function GallerySection() {
             return (
               <Reveal key={item.title} delay={(i % 2) * 0.06}>
                 <article className="group">
-                  <div className="relative overflow-hidden">
+                  <div className="relative mx-auto w-[75%] overflow-hidden">
                     <BeforeAfterSlider
                       beforeSrc={media.before}
                       afterSrc={media.after}
