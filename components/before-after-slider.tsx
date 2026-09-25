@@ -56,18 +56,16 @@ export function BeforeAfterSlider({
 
   const isEditorial = accent === 'brass'
 
-  const dividerClass = isEditorial
-  ? 'bg-pine'
-  : 'bg-paper'
+  const dividerClass = 'bg-pine'
 
   return (
     <div
       ref={containerRef}
       className={cn(
-  'group/slider relative w-full touch-none select-none overflow-hidden bg-transparent',
-  aspectRatio,
-  className,
-)}
+        'group/slider relative w-full touch-none select-none overflow-hidden bg-transparent',
+        aspectRatio,
+        className,
+      )}
       onPointerDown={(e) => {
         dragging.current = true
         ;(e.target as Element).setPointerCapture?.(e.pointerId)
@@ -89,32 +87,32 @@ export function BeforeAfterSlider({
       }}
     >
       {/* AFTER IMAGE */}
-<Image
-  src={afterSrc || '/placeholder.svg'}
-  alt={afterAlt}
-  fill
-  priority={priority}
-  sizes="(max-width: 1024px) 100vw, 520px"
-  className={imageFitClass}
-  draggable={false}
-/>
+      <Image
+        src={afterSrc || '/placeholder.svg'}
+        alt={afterAlt}
+        fill
+        priority={priority}
+        sizes="(max-width: 1024px) 100vw, 520px"
+        className={imageFitClass}
+        draggable={false}
+      />
 
-{/* AFTER LABEL */}
-{showLabels && (
-  <div
-    className="pointer-events-none absolute inset-0 z-20"
-    style={{ clipPath: `inset(0 0 0 ${pos}%)` }}
-  >
-    <span
-      className={cn(
-        'absolute right-4 top-4 font-heading text-[10px] font-medium uppercase tracking-[0.18em]',
-        isEditorial ? 'text-white' : 'text-paper',
+      {/* AFTER LABEL */}
+      {showLabels && (
+        <div
+          className="pointer-events-none absolute inset-0 z-20"
+          style={{ clipPath: `inset(0 0 0 ${pos}%)` }}
+        >
+          <span
+            className={cn(
+              'absolute right-4 top-4 font-serif text-[10px] font-medium uppercase tracking-[0.18em]',
+              isEditorial ? 'text-white' : 'text-paper',
+            )}
+          >
+            {afterLabel}
+          </span>
+        </div>
       )}
-    >
-      {afterLabel}
-    </span>
-  </div>
-)}
 
       {/* BEFORE IMAGE */}
       <div
@@ -135,7 +133,7 @@ export function BeforeAfterSlider({
         {showLabels && (
           <span
             className={cn(
-              'pointer-events-none absolute left-4 top-4 z-20 font-sans text-[10px] font-semibold uppercase tracking-[0.22em]',
+              'pointer-events-none absolute left-4 top-4 z-20 font-serif text-[10px] font-semibold uppercase tracking-[0.22em]',
               isEditorial ? 'text-white' : 'text-paper',
             )}
           >
@@ -156,19 +154,15 @@ export function BeforeAfterSlider({
         }}
       >
         {/* SLIDER HANDLE */}
-<div
-  className={cn(
-    'pointer-events-none absolute left-1/2 top-1/2 z-30 flex h-10 w-5 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2px]','bg-pine',
-  )}
->
-  <span className="flex items-center gap-1">
-    {/* LEFT TRIANGLE */}
-<span className="h-0 w-0 border-b-[3px] border-r-[5px] border-t-[3px] border-b-transparent border-t-transparent border-r-white" />
+        <div className="pointer-events-none absolute left-1/2 top-1/2 z-30 flex h-10 w-5 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2px] bg-pine">
+          <span className="flex items-center gap-1">
+            {/* LEFT TRIANGLE */}
+            <span className="h-0 w-0 border-b-[3px] border-r-[5px] border-t-[3px] border-b-transparent border-t-transparent border-r-white" />
 
-{/* RIGHT TRIANGLE */}
-<span className="h-0 w-0 border-b-[3px] border-l-[5px] border-t-[3px] border-b-transparent border-t-transparent border-l-white" />
-  </span>
-</div>
+            {/* RIGHT TRIANGLE */}
+            <span className="h-0 w-0 border-b-[3px] border-l-[5px] border-t-[3px] border-b-transparent border-t-transparent border-l-white" />
+          </span>
+        </div>
 
         {/* INVISIBLE DRAG CONTROL */}
         <input
@@ -183,16 +177,16 @@ export function BeforeAfterSlider({
       </div>
 
       {/* DRAG HINT */}
-{showDragHint && (
-  <span
-    className={cn(
-      'pointer-events-none absolute bottom-4 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap font-sans text-[9px] font-medium uppercase tracking-[0.18em]'
-      isEditorial ? 'text-white' : 'text-paper',
-    )}
-  >
-    {dragHint}
-  </span>
-)}
+      {showDragHint && (
+        <span
+          className={cn(
+            'pointer-events-none absolute bottom-4 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap font-serif text-[9px] font-medium uppercase tracking-[0.18em]',
+            isEditorial ? 'text-white' : 'text-paper',
+          )}
+        >
+          {dragHint}
+        </span>
+      )}
     </div>
   )
 }
