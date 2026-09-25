@@ -90,27 +90,32 @@ export function BeforeAfterSlider({
       }}
     >
       {/* AFTER IMAGE */}
-      <Image
-        src={afterSrc || '/placeholder.svg'}
-        alt={afterAlt}
-        fill
-        priority={priority}
-        sizes="(max-width: 1024px) 100vw, 520px"
-        className={imageFitClass}
-        draggable={false}
-      />
+<Image
+  src={afterSrc || '/placeholder.svg'}
+  alt={afterAlt}
+  fill
+  priority={priority}
+  sizes="(max-width: 1024px) 100vw, 520px"
+  className={imageFitClass}
+  draggable={false}
+/>
 
-      {/* AFTER LABEL */}
-      {showLabels && (
-        <span
-          className={cn(
-            'pointer-events-none absolute right-4 top-4 z-20 text-[10px] font-bold uppercase tracking-[0.22em]',
-            isEditorial ? 'text-white' : 'text-paper',
-          )}
-        >
-          {afterLabel}
-        </span>
+{/* AFTER LABEL */}
+{showLabels && (
+  <div
+    className="pointer-events-none absolute inset-0 z-20"
+    style={{ clipPath: `inset(0 0 0 ${pos}%)` }}
+  >
+    <span
+      className={cn(
+        'absolute right-4 top-4 text-[10px] font-bold uppercase tracking-[0.22em]',
+        isEditorial ? 'text-white' : 'text-paper',
       )}
+    >
+      {afterLabel}
+    </span>
+  </div>
+)}
 
       {/* BEFORE IMAGE */}
       <div
