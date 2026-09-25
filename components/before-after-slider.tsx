@@ -105,17 +105,16 @@ export function BeforeAfterSlider({
       />
 
       {/* AFTER LABEL */}
-<div
-{showLabels && (
-  <span
-    className={cn(
-      'pointer-events-none absolute right-4 top-4 z-20 text-[10px] font-bold uppercase tracking-[0.22em]',
-      isEditorial ? 'text-white' : 'text-paper',
-    )}
-  >
-    {afterLabel}
-  </span>
-)}
+      {showLabels && (
+        <span
+          className={cn(
+            'pointer-events-none absolute right-4 top-4 z-20 text-[10px] font-bold uppercase tracking-[0.22em]',
+            isEditorial ? 'text-white' : 'text-paper',
+          )}
+        >
+          {afterLabel}
+        </span>
+      )}
 
       {/* BEFORE IMAGE */}
       <div
@@ -133,17 +132,17 @@ export function BeforeAfterSlider({
         />
 
         {/* BEFORE LABEL */}
-<div
-{showLabels && (
-  <span
-    className={cn(
-      'pointer-events-none absolute left-4 top-4 z-20 text-[10px] font-bold uppercase tracking-[0.22em]',
-      isEditorial ? 'text-white' : 'text-paper',
-    )}
-  >
-    {beforeLabel}
-  </span>
-)}
+        {showLabels && (
+          <span
+            className={cn(
+              'pointer-events-none absolute left-4 top-4 z-20 text-[10px] font-bold uppercase tracking-[0.22em]',
+              isEditorial ? 'text-white' : 'text-paper',
+            )}
+          >
+            {beforeLabel}
+          </span>
+        )}
+      </div>
 
       {/* MAIN DIVIDER */}
       <div
