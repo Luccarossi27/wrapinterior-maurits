@@ -57,15 +57,15 @@ export function BeforeAfterSlider({
   const isEditorial = accent === 'brass'
 
   const dividerClass = isEditorial
-    ? 'bg-black'
-    : 'bg-paper'
+  ? 'bg-[#1C1C1C]'
+  : 'bg-paper'
 
   return (
     <div
       ref={containerRef}
       className={cn(
         'group/slider relative w-full touch-none select-none overflow-hidden bg-transparent',
-        chrome && 'border border-black/20',
+        chrome && 'border border-[#1C1C1C]',
         aspectRatio,
         className,
       )}
