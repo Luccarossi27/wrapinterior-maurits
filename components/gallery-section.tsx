@@ -89,7 +89,7 @@ export function GallerySection() {
                   <div
   className={cn(
     'relative mx-auto overflow-hidden',
-    media.aspectRatio === 'aspect-[4/5]' ? 'w-[50%]' : 'w-[70%]'
+    media.aspectRatio === 'aspect-[4/5]' ? 'w-[55%]' : 'w-[75%]'
   )}
 >
                     <BeforeAfterSlider
