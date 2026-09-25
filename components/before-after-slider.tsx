@@ -154,13 +154,13 @@ export function BeforeAfterSlider({
         {/* SLIDER HANDLE */}
 <div
   className={cn(
-    'pointer-events-none absolute left-1/2 top-1/2 flex h-16 w-8 -translate-x-1/2 -translate-y-1/2 items-center justify-center',
+    'pointer-events-none absolute left-1/2 top-1/2 flex h-12 w-6 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2px]',
     isEditorial ? 'bg-black' : 'bg-pine',
   )}
 >
-  <span className="flex items-center gap-0 text-[14px] font-light leading-none text-white">
-    <span>‹</span>
-    <span>›</span>
+  <span className="flex items-center gap-0.5 text-[13px] font-light leading-none text-white">
+    <span className="-translate-y-px">‹</span>
+    <span className="-translate-y-px">›</span>
   </span>
 </div>
 
@@ -177,18 +177,16 @@ export function BeforeAfterSlider({
       </div>
 
       {/* DRAG HINT */}
-      {showDragHint && (
-        <span
-          className={cn(
-            'pointer-events-none absolute bottom-3 left-1/2 z-20 -translate-x-1/2 text-[9px] font-semibold uppercase tracking-[0.2em]',
-            isEditorial
-              ? 'text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.65)]'
-              : 'text-paper drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]',
-          )}
-        >
-          {dragHint}
-        </span>
-      )}
+{showDragHint && (
+  <span
+    className={cn(
+      'pointer-events-none absolute bottom-4 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap text-[9px] font-medium uppercase tracking-[0.18em]',
+      isEditorial ? 'text-white' : 'text-paper',
+    )}
+  >
+    {dragHint}
+  </span>
+)}
     </div>
   )
 }
