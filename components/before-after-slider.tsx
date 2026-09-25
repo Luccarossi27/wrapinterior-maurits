@@ -163,10 +163,10 @@ export function BeforeAfterSlider({
 >
   <span className="flex items-center gap-1">
     {/* LEFT TRIANGLE */}
-    <span className="h-0 w-0 border-b-[4px] border-r-[6px] border-t-[4px] border-b-transparent border-t-transparent border-r-white" />
+<span className="h-0 w-0 border-b-[3px] border-r-[5px] border-t-[3px] border-b-transparent border-t-transparent border-r-white" />
 
-    {/* RIGHT TRIANGLE */}
-    <span className="h-0 w-0 border-b-[4px] border-l-[6px] border-t-[4px] border-b-transparent border-t-transparent border-l-white" />
+{/* RIGHT TRIANGLE */}
+<span className="h-0 w-0 border-b-[3px] border-l-[5px] border-t-[3px] border-b-transparent border-t-transparent border-l-white" />
   </span>
 </div>
 
