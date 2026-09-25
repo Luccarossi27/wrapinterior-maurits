@@ -133,7 +133,7 @@ export function BeforeAfterSlider({
         {showLabels && (
           <span
             className={cn(
-              'pointer-events-none absolute left-4 top-4 z-20 font-serif text-[10px] font-semibold uppercase tracking-[0.26em]',
+              'pointer-events-none absolute left-4 top-4 z-20 font-serif text-[10px] font-semibold uppercase tracking-[0.24em]',
               isEditorial ? 'text-white' : 'text-paper',
             )}
           >
