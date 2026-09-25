@@ -159,13 +159,16 @@ export function BeforeAfterSlider({
         {/* SLIDER HANDLE */}
 <div
   className={cn(
-    'pointer-events-none absolute left-1/2 top-1/2 flex h-12 w-6 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2px]',
+    'pointer-events-none absolute left-1/2 top-1/2 flex h-10 w-5 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2px]',
     isEditorial ? 'bg-black' : 'bg-pine',
   )}
 >
-  <span className="flex items-center gap-0.5 text-[13px] font-light leading-none text-white">
-    <span className="-translate-y-px">‹</span>
-    <span className="-translate-y-px">›</span>
+  <span className="relative flex h-4 w-3 items-center justify-center">
+    {/* LEFT CHEVRON */}
+    <span className="absolute left-0 h-2 w-2 rotate-45 border-b border-l border-white" />
+
+    {/* RIGHT CHEVRON */}
+    <span className="absolute right-0 h-2 w-2 -rotate-[135deg] border-b border-l border-white" />
   </span>
 </div>
 
