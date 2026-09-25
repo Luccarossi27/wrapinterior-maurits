@@ -64,11 +64,10 @@ export function BeforeAfterSlider({
     <div
       ref={containerRef}
       className={cn(
-        'group/slider relative w-full touch-none select-none overflow-hidden bg-transparent',
-        chrome && 'border border-[#1C1C1C]',
-        aspectRatio,
-        className,
-      )}
+  'group/slider relative w-full touch-none select-none overflow-hidden bg-transparent',
+  aspectRatio,
+  className,
+)}
       onPointerDown={(e) => {
         dragging.current = true
         ;(e.target as Element).setPointerCapture?.(e.pointerId)
