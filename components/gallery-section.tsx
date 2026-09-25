@@ -97,7 +97,7 @@ export function GallerySection() {
                       dragHint={t.hero.dragHint}
                       fit="contain"
                       chrome
-                      showLabels={false}
+                      showLabels
                       showDragHint={false}
                       accent="brass"
                       aspectRatio={media.aspectRatio}
