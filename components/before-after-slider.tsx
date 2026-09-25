@@ -159,7 +159,7 @@ export function BeforeAfterSlider({
         {/* SLIDER HANDLE */}
 <div
   className={cn(
-    'pointer-events-none absolute left-1/2 top-1/2 flex h-10 w-5 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2px]',
+    'pointer-events-none absolute left-1/2 top-1/2 z-30 flex h-10 w-5 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2px]',
     isEditorial ? 'bg-black' : 'bg-pine',
   )}
 >
@@ -171,6 +171,18 @@ export function BeforeAfterSlider({
     <span className="absolute right-0 h-2 w-2 -rotate-[135deg] border-b border-l border-white" />
   </span>
 </div>
+
+{/* DRAG TO COMPARE */}
+{showDragHint && (
+  <span
+    className={cn(
+      'pointer-events-none absolute bottom-4 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap text-[9px] font-medium uppercase tracking-[0.18em]',
+      isEditorial ? 'text-white' : 'text-paper',
+    )}
+  >
+    {dragHint}
+  </span>
+)}
 
         {/* INVISIBLE DRAG CONTROL */}
         <input
