@@ -160,7 +160,7 @@ export function BeforeAfterSlider({
 <div
   className={cn(
     'pointer-events-none absolute left-1/2 top-1/2 z-30 flex h-10 w-5 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2px]',
-    isEditorial ? 'bg-black' : 'bg-pine',
+    isEditorial ? 'bg-[#1C1C1C]' : 'bg-pine',
   )}
 >
   <span className="flex items-center gap-1">
