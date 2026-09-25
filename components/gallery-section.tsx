@@ -106,7 +106,7 @@ export function GallerySection() {
                   </div>
 
                   <div className="mt-5 flex items-baseline justify-between gap-6 border-t border-border pt-4">
-                    <h2 className="font-serif text-xl font-semibold uppercase tracking-tight transition-colors group-hover:text-brass">
+                    <h2 className="font-serif text-xl font-semibold uppercase tracking-tight">
                       {item.title}
                     </h2>
 
