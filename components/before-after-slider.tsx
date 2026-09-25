@@ -163,23 +163,14 @@ export function BeforeAfterSlider({
     isEditorial ? 'bg-black' : 'bg-pine',
   )}
 >
-  <span className="flex items-center text-[11px] font-light leading-none text-white">
-    <span>←</span>
-    <span>→</span>
+  <span className="flex items-center gap-1">
+    {/* LEFT TRIANGLE */}
+    <span className="h-0 w-0 border-b-[4px] border-r-[6px] border-t-[4px] border-b-transparent border-t-transparent border-r-white" />
+
+    {/* RIGHT TRIANGLE */}
+    <span className="h-0 w-0 border-b-[4px] border-l-[6px] border-t-[4px] border-b-transparent border-t-transparent border-l-white" />
   </span>
 </div>
-
-{/* DRAG TO COMPARE */}
-{showDragHint && (
-  <span
-    className={cn(
-      'pointer-events-none absolute bottom-4 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap text-[9px] font-medium uppercase tracking-[0.18em]',
-      isEditorial ? 'text-white' : 'text-paper',
-    )}
-  >
-    {dragHint}
-  </span>
-)}
 
         {/* INVISIBLE DRAG CONTROL */}
         <input
