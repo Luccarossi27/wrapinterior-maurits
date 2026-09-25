@@ -54,20 +54,26 @@ export function BeforeAfterSlider({
   const imageFitClass =
     fit === 'contain' ? 'object-contain' : 'object-cover'
 
-  const lineColor =
-    accent === 'brass' ? 'bg-brass' : 'bg-paper'
+  /*
+   * Portfolio/editorial treatment:
+   * accent="brass" now uses a monochrome black/white treatment.
+   *
+   * The existing pine treatment remains available for the Home page.
+   */
+  const isEditorial = accent === 'brass'
 
-  const handleColor =
-    accent === 'brass'
-      ? 'border-brass bg-brass'
-      : 'border-paper bg-paper'
+  const lineClass = isEditorial ? 'bg-black/80' : 'bg-paper'
+
+  const handleClass = isEditorial
+    ? 'border-black/80 bg-paper'
+    : 'border-paper bg-pine'
 
   return (
     <div
       ref={containerRef}
       className={cn(
         'group/slider relative w-full touch-none select-none overflow-hidden bg-transparent',
-        chrome && 'border border-border',
+        chrome && 'border border-black/20',
         aspectRatio,
         className,
       )}
@@ -104,7 +110,14 @@ export function BeforeAfterSlider({
 
       {/* AFTER LABEL */}
       {showLabels && (
-        <span className="pointer-events-none absolute right-3 top-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-paper drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]">
+        <span
+          className={cn(
+            'pointer-events-none absolute right-3 top-3 text-[10px] font-semibold uppercase tracking-[0.2em]',
+            isEditorial
+              ? 'text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.55)]'
+              : 'text-paper drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]',
+          )}
+        >
           {afterLabel}
         </span>
       )}
@@ -126,7 +139,14 @@ export function BeforeAfterSlider({
 
         {/* BEFORE LABEL */}
         {showLabels && (
-          <span className="pointer-events-none absolute left-3 top-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-paper drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]">
+          <span
+            className={cn(
+              'pointer-events-none absolute left-3 top-3 text-[10px] font-semibold uppercase tracking-[0.2em]',
+              isEditorial
+                ? 'text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.55)]'
+                : 'text-paper drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]',
+            )}
+          >
             {beforeLabel}
           </span>
         )}
@@ -136,18 +156,18 @@ export function BeforeAfterSlider({
       <div
         className={cn(
           'absolute inset-y-0 z-10 w-px',
-          lineColor,
+          lineClass,
         )}
         style={{
           left: `${pos}%`,
           transform: 'translateX(-50%)',
         }}
       >
-        {/* MINIMAL ARCHITECTURAL HANDLE */}
+        {/* MINIMAL RECTANGULAR HANDLE */}
         <div
           className={cn(
             'pointer-events-none absolute left-1/2 top-1/2 h-12 w-1 -translate-x-1/2 -translate-y-1/2 border-x',
-            handleColor,
+            handleClass,
           )}
         />
 
@@ -163,17 +183,24 @@ export function BeforeAfterSlider({
         />
       </div>
 
-      {/* SUBTLE HOVER INDICATOR */}
+      {/* SUBTLE EDITORIAL BOTTOM LINE */}
       <div
         className={cn(
           'pointer-events-none absolute bottom-0 left-0 right-0 z-20 h-px origin-left scale-x-0 transition-transform duration-500 group-hover/slider:scale-x-100',
-          lineColor,
+          lineClass,
         )}
       />
 
       {/* DRAG HINT */}
       {showDragHint && (
-        <span className="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 text-[9px] font-medium uppercase tracking-[0.2em] text-paper opacity-80 drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]">
+        <span
+          className={cn(
+            'pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 text-[9px] font-medium uppercase tracking-[0.2em]',
+            isEditorial
+              ? 'text-white opacity-80 drop-shadow-[0_1px_3px_rgba(0,0,0,0.55)]'
+              : 'text-paper opacity-80 drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]',
+          )}
+        >
           {dragHint}
         </span>
       )}
