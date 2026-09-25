@@ -57,7 +57,7 @@ export function BeforeAfterSlider({
   const isEditorial = accent === 'brass'
 
   const dividerClass = isEditorial
-  ? 'bg-[#1C1C1C]'
+  ? 'bg-pine'
   : 'bg-paper'
 
   return (
@@ -159,8 +159,7 @@ export function BeforeAfterSlider({
         {/* SLIDER HANDLE */}
 <div
   className={cn(
-    'pointer-events-none absolute left-1/2 top-1/2 z-30 flex h-10 w-5 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2px]',
-    isEditorial ? 'bg-[#1C1C1C]' : 'bg-pine',
+    'pointer-events-none absolute left-1/2 top-1/2 z-30 flex h-10 w-5 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2px]','bg-pine',
   )}
 >
   <span className="flex items-center gap-1">
