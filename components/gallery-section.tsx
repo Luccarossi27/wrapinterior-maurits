@@ -9,41 +9,49 @@ const galleryMedia = [
     before: '/images/ben-before.jpeg',
     after: '/images/ben-after.jpeg',
     aspectRatio: 'aspect-[5/4]',
+    colour: 'COLOUR TBC',
   },
   {
     before: '/images/bernard-before.jpg',
     after: '/images/bernard-after.jpg',
     aspectRatio: 'aspect-[5/4]',
+    colour: 'COLOUR TBC',
   },
   {
     before: '/images/chantal-before.JPEG',
     after: '/images/chantal-after.jpg',
     aspectRatio: 'aspect-[4/5]',
+    colour: 'COLOUR TBC',
   },
   {
     before: '/images/griffioen-d1-before.JPEG',
     after: '/images/griffioen-d1-after.jpg',
     aspectRatio: 'aspect-[4/5]',
+    colour: 'COLOUR TBC',
   },
   {
     before: '/images/griffioen-d3-before.jpg',
     after: '/images/griffioen-d3-after.jpg',
     aspectRatio: 'aspect-[4/5]',
+    colour: 'COLOUR TBC',
   },
   {
     before: '/images/griffioen-k-before.jpeg',
     after: '/images/griffioen-k-after.jpeg',
     aspectRatio: 'aspect-[4/5]',
+    colour: 'COLOUR TBC',
   },
   {
     before: '/images/hans-before.jpg',
     after: '/images/hans-after.jpg',
     aspectRatio: 'aspect-[5/4]',
+    colour: 'COLOUR TBC',
   },
   {
     before: '/images/minja-before.jpg',
     after: '/images/minja-after.JPEG',
     aspectRatio: 'aspect-[4/5]',
+    colour: 'COLOUR TBC',
   },
 ]
 
@@ -111,14 +119,13 @@ export function GallerySection() {
                   </div>
 
                   <div className="mt-5 flex items-baseline justify-between gap-6 border-t border-border pt-4">
-                    <h2 className="font-serif text-xl font-semibold uppercase tracking-tight">
-                      {item.title}
-                    </h2>
-
-                    <span className="shrink-0 text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground">
-                      {item.location}
-                    </span>
-                  </div>
+  <h2 className="font-serif text-xl font-semibold uppercase tracking-tight">
+    {media.colour}
+  </h2>
+  <span className="shrink-0 text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground">
+    {item.location}
+  </span>
+</div>
                 </article>
               </Reveal>
             )
