@@ -105,7 +105,6 @@ export function BeforeAfterSlider({
       />
 
       {/* AFTER LABEL */}
-<div
 {showLabels && (
   <span
     className={cn(
@@ -133,7 +132,6 @@ export function BeforeAfterSlider({
         />
 
         {/* BEFORE LABEL */}
-<div
 {showLabels && (
   <span
     className={cn(
