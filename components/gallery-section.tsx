@@ -17,7 +17,7 @@ const galleryMedia = [
     before: '/images/bernard-before.jpg',
     after: '/images/bernard-after.jpg',
     aspectRatio: 'aspect-[5/4]',
-    colour: 'COLOUR TBC',
+    colour: 'BLUES',
     code: 'CODE TBC',
   },
   {
