@@ -126,8 +126,6 @@ type Dict = {
   heading: string
   sub: string
   googleBadge: string
-  readMore: string
-  readLess: string
   showTranslation: string
   showOriginal: string
   readButton: string
@@ -360,8 +358,6 @@ materials: {
   heading: 'Wat klanten zeggen',
   sub: 'Lees wat onze klanten zeggen over hun ervaring met Maurits.',
   googleBadge: 'Bekijk ons op Google',
-  readMore: 'Lees meer',
-  readLess: 'Lees minder',
   showOriginal: 'Toon origineel',
   showTranslation: 'Toon vertaling',
   readButton: 'Bekijk onze Google reviews',
@@ -651,8 +647,6 @@ materials: {
   heading: 'What clients say',
   sub: 'See what our clients say about their experience with Maurits.',
   googleBadge: 'See us on Google',
-  readMore: 'Read more',
-  readLess: 'Read less',
   showOriginal: 'Show original',
   showTranslation: 'Show translation',
   readButton: 'Read our Google reviews',
@@ -950,8 +944,6 @@ materials: {
   heading: 'Lo que dicen nuestros clientes',
   sub: 'Descubre lo que nuestros clientes dicen sobre su experiencia con Maurits.',
   googleBadge: 'Ver en Google',
-  readMore: 'Leer más',
-  readLess: 'Leer menos',
   showOriginal: 'Ver original',
   showTranslation: 'Ver traducción',
   readButton: 'Leer nuestras reseñas en Google',
