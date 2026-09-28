@@ -418,6 +418,8 @@ googleReviews: 'Google Reviews',
     faq: {
   heading: 'Veelgestelde vragen',
   sub: 'Alles wat je wilt weten over interieurfolie, het resultaat en onze werkwijze.',
+  contactText: 'Heb je nog een andere vraag? Neem gerust contact met ons op.',
+  contactLink: 'Neem contact op',
   items: [
     {
       q: 'Hoe lang gaat interieurfolie mee?',
@@ -717,6 +719,8 @@ googleReviews: 'Google Reviews',
     faq: {
   heading: 'Frequently asked questions',
   sub: 'Everything you need to know about interior film, the finish and our process.',
+  contactText: 'Have another question? Feel free to get in touch.',
+  contactLink: 'Get in touch',
   items: [
     {
       q: 'How long does interior film last?',
@@ -1016,6 +1020,8 @@ googleReviews: 'Reseñas de Google',
     faq: {
   heading: 'Preguntas frecuentes',
   sub: 'Todo lo que necesitas saber sobre el film decorativo, el acabado y nuestro proceso.',
+  contactText: '¿Tienes alguna otra pregunta? No dudes en ponerte en contacto con nosotros.',
+  contactLink: 'Contacta con nosotros',
   items: [
     {
       q: '¿Cuánto dura el film decorativo?',
