@@ -77,7 +77,7 @@ export function ReviewsSection() {
       className="border-t border-border bg-paper text-ink"
     >
       {/* Header */}
-      <div className="mx-auto w-full max-w-6xl px-5 pt-8 pb-10 sm:px-8 sm:pt-12 sm:pb-14 lg:px-10">
+      <div className="mx-auto w-full max-w-6xl px-5 pt-8 pb-0 sm:px-8 sm:pt-12 sm:pb-0 lg:px-10">
         <Reveal>
           <div className="grid gap-5 border-b border-border pb-8 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
@@ -99,7 +99,7 @@ export function ReviewsSection() {
 
       {/* Reviews carousel — full width */}
       <Reveal delay={0.15}>
-        <div className="mt-8 overflow-hidden border-y border-[#A1A58D] bg-[#858B72]">
+        <div className="mt-0 overflow-hidden border-y border-[#A1A58D] bg-[#858B72]">
           <div
             className="overflow-hidden touch-pan-y"
             onTouchStart={handleTouchStart}
@@ -179,10 +179,10 @@ export function ReviewsSection() {
                                 <Star
                                   key={starIndex}
                                   className={
-                                    starIndex < review.rating
-                                      ? 'size-3 fill-brass text-brass'
-                                      : 'size-3 text-[#F4F1E8]/30'
-                                  }
+  starIndex < review.rating
+    ? 'size-3 fill-[#F4F1E8] text-[#F4F1E8]'
+    : 'size-3 text-[#F4F1E8]/30'
+}
                                   aria-hidden="true"
                                 />
                               ),
