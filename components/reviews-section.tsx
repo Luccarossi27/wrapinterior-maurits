@@ -128,7 +128,7 @@ export function ReviewsSection() {
                     key={`${review.name}-${index}`}
                     className="w-full shrink-0"
                   >
-                    <div className="relative flex min-h-[360px] items-center justify-center px-5 py-7 sm:min-h-[380px] sm:px-10 sm:py-9 lg:min-h-[400px] lg:px-20 lg:py-10">
+                    <div className="relative flex h-[360px] items-center justify-center px-5 py-7 sm:h-[380px] sm:px-10 sm:py-9 lg:h-[400px] lg:px-20 lg:py-10">
                       {/* Decorative quotation mark */}
                       <div
                         className="pointer-events-none absolute left-5 top-5 select-none font-serif text-6xl font-light leading-none text-[#F4F1E8]/15 sm:left-8 sm:text-7xl"
