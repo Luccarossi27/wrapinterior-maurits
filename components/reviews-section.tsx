@@ -12,28 +12,28 @@ export function ReviewsSection() {
   const { t } = useLanguage()
 
   const [activeIndex, setActiveIndex] = useState(0)
-  const [expandedReview, setExpandedReview] = useState(false)
+  const [expandedReviewIndex, setExpandedReviewIndex] = useState<number | null>(null)
   const [showOriginal, setShowOriginal] = useState(false)
 
   const reviews = t.reviews.items
 
   const goToPrevious = () => {
-    setExpandedReview(false)
-    setShowOriginal(false)
+  setExpandedReviewIndex(null)
+  setShowOriginal(false)
 
-    setActiveIndex((current) =>
-      current === 0 ? reviews.length - 1 : current - 1,
-    )
-  }
+  setActiveIndex((current) =>
+    current === 0 ? reviews.length - 1 : current - 1,
+  )
+}
 
-  const goToNext = () => {
-    setExpandedReview(false)
-    setShowOriginal(false)
+const goToNext = () => {
+  setExpandedReviewIndex(null)
+  setShowOriginal(false)
 
-    setActiveIndex((current) =>
-      current === reviews.length - 1 ? 0 : current + 1,
-    )
-  }
+  setActiveIndex((current) =>
+    current === reviews.length - 1 ? 0 : current + 1,
+  )
+}
 
   const touchStartX = useRef<number | null>(null)
   const touchEndX = useRef<number | null>(null)
@@ -134,22 +134,24 @@ export function ReviewsSection() {
   }}
 >
   {reviews.map((review, index) => {
-    const isOriginalView =
-      showOriginal || !review.translatedQuote
+    const isExpanded = expandedReviewIndex === index
 
-    const displayedQuote = isOriginalView
-      ? expandedReview && review.fullQuote
-        ? review.fullQuote
-        : review.quote
-      : expandedReview && review.fullTranslatedQuote
-        ? review.fullTranslatedQuote
-        : review.translatedQuote
+const isOriginalView =
+  showOriginal || !review.translatedQuote
 
-    const hasTranslation = !!review.translatedQuote
+const displayedQuote = isOriginalView
+  ? isExpanded && review.fullQuote
+    ? review.fullQuote
+    : review.quote
+  : isExpanded && review.fullTranslatedQuote
+    ? review.fullTranslatedQuote
+    : review.translatedQuote
 
-    const hasReadMore =
-      !!review.fullQuote ||
-      !!review.fullTranslatedQuote
+const hasTranslation = !!review.translatedQuote
+
+const hasReadMore =
+  !!review.fullQuote ||
+  !!review.fullTranslatedQuote
 
     return (
       <div
@@ -201,7 +203,7 @@ export function ReviewsSection() {
                         setShowOriginal(
                           (current) => !current,
                         )
-                        setExpandedReview(false)
+                        setExpandedReviewIndex(null)
                       }}
                       className="text-xs font-semibold uppercase tracking-[0.16em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
                     >
@@ -215,15 +217,15 @@ export function ReviewsSection() {
                     <button
                       type="button"
                       onClick={() => {
-                        setExpandedReview(
-                          (current) => !current,
-                        )
-                      }}
+  setExpandedReviewIndex(
+    isExpanded ? null : index,
+  )
+}}
                       className="text-xs font-semibold uppercase tracking-[0.16em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
                     >
-                      {expandedReview
-                        ? t.reviews.readLess
-                        : t.reviews.readMore}
+                      {isExpanded
+  ? t.reviews.readLess
+  : t.reviews.readMore}
                     </button>
                   )}
                 </div>
@@ -284,7 +286,7 @@ export function ReviewsSection() {
                       key={`${review.name}-progress`}
                       type="button"
                       onClick={() => {
-                        setExpandedReview(false)
+                        setExpandedReviewIndex(null)
                         setShowOriginal(false)
                         setActiveIndex(index)
                       }}
