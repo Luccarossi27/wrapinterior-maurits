@@ -180,19 +180,21 @@ const goToNext = () => {
 
   <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
     {review.translatedQuote && (
-      <button
-        type="button"
-        onClick={() => {
-          setShowTranslation((current) => !current)
-          setExpandedReview(false)
-        }}
-        className="text-xs font-semibold uppercase tracking-[0.16em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
-      >
-        {showTranslation
-          ? t.reviews.showOriginal
-          : t.reviews.showTranslation}
-      </button>
-    )}
+  <button
+    type="button"
+    onClick={() => {
+      setReviewLanguage((current) =>
+        current === 'original' ? 'site' : 'original',
+      )
+      setExpandedReview(false)
+    }}
+    className="text-xs font-semibold uppercase tracking-[0.16em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
+  >
+    {reviewLanguage === 'original'
+      ? t.reviews.showTranslation
+      : t.reviews.showOriginal}
+  </button>
+)}
 
     {review.fullQuote && (
       <button
