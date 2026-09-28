@@ -647,6 +647,7 @@ materials: {
   otherSub: 'Doors, wardrobes, furniture and other interior surfaces are available on a quote basis.',
   quoteMessage: 'Hi Maurits, I’d like to request a quote for a project.',
 },
+    reviews: {
     eyebrow: 'Testimonials',
 heading: 'WHAT CLIENTS SAY',
 sub: 'See what our clients say about their experience with Maurits.',
@@ -945,6 +946,7 @@ materials: {
   otherSub: 'Puertas, armarios, muebles y otras superficies interiores están disponibles bajo presupuesto.',
   quoteMessage: 'Hi Maurits, I’d like to request a quote for a project.',
 },
+    reviews: {
     eyebrow: 'Testimonios',
 heading: 'LO QUE DICEN NUESTROS CLIENTES',
 sub: 'Descubre lo que nuestros clientes dicen sobre su experiencia con Maurits.',
