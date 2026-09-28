@@ -12,13 +12,11 @@ export function ReviewsSection() {
   const { t } = useLanguage()
 
   const [activeIndex, setActiveIndex] = useState(0)
-  const [expandedReviewIndex, setExpandedReviewIndex] = useState<number | null>(null)
   const [showOriginal, setShowOriginal] = useState(false)
 
   const reviews = t.reviews.items
 
   const goToPrevious = () => {
-  setExpandedReviewIndex(null)
   setShowOriginal(false)
 
   setActiveIndex((current) =>
@@ -27,7 +25,6 @@ export function ReviewsSection() {
 }
 
 const goToNext = () => {
-  setExpandedReviewIndex(null)
   setShowOriginal(false)
 
   setActiveIndex((current) =>
@@ -134,24 +131,15 @@ const goToNext = () => {
   }}
 >
   {reviews.map((review, index) => {
-    const isExpanded = expandedReviewIndex === index
 
 const isOriginalView =
   showOriginal || !review.translatedQuote
 
 const displayedQuote = isOriginalView
-  ? isExpanded && review.fullQuote
-    ? review.fullQuote
-    : review.quote
-  : isExpanded && review.fullTranslatedQuote
-    ? review.fullTranslatedQuote
-    : review.translatedQuote
+  ? review.fullQuote || review.quote
+  : review.fullTranslatedQuote || review.translatedQuote
 
 const hasTranslation = !!review.translatedQuote
-
-const hasReadMore =
-  !!review.fullQuote ||
-  !!review.fullTranslatedQuote
 
     return (
       <div
@@ -194,8 +182,8 @@ const hasReadMore =
               </blockquote>
 
               {/* LANGUAGE + READ MORE CONTROLS */}
-              {(hasTranslation || hasReadMore) && (
-                <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
+              {hasTranslation && (
+  <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
                   {hasTranslation && (
                     <button
                       type="button"
@@ -213,21 +201,6 @@ const hasReadMore =
                     </button>
                   )}
 
-                  {hasReadMore && (
-                    <button
-                      type="button"
-                      onClick={() => {
-  setExpandedReviewIndex(
-    isExpanded ? null : index,
-  )
-}}
-                      className="text-xs font-semibold uppercase tracking-[0.16em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
-                    >
-                      {isExpanded
-  ? t.reviews.readLess
-  : t.reviews.readMore}
-                    </button>
-                  )}
                 </div>
               )}
             </div>
