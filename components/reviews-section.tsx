@@ -209,12 +209,6 @@ const goToNext = () => {
                     <p className="text-sm font-semibold uppercase tracking-[0.16em] text-ink">
                       {review.name}
                     </p>
-
-                    {review.translationNote && (
-                      <p className="mt-2 text-xs text-muted-foreground">
-                        {review.translationNote}
-                      </p>
-                    )}
                   </div>
                 </div>
               </div>
