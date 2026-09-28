@@ -6,9 +6,9 @@ import { Reveal } from '@/components/reveal'
 
 const stepImages = [
   '/images/process1.jpeg',
-  '/images/process2.jpeg',
-  '/images/process4.png',
+  '/images/process4.jpeg',
   '/images/process5.png',
+  '/images/process2.png',
 ]
 
 export function ProcessSection() {
