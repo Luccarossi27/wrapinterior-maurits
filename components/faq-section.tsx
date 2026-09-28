@@ -89,6 +89,26 @@ export function FaqSection() {
           )
         })}
       </div>
+
+      <Reveal delay={0.1}>
+        <div className="mt-10 text-center">
+          <p className="text-sm text-muted-foreground">
+            {t.faq.contactText}
+          </p>
+
+          <a
+            href="/contact"
+            className="group mt-3 inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.18em] text-pine transition-colors hover:text-brass"
+          >
+            {t.faq.contactLink}
+
+            <ArrowUpRight
+              className="size-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              aria-hidden="true"
+            />
+          </a>
+        </div>
+      </Reveal>
     </section>
   )
 }
