@@ -153,7 +153,7 @@ const handleTouchEnd = () => {
                     </div>
                   </div>
 
-                  <blockquote className="mt-6 max-w-4xl font-serif text-2xl font-medium leading-relaxed tracking-tight text-ink sm:text-3xl lg:text-4xl">
+                  <blockquote className="mt-6 max-w-3xl font-serif text-lg font-medium leading-relaxed tracking-tight text-ink sm:text-xl lg:text-2xl">
                     “{review.quote}”
                   </blockquote>
 
