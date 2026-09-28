@@ -11,6 +11,7 @@ const googleReviewsUrl =
 export function ReviewsSection() {
   const { t } = useLanguage()
   const [activeIndex, setActiveIndex] = useState(0)
+  const [expandedReview, setExpandedReview] = useState(false)
   const touchStartX = useRef<number | null>(null)
 const touchEndX = useRef<number | null>(null)
 
@@ -45,16 +46,20 @@ const handleTouchEnd = () => {
   const activeReview = reviews[activeIndex]
 
   const goToPrevious = () => {
-    setActiveIndex((current) =>
-      current === 0 ? reviews.length - 1 : current - 1,
-    )
-  }
+  setExpandedReview(false)
 
-  const goToNext = () => {
-    setActiveIndex((current) =>
-      current === reviews.length - 1 ? 0 : current + 1,
-    )
-  }
+  setActiveIndex((current) =>
+    current === 0 ? reviews.length - 1 : current - 1,
+  )
+}
+
+const goToNext = () => {
+  setExpandedReview(false)
+
+  setActiveIndex((current) =>
+    current === reviews.length - 1 ? 0 : current + 1,
+  )
+}
 
   return (
     <section id="reviews" className="border-t border-border bg-secondary/40">
@@ -210,7 +215,10 @@ const handleTouchEnd = () => {
         <button
           key={`${review.name}-progress-${index}`}
           type="button"
-          onClick={() => setActiveIndex(index)}
+          onClick={() => {
+  setExpandedReview(false)
+  setActiveIndex(index)
+}}
           aria-label={`${t.reviews.goToReview} ${index + 1}`}
           className="group relative h-1 flex-1 bg-border"
         >
