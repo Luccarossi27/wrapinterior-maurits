@@ -363,15 +363,17 @@ materials: {
 
   items: [
     {
-      quote:
-        'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido.',
-      fullQuote:
-        'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido. Desde ese momento hemos decidido que es nuestro punto de contacto para nuestras reformas y actualizaciones y ya van varias. Espero que en el futuro pueda mantener la dedicación que ahora mismo tiene.',
-      translatedQuote:
-        'Ik heb een zeer goede ervaring gehad met Maurits. We vroegen hem om lamellen- en rolgordijnen voor verschillende kamers te zoeken en te plaatsen en het resultaat was perfect. Daarna vroegen we hem ook om een rolluik voor een deur te zoeken en te installeren, en hij vond een model dat bovendien met een afstandsbediening werkt. We zijn erg tevreden over de kwaliteit van zijn werk, de prioriteit en snelheid waarmee hij zijn projecten uitvoert en natuurlijk de redelijke prijs. Sindsdien hebben we besloten dat hij ons aanspreekpunt is voor onze verbouwingen en updates, en dat zijn er inmiddels meerdere. Ik hoop dat hij deze toewijding in de toekomst kan behouden.',
-      name: 'Jose Lopez',
-      rating: 5,
-    },
+  quote:
+    'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido.',
+  fullQuote:
+    'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido. Desde ese momento hemos decidido que es nuestro punto de contacto para nuestras reformas y actualizaciones y ya van varias. Espero que en el futuro pueda mantener la dedicación que ahora mismo tiene.',
+  translatedQuote:
+    'Ik heb een zeer goede ervaring gehad met Maurits. We vroegen hem om lamellen- en rolgordijnen voor verschillende kamers te zoeken en te plaatsen en het resultaat was perfect. Daarna vroegen we hem ook om een rolluik voor een deur te zoeken en te installeren, en hij vond een model dat bovendien met een afstandsbediening werkt. We zijn erg tevreden over de kwaliteit van zijn werk, de prioriteit en snelheid waarmee hij zijn projecten uitvoert en natuurlijk de redelijke prijs. Sindsdien hebben we besloten dat hij ons aanspreekpunt is voor onze verbouwingen en updates, en dat zijn er inmiddels meerdere. Ik hoop dat hij deze toewijding in de toekomst kan behouden.',
+  fullTranslatedQuote:
+    'Ik heb een zeer goede ervaring gehad met Maurits. We vroegen hem om lamellen- en rolgordijnen voor verschillende kamers te zoeken en te plaatsen en het resultaat was perfect. Daarna vroegen we hem ook om een rolluik voor een deur te zoeken en te installeren, en hij vond een model dat bovendien met een afstandsbediening werkt. We zijn erg tevreden over de kwaliteit van zijn werk, de prioriteit en snelheid waarmee hij zijn projecten uitvoert en natuurlijk de redelijke prijs. Sindsdien hebben we besloten dat hij ons aanspreekpunt is voor onze verbouwingen en updates, en dat zijn er inmiddels meerdere. Ik hoop dat hij deze toewijding in de toekomst kan behouden.',
+  name: 'Jose Lopez',
+  rating: 5,
+}
     {
       quote:
         'Maurits is een echte vakman, werkt netjes en komt de afspraken na. Zet vaak net een stap extra om tot een mooi resultaat te komen, dankjewel Maurits.',
@@ -652,44 +654,46 @@ materials: {
 
   items: [
     {
-      quote:
-        'I am very happy with my experience with Maurits. We asked him to source and install slatted and roller blinds in several rooms, and the result was perfect. We are very happy with the quality of his work, the speed he puts into his projects and, of course, the reasonable price.',
-      fullQuote:
-        'I am very happy with my experience with Maurits. We asked him to source and install slatted and roller blinds in several rooms, and the result was perfect. As a result, we also asked him to source and install a blind for a door, and he found us a model that even has a remote control. We are very happy with the quality of his work, the priority and speed he gives to his projects, and of course the reasonable price. Since then, we have decided that he is our point of contact for our renovations and updates, and there have already been several. I hope he can maintain the dedication he currently shows in the future.',
-      translatedQuote:
-        'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido. Desde ese momento hemos decidido que es nuestro punto de contacto para nuestras reformas y actualizaciones y ya van varias. Espero que en el futuro pueda mantener la dedicación que ahora mismo tiene.',
-      name: 'Jose Lopez',
-      rating: 5,
-    },
+  quote:
+    'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido.',
+  fullQuote:
+    'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido. Desde ese momento hemos decidido que es nuestro punto de contacto para nuestras reformas y actualizaciones y ya van varias. Espero que en el futuro pueda mantener la dedicación que ahora mismo tiene.',
+  translatedQuote:
+    'I am very happy with my experience with Maurits. We asked him to source and install slatted and roller blinds in several rooms, and the result was perfect. As a result, we also asked him to source and install a blind for a door, and he found us a model that even has a remote control. We are very happy with the quality of his work, the priority and speed he gives to his projects, and of course the reasonable price.',
+  fullTranslatedQuote:
+    'I am very happy with my experience with Maurits. We asked him to source and install slatted and roller blinds in several rooms, and the result was perfect. As a result, we also asked him to source and install a blind for a door, and he found us a model that even has a remote control. We are very happy with the quality of his work, the priority and speed he gives to his projects, and of course the reasonable price. Since then, we have decided that he is our point of contact for our renovations and updates, and there have already been several. I hope he can maintain the dedication he currently shows in the future.',
+  name: 'Jose Lopez',
+  rating: 5,
+}
     {
       quote:
-        'Maurits is a true professional, works neatly and keeps his promises. He often goes the extra mile to achieve a beautiful result. Thank you, Maurits.',
-      translatedQuote:
         'Maurits is een echte vakman, werkt netjes en komt de afspraken na. Zet vaak net een stap extra om tot een mooi resultaat te komen, dankjewel Maurits.',
+      translatedQuote:
+        'Maurits is a true professional, works neatly and keeps his promises. He often goes the extra mile to achieve a beautiful result. Thank you, Maurits.',
       name: 'Jurgen Brekelmans',
       rating: 5,
     },
     {
       quote:
-        'Pleasant professional, works steadily and is punctual. Thinks along with you and is easy to communicate with. Thank you, Maurits!',
-      translatedQuote:
         'Gezellige vakman, werkt gestaag en is optijd. Denkt mee en makkelijk communiceren. Dank je wel Maurits!',
+      translatedQuote:
+        'Pleasant professional, works steadily and is punctual. Thinks along with you and is easy to communicate with. Thank you, Maurits!',
       name: 'Angela de Groot',
       rating: 5,
     },
     {
       quote:
-        'We are glad we chose to have our kitchen wrapped instead of installing a new one. Great result, and Maurits is someone you can rely on.',
-      translatedQuote:
         'Blij dat we voor het wrappen van onze keuken hebben gekozen ipv een nieuwe installeren. Top resultaat en op Maurits kun je vertrouwen.',
+      translatedQuote:
+        'We are glad we chose to have our kitchen wrapped instead of installing a new one. Great result, and Maurits is someone you can rely on.',
       name: 'Lotte Mulder',
       rating: 5,
     },
     {
       quote:
-        'Maurits is a professional and works very precisely. He helps bring your ideas to life. In our case, the kitchen looks like new again. Thank you, Maurits!',
-      translatedQuote:
         'Maurits is een vakman, werkt heel nauwkeurig. Helpt mee om je ideeën te realiseren. In ons geval, ziet de keuken er weer als nieuw uit. Bedankt, Maurits!',
+      translatedQuote:
+        'Maurits is a professional and works very precisely. He helps bring your ideas to life. In our case, the kitchen looks like new again. Thank you, Maurits!',
       name: 'Andor Verbakel',
       rating: 4,
     },
@@ -950,41 +954,39 @@ materials: {
   items: [
     {
       quote:
-        'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido.',
-      fullQuote:
         'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido. Desde ese momento hemos decidido que es nuestro punto de contacto para nuestras reformas y actualizaciones y ya van varias. Espero que en el futuro pueda mantener la dedicación que ahora mismo tiene.',
       name: 'Jose Lopez',
       rating: 5,
     },
     {
       quote:
-        'Maurits es un auténtico profesional, trabaja con cuidado y cumple con lo acordado. A menudo da un paso más para conseguir un buen resultado. Gracias, Maurits.',
-      translatedQuote:
         'Maurits is een echte vakman, werkt netjes en komt de afspraken na. Zet vaak net een stap extra om tot een mooi resultaat te komen, dankjewel Maurits.',
+      translatedQuote:
+        'Maurits es un auténtico profesional, trabaja con cuidado y cumple con lo acordado. A menudo da un paso más para conseguir un buen resultado. Gracias, Maurits.',
       name: 'Jurgen Brekelmans',
       rating: 5,
     },
     {
       quote:
-        'Un profesional muy agradable, trabaja de forma constante y es puntual. Piensa contigo y es fácil comunicarse con él. ¡Gracias, Maurits!',
-      translatedQuote:
         'Gezellige vakman, werkt gestaag en is optijd. Denkt mee en makkelijk communiceren. Dank je wel Maurits!',
+      translatedQuote:
+        'Un profesional muy agradable, trabaja de forma constante y es puntual. Piensa contigo y es fácil comunicarse con él. ¡Gracias, Maurits!',
       name: 'Angela de Groot',
       rating: 5,
     },
     {
       quote:
-        'Estamos muy contentos de haber elegido renovar nuestra cocina con vinilo en lugar de instalar una nueva. Un resultado excelente y Maurits es una persona en la que puedes confiar.',
-      translatedQuote:
         'Blij dat we voor het wrappen van onze keuken hebben gekozen ipv een nieuwe installeren. Top resultaat en op Maurits kun je vertrouwen.',
+      translatedQuote:
+        'Estamos muy contentos de haber elegido renovar nuestra cocina con vinilo en lugar de instalar una nueva. Un resultado excelente y Maurits es una persona en la que puedes confiar.',
       name: 'Lotte Mulder',
       rating: 5,
     },
     {
       quote:
-        'Maurits es un profesional y trabaja con mucha precisión. Ayuda a hacer realidad tus ideas. En nuestro caso, la cocina vuelve a parecer nueva. ¡Gracias, Maurits!',
-      translatedQuote:
         'Maurits is een vakman, werkt heel nauwkeurig. Helpt mee om je ideeën te realiseren. In ons geval, ziet de keuken er weer als nieuw uit. Bedankt, Maurits!',
+      translatedQuote:
+        'Maurits es un profesional y trabaja con mucha precisión. Ayuda a hacer realidad tus ideas. En nuestro caso, la cocina vuelve a parecer nueva. ¡Gracias, Maurits!',
       name: 'Andor Verbakel',
       rating: 4,
     },
