@@ -640,12 +640,14 @@ materials: {
   goToReview: 'Go to review',
   items: [
     {
-      quote:
-        'I am very happy with my experience with Maurits. We asked him to source and install slatted and roller blinds in several rooms, and the result was perfect. As a result, we also asked him to source and install a blind for a door, and he found us a model that even has a remote control. We are very happy with the quality of his work, the priority and speed he gives to his projects, and of course the reasonable price. Since then, we have decided that he is our point of contact for our renovations and updates, and there have already been several. I hope he can maintain the dedication he currently shows in the future.',
-      name: 'Jose Lopez',
-      rating: 5,
-      translationNote: 'Translated from Spanish',
-    },
+  quote:
+    'I am very happy with my experience with Maurits. We asked him to source and install slatted and roller blinds in several rooms, and the result was perfect. We are very happy with the quality of his work, the speed he puts into his projects and, of course, the reasonable price.',
+  fullQuote:
+    'I am very happy with my experience with Maurits. We asked him to source and install slatted and roller blinds in several rooms, and the result was perfect. As a result, we also asked him to source and install a blind for a door, and he found us a model that even has a remote control. We are very happy with the quality of his work, the priority and speed he gives to his projects, and of course the reasonable price. Since then, we have decided that he is our point of contact for our renovations and updates, and there have already been several. I hope he can maintain the dedication he currently shows in the future.',
+  name: 'Jose Lopez',
+  rating: 5,
+  translationNote: 'Translated from Spanish',
+},
     {
       quote:
         'Maurits is a true professional, works neatly and keeps his promises. He often goes the extra mile to achieve a beautiful result. Thank you, Maurits.',
@@ -926,11 +928,13 @@ materials: {
   goToReview: 'Ir a la reseña',
   items: [
     {
-      quote:
-        'He tenido una muy buena experiencia con Maurits. Le pedimos que buscara y colocara cortinas de lamas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, también le pedimos que nos consiguiera e instalara una persiana para una puerta, y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio ajustado. Desde entonces hemos decidido que sea nuestro punto de contacto para nuestras reformas y actualizaciones, y ya van varias. Espero que en el futuro pueda mantener la dedicación que tiene ahora mismo.',
-      name: 'Jose Lopez',
-      rating: 5,
-    },
+  quote:
+    'He tenido una muy buena experiencia con Maurits. Le pedimos que buscara y colocara cortinas de lamas y enrollables en varias habitaciones y el resultado fue perfecto. Estamos muy contentos con la calidad de su trabajo, la rapidez con la que lleva a cabo sus proyectos y, por supuesto, el precio ajustado.',
+  fullQuote:
+    'He tenido una muy buena experiencia con Maurits. Le pedimos que buscara y colocara cortinas de lamas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, también le pedimos que nos consiguiera e instalara una persiana para una puerta, y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio ajustado. Desde entonces hemos decidido que sea nuestro punto de contacto para nuestras reformas y actualizaciones, y ya van varias. Espero que en el futuro pueda mantener la dedicación que tiene ahora mismo.',
+  name: 'Jose Lopez',
+  rating: 5,
+},
     {
       quote:
         'Maurits es un auténtico profesional, trabaja con cuidado y cumple con lo acordado. A menudo da un paso más para conseguir un resultado bonito. Gracias, Maurits.',
