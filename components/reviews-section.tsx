@@ -12,7 +12,9 @@ export function ReviewsSection() {
   const { t } = useLanguage()
   const [activeIndex, setActiveIndex] = useState(0)
 const [expandedReview, setExpandedReview] = useState(false)
-const [showTranslation, setShowTranslation] = useState(false)
+const [reviewLanguage, setReviewLanguage] = useState<'site' | 'original'>(
+  'site',
+)
   const touchStartX = useRef<number | null>(null)
 const touchEndX = useRef<number | null>(null)
 
@@ -48,7 +50,7 @@ const handleTouchEnd = () => {
 
   const goToPrevious = () => {
   setExpandedReview(false)
-  setShowTranslation(false)
+  setReviewLanguage('site')
 
   setActiveIndex((current) =>
     current === 0 ? reviews.length - 1 : current - 1,
@@ -57,7 +59,7 @@ const handleTouchEnd = () => {
 
 const goToNext = () => {
   setExpandedReview(false)
-  setShowTranslation(false)
+  setReviewLanguage('site')
 
   setActiveIndex((current) =>
     current === reviews.length - 1 ? 0 : current + 1,
@@ -130,11 +132,21 @@ const goToNext = () => {
             transform: `translateX(-${activeIndex * 100}%)`,
           }}
         >
-          {reviews.map((review, index) => (
-            <div
-              key={`${review.name}-${index}`}
-              className="w-full shrink-0"
-            >
+          {reviews.map((review, index) => {
+  const displayedQuote =
+    reviewLanguage === 'original'
+      ? expandedReview && review.fullQuote
+        ? review.fullQuote
+        : review.quote
+      : expandedReview && review.fullTranslatedQuote
+        ? review.fullTranslatedQuote
+        : review.translatedQuote || review.quote
+
+  return (
+    <div
+      key={`${review.name}-${index}`}
+      className="w-full shrink-0"
+    >
               <div className="grid min-h-[360px] items-center lg:grid-cols-[1fr_auto]">
                 <div className="py-12 lg:py-16 lg:pr-16">
                   <div className="flex items-center gap-3">
@@ -163,14 +175,8 @@ const goToNext = () => {
 
                   <div className="mt-6 max-w-3xl">
   <blockquote className="font-serif text-lg font-medium leading-relaxed tracking-tight text-ink sm:text-xl lg:text-2xl">
-    “
-    {showTranslation && review.translatedQuote
-      ? review.translatedQuote
-      : expandedReview && review.fullQuote
-        ? review.fullQuote
-        : review.quote}
-    ”
-  </blockquote>
+  “{displayedQuote}”
+</blockquote>
 
   <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
     {review.translatedQuote && (
@@ -193,7 +199,7 @@ const goToNext = () => {
         type="button"
         onClick={() => {
           setExpandedReview((current) => !current)
-          setShowTranslation(false)
+          setReviewLanguage('site')
         }}
         className="text-xs font-semibold uppercase tracking-[0.16em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
       >
@@ -254,7 +260,7 @@ const goToNext = () => {
           type="button"
           onClick={() => {
   setExpandedReview(false)
-  setShowTranslation(false)
+  setReviewLanguage('site')
   setActiveIndex(index)
 }}
           aria-label={`${t.reviews.goToReview} ${index + 1}`}
