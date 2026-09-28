@@ -1,7 +1,7 @@
 'use client'
 
 import { ArrowLeft, ArrowRight, ArrowUpRight, Quote, Star } from 'lucide-react'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { useLanguage } from '@/lib/i18n/provider'
 import { Reveal } from '@/components/reveal'
 
@@ -11,6 +11,35 @@ const googleReviewsUrl =
 export function ReviewsSection() {
   const { t } = useLanguage()
   const [activeIndex, setActiveIndex] = useState(0)
+  const touchStartX = useRef<number | null>(null)
+const touchEndX = useRef<number | null>(null)
+
+const handleTouchStart = (event: React.TouchEvent<HTMLDivElement>) => {
+  touchStartX.current = event.touches[0].clientX
+  touchEndX.current = null
+}
+
+const handleTouchMove = (event: React.TouchEvent<HTMLDivElement>) => {
+  touchEndX.current = event.touches[0].clientX
+}
+
+const handleTouchEnd = () => {
+  if (touchStartX.current === null || touchEndX.current === null) return
+
+  const distance = touchStartX.current - touchEndX.current
+  const minimumSwipeDistance = 50
+
+  if (Math.abs(distance) >= minimumSwipeDistance) {
+    if (distance > 0) {
+      goToNext()
+    } else {
+      goToPrevious()
+    }
+  }
+
+  touchStartX.current = null
+  touchEndX.current = null
+}
 
   const reviews = t.reviews.items
   const activeReview = reviews[activeIndex]
@@ -81,7 +110,12 @@ export function ReviewsSection() {
 <Reveal delay={0.15}>
   <div className="mt-14 overflow-hidden border-y border-border">
     <div className="relative">
-      <div className="overflow-hidden">
+      <div
+  className="overflow-hidden touch-pan-y"
+  onTouchStart={handleTouchStart}
+  onTouchMove={handleTouchMove}
+  onTouchEnd={handleTouchEnd}
+>
         <div
           className="flex transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
           style={{
