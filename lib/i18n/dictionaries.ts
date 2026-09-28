@@ -959,15 +959,18 @@ materials: {
   nextLabel: 'Siguiente reseña',
   goToReview: 'Ir a la reseña',
 
-  items: [
-    {
-      quote:
-        'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido.',
-      fullQuote:
-        'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido. Desde ese momento hemos decidido que es nuestro punto de contacto para nuestras reformas y actualizaciones y ya van varias. Espero que en el futuro pueda mantener la dedicación que ahora mismo tiene.',
-      name: 'Jose Lopez',
-      rating: 5,
-    },
+  {
+  quote:
+    'He tenido muy buena experiencia ... precio comedido.',
+  fullQuote:
+    'He tenido muy buena experiencia ... precio comedido. Desde ese momento hemos decidido que es nuestro punto de contacto para nuestras reformas y actualizaciones y ya van varias. Espero que en el futuro pueda mantener la dedicación que ahora mismo tiene.',
+  translatedQuote:
+    'He tenido muy buena experiencia ... precio comedido.',
+  fullTranslatedQuote:
+    'He tenido muy buena experiencia ... precio comedido. Desde ese momento hemos decidido que es nuestro punto de contacto para nuestras reformas y actualizaciones y ya van varias. Espero que en el futuro pueda mantener la dedicación que ahora mismo tiene.',
+  name: 'Jose Lopez',
+  rating: 5,
+},
     {
       quote:
         'Maurits is een echte vakman, werkt netjes en komt de afspraken na. Zet vaak net een stap extra om tot een mooi resultaat te komen, dankjewel Maurits.',
