@@ -123,9 +123,11 @@ type Dict = {
   quoteMessage: string
 }
   reviews: {
+  eyebrow: string
   heading: string
   sub: string
   googleBadge: string
+  googleReviews: string
   showTranslation: string
   showOriginal: string
   readButton: string
@@ -355,9 +357,11 @@ materials: {
   quoteMessage: 'Hoi Maurits, ik wil graag een offerte aanvragen voor een project.',
 },
     reviews: {
-  heading: 'Wat klanten zeggen',
-  sub: 'Lees wat onze klanten zeggen over hun ervaring met Maurits.',
-  googleBadge: 'Bekijk ons op Google',
+  eyebrow: 'Testimonials',
+heading: 'WAT ONZE KLANTEN ZEGGEN',
+sub: 'Ontdek wat onze klanten zeggen over hun ervaring met Maurits.',
+googleBadge: 'Google Reviews',
+googleReviews: 'Google Reviews',
   showOriginal: 'Toon origineel',
   showTranslation: 'Toon vertaling',
   readButton: 'Bekijk onze Google reviews',
@@ -643,10 +647,11 @@ materials: {
   otherSub: 'Doors, wardrobes, furniture and other interior surfaces are available on a quote basis.',
   quoteMessage: 'Hi Maurits, I’d like to request a quote for a project.',
 },
-    reviews: {
-  heading: 'What clients say',
-  sub: 'See what our clients say about their experience with Maurits.',
-  googleBadge: 'See us on Google',
+    eyebrow: 'Testimonials',
+heading: 'WHAT CLIENTS SAY',
+sub: 'See what our clients say about their experience with Maurits.',
+googleBadge: 'Google Reviews',
+googleReviews: 'Google Reviews',
   showOriginal: 'Show original',
   showTranslation: 'Show translation',
   readButton: 'Read our Google reviews',
@@ -940,10 +945,11 @@ materials: {
   otherSub: 'Puertas, armarios, muebles y otras superficies interiores están disponibles bajo presupuesto.',
   quoteMessage: 'Hi Maurits, I’d like to request a quote for a project.',
 },
-    reviews: {
-  heading: 'Lo que dicen nuestros clientes',
-  sub: 'Descubre lo que nuestros clientes dicen sobre su experiencia con Maurits.',
-  googleBadge: 'Ver en Google',
+    eyebrow: 'Testimonios',
+heading: 'LO QUE DICEN NUESTROS CLIENTES',
+sub: 'Descubre lo que nuestros clientes dicen sobre su experiencia con Maurits.',
+googleBadge: 'Reseñas de Google',
+googleReviews: 'Reseñas de Google',
   showOriginal: 'Ver original',
   showTranslation: 'Ver traducción',
   readButton: 'Leer nuestras reseñas en Google',
