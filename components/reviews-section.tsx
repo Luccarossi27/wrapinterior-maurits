@@ -133,15 +133,15 @@ export function ReviewsSection() {
                     transform: `translateX(-${activeIndex * 100}%)`,
                   }}
                 >
-                  {reviews.map((review, index) => {
-                    const displayedQuote =
-                      showOriginal && review.translatedQuote
-                        ? expandedReview && review.fullQuote
-                          ? review.fullQuote
-                          : review.quote
-                        : expandedReview && review.fullTranslatedQuote
-                          ? review.fullTranslatedQuote
-                          : review.translatedQuote || review.quote
+                  const isOriginalView = showOriginal || !review.translatedQuote
+
+const displayedQuote = isOriginalView
+  ? expandedReview && review.fullQuote
+    ? review.fullQuote
+    : review.quote
+  : expandedReview && review.fullTranslatedQuote
+    ? review.fullTranslatedQuote
+    : review.translatedQuote
 
                     const hasTranslation =
                       !!review.translatedQuote
