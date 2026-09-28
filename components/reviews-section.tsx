@@ -71,29 +71,27 @@ export function ReviewsSection() {
     touchEndX.current = null
   }
 
-  const activeReview = reviews[activeIndex]
-
   return (
     <section
       id="reviews"
       className="border-t border-border bg-paper text-ink"
     >
-      <div className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
+      <div className="mx-auto w-full max-w-6xl px-5 py-16 sm:px-8 sm:py-20 lg:px-10">
 
         {/* Header */}
         <Reveal>
-          <div className="grid gap-8 border-b border-border pb-10 lg:grid-cols-[1fr_auto] lg:items-end">
+          <div className="grid gap-5 border-b border-border pb-8 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.24em] text-pine">
-                Google Reviews
+                {t.reviews.eyebrow}
               </p>
 
-              <h2 className="mt-4 max-w-2xl font-serif text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+              <h2 className="mt-3 max-w-2xl font-serif text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
                 {t.reviews.heading}
               </h2>
             </div>
 
-            <p className="max-w-md text-base leading-relaxed text-muted-foreground lg:text-right">
+            <p className="max-w-md text-sm leading-relaxed text-muted-foreground lg:text-right">
               {t.reviews.sub}
             </p>
           </div>
@@ -101,12 +99,12 @@ export function ReviewsSection() {
 
         {/* Rating */}
         <Reveal delay={0.08}>
-          <div className="mt-10 flex flex-col items-start gap-3 sm:flex-row sm:items-end sm:gap-5">
-            <span className="font-serif text-6xl font-light leading-none tracking-tight text-pine sm:text-7xl">
+          <div className="mt-7 flex items-center gap-4">
+            <span className="font-serif text-4xl font-light leading-none tracking-tight text-pine sm:text-5xl">
               4.9
             </span>
 
-            <div className="pb-1">
+            <div className="flex flex-col gap-1">
               <div
                 className="flex gap-1"
                 aria-label="4.9 out of 5 stars"
@@ -114,13 +112,13 @@ export function ReviewsSection() {
                 {Array.from({ length: 5 }).map((_, index) => (
                   <Star
                     key={index}
-                    className="size-4 fill-brass text-brass"
+                    className="size-3.5 fill-brass text-brass"
                     aria-hidden="true"
                   />
                 ))}
               </div>
 
-              <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                 {t.reviews.googleBadge}
               </p>
             </div>
@@ -129,8 +127,7 @@ export function ReviewsSection() {
 
         {/* Reviews carousel */}
         <Reveal delay={0.15}>
-          <div className="mt-14 border-y border-border">
-
+          <div className="mt-8 overflow-hidden border-y border-border bg-pine/[0.035]">
             <div
               className="overflow-hidden touch-pan-y"
               onTouchStart={handleTouchStart}
@@ -159,26 +156,26 @@ export function ReviewsSection() {
                       key={`${review.name}-${index}`}
                       className="w-full shrink-0"
                     >
-                      <div className="relative px-2 py-16 sm:px-8 sm:py-20 lg:px-16 lg:py-24">
+                      <div className="relative px-5 py-12 sm:px-10 sm:py-14 lg:px-20 lg:py-16">
 
                         {/* Decorative quotation mark */}
                         <div
-                          className="pointer-events-none absolute left-0 top-8 select-none font-serif text-7xl font-light leading-none text-pine/15 sm:left-4 sm:text-8xl"
+                          className="pointer-events-none absolute left-5 top-5 select-none font-serif text-6xl font-light leading-none text-pine/10 sm:left-8 sm:text-7xl"
                           aria-hidden="true"
                         >
                           “
                         </div>
 
-                        <div className="relative mx-auto max-w-4xl text-center">
+                        <div className="relative mx-auto max-w-3xl text-center">
 
                           {/* Quote */}
-                          <blockquote className="font-serif text-2xl font-light italic leading-[1.55] tracking-tight text-ink sm:text-3xl lg:text-4xl">
+                          <blockquote className="font-serif text-lg font-light italic leading-[1.6] tracking-tight text-ink sm:text-xl lg:text-2xl">
                             “{displayedQuote}”
                           </blockquote>
 
                           {/* Translation toggle */}
                           {hasTranslation && (
-                            <div className="mt-8 flex justify-center">
+                            <div className="mt-6 flex justify-center">
                               <button
                                 type="button"
                                 onClick={() => {
@@ -186,7 +183,7 @@ export function ReviewsSection() {
                                     (current) => !current,
                                   )
                                 }}
-                                className="text-xs font-semibold uppercase tracking-[0.18em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
+                                className="text-[10px] font-semibold uppercase tracking-[0.18em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
                               >
                                 {showOriginal
                                   ? t.reviews.showTranslation
@@ -196,15 +193,15 @@ export function ReviewsSection() {
                           )}
 
                           {/* Author */}
-                          <div className="mt-10">
-                            <div className="mx-auto mb-5 h-px w-10 bg-pine/40" />
+                          <div className="mt-7">
+                            <div className="mx-auto mb-4 h-px w-8 bg-pine/40" />
 
-                            <p className="text-xs font-bold uppercase tracking-[0.2em] text-pine">
+                            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-pine">
                               {review.name}
                             </p>
 
                             <div
-                              className="mt-3 flex justify-center gap-1"
+                              className="mt-2 flex justify-center gap-1"
                               aria-label={`${review.rating} out of 5 stars`}
                             >
                               {Array.from({ length: 5 }).map(
@@ -231,29 +228,29 @@ export function ReviewsSection() {
             </div>
 
             {/* Carousel controls */}
-            <div className="flex items-center justify-between border-t border-border px-2 py-5 sm:px-8">
+            <div className="flex items-center justify-between border-t border-border px-5 py-4 sm:px-8">
 
               <button
                 type="button"
                 onClick={goToPrevious}
                 aria-label={t.reviews.previousLabel}
-                className="group flex items-center gap-3 text-pine transition-colors hover:text-ink"
+                className="group flex items-center gap-2 text-pine transition-colors hover:text-ink"
               >
-                <ArrowLeft className="size-4 transition-transform group-hover:-translate-x-1" />
+                <ArrowLeft className="size-3.5 transition-transform group-hover:-translate-x-1" />
 
-                <span className="hidden text-xs font-semibold uppercase tracking-[0.16em] sm:inline">
+                <span className="hidden text-[10px] font-semibold uppercase tracking-[0.16em] sm:inline">
                   {t.reviews.previousLabel}
                 </span>
               </button>
 
-              <div className="flex items-center gap-3">
-                <span className="font-serif text-sm text-pine">
+              <div className="flex items-center gap-3 font-sans text-[10px] font-semibold tracking-[0.16em] text-muted-foreground">
+                <span className="text-pine">
                   {String(activeIndex + 1).padStart(2, '0')}
                 </span>
 
-                <span className="h-px w-8 bg-border" />
+                <span className="h-px w-7 bg-border" />
 
-                <span className="text-xs font-semibold tracking-[0.12em] text-muted-foreground">
+                <span>
                   {String(reviews.length).padStart(2, '0')}
                 </span>
               </div>
@@ -262,13 +259,13 @@ export function ReviewsSection() {
                 type="button"
                 onClick={goToNext}
                 aria-label={t.reviews.nextLabel}
-                className="group flex items-center gap-3 text-pine transition-colors hover:text-ink"
+                className="group flex items-center gap-2 text-pine transition-colors hover:text-ink"
               >
-                <span className="hidden text-xs font-semibold uppercase tracking-[0.16em] sm:inline">
+                <span className="hidden text-[10px] font-semibold uppercase tracking-[0.16em] sm:inline">
                   {t.reviews.nextLabel}
                 </span>
 
-                <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" />
               </button>
             </div>
           </div>
@@ -276,17 +273,17 @@ export function ReviewsSection() {
 
         {/* Google CTA */}
         <Reveal delay={0.2}>
-          <div className="mt-10 flex justify-center">
+          <div className="mt-8 flex justify-center">
             <a
               href={googleReviewsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-3 border border-pine px-6 py-3 text-xs font-bold uppercase tracking-[0.16em] text-pine transition-all hover:bg-pine hover:text-paper"
+              className="group inline-flex items-center gap-3 border border-pine px-6 py-3 text-[10px] font-bold uppercase tracking-[0.18em] text-pine transition-all hover:bg-pine hover:text-paper"
             >
-              {t.reviews.readButton}
+              {t.reviews.googleReviews}
 
               <ArrowUpRight
-                className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                className="size-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                 aria-hidden="true"
               />
             </a>
