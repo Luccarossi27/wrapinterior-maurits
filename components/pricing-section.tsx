@@ -104,7 +104,7 @@ export function PricingSection() {
           </p>
 
           <a
-            href={whatsappLink(t.pricing.otherTitle)}
+            href={whatsappLink(t.pricing.quoteMessage)}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-pine px-5 py-3 text-sm font-semibold text-paper transition-transform hover:-translate-y-0.5 hover:bg-ink"
