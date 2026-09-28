@@ -37,7 +37,7 @@ export function PricingSection() {
             <Reveal key={card.name} delay={i * 0.07}>
               <div
                 className={cn(
-                  'flex h-full flex-col rounded-3xl border p-7 transition-shadow',
+                  'flex h-full flex-col rounded-3xl border p-7',
                   featured
                     ? 'border-pine bg-pine text-paper shadow-2xl shadow-pine/25'
                     : 'border-border bg-card',
@@ -86,21 +86,6 @@ export function PricingSection() {
                     {t.pricing.vat}
                   </span>
                 </div>
-
-                <a
-                  href={whatsappLink(`${t.cta.getQuote} — ${card.name}`)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={cn(
-                    'mt-7 inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition-transform hover:-translate-y-0.5',
-                    featured
-                      ? 'bg-paper text-pine hover:bg-sand'
-                      : 'bg-pine text-paper hover:bg-ink',
-                  )}
-                >
-                  <MessageCircle className="size-4" />
-                  {t.cta.getQuote}
-                </a>
               </div>
             </Reveal>
           )
