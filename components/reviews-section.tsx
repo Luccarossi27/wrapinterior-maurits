@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowLeft, ArrowRight, ArrowUpRight, Quote, Star } from 'lucide-react'
+import { ArrowLeft, ArrowRight, ArrowUpRight, Star } from 'lucide-react'
 import { useRef, useState } from 'react'
 import { useLanguage } from '@/lib/i18n/provider'
 import { Reveal } from '@/components/reveal'
@@ -17,20 +17,20 @@ export function ReviewsSection() {
   const reviews = t.reviews.items
 
   const goToPrevious = () => {
-  setShowOriginal(false)
+    setShowOriginal(false)
 
-  setActiveIndex((current) =>
-    current === 0 ? reviews.length - 1 : current - 1,
-  )
-}
+    setActiveIndex((current) =>
+      current === 0 ? reviews.length - 1 : current - 1,
+    )
+  }
 
-const goToNext = () => {
-  setShowOriginal(false)
+  const goToNext = () => {
+    setShowOriginal(false)
 
-  setActiveIndex((current) =>
-    current === reviews.length - 1 ? 0 : current + 1,
-  )
-}
+    setActiveIndex((current) =>
+      current === reviews.length - 1 ? 0 : current + 1,
+    )
+  }
 
   const touchStartX = useRef<number | null>(null)
   const touchEndX = useRef<number | null>(null)
@@ -71,232 +71,228 @@ const goToNext = () => {
     touchEndX.current = null
   }
 
+  const activeReview = reviews[activeIndex]
+
   return (
     <section
       id="reviews"
       className="border-t border-border bg-paper text-ink"
     >
       <div className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
-        {/* HEADER */}
+
+        {/* Header */}
         <Reveal>
-          <div className="grid gap-8 border-b border-border pb-10 lg:grid-cols-[1fr_2fr] lg:items-end">
+          <div className="grid gap-8 border-b border-border pb-10 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-brass">
-                Google
+              <p className="text-xs font-bold uppercase tracking-[0.24em] text-pine">
+                Google Reviews
               </p>
 
-              <h2 className="mt-3 font-serif text-4xl font-semibold tracking-tight sm:text-5xl">
+              <h2 className="mt-4 max-w-2xl font-serif text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
                 {t.reviews.heading}
               </h2>
             </div>
 
-            <p className="max-w-2xl text-base leading-relaxed text-muted-foreground lg:justify-self-end lg:text-lg">
+            <p className="max-w-md text-base leading-relaxed text-muted-foreground lg:text-right">
               {t.reviews.sub}
             </p>
           </div>
         </Reveal>
 
-        {/* GOOGLE BADGE */}
+        {/* Rating */}
         <Reveal delay={0.08}>
-          <div className="mt-8 flex items-center gap-3">
-            <div className="flex gap-0.5" aria-hidden="true">
-              {Array.from({ length: 5 }).map((_, index) => (
-                <Star
-                  key={index}
-                  className="size-3.5 fill-brass text-brass"
-                />
-              ))}
-            </div>
-
-            <span className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-              {t.reviews.googleBadge}
+          <div className="mt-10 flex flex-col items-start gap-3 sm:flex-row sm:items-end sm:gap-5">
+            <span className="font-serif text-6xl font-light leading-none tracking-tight text-pine sm:text-7xl">
+              4.9
             </span>
-          </div>
-        </Reveal>
 
-        {/* REVIEW CAROUSEL */}
-        <Reveal delay={0.15}>
-          <div className="mt-10 overflow-hidden border-y border-border">
-            <div className="relative">
+            <div className="pb-1">
               <div
-                className="overflow-hidden touch-pan-y"
-                onTouchStart={handleTouchStart}
-                onTouchMove={handleTouchMove}
-                onTouchEnd={handleTouchEnd}
+                className="flex gap-1"
+                aria-label="4.9 out of 5 stars"
               >
-                <div
-  className="flex transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
-  style={{
-    transform: `translateX(-${activeIndex * 100}%)`,
-  }}
->
-  {reviews.map((review, index) => {
-
-const isOriginalView =
-  showOriginal || !review.translatedQuote
-
-const displayedQuote = isOriginalView
-  ? review.fullQuote || review.quote
-  : review.fullTranslatedQuote || review.translatedQuote
-
-const hasTranslation = !!review.translatedQuote
-
-    return (
-      <div
-        key={`${review.name}-${index}`}
-        className="w-full shrink-0"
-      >
-        <div className="grid min-h-[360px] items-center lg:grid-cols-[1fr_auto]">
-          <div className="py-12 lg:py-16 lg:pr-16">
-            {/* STARS */}
-            <div className="flex items-center gap-3">
-              <Quote
-                className="size-7 shrink-0 text-brass"
-                aria-hidden="true"
-              />
-
-              <div
-                className="flex gap-0.5"
-                aria-label={`${review.rating} out of 5 stars`}
-              >
-                {Array.from({ length: 5 }).map(
-                  (_, starIndex) => (
-                    <Star
-                      key={starIndex}
-                      className={
-                        starIndex < review.rating
-                          ? 'size-4 fill-brass text-brass'
-                          : 'size-4 text-border'
-                      }
-                      aria-hidden="true"
-                    />
-                  ),
-                )}
+                {Array.from({ length: 5 }).map((_, index) => (
+                  <Star
+                    key={index}
+                    className="size-4 fill-brass text-brass"
+                    aria-hidden="true"
+                  />
+                ))}
               </div>
-            </div>
 
-            {/* QUOTE */}
-            <div className="mt-6 max-w-3xl">
-              <blockquote className="font-serif text-lg font-medium leading-relaxed tracking-tight text-ink sm:text-xl lg:text-2xl">
-                “{displayedQuote}”
-              </blockquote>
-
-              {/* LANGUAGE + READ MORE CONTROLS */}
-              {hasTranslation && (
-  <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
-                  {hasTranslation && (
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setShowOriginal(
-                          (current) => !current,
-                        )
-                      }}
-                      className="text-xs font-semibold uppercase tracking-[0.16em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
-                    >
-                      {showOriginal
-                        ? t.reviews.showTranslation
-                        : t.reviews.showOriginal}
-                    </button>
-                  )}
-
-                </div>
-              )}
-            </div>
-
-            {/* NAME */}
-            <div className="mt-8">
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-ink">
-                {review.name}
+              <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                {t.reviews.googleBadge}
               </p>
             </div>
           </div>
-        </div>
-      </div>
-    )
-  })}
-</div>
-              </div>
+        </Reveal>
 
-              {/* CONTROLS */}
-              <div className="flex items-center justify-between border-t border-border px-0 py-5">
-                <div className="flex items-center gap-5">
-                  <button
-                    type="button"
-                    onClick={goToPrevious}
-                    aria-label={t.reviews.previousLabel}
-                    className="group flex size-9 items-center justify-center border border-border text-ink transition-colors hover:border-pine hover:bg-pine hover:text-paper"
-                  >
-                    <ArrowLeft
-                      className="size-4 transition-transform group-hover:-translate-x-0.5"
-                      aria-hidden="true"
-                    />
-                  </button>
+        {/* Reviews carousel */}
+        <Reveal delay={0.15}>
+          <div className="mt-14 border-y border-border">
 
-                  <button
-                    type="button"
-                    onClick={goToNext}
-                    aria-label={t.reviews.nextLabel}
-                    className="group flex size-9 items-center justify-center border border-border text-ink transition-colors hover:border-pine hover:bg-pine hover:text-paper"
-                  >
-                    <ArrowRight
-                      className="size-4 transition-transform group-hover:translate-x-0.5"
-                      aria-hidden="true"
-                    />
-                  </button>
+            <div
+              className="overflow-hidden touch-pan-y"
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+            >
+              <div
+                className="flex transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
+                style={{
+                  transform: `translateX(-${activeIndex * 100}%)`,
+                }}
+              >
+                {reviews.map((review, index) => {
+                  const isOriginalView =
+                    showOriginal || !review.translatedQuote
 
-                  <span className="font-serif text-sm font-medium tracking-[0.12em] text-muted-foreground">
-                    {String(activeIndex + 1).padStart(2, '0')}
-                    {' / '}
-                    {String(reviews.length).padStart(2, '0')}
-                  </span>
-                </div>
+                  const displayedQuote = isOriginalView
+                    ? review.fullQuote || review.quote
+                    : review.fullTranslatedQuote ||
+                      review.translatedQuote
 
-                {/* PROGRESS */}
-                <div className="flex items-center gap-1.5">
-                  {reviews.map((review, index) => (
-                    <button
-                      key={`${review.name}-progress`}
-                      type="button"
-                      onClick={() => {
-                        setShowOriginal(false)
-                        setActiveIndex(index)
-                      }}
-                      aria-label={`${t.reviews.goToReview} ${index + 1}`}
-                      className="group h-4 w-8"
+                  const hasTranslation = !!review.translatedQuote
+
+                  return (
+                    <div
+                      key={`${review.name}-${index}`}
+                      className="w-full shrink-0"
                     >
-                      <span
-                        className={`block h-px w-full transition-all duration-300 ${
-                          index === activeIndex
-                            ? 'bg-pine'
-                            : 'bg-border group-hover:bg-muted-foreground'
-                        }`}
-                      />
-                    </button>
-                  ))}
-                </div>
+                      <div className="relative px-2 py-16 sm:px-8 sm:py-20 lg:px-16 lg:py-24">
+
+                        {/* Decorative quotation mark */}
+                        <div
+                          className="pointer-events-none absolute left-0 top-8 select-none font-serif text-7xl font-light leading-none text-pine/15 sm:left-4 sm:text-8xl"
+                          aria-hidden="true"
+                        >
+                          “
+                        </div>
+
+                        <div className="relative mx-auto max-w-4xl text-center">
+
+                          {/* Quote */}
+                          <blockquote className="font-serif text-2xl font-light italic leading-[1.55] tracking-tight text-ink sm:text-3xl lg:text-4xl">
+                            “{displayedQuote}”
+                          </blockquote>
+
+                          {/* Translation toggle */}
+                          {hasTranslation && (
+                            <div className="mt-8 flex justify-center">
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  setShowOriginal(
+                                    (current) => !current,
+                                  )
+                                }}
+                                className="text-xs font-semibold uppercase tracking-[0.18em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
+                              >
+                                {showOriginal
+                                  ? t.reviews.showTranslation
+                                  : t.reviews.showOriginal}
+                              </button>
+                            </div>
+                          )}
+
+                          {/* Author */}
+                          <div className="mt-10">
+                            <div className="mx-auto mb-5 h-px w-10 bg-pine/40" />
+
+                            <p className="text-xs font-bold uppercase tracking-[0.2em] text-pine">
+                              {review.name}
+                            </p>
+
+                            <div
+                              className="mt-3 flex justify-center gap-1"
+                              aria-label={`${review.rating} out of 5 stars`}
+                            >
+                              {Array.from({ length: 5 }).map(
+                                (_, starIndex) => (
+                                  <Star
+                                    key={starIndex}
+                                    className={
+                                      starIndex < review.rating
+                                        ? 'size-3 fill-brass text-brass'
+                                        : 'size-3 text-border'
+                                    }
+                                    aria-hidden="true"
+                                  />
+                                ),
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )
+                })}
               </div>
+            </div>
+
+            {/* Carousel controls */}
+            <div className="flex items-center justify-between border-t border-border px-2 py-5 sm:px-8">
+
+              <button
+                type="button"
+                onClick={goToPrevious}
+                aria-label={t.reviews.previousLabel}
+                className="group flex items-center gap-3 text-pine transition-colors hover:text-ink"
+              >
+                <ArrowLeft className="size-4 transition-transform group-hover:-translate-x-1" />
+
+                <span className="hidden text-xs font-semibold uppercase tracking-[0.16em] sm:inline">
+                  {t.reviews.previousLabel}
+                </span>
+              </button>
+
+              <div className="flex items-center gap-3">
+                <span className="font-serif text-sm text-pine">
+                  {String(activeIndex + 1).padStart(2, '0')}
+                </span>
+
+                <span className="h-px w-8 bg-border" />
+
+                <span className="text-xs font-semibold tracking-[0.12em] text-muted-foreground">
+                  {String(reviews.length).padStart(2, '0')}
+                </span>
+              </div>
+
+              <button
+                type="button"
+                onClick={goToNext}
+                aria-label={t.reviews.nextLabel}
+                className="group flex items-center gap-3 text-pine transition-colors hover:text-ink"
+              >
+                <span className="hidden text-xs font-semibold uppercase tracking-[0.16em] sm:inline">
+                  {t.reviews.nextLabel}
+                </span>
+
+                <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+              </button>
             </div>
           </div>
         </Reveal>
 
-        {/* GOOGLE CTA */}
+        {/* Google CTA */}
         <Reveal delay={0.2}>
-          <div className="mt-8 flex justify-center">
+          <div className="mt-10 flex justify-center">
             <a
               href={googleReviewsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
+              className="group inline-flex items-center gap-3 border border-pine px-6 py-3 text-xs font-bold uppercase tracking-[0.16em] text-pine transition-all hover:bg-pine hover:text-paper"
             >
               {t.reviews.readButton}
+
               <ArrowUpRight
-                className="size-3.5"
+                className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                 aria-hidden="true"
               />
             </a>
           </div>
         </Reveal>
+
       </div>
     </section>
   )
