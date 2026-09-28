@@ -144,10 +144,17 @@ type Dict = {
   }[]
 }
   faq: {
-    heading: string
-    sub: string
-    items: { q: string; a: string }[]
-  }
+  heading: string
+  sub: string
+  items: {
+    q: string
+    a: string
+    link?: {
+      label: string
+      href: string
+    }
+  }[]
+}
   finalCta: {
     heading: string
     sub: string
@@ -409,39 +416,39 @@ googleReviews: 'Google Reviews',
   ],
 },
     faq: {
-      heading: 'Veelgestelde vragen',
-      sub: 'Duurzaamheid aan de Costa Blanca en alles rond het wrappen.',
-      items: [
-        {
-          q: 'Hoe lang gaat folie mee aan de Costa Blanca?',
-          a: 'Bij normaal gebruik en goed onderhoud gaan premium interieurfolies vele jaren mee. [VERIFY] Vermeld hier de exacte verwachte levensduur en eventuele garantie.',
-        },
-        {
-          q: 'Is het geschikt voor zon, zout zeeklimaat en vocht?',
-          a: 'We kiezen folies die bestand zijn tegen warmte en vocht. Voor plekken met direct fel zonlicht adviseren we de meest UV-stabiele opties.',
-        },
-        {
-          q: 'Kan ik blijven wonen tijdens het wrappen?',
-          a: 'Meestal wel. Losse delen wrappen we in ons atelier; vaste delen werken we netjes en stofarm op locatie af.',
-        },
-        {
-          q: 'Welke foliemerken gebruiken jullie?',
-          a: '[VERIFY] Vul hier de merken in die u daadwerkelijk gebruikt.',
-        },
-        {
-          q: 'Is het verwijderbaar?',
-          a: 'Ja. De folie kan later worden verwijderd; de onderliggende fronten blijven intact bij correcte toepassing.',
-        },
-        {
-          q: 'Hoe onderhoud ik gewrapte fronten?',
-          a: 'Reinigen met een zachte doek en een mild, niet-schurend middel is voldoende. Vermijd agressieve schoonmaakmiddelen.',
-        },
-        {
-          q: 'Wat als een front beschadigd is?',
-          a: 'Losse delen kunnen doorgaans opnieuw worden gewrapt zonder de hele keuken te vervangen. Neem contact op voor herstel.',
-        },
-      ],
+  heading: 'Veelgestelde vragen',
+  sub: 'Alles wat je wilt weten over interieurfolie, het resultaat en onze werkwijze.',
+  items: [
+    {
+      q: 'Hoe lang gaat interieurfolie mee?',
+      a: 'Gemiddeld 7 tot 10 jaar, afhankelijk van gebruik, onderhoud en de omstandigheden waarin de folie wordt toegepast.',
     },
+    {
+      q: 'Is interieurfolie bestand tegen hitte en vocht?',
+      a: 'Ja. Onze interieurfolie is hittebestendig en vochtwerend en is daarom uitstekend geschikt voor keukens en badkamers. De folie is echter niet bestand tegen extreme directe hitte, zoals een hete pan die rechtstreeks op het oppervlak wordt geplaatst.',
+    },
+    {
+      q: 'Kan de folie later weer worden verwijderd?',
+      a: 'In veel gevallen wel. Bij het verwijderen kunnen echter lichte sporen achterblijven, afhankelijk van het materiaal, de afwerking en de staat van de oorspronkelijke ondergrond. We beoordelen iedere ondergrond vooraf om het beste resultaat te garanderen.',
+    },
+    {
+      q: 'Wat kost interieur wrappen?',
+      a: 'Elke keuken en elk interieur is anders. Daarom werken we met een offerte op maat, gebaseerd op onder andere het aantal en formaat van de fronten, vaste delen, de staat van de ondergrond en de gekozen folie.',
+      link: {
+        label: 'Bekijk onze prijzen',
+        href: '/pricing',
+      },
+    },
+    {
+      q: 'Moet ik mijn meubels of keuken zelf demonteren?',
+      a: 'Nee. Waar nodig nemen wij de demontage voor onze rekening. Losse en eenvoudig te vervoeren delen nemen we zorgvuldig mee naar onze werkplaats, waar ze worden voorbereid en gewrapt. Vaste delen worden op locatie afgewerkt.',
+    },
+    {
+      q: 'Kunnen paneeldeuren vlak worden gemaakt met folie?',
+      a: 'Nee. Wrappen verandert de kleur en afwerking, maar niet de vorm van het oorspronkelijke oppervlak. Paneeldeuren, rondingen en andere vormen blijven intact; de folie wordt zorgvuldig om de bestaande vorm heen aangebracht.',
+    },
+  ],
+},
     finalCta: {
       heading: "Stuur 3–5 foto's via WhatsApp en ontvang een eerste indicatie.",
       sub: 'Vertel ons kort over uw project — wij denken graag mee.',
@@ -708,39 +715,39 @@ googleReviews: 'Google Reviews',
   ],
 },
     faq: {
-      heading: 'Frequently asked questions',
-      sub: 'Coastal durability and everything about the wrapping process.',
-      items: [
-        {
-          q: 'How long does the film last on the Costa Blanca?',
-          a: 'With normal use and good care, premium interior films last many years. [VERIFY] State the exact expected lifespan and any warranty here.',
-        },
-        {
-          q: 'Is it suitable for sun, salty sea air and moisture?',
-          a: 'We select films that resist heat and moisture. For spots in direct strong sunlight we recommend the most UV-stable options.',
-        },
-        {
-          q: 'Can I stay in my home during the wrapping?',
-          a: 'Usually yes. Removable parts are wrapped in our workshop; fixed parts are finished neatly and with minimal dust on location.',
-        },
-        {
-          q: 'Which film brands do you use?',
-          a: '[VERIFY] List the brands you actually use here.',
-        },
-        {
-          q: 'Is it removable?',
-          a: 'Yes. The film can be removed later; the underlying fronts stay intact when applied correctly.',
-        },
-        {
-          q: 'How do I maintain wrapped fronts?',
-          a: 'A soft cloth and a mild, non-abrasive cleaner are enough. Avoid aggressive cleaning products.',
-        },
-        {
-          q: 'What if a front gets damaged?',
-          a: 'Individual parts can usually be re-wrapped without replacing the whole kitchen. Contact us for repairs.',
-        },
-      ],
+  heading: 'Frequently asked questions',
+  sub: 'Everything you need to know about interior film, the finish and our process.',
+  items: [
+    {
+      q: 'How long does interior film last?',
+      a: 'Typically 7–10 years, depending on use, care and the conditions in which the film is applied.',
     },
+    {
+      q: 'Is interior film resistant to heat and moisture?',
+      a: 'Yes. Our interior film is heat-resistant and moisture-resistant, making it well suited to kitchens and bathrooms. However, it is not designed to withstand extreme direct heat, such as a hot pan placed directly on the surface.',
+    },
+    {
+      q: 'Can the film be removed later?',
+      a: 'In many cases, yes. However, removal may leave light traces depending on the material, finish and condition of the original surface. We assess each surface beforehand to ensure the best possible result.',
+    },
+    {
+      q: 'How much does interior wrapping cost?',
+      a: 'Every kitchen and interior is different, so we provide a tailored quote based on factors such as the number and size of fronts, fixed elements, the condition of the surface and the film selected.',
+      link: {
+        label: 'View our pricing',
+        href: '/pricing',
+      },
+    },
+    {
+      q: 'Do I need to dismantle my furniture or kitchen?',
+      a: 'No. We take care of the dismantling where required. Removable and easily transportable parts are carefully taken to our workshop, where they are prepared and wrapped. Fixed elements are finished on site.',
+    },
+    {
+      q: 'Can panelled doors be made flat with wrapping?',
+      a: 'No. Wrapping changes the colour and finish, but not the shape of the original surface. Panelled doors, curves and other contours remain intact, with the film carefully formed around the existing shape.',
+    },
+  ],
+},
     finalCta: {
       heading: 'Send 3–5 photos via WhatsApp and get a first indication.',
       sub: 'Tell us briefly about your project — we are happy to advise.',
@@ -1007,39 +1014,39 @@ googleReviews: 'Reseñas de Google',
   ],
 },
     faq: {
-      heading: 'Preguntas frecuentes',
-      sub: 'Durabilidad en la costa y todo sobre el proceso de vinilado.',
-      items: [
-        {
-          q: '¿Cuánto dura el vinilo en la Costa Blanca?',
-          a: 'Con un uso normal y buen cuidado, los vinilos premium de interior duran muchos años. [VERIFY] Indica aquí la vida útil exacta y la garantía.',
-        },
-        {
-          q: '¿Es apto para sol, aire marino salino y humedad?',
-          a: 'Elegimos vinilos resistentes al calor y la humedad. Para zonas con sol directo intenso recomendamos las opciones más estables a los rayos UV.',
-        },
-        {
-          q: '¿Puedo seguir viviendo en casa durante el vinilado?',
-          a: 'Normalmente sí. Las piezas desmontables se vinilan en el taller; las fijas se acaban con esmero y poco polvo en casa.',
-        },
-        {
-          q: '¿Qué marcas de vinilo usáis?',
-          a: '[VERIFY] Indica aquí las marcas que utilizas realmente.',
-        },
-        {
-          q: '¿Se puede quitar?',
-          a: 'Sí. El vinilo se puede retirar más adelante; los frentes originales quedan intactos si se aplica correctamente.',
-        },
-        {
-          q: '¿Cómo mantengo los frentes vinilados?',
-          a: 'Basta con un paño suave y un limpiador suave no abrasivo. Evita productos de limpieza agresivos.',
-        },
-        {
-          q: '¿Y si se daña un frente?',
-          a: 'Las piezas sueltas suelen poder revinilarse sin sustituir toda la cocina. Contáctanos para repararlo.',
-        },
-      ],
+  heading: 'Preguntas frecuentes',
+  sub: 'Todo lo que necesitas saber sobre el film decorativo, el acabado y nuestro proceso.',
+  items: [
+    {
+      q: '¿Cuánto dura el film decorativo?',
+      a: 'Normalmente, entre 7 y 10 años, dependiendo del uso, el cuidado y las condiciones en las que se aplique.',
     },
+    {
+      q: '¿El film es resistente al calor y la humedad?',
+      a: 'Sí. Nuestro film decorativo es resistente al calor y a la humedad, por lo que es especialmente adecuado para cocinas y baños. Sin embargo, no está diseñado para soportar un calor extremo y directo, como el de una sartén caliente colocada directamente sobre la superficie.',
+    },
+    {
+      q: '¿Se puede retirar el film más adelante?',
+      a: 'En muchos casos, sí. Sin embargo, al retirarlo pueden quedar ligeros restos o marcas, dependiendo del material, el acabado y el estado de la superficie original. Evaluamos cada superficie antes de empezar para conseguir el mejor resultado posible.',
+    },
+    {
+      q: '¿Cuánto cuesta vinilar un interior?',
+      a: 'Cada cocina y cada interior son diferentes. Por eso ofrecemos presupuestos personalizados teniendo en cuenta factores como el número y tamaño de los frentes, las partes fijas, el estado de la superficie y el film elegido.',
+      link: {
+        label: 'Ver nuestros precios',
+        href: '/pricing',
+      },
+    },
+    {
+      q: '¿Tengo que desmontar yo los muebles o la cocina?',
+      a: 'No. Nos encargamos del desmontaje cuando sea necesario. Las piezas desmontables y fáciles de transportar se llevan cuidadosamente a nuestro taller, donde se preparan y vinilan. Las partes fijas se trabajan directamente en el lugar.',
+    },
+    {
+      q: '¿Se pueden dejar lisas las puertas con molduras mediante vinilado?',
+      a: 'No. El vinilado cambia el color y el acabado, pero no modifica la forma de la superficie original. Las puertas con molduras, curvas y otras formas mantienen su diseño, y el film se adapta cuidadosamente a ellas.',
+    },
+  ],
+},
     finalCta: {
       heading: 'Envía 3–5 fotos por WhatsApp y recibe una primera orientación.',
       sub: 'Cuéntanos brevemente tu proyecto — te asesoramos encantados.',
