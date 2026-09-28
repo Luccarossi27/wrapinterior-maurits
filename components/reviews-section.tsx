@@ -128,119 +128,120 @@ export function ReviewsSection() {
                 onTouchEnd={handleTouchEnd}
               >
                 <div
-                  className="flex transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
-                  style={{
-                    transform: `translateX(-${activeIndex * 100}%)`,
-                  }}
-                >
-                  const isOriginalView = showOriginal || !review.translatedQuote
+  className="flex transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
+  style={{
+    transform: `translateX(-${activeIndex * 100}%)`,
+  }}
+>
+  {reviews.map((review, index) => {
+    const isOriginalView =
+      showOriginal || !review.translatedQuote
 
-const displayedQuote = isOriginalView
-  ? expandedReview && review.fullQuote
-    ? review.fullQuote
-    : review.quote
-  : expandedReview && review.fullTranslatedQuote
-    ? review.fullTranslatedQuote
-    : review.translatedQuote
+    const displayedQuote = isOriginalView
+      ? expandedReview && review.fullQuote
+        ? review.fullQuote
+        : review.quote
+      : expandedReview && review.fullTranslatedQuote
+        ? review.fullTranslatedQuote
+        : review.translatedQuote
 
-const hasTranslation = !!review.translatedQuote
+    const hasTranslation = !!review.translatedQuote
 
-const hasReadMore =
-  !!review.fullQuote ||
-  !!review.fullTranslatedQuote
+    const hasReadMore =
+      !!review.fullQuote ||
+      !!review.fullTranslatedQuote
 
-                    return (
-                      <div
-                        key={`${review.name}-${index}`}
-                        className="w-full shrink-0"
-                      >
-                        <div className="grid min-h-[360px] items-center lg:grid-cols-[1fr_auto]">
-                          <div className="py-12 lg:py-16 lg:pr-16">
-                            {/* STARS */}
-                            <div className="flex items-center gap-3">
-                              <Quote
-                                className="size-7 shrink-0 text-brass"
-                                aria-hidden="true"
-                              />
+    return (
+      <div
+        key={`${review.name}-${index}`}
+        className="w-full shrink-0"
+      >
+        <div className="grid min-h-[360px] items-center lg:grid-cols-[1fr_auto]">
+          <div className="py-12 lg:py-16 lg:pr-16">
+            {/* STARS */}
+            <div className="flex items-center gap-3">
+              <Quote
+                className="size-7 shrink-0 text-brass"
+                aria-hidden="true"
+              />
 
-                              <div
-                                className="flex gap-0.5"
-                                aria-label={`${review.rating} out of 5 stars`}
-                              >
-                                {Array.from({ length: 5 }).map(
-                                  (_, starIndex) => (
-                                    <Star
-                                      key={starIndex}
-                                      className={
-                                        starIndex < review.rating
-                                          ? 'size-4 fill-brass text-brass'
-                                          : 'size-4 text-border'
-                                      }
-                                      aria-hidden="true"
-                                    />
-                                  ),
-                                )}
-                              </div>
-                            </div>
-
-                            {/* QUOTE */}
-                            <div className="mt-6 max-w-3xl">
-                              <blockquote className="font-serif text-lg font-medium leading-relaxed tracking-tight text-ink sm:text-xl lg:text-2xl">
-                                “{displayedQuote}”
-                              </blockquote>
-
-                              {/* LANGUAGE + READ MORE CONTROLS */}
-                              {(hasTranslation || hasReadMore) && (
-                                <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
-                                  {hasTranslation && (
-                                    <button
-                                      type="button"
-                                      onClick={() => {
-                                        setShowOriginal(
-                                          (current) => !current,
-                                        )
-                                        setExpandedReview(false)
-                                      }}
-                                      className="text-xs font-semibold uppercase tracking-[0.16em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
-                                    >
-                                      {showOriginal
-                                        ? t.reviews.showTranslation
-                                        : t.reviews.showOriginal}
-                                    </button>
-                                  )}
-
-                                  {hasReadMore && (
-                                    <button
-                                      type="button"
-                                      onClick={() => {
-                                        setExpandedReview(
-                                          (current) => !current,
-                                        )
-                                      }}
-                                      className="text-xs font-semibold uppercase tracking-[0.16em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
-                                    >
-                                      {expandedReview
-                                        ? t.reviews.readLess
-                                        : t.reviews.readMore}
-                                    </button>
-                                  )}
-                                </div>
-                              )}
-                            </div>
-
-                            {/* NAME */}
-                            <div className="mt-8">
-                              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-ink">
-                                {review.name}
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    )
-                  })}
-                </div>
+              <div
+                className="flex gap-0.5"
+                aria-label={`${review.rating} out of 5 stars`}
+              >
+                {Array.from({ length: 5 }).map(
+                  (_, starIndex) => (
+                    <Star
+                      key={starIndex}
+                      className={
+                        starIndex < review.rating
+                          ? 'size-4 fill-brass text-brass'
+                          : 'size-4 text-border'
+                      }
+                      aria-hidden="true"
+                    />
+                  ),
+                )}
               </div>
+            </div>
+
+            {/* QUOTE */}
+            <div className="mt-6 max-w-3xl">
+              <blockquote className="font-serif text-lg font-medium leading-relaxed tracking-tight text-ink sm:text-xl lg:text-2xl">
+                “{displayedQuote}”
+              </blockquote>
+
+              {/* LANGUAGE + READ MORE CONTROLS */}
+              {(hasTranslation || hasReadMore) && (
+                <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
+                  {hasTranslation && (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setShowOriginal(
+                          (current) => !current,
+                        )
+                        setExpandedReview(false)
+                      }}
+                      className="text-xs font-semibold uppercase tracking-[0.16em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
+                    >
+                      {showOriginal
+                        ? t.reviews.showTranslation
+                        : t.reviews.showOriginal}
+                    </button>
+                  )}
+
+                  {hasReadMore && (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setExpandedReview(
+                          (current) => !current,
+                        )
+                      }}
+                      className="text-xs font-semibold uppercase tracking-[0.16em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
+                    >
+                      {expandedReview
+                        ? t.reviews.readLess
+                        : t.reviews.readMore}
+                    </button>
+                  )}
+                </div>
+              )}
+            </div>
+
+            {/* NAME */}
+            <div className="mt-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-ink">
+                {review.name}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  })}
+</div>
 
               {/* CONTROLS */}
               <div className="flex items-center justify-between border-t border-border px-0 py-5">
