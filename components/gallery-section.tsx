@@ -10,7 +10,7 @@ const galleryMedia = [
     before: '/images/ben-before.jpeg',
     after: '/images/ben-after.jpeg',
     aspectRatio: 'aspect-[5/4]',
-    colour: 'GREEN',
+    colour: 'COLOUR TBC',
     code: 'CODE TBC',
   },
   {
