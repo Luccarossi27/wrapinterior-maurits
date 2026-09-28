@@ -76,7 +76,7 @@ export function ReviewsSection() {
       id="reviews"
       className="border-t border-border bg-paper text-ink"
     >
-      <div className="mx-auto w-full max-w-6xl px-5 py-16 sm:px-8 sm:py-20 lg:px-10">
+      <div className="mx-auto w-full max-w-6xl px-5 pt-8 pb-10 sm:px-8 sm:pt-12 sm:pb-14 lg:px-10">
 
         {/* Header */}
         <Reveal>
