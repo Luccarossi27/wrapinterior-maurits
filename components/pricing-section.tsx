@@ -111,16 +111,15 @@ export function PricingSection() {
       <Reveal delay={0.1}>
         <div className="mt-14 border-t border-border pt-10 text-center">
           <h3 className="font-serif text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
-            Doors & Other Interiors
+            {t.pricing.otherTitle}
           </h3>
 
           <p className="mx-auto mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            We also wrap doors, wardrobes, furniture and other interior
-            surfaces. Contact us for a tailored quote.
+            {t.pricing.otherSub}
           </p>
 
           <a
-            href={whatsappLink('Quote for doors or other interiors')}
+            href={whatsappLink(t.pricing.otherTitle)}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-pine px-5 py-3 text-sm font-semibold text-paper transition-transform hover:-translate-y-0.5 hover:bg-ink"
@@ -131,6 +130,7 @@ export function PricingSection() {
         </div>
       </Reveal>
 
+      {/* DISCLAIMER */}
       <Reveal delay={0.15}>
         <p className="mx-auto mt-8 max-w-2xl text-center text-xs leading-relaxed text-muted-foreground">
           {t.pricing.disclaimer}
