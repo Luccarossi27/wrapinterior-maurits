@@ -159,8 +159,20 @@ const goToNext = () => {
                   </div>
 
                   <blockquote className="mt-6 max-w-3xl font-serif text-lg font-medium leading-relaxed tracking-tight text-ink sm:text-xl lg:text-2xl">
-                    “{review.quote}”
-                  </blockquote>
+  “{expandedReview && review.fullQuote ? review.fullQuote : review.quote}”
+</blockquote>
+
+{review.fullQuote && (
+  <button
+    type="button"
+    onClick={() => setExpandedReview((current) => !current)}
+    className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
+  >
+    {expandedReview
+      ? t.reviews.readLess
+      : t.reviews.readMore}
+  </button>
+)}
 
                   <div className="mt-8">
                     <p className="text-sm font-semibold uppercase tracking-[0.16em] text-ink">
