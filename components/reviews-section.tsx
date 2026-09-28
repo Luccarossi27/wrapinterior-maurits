@@ -143,12 +143,11 @@ const displayedQuote = isOriginalView
     ? review.fullTranslatedQuote
     : review.translatedQuote
 
-                    const hasTranslation =
-                      !!review.translatedQuote
+const hasTranslation = !!review.translatedQuote
 
-                    const hasReadMore =
-                      !!review.fullQuote ||
-                      !!review.fullTranslatedQuote
+const hasReadMore =
+  !!review.fullQuote ||
+  !!review.fullTranslatedQuote
 
                     return (
                       <div
