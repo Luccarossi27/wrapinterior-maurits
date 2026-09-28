@@ -1,8 +1,11 @@
 'use client'
 
-import { Quote, Star } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import { useLanguage } from '@/lib/i18n/provider'
 import { Reveal } from '@/components/reveal'
+
+const googleReviewsUrl =
+  'https://maps.app.goo.gl/EyFc7M5abQFYoVk67'
 
 export function ReviewsSection() {
   const { t } = useLanguage()
@@ -10,60 +13,68 @@ export function ReviewsSection() {
   return (
     <section id="reviews" className="border-t border-border bg-secondary/40">
       <div className="mx-auto w-full max-w-6xl px-5 pt-4 pb-20 sm:px-8 lg:pt-10 lg:pb-28">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
           <div className="max-w-2xl">
             <Reveal>
               <h2 className="text-balance font-serif text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
                 {t.reviews.heading}
               </h2>
             </Reveal>
+
             <Reveal delay={0.05}>
               <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground">
                 {t.reviews.sub}
               </p>
             </Reveal>
           </div>
+
           <Reveal delay={0.1}>
-            <div className="flex items-center gap-2 rounded-2xl border border-border bg-card px-4 py-3">
-              <div className="flex" aria-hidden="true">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="size-4 fill-brass text-brass" />
-                ))}
+            <a
+              href={googleReviewsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-5 border border-border bg-card px-5 py-4 transition-colors hover:border-pine"
+            >
+              <div className="flex flex-col gap-2">
+                <div className="flex" aria-label="5 star rating">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <span
+                      key={i}
+                      className="text-lg leading-none text-brass"
+                      aria-hidden="true"
+                    >
+                      ★
+                    </span>
+                  ))}
+                </div>
+
+                <span className="text-sm font-semibold text-ink">
+                  {t.reviews.googleBadge}
+                </span>
               </div>
-              <span className="text-sm font-semibold text-ink">
-                {t.reviews.googleBadge}
-              </span>
-            </div>
+
+              <ArrowUpRight className="size-5 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+            </a>
           </Reveal>
         </div>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-3">
-          {t.reviews.items.map((review, i) => (
-            <Reveal key={`${review.name}-${i}`} delay={i * 0.07}>
-              <figure className="flex h-full flex-col rounded-3xl border border-border bg-card p-6">
-                <Quote className="size-7 text-brass" aria-hidden="true" />
-                <blockquote className="mt-4 flex-1 text-pretty text-base leading-relaxed text-ink">
-                  {review.quote}
-                </blockquote>
-                <figcaption className="mt-6 border-t border-border pt-4">
-                  <span className="block font-semibold text-ink">
-                    {review.name}
-                  </span>
-                  <span className="mt-0.5 block text-sm text-muted-foreground">
-                    {review.projectType} · {review.location}
-                  </span>
-                  <span className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-xs text-moss">
-                    <span>
-                      {t.reviews.projectLabel}: {review.finish}
-                    </span>
-                    <span>·</span>
-                    <span>{review.duration}</span>
-                  </span>
-                </figcaption>
-              </figure>
-            </Reveal>
-          ))}
-        </div>
+        <Reveal delay={0.15}>
+          <div className="mt-14 border-y border-border py-12 text-center">
+            <p className="font-serif text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+              {t.reviews.readMore}
+            </p>
+
+            <a
+              href={googleReviewsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center gap-2 bg-pine px-5 py-3 text-sm font-semibold text-paper transition-colors hover:bg-ink"
+            >
+              {t.reviews.readButton}
+              <ArrowUpRight className="size-4" />
+            </a>
+          </div>
+        </Reveal>
       </div>
     </section>
   )
