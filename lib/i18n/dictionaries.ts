@@ -107,20 +107,21 @@ type Dict = {
     steps: { title: string; desc: string }[]
   }
   pricing: {
-    heading: string
-    sub: string
-    includedTitle: string
-    popularLabel: string
-    vat: string
-    cards: {
-      name: string
-      scope: string
-      price: string
-      popular?: boolean
-      included: string[]
-    }[]
-    disclaimer: string
-  }
+  heading: string
+  sub: string
+  popularLabel: string
+  vat: string
+  cards: {
+    name: string
+    scope: string
+    price: string
+    popular?: boolean
+  }[]
+  disclaimer: string
+  otherTitle: string
+  otherSub: string
+  quoteMessage: string
+}
   reviews: {
   heading: string
   sub: string
