@@ -11,7 +11,8 @@ const googleReviewsUrl =
 export function ReviewsSection() {
   const { t } = useLanguage()
   const [activeIndex, setActiveIndex] = useState(0)
-  const [expandedReview, setExpandedReview] = useState(false)
+const [expandedReview, setExpandedReview] = useState(false)
+const [showTranslation, setShowTranslation] = useState(false)
   const touchStartX = useRef<number | null>(null)
 const touchEndX = useRef<number | null>(null)
 
@@ -47,6 +48,7 @@ const handleTouchEnd = () => {
 
   const goToPrevious = () => {
   setExpandedReview(false)
+  setShowTranslation(false)
 
   setActiveIndex((current) =>
     current === 0 ? reviews.length - 1 : current - 1,
@@ -55,6 +57,7 @@ const handleTouchEnd = () => {
 
 const goToNext = () => {
   setExpandedReview(false)
+  setShowTranslation(false)
 
   setActiveIndex((current) =>
     current === reviews.length - 1 ? 0 : current + 1,
@@ -158,21 +161,49 @@ const goToNext = () => {
                     </div>
                   </div>
 
-                  <blockquote className="mt-6 max-w-3xl font-serif text-lg font-medium leading-relaxed tracking-tight text-ink sm:text-xl lg:text-2xl">
-  “{expandedReview && review.fullQuote ? review.fullQuote : review.quote}”
-</blockquote>
+                  <div className="mt-6 max-w-3xl">
+  <blockquote className="font-serif text-lg font-medium leading-relaxed tracking-tight text-ink sm:text-xl lg:text-2xl">
+    “
+    {showTranslation && review.translatedQuote
+      ? review.translatedQuote
+      : expandedReview && review.fullQuote
+        ? review.fullQuote
+        : review.quote}
+    ”
+  </blockquote>
 
-{review.fullQuote && (
-  <button
-    type="button"
-    onClick={() => setExpandedReview((current) => !current)}
-    className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
-  >
-    {expandedReview
-      ? t.reviews.readLess
-      : t.reviews.readMore}
-  </button>
-)}
+  <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
+    {review.translatedQuote && (
+      <button
+        type="button"
+        onClick={() => {
+          setShowTranslation((current) => !current)
+          setExpandedReview(false)
+        }}
+        className="text-xs font-semibold uppercase tracking-[0.16em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
+      >
+        {showTranslation
+          ? t.reviews.showOriginal
+          : t.reviews.showTranslation}
+      </button>
+    )}
+
+    {review.fullQuote && (
+      <button
+        type="button"
+        onClick={() => {
+          setExpandedReview((current) => !current)
+          setShowTranslation(false)
+        }}
+        className="text-xs font-semibold uppercase tracking-[0.16em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
+      >
+        {expandedReview
+          ? t.reviews.readLess
+          : t.reviews.readMore}
+      </button>
+    )}
+  </div>
+</div>
 
                   <div className="mt-8">
                     <p className="text-sm font-semibold uppercase tracking-[0.16em] text-ink">
@@ -229,6 +260,7 @@ const goToNext = () => {
           type="button"
           onClick={() => {
   setExpandedReview(false)
+  setShowTranslation(false)
   setActiveIndex(index)
 }}
           aria-label={`${t.reviews.goToReview} ${index + 1}`}
