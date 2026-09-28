@@ -78,102 +78,118 @@ export function ReviewsSection() {
         </div>
 
         {/* REVIEW CAROUSEL */}
-        <Reveal delay={0.15}>
-          <div className="mt-14 border-y border-border">
-            <div className="grid min-h-[360px] items-center lg:grid-cols-[1fr_auto]">
-              <div className="py-12 pr-0 lg:py-16 lg:pr-16">
-                <div className="flex items-center gap-3">
-                  <Quote
-                    className="size-7 shrink-0 text-brass"
-                    aria-hidden="true"
-                  />
+<Reveal delay={0.15}>
+  <div className="mt-14 overflow-hidden border-y border-border">
+    <div className="relative">
+      <div className="overflow-hidden">
+        <div
+          className="flex transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
+          style={{
+            transform: `translateX(-${activeIndex * 100}%)`,
+          }}
+        >
+          {reviews.map((review, index) => (
+            <div
+              key={`${review.name}-${index}`}
+              className="w-full shrink-0"
+            >
+              <div className="grid min-h-[360px] items-center lg:grid-cols-[1fr_auto]">
+                <div className="py-12 lg:py-16 lg:pr-16">
+                  <div className="flex items-center gap-3">
+                    <Quote
+                      className="size-7 shrink-0 text-brass"
+                      aria-hidden="true"
+                    />
 
-                  <div className="flex gap-0.5" aria-label={`${activeReview.rating} out of 5 stars`}>
-                    {Array.from({ length: 5 }).map((_, i) => (
-                      <Star
-                        key={i}
-                        className={
-                          i < activeReview.rating
-                            ? 'size-4 fill-brass text-brass'
-                            : 'size-4 text-border'
-                        }
-                        aria-hidden="true"
-                      />
-                    ))}
+                    <div
+                      className="flex gap-0.5"
+                      aria-label={`${review.rating} out of 5 stars`}
+                    >
+                      {Array.from({ length: 5 }).map((_, i) => (
+                        <Star
+                          key={i}
+                          className={
+                            i < review.rating
+                              ? 'size-4 fill-brass text-brass'
+                              : 'size-4 text-border'
+                          }
+                          aria-hidden="true"
+                        />
+                      ))}
+                    </div>
                   </div>
-                </div>
 
-                <div
-                  key={activeIndex}
-                  className="mt-6 animate-in fade-in slide-in-from-right-2 duration-300"
-                >
-                  <blockquote className="max-w-4xl font-serif text-2xl font-medium leading-relaxed tracking-tight text-ink sm:text-3xl lg:text-4xl">
-                    “{activeReview.quote}”
+                  <blockquote className="mt-6 max-w-4xl font-serif text-2xl font-medium leading-relaxed tracking-tight text-ink sm:text-3xl lg:text-4xl">
+                    “{review.quote}”
                   </blockquote>
 
                   <div className="mt-8">
                     <p className="text-sm font-semibold uppercase tracking-[0.16em] text-ink">
-                      {activeReview.name}
+                      {review.name}
                     </p>
 
-                    {activeReview.translationNote && (
+                    {review.translationNote && (
                       <p className="mt-2 text-xs text-muted-foreground">
-                        {activeReview.translationNote}
+                        {review.translationNote}
                       </p>
                     )}
                   </div>
                 </div>
               </div>
-
-              {/* CONTROLS */}
-              <div className="flex items-center justify-between border-t border-border py-5 lg:h-full lg:w-44 lg:flex-col lg:border-l lg:border-t-0 lg:justify-center lg:py-0">
-                <span className="font-serif text-sm font-medium tracking-[0.14em] text-muted-foreground">
-                  {String(activeIndex + 1).padStart(2, '0')} /{' '}
-                  {String(reviews.length).padStart(2, '0')}
-                </span>
-
-                <div className="flex items-center gap-2">
-                  <button
-                    type="button"
-                    onClick={goToPrevious}
-                    aria-label={t.reviews.previousLabel}
-                    className="flex size-10 items-center justify-center border border-border text-ink transition-colors hover:border-pine hover:bg-pine hover:text-paper"
-                  >
-                    <ArrowLeft className="size-4" />
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={goToNext}
-                    aria-label={t.reviews.nextLabel}
-                    className="flex size-10 items-center justify-center border border-border text-ink transition-colors hover:border-pine hover:bg-pine hover:text-paper"
-                  >
-                    <ArrowRight className="size-4" />
-                  </button>
-                </div>
-              </div>
             </div>
+          ))}
+        </div>
+      </div>
 
-            {/* PROGRESS */}
-            <div className="flex border-t border-border">
-              {reviews.map((review, index) => (
-                <button
-                  key={`${review.name}-${index}`}
-                  type="button"
-                  onClick={() => setActiveIndex(index)}
-                  aria-label={`${t.reviews.goToReview} ${index + 1}`}
-                  className="group relative h-1 flex-1 bg-border"
-                >
-                  <span
-                    className={`absolute inset-y-0 left-0 transition-all duration-300 ${
-                      index === activeIndex ? 'w-full bg-pine' : 'w-0'
-                    }`}
-                  />
-                </button>
-              ))}
-            </div>
-          </div>
-        </Reveal>
+      {/* CONTROLS */}
+      <div className="flex items-center justify-between border-t border-border py-5 lg:absolute lg:bottom-0 lg:right-0 lg:w-44 lg:border-l lg:border-t-0 lg:px-6">
+        <span className="font-serif text-sm font-medium tracking-[0.14em] text-muted-foreground">
+          {String(activeIndex + 1).padStart(2, '0')} /{' '}
+          {String(reviews.length).padStart(2, '0')}
+        </span>
+
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={goToPrevious}
+            aria-label={t.reviews.previousLabel}
+            className="flex size-10 items-center justify-center border border-border text-ink transition-colors hover:border-pine hover:bg-pine hover:text-paper"
+          >
+            <ArrowLeft className="size-4" />
+          </button>
+
+          <button
+            type="button"
+            onClick={goToNext}
+            aria-label={t.reviews.nextLabel}
+            className="flex size-10 items-center justify-center border border-border text-ink transition-colors hover:border-pine hover:bg-pine hover:text-paper"
+          >
+            <ArrowRight className="size-4" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    {/* PROGRESS */}
+    <div className="flex border-t border-border">
+      {reviews.map((review, index) => (
+        <button
+          key={`${review.name}-progress-${index}`}
+          type="button"
+          onClick={() => setActiveIndex(index)}
+          aria-label={`${t.reviews.goToReview} ${index + 1}`}
+          className="group relative h-1 flex-1 bg-border"
+        >
+          <span
+            className={`absolute inset-y-0 left-0 transition-all duration-500 ${
+              index === activeIndex ? 'w-full bg-pine' : 'w-0'
+            }`}
+          />
+        </button>
+      ))}
+    </div>
+  </div>
+</Reveal>
 
         {/* GOOGLE CTA */}
         <Reveal delay={0.2}>
