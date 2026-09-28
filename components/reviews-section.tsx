@@ -97,34 +97,6 @@ export function ReviewsSection() {
           </div>
         </Reveal>
 
-        {/* Rating */}
-        <Reveal delay={0.08}>
-          <div className="mt-7 flex items-center gap-4">
-            <span className="font-serif text-4xl font-light leading-none tracking-tight text-pine sm:text-5xl">
-              4.9
-            </span>
-
-            <div className="flex flex-col gap-1">
-              <div
-                className="flex gap-1"
-                aria-label="4.9 out of 5 stars"
-              >
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <Star
-                    key={index}
-                    className="size-3.5 fill-brass text-brass"
-                    aria-hidden="true"
-                  />
-                ))}
-              </div>
-
-              <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                {t.reviews.googleBadge}
-              </p>
-            </div>
-          </div>
-        </Reveal>
-
         {/* Reviews carousel */}
         <Reveal delay={0.15}>
           <div className="mt-8 overflow-hidden border-y border-border bg-pine/[0.035]">
@@ -271,24 +243,45 @@ export function ReviewsSection() {
           </div>
         </Reveal>
 
-        {/* Google CTA */}
-        <Reveal delay={0.2}>
-          <div className="mt-8 flex justify-center">
-            <a
-              href={googleReviewsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-3 border border-pine px-6 py-3 text-[10px] font-bold uppercase tracking-[0.18em] text-pine transition-all hover:bg-pine hover:text-paper"
-            >
-              {t.reviews.googleReviews}
+        {/* Google rating + CTA */}
+<Reveal delay={0.2}>
+  <div className="mt-8 flex flex-col items-center">
 
-              <ArrowUpRight
-                className="size-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                aria-hidden="true"
-              />
-            </a>
-          </div>
-        </Reveal>
+    <div className="flex items-center gap-3">
+      <span className="font-serif text-3xl font-light leading-none tracking-tight text-pine">
+        4.9
+      </span>
+
+      <div className="flex gap-1">
+        {Array.from({ length: 5 }).map((_, index) => (
+          <Star
+            key={index}
+            className="size-3.5 fill-brass text-brass"
+            aria-hidden="true"
+          />
+        ))}
+      </div>
+    </div>
+
+    <p className="mt-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+      {t.reviews.googleBadge}
+    </p>
+
+    <a
+      href={googleReviewsUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group mt-5 inline-flex items-center gap-3 border border-pine px-6 py-3 text-[10px] font-bold uppercase tracking-[0.18em] text-pine transition-all hover:bg-pine hover:text-paper"
+    >
+      {t.reviews.googleReviews}
+
+      <ArrowUpRight
+        className="size-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+        aria-hidden="true"
+      />
+    </a>
+  </div>
+</Reveal>
 
       </div>
     </section>
