@@ -99,7 +99,7 @@ export function ReviewsSection() {
 
         {/* Reviews carousel */}
         <Reveal delay={0.15}>
-          <div className="mt-8 overflow-hidden border-y border-border bg-pine/[0.035]">
+          <div className="mt-8 overflow-hidden border-y border-border bg-[#242422]">
             <div
               className="overflow-hidden touch-pan-y"
               onTouchStart={handleTouchStart}
@@ -132,7 +132,7 @@ export function ReviewsSection() {
 
                         {/* Decorative quotation mark */}
                         <div
-                          className="pointer-events-none absolute left-5 top-5 select-none font-serif text-6xl font-light leading-none text-pine/10 sm:left-8 sm:text-7xl"
+                          className="pointer-events-none absolute left-5 top-5 select-none font-serif text-6xl font-light leading-none text-paper/10 sm:left-8 sm:text-7xl"
                           aria-hidden="true"
                         >
                           “
@@ -141,7 +141,7 @@ export function ReviewsSection() {
                         <div className="relative mx-auto max-w-3xl text-center">
 
                           {/* Quote */}
-                          <blockquote className="font-serif text-lg font-light italic leading-[1.6] tracking-tight text-ink sm:text-xl lg:text-2xl">
+                          <blockquote className="font-serif text-lg font-light italic leading-[1.6] tracking-tight text-paper sm:text-xl lg:text-2xl">
                             “{displayedQuote}”
                           </blockquote>
 
@@ -155,7 +155,7 @@ export function ReviewsSection() {
                                     (current) => !current,
                                   )
                                 }}
-                                className="text-[10px] font-semibold uppercase tracking-[0.18em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
+                                className="text-[10px] font-semibold uppercase tracking-[0.18em] text-paper/70 underline-offset-4 transition-colors hover:text-paper hover:underline"
                               >
                                 {showOriginal
                                   ? t.reviews.showTranslation
