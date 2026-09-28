@@ -951,6 +951,7 @@ materials: {
   nextLabel: 'Siguiente reseña',
   goToReview: 'Ir a la reseña',
 
+  items: [
   {
   quote:
     'He tenido muy buena experiencia ... precio comedido.',

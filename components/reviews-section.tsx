@@ -191,7 +191,6 @@ const hasTranslation = !!review.translatedQuote
                         setShowOriginal(
                           (current) => !current,
                         )
-                        setExpandedReviewIndex(null)
                       }}
                       className="text-xs font-semibold uppercase tracking-[0.16em] text-pine underline-offset-4 transition-colors hover:text-ink hover:underline"
                     >
@@ -217,6 +216,7 @@ const hasTranslation = !!review.translatedQuote
     )
   })}
 </div>
+              </div>
 
               {/* CONTROLS */}
               <div className="flex items-center justify-between border-t border-border px-0 py-5">
@@ -259,7 +259,6 @@ const hasTranslation = !!review.translatedQuote
                       key={`${review.name}-progress`}
                       type="button"
                       onClick={() => {
-                        setExpandedReviewIndex(null)
                         setShowOriginal(false)
                         setActiveIndex(index)
                       }}
