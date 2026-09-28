@@ -248,34 +248,36 @@ export function ReviewsSection() {
         href={googleReviewsUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="group inline-flex items-center gap-4 border border-pine px-6 py-4 text-pine transition-all hover:bg-pine hover:text-paper"
+        className="group inline-flex min-w-[220px] flex-col items-center gap-3 border border-pine px-8 py-5 text-pine transition-all hover:bg-pine hover:text-paper"
       >
         {/* Rating */}
-        <span className="font-serif text-2xl font-light leading-none tracking-tight">
-          4.9
-        </span>
+        <div className="flex items-center gap-3">
+          <span className="font-serif text-3xl font-light leading-none tracking-tight">
+            4.9
+          </span>
 
-        {/* Stars */}
-        <div className="flex gap-1">
-          {Array.from({ length: 5 }).map((_, index) => (
-            <Star
-              key={index}
-              className="size-3 fill-brass text-brass transition-colors group-hover:fill-paper group-hover:text-paper"
-              aria-hidden="true"
-            />
-          ))}
+          <div className="flex gap-1">
+            {Array.from({ length: 5 }).map((_, index) => (
+              <Star
+                key={index}
+                className="size-3.5 fill-brass text-brass transition-colors group-hover:fill-paper group-hover:text-paper"
+                aria-hidden="true"
+              />
+            ))}
+          </div>
         </div>
 
-        {/* Label */}
-        <span className="text-[10px] font-bold uppercase tracking-[0.18em]">
-          {t.reviews.googleBadge}
-        </span>
+        {/* Google Reviews */}
+        <div className="flex items-center gap-3">
+          <span className="text-[10px] font-bold uppercase tracking-[0.18em]">
+            {t.reviews.googleBadge}
+          </span>
 
-        {/* Arrow */}
-        <ArrowUpRight
-          className="size-3.5 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-          aria-hidden="true"
-        />
+          <ArrowUpRight
+            className="size-3.5 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+            aria-hidden="true"
+          />
+        </div>
       </a>
     </div>
   </Reveal>
