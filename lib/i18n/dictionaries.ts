@@ -359,38 +359,42 @@ materials: {
   nextLabel: 'Volgende review',
   goToReview: 'Ga naar review',
   items: [
-    {
-      quote:
-        'Maurits is een echte vakman, werkt netjes en komt de afspraken na. Zet vaak net een stap extra om tot een mooi resultaat te komen, dankjewel Maurits.',
-      name: 'Jurgen Brekelmans',
-      rating: 5,
-    },
-    {
-      quote:
-        'Gezellige vakman, werkt gestaag en is optijd. Denkt mee en makkelijk communiceren. Dank je wel Maurits!',
-      name: 'Angela de Groot',
-      rating: 5,
-    },
-    {
-      quote:
-        'Blij dat we voor het wrappen van onze keuken hebben gekozen ipv een nieuwe installeren. Top resultaat en op Maurits kun je vertrouwen.',
-      name: 'Lotte Mulder',
-      rating: 5,
-    },
-    {
-      quote:
-        'Maurits is een vakman, werkt heel nauwkeurig. Helpt mee om je ideeën te realiseren. In ons geval, ziet de keuken er weer als nieuw uit. Bedankt, Maurits!',
-      name: 'Andor Verbakel',
-      rating: 4,
-    },
-    {
-      quote:
-        'Fijne samenwerking: snel antwoord, goed advies en vakkundig werk. Professioneel 2.0. Een absolute aanrader.',
-      name: 'Annelies van Wijk',
-      rating: 5,
-    },
-  ],
-},
+  {
+    quote:
+      'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido.',
+    fullQuote:
+      'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido. Desde ese momento hemos decidido que es nuestro punto de contacto para nuestras reformas y actualizaciones y ya van varias. Espero que en el futuro pueda mantener la dedicación que ahora mismo tiene.',
+    translatedQuote:
+      'Ik heb een zeer goede ervaring gehad met Maurits. We vroegen hem om lamellen- en rolgordijnen voor verschillende kamers te zoeken en te plaatsen en het resultaat was perfect. Daarna vroegen we hem ook om een rolluik voor een deur te zoeken en te installeren, en hij vond een model dat bovendien met een afstandsbediening werkt. We zijn erg tevreden over de kwaliteit van zijn werk, de prioriteit en snelheid waarmee hij zijn projecten uitvoert en natuurlijk de redelijke prijs. Sindsdien hebben we besloten dat hij ons aanspreekpunt is voor onze verbouwingen en updates, en dat zijn er inmiddels meerdere. Ik hoop dat hij deze toewijding in de toekomst kan behouden.',
+    name: 'Jose Lopez',
+    rating: 5,
+    translationNote: 'Origineel in het Spaans',
+  },
+  {
+    quote:
+      'Maurits is een echte vakman, werkt netjes en komt de afspraken na. Zet vaak net een stap extra om tot een mooi resultaat te komen, dankjewel Maurits.',
+    name: 'Jurgen Brekelmans',
+    rating: 5,
+  },
+  {
+    quote:
+      'Gezellige vakman, werkt gestaag en is optijd. Denkt mee en makkelijk communiceren. Dank je wel Maurits!',
+    name: 'Angela de Groot',
+    rating: 5,
+  },
+  {
+    quote:
+      'Blij dat we voor het wrappen van onze keuken hebben gekozen ipv een nieuwe installeren. Top resultaat en op Maurits kun je vertrouwen.',
+    name: 'Lotte Mulder',
+    rating: 5,
+  },
+  {
+    quote:
+      'Maurits is een vakman, werkt heel nauwkeurig. Helpt mee om je ideeën te realiseren. In ons geval, ziet de keuken er weer als nieuw uit. Bedankt, Maurits!',
+    name: 'Andor Verbakel',
+    rating: 4,
+  },
+],
     faq: {
       heading: 'Veelgestelde vragen',
       sub: 'Duurzaamheid aan de Costa Blanca en alles rond het wrappen.',
