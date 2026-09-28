@@ -241,45 +241,45 @@ export function ReviewsSection() {
       </Reveal>
 
       {/* Google rating + CTA */}
-      <div className="mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10">
-        <Reveal delay={0.2}>
-          <div className="flex flex-col items-center py-8">
-            <div className="flex items-center gap-3">
-              <span className="font-serif text-3xl font-light leading-none tracking-tight text-pine">
-                4.9
-              </span>
+<div className="mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10">
+  <Reveal delay={0.2}>
+    <div className="flex justify-center py-8">
+      <a
+        href={googleReviewsUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group inline-flex items-center gap-4 border border-pine px-6 py-4 text-pine transition-all hover:bg-pine hover:text-paper"
+      >
+        {/* Rating */}
+        <span className="font-serif text-2xl font-light leading-none tracking-tight">
+          4.9
+        </span>
 
-              <div className="flex gap-1">
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <Star
-                    key={index}
-                    className="size-3.5 fill-brass text-brass"
-                    aria-hidden="true"
-                  />
-                ))}
-              </div>
-            </div>
+        {/* Stars */}
+        <div className="flex gap-1">
+          {Array.from({ length: 5 }).map((_, index) => (
+            <Star
+              key={index}
+              className="size-3 fill-brass text-brass transition-colors group-hover:fill-paper group-hover:text-paper"
+              aria-hidden="true"
+            />
+          ))}
+        </div>
 
-            <p className="mt-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-              {t.reviews.googleBadge}
-            </p>
+        {/* Label */}
+        <span className="text-[10px] font-bold uppercase tracking-[0.18em]">
+          {t.reviews.googleBadge}
+        </span>
 
-            <a
-              href={googleReviewsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group mt-5 inline-flex items-center gap-3 border border-pine px-6 py-3 text-[10px] font-bold uppercase tracking-[0.18em] text-pine transition-all hover:bg-pine hover:text-paper"
-            >
-              {t.reviews.googleReviews}
-
-              <ArrowUpRight
-                className="size-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                aria-hidden="true"
-              />
-            </a>
-          </div>
-        </Reveal>
-      </div>
+        {/* Arrow */}
+        <ArrowUpRight
+          className="size-3.5 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+          aria-hidden="true"
+        />
+      </a>
+    </div>
+  </Reveal>
+</div>
     </section>
   )
 }
