@@ -69,9 +69,9 @@ export function FinalCta() {
         </div>
       </div>
 
-      {/* Contact methods */}
-      <div className="mx-auto w-full max-w-6xl px-5 pb-20 sm:px-8 lg:pb-28">
-        <div className="grid gap-4 md:grid-cols-3">
+     {/* Contact methods */}
+<div className="mx-auto w-full max-w-6xl px-5 pb-4 sm:px-8 lg:pb-6">
+  <div className="grid gap-4 md:grid-cols-3">
           {/* WhatsApp */}
           <Reveal delay={0.05}>
             <div className="flex h-full flex-col rounded-3xl border border-border bg-card p-6 sm:p-7">
