@@ -146,6 +146,8 @@ type Dict = {
   faq: {
   heading: string
   sub: string
+  contactText: string
+  contactLink: string
   items: {
     q: string
     a: string
