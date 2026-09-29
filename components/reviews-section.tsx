@@ -243,12 +243,12 @@ export function ReviewsSection() {
       {/* Google rating + CTA */}
 <div className="mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10">
   <Reveal delay={0.2}>
-    <div className="flex bg-#EDE3D2 justify-center py-8">
+    <div className="flex justify-center py-8">
       <a
         href={googleReviewsUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="group inline-flex min-w-[220px] flex-col items-center gap-3 border border-pine px-8 py-5 text-pine transition-all hover:bg-pine hover:text-paper"
+        className="group inline-flex min-w-[220px] bg-[#E8DCC8] flex-col items-center gap-3 border border-pine px-8 py-5 text-pine transition-all hover:bg-pine hover:text-paper"
       >
         {/* Rating */}
         <div className="flex items-center gap-3">
