@@ -54,7 +54,7 @@ export function SiteHeader() {
           <LanguageSwitcher className="hidden sm:inline-flex" />
 
           <a
-            href={whatsappLink(t.finalCta.microcopy)}
+            href={whatsappLink(t.contactPage.whatsappMessage)}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white/20 md:inline-flex"
@@ -110,7 +110,7 @@ export function SiteHeader() {
           </div>
 
           <a
-            href={whatsappLink(t.finalCta.microcopy)}
+            href={whatsappLink(t.contactPage.whatsappMessage)}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
