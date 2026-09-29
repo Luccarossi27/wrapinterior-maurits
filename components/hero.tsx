@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowRight, Camera, MessageCircle } from 'lucide-react'
+import { ArrowRight, MessageCircle } from 'lucide-react'
 import { whatsappLink } from '@/lib/i18n/dictionaries'
 import { useLanguage } from '@/lib/i18n/provider'
 import { BeforeAfterSlider } from '@/components/before-after-slider'
@@ -57,25 +57,6 @@ export function Hero() {
             </div>
           </Reveal>
 
-          {/* Trust / service points */}
-          <Reveal delay={0.2}>
-            <ul className="mt-9 flex flex-wrap gap-x-6 gap-y-3 border-t border-border pt-5">
-              {t.hero.chips.map((chip, i) => (
-                <li
-                  key={chip}
-                  className="flex items-center gap-2 text-sm font-medium text-ink"
-                >
-                  {i === 3 ? (
-                    <Camera className="size-4 text-brass" />
-                  ) : (
-                    <span className="size-1.5 rounded-full bg-brass" />
-                  )}
-
-                  {chip}
-                </li>
-              ))}
-            </ul>
-          </Reveal>
         </div>
 
         {/* Before / After */}
