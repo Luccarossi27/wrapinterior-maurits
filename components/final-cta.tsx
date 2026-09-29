@@ -1,4 +1,3 @@
-```tsx
 'use client'
 
 import Image from 'next/image'
@@ -18,10 +17,10 @@ export function FinalCta() {
   const { t } = useLanguage()
 
   const fullAddress = `${contact.address}, ${contact.postcode} ${contact.city}, ${contact.province}, Spain`
-const encodedAddress = encodeURIComponent(fullAddress)
+  const encodedAddress = encodeURIComponent(fullAddress)
 
-const mapSrc = `https://www.google.com/maps?q=${encodedAddress}&output=embed`
-const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`
+  const mapSrc = `https://www.google.com/maps?q=${encodedAddress}&output=embed`
+  const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`
 
   return (
     <section
@@ -266,4 +265,3 @@ const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${enco
     </section>
   )
 }
-```
