@@ -161,6 +161,7 @@ type Dict = {
   eyebrow: string
   heading: string
   sub: string
+  button: string
 
   whatsapp: {
     title: string
@@ -480,6 +481,7 @@ googleReviews: 'Google Reviews',
   eyebrow: 'CONTACT',
   heading: 'Laten we je project bespreken.',
   sub: 'Heb je een vraag, wil je een eerste prijsindicatie of wil je weten wat er mogelijk is? Neem rechtstreeks contact op met Maurits.',
+  button: 'Neem contact op',
 
   whatsapp: {
     title: 'WhatsApp',
@@ -805,6 +807,7 @@ googleReviews: 'Google Reviews',
   eyebrow: 'GET IN TOUCH',
   heading: 'Let’s talk about your project.',
   sub: 'Have a question, want an initial quote or simply want to know what’s possible? Get in touch with Maurits directly.',
+  button: 'Get in touch',
 
   whatsapp: {
     title: 'WhatsApp',
@@ -1128,6 +1131,7 @@ googleReviews: 'Reseñas de Google',
   eyebrow: 'CONTACTO',
   heading: 'Hablemos de tu proyecto.',
   sub: '¿Tienes alguna pregunta, quieres un presupuesto inicial o simplemente quieres saber qué es posible? Ponte en contacto directamente con Maurits.',
+  button: 'Contacta con nosotros',
 
   whatsapp: {
     title: 'WhatsApp',
