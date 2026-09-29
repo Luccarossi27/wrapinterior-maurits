@@ -745,8 +745,8 @@ googleReviews: 'Google Reviews',
   ],
 },
     finalCta: {
-      heading: 'Send 3–5 photos via WhatsApp and get a first indication.',
-      sub: 'Tell us briefly about your project — we are happy to advise.',
+      heading: 'Send 3–5 photos via WhatsApp and get a first quote.',
+      sub: 'Tell us briefly about your project, we are happy to advise.',
       microcopy: 'Send 3–5 clear photos of the fronts and any fixed parts.',
       form: {
         name: 'Name',
