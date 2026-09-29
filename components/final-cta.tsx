@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from 'react'
 import Image from 'next/image'
-import { ArrowRight, Camera, Check, MessageCircle, Phone } from 'lucide-react'
+import { ArrowRight, Check, MessageCircle, Phone } from 'lucide-react'
 import { contact, whatsappLink } from '@/lib/i18n/dictionaries'
 import { useLanguage } from '@/lib/i18n/provider'
 import { Reveal } from '@/components/reveal'
@@ -30,7 +30,7 @@ export function FinalCta() {
     setSent(true)
 
     window.open(
-      whatsappLink(composed || t.finalCta.microcopy),
+      whatsappLink(composed || t.finalCta.whatsappMessage),
       '_blank',
       'noopener',
     )
@@ -61,25 +61,15 @@ export function FinalCta() {
             </Reveal>
 
             <Reveal delay={0.15}>
-              <div className="mt-6 flex max-w-lg items-start gap-3 rounded-2xl border border-border bg-sand/50 px-4 py-4">
-                <Camera className="mt-0.5 size-5 shrink-0 text-brass" />
-
-                <p className="text-sm leading-relaxed text-muted-foreground">
-                  {t.finalCta.microcopy}
-                </p>
-              </div>
-            </Reveal>
-
-            <Reveal delay={0.2}>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a
-                  href={whatsappLink(t.finalCta.microcopy)}
+                  href={whatsappLink(t.finalCta.whatsappMessage)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex items-center justify-center gap-2 rounded-full bg-pine px-6 py-3.5 text-base font-semibold text-paper transition-transform hover:-translate-y-0.5 hover:bg-ink"
                 >
                   <MessageCircle className="size-5" />
-                  {t.cta.sendPhotos}
+                  {t.finalCta.whatsappButton}
                   <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
                 </a>
 
@@ -115,26 +105,19 @@ export function FinalCta() {
                     <Check className="size-7" />
                   </span>
 
-                  <div>
-                    <p className="text-lg font-semibold text-ink">
-                      {t.finalCta.form.success}
-                    </p>
-
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                      WhatsApp should now be open with your enquiry ready to
-                      send.
-                    </p>
-                  </div>
+                  <p className="text-lg font-semibold text-ink">
+                    {t.finalCta.form.success}
+                  </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                   <div>
                     <h3 className="font-serif text-2xl font-semibold text-ink">
-                      {t.cta.getQuote}
+                      {t.finalCta.formHeading}
                     </h3>
 
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      Send us a few details and we'll take it from there.
+                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                      {t.finalCta.formIntro}
                     </p>
                   </div>
 
