@@ -1,4 +1,3 @@
-```tsx
 import { SiteHeader } from '@/components/site-header'
 import { Hero } from '@/components/hero'
 import { ProofBar } from '@/components/proof-bar'
