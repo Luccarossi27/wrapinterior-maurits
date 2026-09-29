@@ -1,186 +1,237 @@
 'use client'
 
-import { useState, type FormEvent } from 'react'
-import Image from 'next/image'
-import { ArrowRight, Check, MessageCircle, Phone } from 'lucide-react'
+import {
+  ArrowRight,
+  Mail,
+  MapPin,
+  MessageCircle,
+  Navigation,
+  Phone,
+} from 'lucide-react'
 import { contact, whatsappLink } from '@/lib/i18n/dictionaries'
 import { useLanguage } from '@/lib/i18n/provider'
 import { Reveal } from '@/components/reveal'
 
 export function FinalCta() {
   const { t } = useLanguage()
-  const [sent, setSent] = useState(false)
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault()
+  const fullAddress = `${contact.address}, ${contact.postcode} ${contact.city}, ${contact.province}, Spain`
+  const encodedAddress = encodeURIComponent(fullAddress)
 
-    const data = new FormData(e.currentTarget)
-    const name = String(data.get('name') ?? '')
-    const phone = String(data.get('phone') ?? '')
-    const message = String(data.get('message') ?? '')
-
-    const composed = [
-      name && `${t.finalCta.form.name}: ${name}`,
-      phone && `${t.finalCta.form.phone}: ${phone}`,
-      message,
-    ]
-      .filter(Boolean)
-      .join('\n')
-
-    setSent(true)
-
-    window.open(
-      whatsappLink(composed || t.finalCta.whatsappMessage),
-      '_blank',
-      'noopener',
-    )
-  }
+  const mapSrc = `https://www.google.com/maps?q=${encodedAddress}&output=embed`
+  const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`
 
   return (
-    <section id="contact" className="border-t border-border bg-background text-ink">
-      <div className="mx-auto w-full max-w-6xl px-5 pt-4 pb-20 sm:px-8 lg:pt-10 lg:pb-28">
-        <div className="grid gap-10 lg:grid-cols-[1.05fr_1fr] lg:items-center lg:gap-16">
-          {/* Left side */}
-          <div>
-            <Reveal>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brass">
-                Get in touch
-              </p>
-            </Reveal>
+    <section
+      id="contact"
+      className="border-t border-border bg-background text-ink"
+    >
+      {/* Intro */}
+      <div className="mx-auto w-full max-w-6xl px-5 pt-12 pb-16 sm:px-8 sm:pt-16 lg:pt-20 lg:pb-20">
+        <div className="max-w-3xl">
+          <Reveal>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brass">
+              {t.contactPage.eyebrow}
+            </p>
+          </Reveal>
 
-            <Reveal delay={0.05}>
-              <h2 className="mt-3 max-w-2xl text-balance font-serif text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl lg:text-5xl">
-                {t.finalCta.heading}
+          <Reveal delay={0.05}>
+            <h1 className="mt-3 text-balance font-serif text-4xl font-semibold leading-[1.05] tracking-tight text-ink sm:text-5xl lg:text-6xl">
+              {t.contactPage.heading}
+            </h1>
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <p className="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
+              {t.contactPage.sub}
+            </p>
+          </Reveal>
+        </div>
+      </div>
+
+      {/* Contact methods */}
+      <div className="mx-auto w-full max-w-6xl px-5 pb-20 sm:px-8 lg:pb-28">
+        <div className="grid gap-4 md:grid-cols-3">
+          {/* WhatsApp */}
+          <Reveal delay={0.05}>
+            <div className="flex h-full flex-col rounded-3xl border border-border bg-card p-6 sm:p-7">
+              <div className="flex size-12 items-center justify-center rounded-2xl bg-pine text-paper">
+                <MessageCircle className="size-5" />
+              </div>
+
+              <h2 className="mt-6 font-serif text-2xl font-semibold text-ink">
+                {t.contactPage.whatsapp.title}
               </h2>
-            </Reveal>
 
-            <Reveal delay={0.1}>
-              <p className="mt-5 max-w-lg text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-                {t.finalCta.sub}
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                {t.contactPage.whatsapp.text}
               </p>
-            </Reveal>
 
-            <Reveal delay={0.15}>
-              <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-                <a
-                  href={whatsappLink(t.finalCta.whatsappMessage)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group inline-flex items-center justify-center gap-2 rounded-full bg-pine px-6 py-3.5 text-base font-semibold text-paper transition-transform hover:-translate-y-0.5 hover:bg-ink"
-                >
-                  <MessageCircle className="size-5" />
-                  {t.finalCta.whatsappButton}
-                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
-                </a>
+              <a
+                href={whatsappLink(t.contactPage.whatsappMessage)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-pine px-5 py-3 text-sm font-semibold text-paper transition-transform hover:-translate-y-0.5 hover:bg-ink"
+              >
+                {t.contactPage.whatsapp.button}
+                <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+              </a>
+            </div>
+          </Reveal>
 
-                <a
-                  href={`tel:${contact.phoneHref}`}
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-6 py-3.5 text-base font-semibold text-ink transition-colors hover:border-pine hover:bg-sand"
-                >
-                  <Phone className="size-5" />
-                  {t.cta.call}
-                </a>
+          {/* Phone */}
+          <Reveal delay={0.1}>
+            <div className="flex h-full flex-col rounded-3xl border border-border bg-card p-6 sm:p-7">
+              <div className="flex size-12 items-center justify-center rounded-2xl bg-sand text-pine">
+                <Phone className="size-5" />
               </div>
-            </Reveal>
-          </div>
 
-          {/* Quote form */}
+              <h2 className="mt-6 font-serif text-2xl font-semibold text-ink">
+                {t.contactPage.phone.title}
+              </h2>
+
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                {t.contactPage.phone.text}
+              </p>
+
+              <a
+                href={`tel:${contact.phoneHref}`}
+                className="mt-6 inline-flex items-center justify-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-semibold text-ink transition-colors hover:border-pine hover:bg-sand"
+              >
+                {t.contactPage.phone.button}
+                <ArrowRight className="size-4" />
+              </a>
+            </div>
+          </Reveal>
+
+          {/* Email */}
           <Reveal delay={0.15}>
-            <div className="rounded-3xl border border-border bg-card p-5 text-ink shadow-2xl sm:p-7">
-              <div className="relative mb-6 h-36 overflow-hidden rounded-2xl sm:h-40">
-                <Image
-                  src="/images/contact1.jpg"
-                  alt="Maurits standing outside the Wrap Interior workshop"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 460px"
-                  className="object-cover object-[center_20%]"
-                />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/30 to-transparent" />
+            <div className="flex h-full flex-col rounded-3xl border border-border bg-card p-6 sm:p-7">
+              <div className="flex size-12 items-center justify-center rounded-2xl bg-sand text-pine">
+                <Mail className="size-5" />
               </div>
 
-              {sent ? (
-                <div className="flex min-h-[300px] flex-col items-center justify-center gap-4 py-8 text-center">
-                  <span className="flex size-14 items-center justify-center rounded-full bg-secondary text-pine">
-                    <Check className="size-7" />
-                  </span>
+              <h2 className="mt-6 font-serif text-2xl font-semibold text-ink">
+                {t.contactPage.email.title}
+              </h2>
 
-                  <p className="text-lg font-semibold text-ink">
-                    {t.finalCta.form.success}
-                  </p>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                  <div>
-                    <h3 className="font-serif text-2xl font-semibold text-ink">
-                      {t.finalCta.formHeading}
-                    </h3>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                {t.contactPage.email.text}
+              </p>
 
-                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                      {t.finalCta.formIntro}
-                    </p>
-                  </div>
-
-                  <label className="flex flex-col gap-1.5 text-sm">
-                    <span className="font-medium text-ink">
-                      {t.finalCta.form.name}
-                    </span>
-
-                    <input
-                      name="name"
-                      type="text"
-                      autoComplete="name"
-                      className="rounded-xl border border-border bg-card px-4 py-2.5 text-ink outline-none transition-colors placeholder:text-muted-foreground focus:border-pine focus:ring-2 focus:ring-pine/20"
-                    />
-                  </label>
-
-                  <label className="flex flex-col gap-1.5 text-sm">
-                    <span className="font-medium text-ink">
-                      {t.finalCta.form.phone}
-                    </span>
-
-                    <input
-                      name="phone"
-                      type="tel"
-                      autoComplete="tel"
-                      className="rounded-xl border border-border bg-card px-4 py-2.5 text-ink outline-none transition-colors placeholder:text-muted-foreground focus:border-pine focus:ring-2 focus:ring-pine/20"
-                    />
-                  </label>
-
-                  <label className="flex flex-col gap-1.5 text-sm">
-                    <span className="font-medium text-ink">
-                      {t.finalCta.form.message}
-                    </span>
-
-                    <textarea
-                      name="message"
-                      rows={3}
-                      className="resize-none rounded-xl border border-border bg-card px-4 py-2.5 text-ink outline-none transition-colors placeholder:text-muted-foreground focus:border-pine focus:ring-2 focus:ring-pine/20"
-                    />
-                  </label>
-
-                  <button
-                    type="submit"
-                    className="mt-1 inline-flex items-center justify-center gap-2 rounded-full bg-pine px-5 py-3 text-sm font-semibold text-paper transition-transform hover:-translate-y-0.5 hover:bg-ink"
-                  >
-                    <MessageCircle className="size-4" />
-                    {t.finalCta.form.submit}
-                  </button>
-
-                  <p className="text-center text-xs text-muted-foreground">
-                    {t.finalCta.form.or}{' '}
-                    <a
-                      href={`tel:${contact.phoneHref}`}
-                      className="font-medium text-pine underline-offset-2 hover:underline"
-                    >
-                      {contact.phoneDisplay}
-                    </a>
-                  </p>
-                </form>
-              )}
+              <a
+                href={`mailto:${contact.email}`}
+                className="mt-6 inline-flex items-center justify-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-semibold text-ink transition-colors hover:border-pine hover:bg-sand"
+              >
+                {t.contactPage.email.button}
+                <ArrowRight className="size-4" />
+              </a>
             </div>
           </Reveal>
         </div>
+      </div>
+
+      {/* Workshop / Map */}
+      <div className="border-y border-border bg-sand/30">
+        <div className="mx-auto w-full max-w-6xl px-5 py-16 sm:px-8 lg:py-20">
+          <div className="grid gap-10 lg:grid-cols-[1fr_1.35fr] lg:items-center lg:gap-14">
+            {/* Location details */}
+            <div>
+              <Reveal>
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brass">
+                  {t.contactPage.location.eyebrow}
+                </p>
+              </Reveal>
+
+              <Reveal delay={0.05}>
+                <h2 className="mt-3 font-serif text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
+                  {t.contactPage.location.heading}
+                </h2>
+              </Reveal>
+
+              <Reveal delay={0.1}>
+                <p className="mt-4 max-w-md text-base leading-relaxed text-muted-foreground">
+                  {t.contactPage.location.sub}
+                </p>
+              </Reveal>
+
+              <Reveal delay={0.15}>
+                <div className="mt-8 flex gap-4">
+                  <div className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-pine text-paper">
+                    <MapPin className="size-5" />
+                  </div>
+
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.15em] text-brass">
+                      {t.contactPage.location.addressLabel}
+                    </p>
+
+                    <address className="mt-2 not-italic text-sm leading-relaxed text-ink">
+                      {contact.address}
+                      <br />
+                      {contact.postcode} {contact.city}
+                      <br />
+                      {contact.province}, Spain
+                    </address>
+                  </div>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.2}>
+                <a
+                  href={directionsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group mt-8 inline-flex items-center gap-2 rounded-full bg-pine px-6 py-3.5 text-sm font-semibold text-paper transition-transform hover:-translate-y-0.5 hover:bg-ink"
+                >
+                  <Navigation className="size-4" />
+                  {t.contactPage.location.directions}
+                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+                </a>
+              </Reveal>
+            </div>
+
+            {/* Interactive map */}
+            <Reveal delay={0.15}>
+              <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-xl">
+                <iframe
+                  title={t.contactPage.location.mapTitle}
+                  src={mapSrc}
+                  className="h-[380px] w-full border-0 sm:h-[460px]"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                />
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom CTA */}
+      <div className="mx-auto w-full max-w-6xl px-5 py-16 sm:px-8 lg:py-24">
+        <Reveal>
+          <div className="rounded-3xl bg-pine px-6 py-12 text-center text-paper sm:px-10 sm:py-14">
+            <h2 className="mx-auto max-w-2xl font-serif text-3xl font-semibold leading-tight sm:text-4xl">
+              {t.contactPage.bottomCta.heading}
+            </h2>
+
+            <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-paper/75 sm:text-base">
+              {t.contactPage.bottomCta.sub}
+            </p>
+
+            <a
+              href={whatsappLink(t.contactPage.whatsappMessage)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-7 inline-flex items-center justify-center gap-2 rounded-full bg-paper px-6 py-3.5 text-sm font-semibold text-pine transition-transform hover:-translate-y-0.5"
+            >
+              <MessageCircle className="size-4" />
+              {t.contactPage.bottomCta.button}
+              <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+            </a>
+          </div>
+        </Reveal>
       </div>
     </section>
   )
