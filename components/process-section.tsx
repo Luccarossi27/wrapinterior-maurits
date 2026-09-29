@@ -54,14 +54,13 @@ export function ProcessSection() {
             </ol>
           </div>
 
-          <Reveal
-  delay={0.15}
-  className="grid h-[520px] grid-cols-2 grid-rows-2"
->
+          <Reveal delay={0.15} className="grid grid-cols-2">
   {stepImages.map((src, i) => (
     <div
       key={i}
-      className="relative min-h-0 overflow-hidden border border-paper/10"
+      className={`relative overflow-hidden border border-paper/10 ${
+        i % 3 === 0 ? 'aspect-[3/4]' : 'aspect-square'
+      } ${i === 0 ? 'translate-y-4' : ''} ${i === 3 ? '-translate-y-4' : ''}`}
     >
       <Image
         src={src || '/placeholder.svg'}
