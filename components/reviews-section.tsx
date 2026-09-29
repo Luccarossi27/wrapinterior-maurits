@@ -252,7 +252,7 @@ export function ReviewsSection() {
       >
         {/* Rating */}
         <div className="flex items-center gap-3">
-          <span className="font-serif text-3xl font-light leading-none tracking-tight">
+          <span className="font-serif bg-[#D8C5AA] text-3xl font-light leading-none tracking-tight">
             4.9
           </span>
 
@@ -260,7 +260,7 @@ export function ReviewsSection() {
             {Array.from({ length: 5 }).map((_, index) => (
               <Star
                 key={index}
-                className="size-3.5 fill-brass text-brass bg-[#D8C5AA] transition-colors group-hover:fill-paper group-hover:text-paper"
+                className="size-3.5 fill-brass text-brass transition-colors group-hover:fill-paper group-hover:text-paper"
                 aria-hidden="true"
               />
             ))}
