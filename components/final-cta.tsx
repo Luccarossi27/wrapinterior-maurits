@@ -1,5 +1,7 @@
+```tsx
 'use client'
 
+import Image from 'next/image'
 import {
   ArrowRight,
   Mail,
@@ -26,25 +28,53 @@ export function FinalCta() {
       id="contact"
       className="border-t border-border bg-background text-ink"
     >
-      {/* Intro */}
+      {/* Intro / Meet Maurits */}
       <div className="mx-auto w-full max-w-6xl px-5 pt-12 pb-16 sm:px-8 sm:pt-16 lg:pt-20 lg:pb-20">
-        <div className="max-w-3xl">
-          <Reveal>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brass">
-              {t.contactPage.eyebrow}
-            </p>
-          </Reveal>
+        <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+          {/* Intro copy */}
+          <div className="max-w-3xl">
+            <Reveal>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brass">
+                {t.contactPage.eyebrow}
+              </p>
+            </Reveal>
 
-          <Reveal delay={0.05}>
-            <h1 className="mt-3 text-balance font-serif text-4xl font-semibold leading-[1.05] tracking-tight text-ink sm:text-5xl lg:text-6xl">
-              {t.contactPage.heading}
-            </h1>
-          </Reveal>
+            <Reveal delay={0.05}>
+              <h1 className="mt-3 text-balance font-serif text-4xl font-semibold leading-[1.05] tracking-tight text-ink sm:text-5xl lg:text-6xl">
+                {t.contactPage.heading}
+              </h1>
+            </Reveal>
 
-          <Reveal delay={0.1}>
-            <p className="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-              {t.contactPage.sub}
-            </p>
+            <Reveal delay={0.1}>
+              <p className="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
+                {t.contactPage.sub}
+              </p>
+            </Reveal>
+
+            <Reveal delay={0.15}>
+              <div className="mt-8 flex items-center gap-4">
+                <div className="size-1.5 rounded-full bg-brass" />
+                <p className="text-sm font-medium text-ink">
+                  Maurits · Wrap Interior
+                </p>
+              </div>
+            </Reveal>
+          </div>
+
+          {/* Maurits photo */}
+          <Reveal delay={0.15}>
+            <div className="relative overflow-hidden rounded-3xl border border-border bg-sand shadow-xl">
+              <div className="relative aspect-[4/3] w-full sm:aspect-[16/10] lg:aspect-[4/3]">
+                <Image
+                  src="/images/contact1.jpg"
+                  alt="Maurits from Wrap Interior"
+                  fill
+                  priority
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 45vw"
+                />
+              </div>
+            </div>
           </Reveal>
         </div>
       </div>
@@ -236,3 +266,4 @@ export function FinalCta() {
     </section>
   )
 }
+```
