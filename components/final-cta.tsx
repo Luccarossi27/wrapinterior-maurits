@@ -99,8 +99,8 @@ export function FinalCta() {
             <div className="rounded-3xl border border-border bg-card p-5 text-ink shadow-2xl sm:p-7">
               <div className="relative mb-6 h-36 overflow-hidden rounded-2xl sm:h-40">
                 <Image
-                  src="/images/portrait-team.png"
-                  alt="Wrap Interior craftsperson smoothing wrapping film onto a kitchen front"
+                  src="/images/contact1.jpg"
+                  alt="Maurits standing outside the Wrap Interior workshop"
                   fill
                   sizes="(max-width: 1024px) 100vw, 460px"
                   className="object-cover object-center"
