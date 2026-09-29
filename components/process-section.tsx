@@ -54,24 +54,22 @@ export function ProcessSection() {
             </ol>
           </div>
 
-          <Reveal delay={0.15} className="grid grid-cols-2">
-            {stepImages.map((src, i) => (
-              <div
-                key={i}
-                className={`relative overflow-hidden rounded-3xl border border-paper/10 ${
-                  i % 3 === 0 ? 'aspect-[3/4]' : 'aspect-square'
-                } ${i === 0 ? 'translate-y-4' : ''} ${i === 3 ? '-translate-y-4' : ''}`}
-              >
-                <Image
-                  src={src || '/placeholder.svg'}
-                  alt={t.process.steps[i]?.title ?? 'Wrapping process detail'}
-                  fill
-                  sizes="(max-width: 1024px) 45vw, 300px"
-                  className="object-cover"
-                />
-              </div>
-            ))}
-          </Reveal>
+          <Reveal delay={0.15} className="grid grid-cols-2 grid-rows-2">
+  {stepImages.map((src, i) => (
+    <div
+      key={i}
+      className="relative min-h-0 overflow-hidden border border-paper/10"
+    >
+      <Image
+        src={src || '/placeholder.svg'}
+        alt={t.process.steps[i]?.title ?? 'Wrapping process detail'}
+        fill
+        sizes="(max-width: 1024px) 45vw, 300px"
+        className="object-cover"
+      />
+    </div>
+  ))}
+</Reveal>
         </div>
       </div>
     </section>
