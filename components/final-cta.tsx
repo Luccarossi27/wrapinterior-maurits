@@ -49,6 +49,7 @@ export function FinalCta() {
                 {t.contactPage.sub}
               </p>
             </Reveal>
+          </div>
 
           {/* Maurits photo */}
           <Reveal delay={0.15}>
