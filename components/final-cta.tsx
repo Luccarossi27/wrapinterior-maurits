@@ -103,7 +103,7 @@ export function FinalCta() {
                   alt="Maurits standing outside the Wrap Interior workshop"
                   fill
                   sizes="(max-width: 1024px) 100vw, 460px"
-                  className="object-cover object-center"
+                  className="object-cover object-top"
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/30 to-transparent" />
