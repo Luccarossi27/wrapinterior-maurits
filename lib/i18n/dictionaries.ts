@@ -500,7 +500,7 @@ googleReviews: 'Google Reviews',
   },
 
   whatsappMessage:
-    'Hi Maurits, I’d like to request a quote. I’ve attached some photos of my project.',
+    'Hoi Maurits, Ik wil graag een offerte aanvragen. Ik heb een aantal foto’s van mijn project bijgevoegd.',
 
   location: {
     eyebrow: 'ONZE WERKPLAATS',
