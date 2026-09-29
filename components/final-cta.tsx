@@ -116,10 +116,10 @@ export function FinalCta() {
 
               <a
                 href={`tel:${contact.phoneHref}`}
-                className="mt-6 inline-flex items-center justify-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-semibold text-ink transition-colors hover:border-pine hover:bg-sand"
+                className="group mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-pine px-5 py-3 text-sm font-semibold text-paper transition-transform hover:-translate-y-0.5 hover:bg-ink"
               >
                 {t.contactPage.phone.button}
-                <ArrowRight className="size-4" />
+                <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
               </a>
             </div>
           </Reveal>
@@ -141,10 +141,10 @@ export function FinalCta() {
 
               <a
                 href={`mailto:${contact.email}`}
-                className="mt-6 inline-flex items-center justify-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-semibold text-ink transition-colors hover:border-pine hover:bg-sand"
+                className="group mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-pine px-5 py-3 text-sm font-semibold text-paper transition-transform hover:-translate-y-0.5 hover:bg-ink"
               >
                 {t.contactPage.email.button}
-                <ArrowRight className="size-4" />
+                <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
               </a>
             </div>
           </Reveal>
