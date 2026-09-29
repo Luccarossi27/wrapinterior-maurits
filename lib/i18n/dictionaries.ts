@@ -156,18 +156,21 @@ type Dict = {
   }[]
 }
   finalCta: {
-    heading: string
-    sub: string
-    microcopy: string
-    form: {
-      name: string
-      phone: string
-      message: string
-      submit: string
-      success: string
-      or: string
-    }
+  heading: string
+  sub: string
+  whatsappButton: string
+  whatsappMessage: string
+  formHeading: string
+  formIntro: string
+  form: {
+    name: string
+    phone: string
+    message: string
+    submit: string
+    success: string
+    or: string
   }
+}
   footer: {
     tagline: string,
     serviceAreaTitle: string
@@ -450,7 +453,10 @@ googleReviews: 'Google Reviews',
     finalCta: {
   heading: 'Stuur ons 3–5 foto’s voor een eerste indicatie.',
   sub: 'Stuur ons via WhatsApp een paar foto’s van je interieur en vertel kort wat je wilt laten wrappen. We bekijken je project en komen bij je terug met een eerste indicatie.',
-  microcopy: 'De snelste manier om te beginnen is door je foto’s en een paar gegevens rechtstreeks via WhatsApp te sturen.',
+  whatsappButton: 'Stuur foto’s via WhatsApp',
+  whatsappMessage: 'Hoi Maurits, ik wil graag een offerte aanvragen. Ik heb een paar foto’s van mijn project toegevoegd.',
+  formHeading: 'Liever via het formulier?',
+  formIntro: 'Vertel ons kort over je project en we nemen contact met je op.',
   form: {
     name: 'Naam',
     phone: 'Telefoon of WhatsApp',
@@ -460,7 +466,6 @@ googleReviews: 'Google Reviews',
     or: 'of',
   },
 },
-    },
     footer: {
       tagline: '',
       serviceAreaTitle: 'Werkgebied',
@@ -748,7 +753,10 @@ googleReviews: 'Google Reviews',
     finalCta: {
   heading: 'Send us 3–5 photos for a first quote.',
   sub: 'Send us a few photos of your space via WhatsApp and tell us briefly what you would like to wrap. We’ll take a look and get back to you with an initial quote.',
-  microcopy: 'The quickest way to get started is to send your photos and a few details directly on WhatsApp.',
+  whatsappButton: 'Send photos via WhatsApp',
+  whatsappMessage: 'Hi Maurits, I’d like to request a quote. I’ve attached some photos of my project.',
+  formHeading: 'Prefer the form?',
+  formIntro: 'Tell us a little about your project and we’ll get back to you.',
   form: {
     name: 'Name',
     phone: 'Phone or WhatsApp',
@@ -758,7 +766,6 @@ googleReviews: 'Google Reviews',
     or: 'or',
   },
 },
-    },
     footer: {
       tagline: '',
       serviceAreaTitle: 'Service area',
@@ -1043,8 +1050,11 @@ googleReviews: 'Reseñas de Google',
 },
     finalCta: {
   heading: 'Envíanos 3–5 fotos para un primer presupuesto.',
-  sub: 'Envíanos por WhatsApp unas fotos de tu interior y cuéntanos brevemente qué te gustaría vinilar. Revisaremos tu proyecto y te enviaremos una primera orientación.',
-  microcopy: 'La forma más rápida de empezar es enviarnos tus fotos y algunos detalles directamente por WhatsApp.',
+  sub: 'Envíanos por WhatsApp unas fotos de tu interior y cuéntanos brevemente qué te gustaría vinilar. Revisaremos tu proyecto y te enviaremos un primer presupuesto.',
+  whatsappButton: 'Enviar fotos por WhatsApp',
+  whatsappMessage: 'Hi Maurits, I’d like to request a quote. I’ve attached some photos of my project.',
+  formHeading: '¿Prefieres el formulario?',
+  formIntro: 'Cuéntanos brevemente tu proyecto y nos pondremos en contacto contigo.',
   form: {
     name: 'Nombre',
     phone: 'Teléfono o WhatsApp',
@@ -1054,7 +1064,6 @@ googleReviews: 'Reseñas de Google',
     or: 'o',
   },
 },
-    },
     footer: {
   tagline: '',
   serviceAreaTitle: 'Zona de servicio',
