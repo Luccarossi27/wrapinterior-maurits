@@ -54,7 +54,10 @@ export function ProcessSection() {
             </ol>
           </div>
 
-          <Reveal delay={0.15} className="grid grid-cols-2 grid-rows-2">
+          <Reveal
+  delay={0.15}
+  className="grid h-[520px] grid-cols-2 grid-rows-2"
+>
   {stepImages.map((src, i) => (
     <div
       key={i}
