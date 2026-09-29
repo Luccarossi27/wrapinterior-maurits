@@ -248,7 +248,7 @@ export function ReviewsSection() {
         href={googleReviewsUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="group inline-flex min-w-[220px] bg-[#E8DCC8] flex-col items-center gap-3 border border-pine px-8 py-5 text-pine transition-all hover:bg-pine hover:text-paper"
+        className="group inline-flex min-w-[220px] bg-[#EDE3D2] flex-col items-center gap-3 border border-pine px-8 py-5 text-pine transition-all hover:bg-pine hover:text-paper"
       >
         {/* Rating */}
         <div className="flex items-center gap-3">
