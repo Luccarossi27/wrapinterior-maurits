@@ -28,7 +28,7 @@ export function FinalCta() {
       className="border-t border-border bg-background text-ink"
     >
       {/* Intro / Meet Maurits */}
-      <div className="mx-auto w-full max-w-6xl px-5 pt-4 pb-16 sm:px-8 sm:pt-6 lg:pt-8 lg:pb-20">
+      <div className="mx-auto w-full max-w-6xl px-5 pt-0 pb-16 sm:px-8 sm:pt-2 lg:pt-4 lg:pb-20">
         <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
           {/* Intro copy */}
           <div className="max-w-3xl">
