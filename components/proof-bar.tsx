@@ -8,7 +8,7 @@ export function ProofBar() {
 
   return (
     <section aria-label={t.proof.note} className="border-y border-border bg-pine text-paper">
-      <div className="mx-auto grid w-full max-w-6xl grid-cols-2 gap-px overflow-hidden px-5 py-10 sm:px-8 lg:grid-cols-4">
+      <div className="mx-auto grid w-full max-w-6xl grid-cols-2 gap-px overflow-hidden px-5 py-10 sm:px-8 lg:grid-cols-3">
         {t.proof.items.map((item, i) => (
           <Reveal
             key={item.label}
