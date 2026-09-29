@@ -50,16 +50,6 @@ export function FinalCta() {
               </p>
             </Reveal>
 
-            <Reveal delay={0.15}>
-              <div className="mt-8 flex items-center gap-4">
-                <div className="size-1.5 rounded-full bg-brass" />
-                <p className="text-sm font-medium text-ink">
-                  Maurits · Wrap Interior
-                </p>
-              </div>
-            </Reveal>
-          </div>
-
           {/* Maurits photo */}
           <Reveal delay={0.15}>
             <div className="relative overflow-hidden rounded-3xl border border-border bg-sand shadow-xl">
