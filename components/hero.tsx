@@ -38,7 +38,7 @@ export function Hero() {
           <Reveal delay={0.15}>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
-                href={whatsappLink(t.finalCta.microcopy)}
+                href={whatsappLink(t.contactPage.whatsappMessage)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-pine px-6 py-3.5 text-base font-semibold text-paper shadow-lg shadow-pine/20 transition-transform hover:-translate-y-0.5 hover:bg-ink"
