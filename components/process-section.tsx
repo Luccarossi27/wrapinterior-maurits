@@ -60,7 +60,7 @@ export function ProcessSection() {
   key={i}
   className={`relative overflow-hidden rounded-3xl border border-paper/10 ${
     i % 3 === 0 ? 'aspect-[3/4]' : 'aspect-square'
-  } ${i === 0 ? '-translate-y-0' : ''} ${i === 1 ? 'translate-y-24' : ''} ${
+  } ${i === 0 ? '-translate-y-0' : ''} ${i === 1 ? 'translate-y-20' : ''} ${
     i === 3 ? '-translate-y-0' : ''
   }`}
 >
