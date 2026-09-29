@@ -379,12 +379,8 @@ googleReviews: 'Google Reviews',
   items: [
     {
       quote:
-        'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido.',
-      fullQuote:
         'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido. Desde ese momento hemos decidido que es nuestro punto de contacto para nuestras reformas y actualizaciones y ya van varias. Espero que en el futuro pueda mantener la dedicación que ahora mismo tiene.',
       translatedQuote:
-        'Ik heb een zeer goede ervaring gehad met Maurits. We vroegen hem om lamellen- en rolgordijnen voor verschillende kamers te zoeken en te plaatsen en het resultaat was perfect. Daarna vroegen we hem ook om een rolluik voor een deur te zoeken en te installeren, en hij vond een model dat bovendien met een afstandsbediening werkt. We zijn erg tevreden over de kwaliteit van zijn werk, de prioriteit en snelheid waarmee hij zijn projecten uitvoert en natuurlijk de redelijke prijs.',
-      fullTranslatedQuote:
         'Ik heb een zeer goede ervaring gehad met Maurits. We vroegen hem om lamellen- en rolgordijnen voor verschillende kamers te zoeken en te plaatsen en het resultaat was perfect. Daarna vroegen we hem ook om een rolluik voor een deur te zoeken en te installeren, en hij vond een model dat bovendien met een afstandsbediening werkt. We zijn erg tevreden over de kwaliteit van zijn werk, de prioriteit en snelheid waarmee hij zijn projecten uitvoert en natuurlijk de redelijke prijs. Sindsdien hebben we besloten dat hij ons aanspreekpunt is voor onze verbouwingen en updates, en dat zijn er inmiddels meerdere. Ik hoop dat hij deze toewijding in de toekomst kan behouden.',
       name: 'Jose Lopez',
       rating: 5,
@@ -672,12 +668,8 @@ googleReviews: 'Google Reviews',
   items: [
     {
       quote:
-        'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido.',
-      fullQuote:
         'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido. Desde ese momento hemos decidido que es nuestro punto de contacto para nuestras reformas y actualizaciones y ya van varias. Espero que en el futuro pueda mantener la dedicación que ahora mismo tiene.',
       translatedQuote:
-        'I am very happy with my experience with Maurits. We asked him to source and install slatted and roller blinds in several rooms, and the result was perfect. As a result, we also asked him to source and install a blind for a door, and he found us a model that even has a remote control. We are very happy with the quality of his work, the priority and speed he gives to his projects, and of course the reasonable price.',
-      fullTranslatedQuote:
         'I am very happy with my experience with Maurits. We asked him to source and install slatted and roller blinds in several rooms, and the result was perfect. As a result, we also asked him to source and install a blind for a door, and he found us a model that even has a remote control. We are very happy with the quality of his work, the priority and speed he gives to his projects, and of course the reasonable price. Since then, we have decided that he is our point of contact for our renovations and updates, and there have already been several. I hope he can maintain the dedication he currently shows in the future.',
       name: 'Jose Lopez',
       rating: 5,
@@ -973,13 +965,7 @@ googleReviews: 'Reseñas de Google',
   items: [
   {
   quote:
-    'He tenido muy buena experiencia ... precio comedido.',
-  fullQuote:
-    'He tenido muy buena experiencia ... precio comedido. Desde ese momento hemos decidido que es nuestro punto de contacto para nuestras reformas y actualizaciones y ya van varias. Espero que en el futuro pueda mantener la dedicación que ahora mismo tiene.',
-  translatedQuote:
-    'He tenido muy buena experiencia ... precio comedido.',
-  fullTranslatedQuote:
-    'He tenido muy buena experiencia ... precio comedido. Desde ese momento hemos decidido que es nuestro punto de contacto para nuestras reformas y actualizaciones y ya van varias. Espero que en el futuro pueda mantener la dedicación que ahora mismo tiene.',
+    'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido. Desde ese momento hemos decidido que es nuestro punto de contacto para nuestras reformas y actualizaciones y ya van varias. Espero que en el futuro pueda mantener la dedicación que ahora mismo tiene.',
   name: 'Jose Lopez',
   rating: 5,
 },
