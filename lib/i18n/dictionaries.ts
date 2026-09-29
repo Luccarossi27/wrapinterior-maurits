@@ -260,10 +260,9 @@ export const dictionaries: Record<Locale, Dict> = {
     proof: {
       note: 'Alle cijfers zijn plaatshouders — vervang met geverifieerde waarden.',
       items: [
-        { value: '[X]+', label: 'projecten afgerond' },
-        { value: '[X] jaar', label: 'ervaring' },
+        { value: '30 jaar', label: 'ervaring' },
         { value: '500+', label: 'kleuren & structuren' },
-        { value: '[4,9/5]', label: 'Google beoordeling' },
+        { value: '4,9/5', label: 'Google beoordeling' },
       ],
     },
         homepageServices: {
@@ -578,10 +577,9 @@ googleReviews: 'Google Reviews',
     proof: {
       note: 'All figures are placeholders — replace with verified values.',
       items: [
-        { value: '[X]+', label: 'projects completed' },
-        { value: '[X] yrs', label: 'of experience' },
+        { value: '30 yrs', label: 'of experience' },
         { value: '500+', label: 'colours & textures' },
-        { value: '[4.9/5]', label: 'Google rating' },
+        { value: '4.9/5', label: 'Google rating' },
       ],
     },
     homepageServices: {
@@ -904,10 +902,9 @@ googleReviews: 'Google Reviews',
     proof: {
       note: 'Todas las cifras son marcadores — sustitúyelas por valores verificados.',
       items: [
-        { value: '[X]+', label: 'proyectos realizados' },
-        { value: '[X] años', label: 'de experiencia' },
+        { value: '30 años', label: 'de experiencia' },
         { value: '500+', label: 'colores y texturas' },
-        { value: '[4,9/5]', label: 'valoración en Google' },
+        { value: '4,9/5', label: 'valoración en Google' },
       ],
     },
     homepageServices: {
