@@ -11,7 +11,7 @@ export function MobileActionBar() {
     <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/90 p-3 backdrop-blur-md md:hidden">
       <div className="mx-auto flex max-w-md items-center gap-2">
         <a
-          href={whatsappLink(t.finalCta.microcopy)}
+          href={whatsappLink(t.contactPage.whatsappMessage)}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-pine px-4 py-3 text-sm font-semibold text-paper"
