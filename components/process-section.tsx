@@ -58,7 +58,7 @@ export function ProcessSection() {
   {stepImages.map((src, i) => (
     <div
       key={i}
-      className={`relative overflow-hidden border border-paper/10 ${
+      className={`relative overflow-hidden rounded-3xl border border-paper/10 ${
         i % 3 === 0 ? 'aspect-[3/4]' : 'aspect-square'
       } ${i === 0 ? 'translate-y-4' : ''} ${i === 3 ? '-translate-y-4' : ''}`}
     >
