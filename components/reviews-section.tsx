@@ -260,7 +260,7 @@ export function ReviewsSection() {
             {Array.from({ length: 5 }).map((_, index) => (
               <Star
                 key={index}
-                className="size-3.5 fill-brass text-brass transition-colors group-hover:fill-paper group-hover:text-paper"
+                className="size-3.5 fill-brass text-brass bg-[#D8C5AA] transition-colors group-hover:fill-paper group-hover:text-paper"
                 aria-hidden="true"
               />
             ))}
