@@ -224,7 +224,7 @@ export function MaterialsSection() {
 
   const quoteText = selectedMaterial
     ? `Hi, I'm interested in having my interior wrapped. I'm interested in the ${selectedMaterial.name} (${selectedMaterial.code}) finish. I'd like to send some photos and get a quote.`
-    : t.finalCta.microcopy
+    : t.contactPage.whatsappMessage
 
   return (
     <section
@@ -546,7 +546,7 @@ export function MaterialsSection() {
               </div>
 
               <a
-                href={whatsappLink(t.finalCta.microcopy)}
+                href={whatsappLink(t.contactPage.whatsappMessage)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex shrink-0 items-center justify-center gap-2 bg-paper px-6 py-3.5 text-sm font-bold text-pine transition-transform hover:-translate-y-0.5"
