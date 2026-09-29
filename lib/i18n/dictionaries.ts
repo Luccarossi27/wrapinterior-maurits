@@ -155,22 +155,46 @@ type Dict = {
     }
   }[]
 }
-  finalCta: {
+  contactPage: {
+  eyebrow: string
   heading: string
   sub: string
-  whatsappButton: string
-  whatsappMessage: string
-  formHeading: string
-  formIntro: string
-  form: {
-    name: string
-    phone: string
-    message: string
-    submit: string
-    success: string
-    or: string
+
+  whatsapp: {
+    title: string
+    text: string
+    button: string
   }
-}
+
+  phone: {
+    title: string
+    text: string
+    button: string
+  }
+
+  email: {
+    title: string
+    text: string
+    button: string
+  }
+
+  whatsappMessage: string
+
+  location: {
+    eyebrow: string
+    heading: string
+    sub: string
+    addressLabel: string
+    directions: string
+    mapTitle: string
+  }
+
+  bottomCta: {
+    heading: string
+    sub: string
+    button: string
+  }
+},
   footer: {
     tagline: string,
     serviceAreaTitle: string
@@ -450,20 +474,45 @@ googleReviews: 'Google Reviews',
     },
   ],
 },
-    finalCta: {
-  heading: 'Stuur ons 3–5 foto’s voor een eerste indicatie.',
-  sub: 'Stuur ons via WhatsApp een paar foto’s van je interieur en vertel kort wat je wilt laten wrappen. We bekijken je project en komen bij je terug met een eerste indicatie.',
-  whatsappButton: 'Stuur foto’s via WhatsApp',
-  whatsappMessage: 'Hoi Maurits, ik wil graag een offerte aanvragen. Ik heb een paar foto’s van mijn project toegevoegd.',
-  formHeading: 'Liever via het formulier?',
-  formIntro: 'Vertel ons kort over je project en we nemen contact met je op.',
-  form: {
-    name: 'Naam',
-    phone: 'Telefoon of WhatsApp',
-    message: 'Vertel over je project',
-    submit: 'Verstuur aanvraag',
-    success: 'Bedankt! We nemen zo snel mogelijk contact met je op.',
-    or: 'of',
+    contactPage: {
+  eyebrow: 'CONTACT',
+  heading: 'Laten we je project bespreken.',
+  sub: 'Heb je een vraag, wil je een eerste prijsindicatie of wil je weten wat er mogelijk is? Neem rechtstreeks contact op met Maurits.',
+
+  whatsapp: {
+    title: 'WhatsApp',
+    text: 'De snelste manier om te beginnen. Stuur een paar foto’s van je interieur en vertel kort wat je wilt laten wrappen.',
+    button: 'Stuur een WhatsApp',
+  },
+
+  phone: {
+    title: 'Bel ons',
+    text: 'Liever even overleggen? Bel Maurits rechtstreeks.',
+    button: 'Bel ons',
+  },
+
+  email: {
+    title: 'E-mail',
+    text: 'Voor algemene vragen of meer informatie kun je ons ook mailen.',
+    button: 'Stuur een e-mail',
+  },
+
+  whatsappMessage:
+    'Hi Maurits, I’d like to request a quote. I’ve attached some photos of my project.',
+
+  location: {
+    eyebrow: 'ONZE WERKPLAATS',
+    heading: 'Bezoek ons in Jávea.',
+    sub: 'Onze werkplaats bevindt zich in Jávea, aan de Costa Blanca.',
+    addressLabel: 'Adres',
+    directions: 'Plan je route',
+    mapTitle: 'Wrap Interior workshop in Jávea',
+  },
+
+  bottomCta: {
+    heading: 'Klaar om je interieur te transformeren?',
+    sub: 'Stuur ons een paar foto’s via WhatsApp en vertel ons wat je in gedachten hebt.',
+    button: 'Stuur foto’s via WhatsApp',
   },
 },
     footer: {
@@ -750,20 +799,45 @@ googleReviews: 'Google Reviews',
     },
   ],
 },
-    finalCta: {
-  heading: 'Send us 3–5 photos for a first quote.',
-  sub: 'Send us a few photos of your space via WhatsApp and tell us briefly what you would like to wrap. We’ll take a look and get back to you with an initial quote.',
-  whatsappButton: 'Send photos via WhatsApp',
-  whatsappMessage: 'Hi Maurits, I’d like to request a quote. I’ve attached some photos of my project.',
-  formHeading: 'Prefer the form?',
-  formIntro: 'Tell us a little about your project and we’ll get back to you.',
-  form: {
-    name: 'Name',
-    phone: 'Phone or WhatsApp',
-    message: 'Tell us about your project',
-    submit: 'Send enquiry',
-    success: 'Thank you! We’ll be in touch as soon as possible.',
-    or: 'or',
+    contactPage: {
+  eyebrow: 'GET IN TOUCH',
+  heading: 'Let’s talk about your project.',
+  sub: 'Have a question, want an initial quote or simply want to know what’s possible? Get in touch with Maurits directly.',
+
+  whatsapp: {
+    title: 'WhatsApp',
+    text: 'The quickest way to get started. Send a few photos of your interior and tell us briefly what you would like to wrap.',
+    button: 'Message us on WhatsApp',
+  },
+
+  phone: {
+    title: 'Call us',
+    text: 'Prefer to speak to someone? Call Maurits directly.',
+    button: 'Call us',
+  },
+
+  email: {
+    title: 'Email',
+    text: 'For general enquiries or more information, you can also reach us by email.',
+    button: 'Send an email',
+  },
+
+  whatsappMessage:
+    'Hi Maurits, I’d like to request a quote. I’ve attached some photos of my project.',
+
+  location: {
+    eyebrow: 'OUR WORKSHOP',
+    heading: 'Visit us in Jávea.',
+    sub: 'Our workshop is based in Jávea, on the Costa Blanca.',
+    addressLabel: 'Address',
+    directions: 'Get directions',
+    mapTitle: 'Wrap Interior workshop in Jávea',
+  },
+
+  bottomCta: {
+    heading: 'Ready to transform your interior?',
+    sub: 'Send us a few photos on WhatsApp and tell us what you have in mind.',
+    button: 'Send photos via WhatsApp',
   },
 },
     footer: {
@@ -1048,20 +1122,45 @@ googleReviews: 'Reseñas de Google',
     },
   ],
 },
-    finalCta: {
-  heading: 'Envíanos 3–5 fotos para un primer presupuesto.',
-  sub: 'Envíanos por WhatsApp unas fotos de tu interior y cuéntanos brevemente qué te gustaría vinilar. Revisaremos tu proyecto y te enviaremos un primer presupuesto.',
-  whatsappButton: 'Enviar fotos por WhatsApp',
-  whatsappMessage: 'Hi Maurits, I’d like to request a quote. I’ve attached some photos of my project.',
-  formHeading: '¿Prefieres el formulario?',
-  formIntro: 'Cuéntanos brevemente tu proyecto y nos pondremos en contacto contigo.',
-  form: {
-    name: 'Nombre',
-    phone: 'Teléfono o WhatsApp',
-    message: 'Cuéntanos tu proyecto',
-    submit: 'Enviar solicitud',
-    success: '¡Gracias! Nos pondremos en contacto contigo lo antes posible.',
-    or: 'o',
+    contactPage: {
+  eyebrow: 'CONTACTO',
+  heading: 'Hablemos de tu proyecto.',
+  sub: '¿Tienes alguna pregunta, quieres un presupuesto inicial o simplemente quieres saber qué es posible? Ponte en contacto directamente con Maurits.',
+
+  whatsapp: {
+    title: 'WhatsApp',
+    text: 'La forma más rápida de empezar. Envíanos unas fotos de tu interior y cuéntanos brevemente qué te gustaría vinilar.',
+    button: 'Escribir por WhatsApp',
+  },
+
+  phone: {
+    title: 'Llámanos',
+    text: '¿Prefieres hablar con nosotros? Llama directamente a Maurits.',
+    button: 'Llamar',
+  },
+
+  email: {
+    title: 'Email',
+    text: 'Para consultas generales o más información, también puedes escribirnos por email.',
+    button: 'Enviar un email',
+  },
+
+  whatsappMessage:
+    'Hi Maurits, I’d like to request a quote. I’ve attached some photos of my project.',
+
+  location: {
+    eyebrow: 'NUESTRO TALLER',
+    heading: 'Visítanos en Jávea.',
+    sub: 'Nuestro taller está en Jávea, en la Costa Blanca.',
+    addressLabel: 'Dirección',
+    directions: 'Cómo llegar',
+    mapTitle: 'Taller de Wrap Interior en Jávea',
+  },
+
+  bottomCta: {
+    heading: '¿Listo para transformar tu interior?',
+    sub: 'Envíanos unas fotos por WhatsApp y cuéntanos qué tienes en mente.',
+    button: 'Enviar fotos por WhatsApp',
   },
 },
     footer: {
