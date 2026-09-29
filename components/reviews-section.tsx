@@ -241,7 +241,7 @@ export function ReviewsSection() {
       </Reveal>
 
       {/* Google rating + CTA */}
-<div className="mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10">
+<div className="mx-auto w-full bg-[#E8DCC8] max-w-6xl px-5 sm:px-8 lg:px-10">
   <Reveal delay={0.2}>
     <div className="flex justify-center py-8">
       <a
@@ -252,7 +252,7 @@ export function ReviewsSection() {
       >
         {/* Rating */}
         <div className="flex items-center gap-3">
-          <span className="font-serif bg-[#D8C5AA] text-3xl font-light leading-none tracking-tight">
+          <span className="font-serif text-3xl font-light leading-none tracking-tight">
             4.9
           </span>
 
