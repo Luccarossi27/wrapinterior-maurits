@@ -1,5 +1,5 @@
 import { SiteHeader } from '@/components/site-header'
-import { ContactSection } from '@/components/contact-section'
+import { FinalCta } from '@/components/final-cta'
 import { SiteFooter } from '@/components/site-footer'
 import { MobileActionBar } from '@/components/mobile-action-bar'
 import { SkipLink } from '@/components/skip-link'
