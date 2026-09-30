@@ -329,20 +329,23 @@ export function MaterialsSection() {
                 </div>
 
                 {/* INFO */}
-                <div className="pt-4">
-                  <div className="flex items-baseline justify-between gap-3">
-                    <h2 className="font-serif text-base font-semibold uppercase leading-tight transition-colors group-hover:text-brass sm:text-lg">
-                      {material.name}
-                    </h2>
+<div className="pt-4">
+  <div className="flex items-baseline justify-between gap-3">
+    <h2 className="font-serif text-base font-semibold uppercase leading-tight transition-colors group-hover:text-brass sm:text-lg">
+      {material.name}
+    </h2>
 
-                    <span className="shrink-0 text-[10px] font-bold uppercase tracking-[0.12em] text-muted-foreground">
-                      {material.code}
-                    </span>
-                  </div>
-              </button>
-            </Reveal>
-          ))}
-        </div>
+    <span className="shrink-0 text-[10px] font-bold uppercase tracking-[0.12em] text-muted-foreground">
+      {material.code}
+    </span>
+  </div>
+
+  <div className="mt-2 flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.1em] text-muted-foreground">
+    <span>{material.category}</span>
+    <span className="text-brass">·</span>
+    <span>{material.colour}</span>
+  </div>
+</div>
 
         {/* EMPTY */}
         {filteredMaterials.length === 0 && (
