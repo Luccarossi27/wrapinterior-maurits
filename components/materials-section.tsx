@@ -37,18 +37,14 @@ const colours = [
   'Yellow',
   'Green',
   'Gold',
-  'Light Brown',
   'Grey',
   'Orange',
   'Blue',
   'Bronze',
-  'Dark Brown',
   'Black',
   'Red',
   'Pink',
-  'Light Green',
   'Brown',
-  'Light Blue',
 ]
 
 const ITEMS_PER_PAGE = 24
@@ -343,13 +339,6 @@ export function MaterialsSection() {
                       {material.code}
                     </span>
                   </div>
-
-                  <div className="mt-2 flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.1em] text-muted-foreground">
-                    <span>{material.category}</span>
-                    <span className="text-brass">·</span>
-                    <span>{material.colour}</span>
-                  </div>
-                </div>
               </button>
             </Reveal>
           ))}
