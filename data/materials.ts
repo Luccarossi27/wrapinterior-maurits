@@ -14,7 +14,6 @@ export type Material = {
   code: string
   category: MaterialCategory
   colour: string
-  colourFamily: string
   finish: string
   texture: string
   image: string
@@ -31,7 +30,6 @@ export const materials: Material[] = [
     code: 'WD001',
     category: 'Wood',
     colour: 'Brown',
-    colourFamily: 'Earth',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -44,7 +42,6 @@ export const materials: Material[] = [
     code: 'WD022',
     category: 'Wood',
     colour: 'Light Brown',
-    colourFamily: 'Rustic',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -57,7 +54,6 @@ export const materials: Material[] = [
     code: 'WD017',
     category: 'Wood',
     colour: 'Brown',
-    colourFamily: 'Rustic',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -70,7 +66,6 @@ export const materials: Material[] = [
     code: 'W302',
     category: 'Wood',
     colour: 'Brown',
-    colourFamily: 'Natural',
     finish: 'Matte',
     texture: 'Textured',
     image: imageUrl('W302'),
@@ -82,7 +77,6 @@ export const materials: Material[] = [
     code: 'W931',
     category: 'Wood',
     colour: 'Dark Brown',
-    colourFamily: 'Dark',
     finish: 'Matte',
     texture: 'Textured',
     image: imageUrl('W931'),
@@ -95,7 +89,6 @@ export const materials: Material[] = [
     code: 'ST061',
     category: 'Stone',
     colour: 'Grey',
-    colourFamily: 'Earth',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -108,7 +101,6 @@ export const materials: Material[] = [
     code: 'ST062',
     category: 'Stone',
     colour: 'Grey',
-    colourFamily: 'Earth',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -121,7 +113,6 @@ export const materials: Material[] = [
     code: 'ST063',
     category: 'Stone',
     colour: 'White',
-    colourFamily: 'Pale',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -134,7 +125,6 @@ export const materials: Material[] = [
     code: 'ST102',
     category: 'Stone',
     colour: 'Grey',
-    colourFamily: 'Industrial',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -147,7 +137,6 @@ export const materials: Material[] = [
     code: 'NS806',
     category: 'Stone',
     colour: 'Beige',
-    colourFamily: 'Natural',
     finish: 'Matte',
     texture: 'Smooth',
     image: imageUrl('NS806'),
@@ -160,7 +149,6 @@ export const materials: Material[] = [
     code: 'SC007',
     category: 'Solid Colour',
     colour: 'Beige',
-    colourFamily: 'Pale',
     finish: 'Matte',
     texture: 'Soft Touch',
     image: imageUrl('SC007'),
@@ -172,7 +160,6 @@ export const materials: Material[] = [
     code: 'SPW96',
     category: 'Wood',
     colour: 'White',
-    colourFamily: 'White Series',
     finish: 'Matte',
     texture: 'Textured',
     image: imageUrl('SPW96'),
@@ -184,7 +171,6 @@ export const materials: Material[] = [
     code: 'S202',
     category: 'Solid Colour',
     colour: 'Green',
-    colourFamily: 'Forest',
     finish: 'Satin',
     texture: 'Textured',
     image: imageUrl('S202'),
@@ -196,7 +182,6 @@ export const materials: Material[] = [
     code: 'S214',
     category: 'Solid Colour',
     colour: 'Light Green',
-    colourFamily: 'Forest',
     finish: 'Satin',
     texture: 'Textured',
     image: imageUrl('S214'),
@@ -209,7 +194,6 @@ export const materials: Material[] = [
     code: 'ME001',
     category: 'Metallic',
     colour: 'Gold',
-    colourFamily: 'Gold',
     finish: 'Metallic',
     texture: 'Textured',
     image:
@@ -222,7 +206,6 @@ export const materials: Material[] = [
     code: 'ME002',
     category: 'Metallic',
     colour: 'Beige/Gold',
-    colourFamily: 'Beige',
     finish: 'Metallic',
     texture: 'Textured',
     image:
@@ -235,7 +218,6 @@ export const materials: Material[] = [
     code: 'ME005',
     category: 'Metallic',
     colour: 'Brown',
-    colourFamily: 'Raw',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -249,7 +231,6 @@ export const materials: Material[] = [
     code: 'LE012',
     category: 'Leather',
     colour: 'Brown',
-    colourFamily: 'Earth',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -262,7 +243,6 @@ export const materials: Material[] = [
     code: 'LE013',
     category: 'Leather',
     colour: 'Brown',
-    colourFamily: 'Earth',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -276,7 +256,6 @@ export const materials: Material[] = [
     code: 'RF007',
     category: 'Textile',
     colour: 'Grey',
-    colourFamily: 'Fabric',
     finish: 'Matte',
     texture: 'Textured',
     image: imageUrl('RF007'),
@@ -289,7 +268,6 @@ export const materials: Material[] = [
     code: 'PW109',
     category: 'Painted Wood',
     colour: 'Brown',
-    colourFamily: 'Painted Wood',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -303,7 +281,6 @@ export const materials: Material[] = [
     code: 'SC053',
     category: 'Solid Colour',
     colour: 'White',
-    colourFamily: 'White Series',
     finish: 'Matte',
     texture: 'Smooth',
     image: imageUrl('SC053'),
@@ -315,7 +292,6 @@ export const materials: Material[] = [
     code: 'SC153',
     category: 'Solid Colour',
     colour: 'Beige',
-    colourFamily: 'Pale',
     finish: 'Satin',
     texture: 'Textured',
     image: imageUrl('SC153'),
@@ -328,7 +304,6 @@ export const materials: Material[] = [
     code: 'WD016',
     category: 'Wood',
     colour: 'Brown',
-    colourFamily: 'Rustic',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -341,7 +316,6 @@ export const materials: Material[] = [
     code: 'PW106',
     category: 'Painted Wood',
     colour: 'Brown',
-    colourFamily: 'Earth',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -354,7 +328,6 @@ export const materials: Material[] = [
     code: 'PW111',
     category: 'Painted Wood',
     colour: 'White',
-    colourFamily: 'White Series',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -368,7 +341,6 @@ export const materials: Material[] = [
     code: 'NS403',
     category: 'Stone',
     colour: 'Grey',
-    colourFamily: 'Dark',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -382,7 +354,6 @@ export const materials: Material[] = [
     code: 'SC015',
     category: 'Solid Colour',
     colour: 'White',
-    colourFamily: 'White Series',
     finish: 'Matte',
     texture: 'Soft Touch',
     image:
@@ -396,7 +367,6 @@ export const materials: Material[] = [
     code: 'W823',
     category: 'Wood',
     colour: 'Dark Brown',
-    colourFamily: 'Dark',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -409,7 +379,6 @@ export const materials: Material[] = [
     code: 'PZ615',
     category: 'Wood',
     colour: 'Dark Brown',
-    colourFamily: 'Dark',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -422,7 +391,6 @@ export const materials: Material[] = [
     code: 'PZ010',
     category: 'Wood',
     colour: 'Dark Brown',
-    colourFamily: 'Dark',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -435,7 +403,6 @@ export const materials: Material[] = [
     code: 'W944',
     category: 'Wood',
     colour: 'Beige',
-    colourFamily: 'Pale',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -448,7 +415,6 @@ export const materials: Material[] = [
     code: 'ST156',
     category: 'Stone',
     colour: 'Grey',
-    colourFamily: 'Dark',
     finish: 'High Gloss',
     texture: 'Smooth',
     image:
@@ -461,7 +427,6 @@ export const materials: Material[] = [
     code: 'WD307',
     category: 'Wood',
     colour: 'Brown',
-    colourFamily: 'Natural',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -475,7 +440,6 @@ export const materials: Material[] = [
     code: 'TE010',
     category: 'Textile',
     colour: 'White',
-    colourFamily: 'Fabric',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -488,7 +452,6 @@ export const materials: Material[] = [
     code: 'TE012',
     category: 'Textile',
     colour: 'Beige',
-    colourFamily: 'Fabric',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -501,7 +464,6 @@ export const materials: Material[] = [
     code: 'TE011',
     category: 'Textile',
     colour: 'Grey',
-    colourFamily: 'Fabric',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -514,7 +476,6 @@ export const materials: Material[] = [
     code: 'TE014',
     category: 'Textile',
     colour: 'Dark Brown',
-    colourFamily: 'Fabric',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -527,7 +488,6 @@ export const materials: Material[] = [
     code: 'TE008',
     category: 'Textile',
     colour: 'Beige',
-    colourFamily: 'Fabric',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -540,7 +500,6 @@ export const materials: Material[] = [
     code: 'TE005',
     category: 'Textile',
     colour: 'Grey',
-    colourFamily: 'Fabric',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -553,7 +512,6 @@ export const materials: Material[] = [
     code: 'NS820',
     category: 'Textile',
     colour: 'Dark Brown',
-    colourFamily: 'Fabric',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -566,7 +524,6 @@ export const materials: Material[] = [
     code: 'PW011',
     category: 'Painted Wood',
     colour: 'White',
-    colourFamily: 'Painted Wood',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -579,7 +536,6 @@ export const materials: Material[] = [
     code: 'PW012',
     category: 'Painted Wood',
     colour: 'White',
-    colourFamily: 'Painted Wood',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -592,7 +548,6 @@ export const materials: Material[] = [
     code: 'PS502',
     category: 'Stone',
     colour: 'White',
-    colourFamily: 'White Series',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -605,7 +560,6 @@ export const materials: Material[] = [
     code: 'TE009',
     category: 'Textile',
     colour: 'Grey',
-    colourFamily: 'Fabric',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -618,7 +572,6 @@ export const materials: Material[] = [
     code: 'TE001',
     category: 'Textile',
     colour: 'White',
-    colourFamily: 'Fabric',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -631,7 +584,6 @@ export const materials: Material[] = [
     code: 'RF008',
     category: 'Textile',
     colour: 'Beige',
-    colourFamily: 'Fabric',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -644,7 +596,6 @@ export const materials: Material[] = [
     code: 'TE003',
     category: 'Textile',
     colour: 'Grey',
-    colourFamily: 'Fabric',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -658,7 +609,6 @@ export const materials: Material[] = [
     code: 'PW103',
     category: 'Painted Wood',
     colour: 'Grey',
-    colourFamily: 'Painted Wood',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -671,7 +621,6 @@ export const materials: Material[] = [
     code: 'PW108',
     category: 'Painted Wood',
     colour: 'Grey',
-    colourFamily: 'Painted Wood',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -685,7 +634,6 @@ export const materials: Material[] = [
     code: 'WD003',
     category: 'Wood',
     colour: 'Brown',
-    colourFamily: 'Natural',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -698,7 +646,6 @@ export const materials: Material[] = [
     code: 'WD206',
     category: 'Wood',
     colour: 'Light Brown',
-    colourFamily: 'Natural',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -711,7 +658,6 @@ export const materials: Material[] = [
     code: 'WD212',
     category: 'Wood',
     colour: 'Brown',
-    colourFamily: 'Natural',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -724,7 +670,6 @@ export const materials: Material[] = [
     code: 'WD316',
     category: 'Wood',
     colour: 'Light Brown',
-    colourFamily: 'Natural',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -738,7 +683,6 @@ export const materials: Material[] = [
     code: 'SC157',
     category: 'Solid Colour',
     colour: 'Beige',
-    colourFamily: 'Pale',
     finish: 'Matte',
     texture: 'Soft Touch',
     image:
@@ -751,7 +695,6 @@ export const materials: Material[] = [
     code: 'SC160',
     category: 'Solid Colour',
     colour: 'Beige',
-    colourFamily: 'Earth',
     finish: 'Matte',
     texture: 'Soft Touch',
     image:
@@ -764,7 +707,6 @@ export const materials: Material[] = [
     code: 'SC056',
     category: 'Solid Colour',
     colour: 'Beige',
-    colourFamily: 'Pale',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -777,7 +719,6 @@ export const materials: Material[] = [
     code: 'SC109',
     category: 'Solid Colour',
     colour: 'Dark Brown',
-    colourFamily: 'Dark',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -791,7 +732,6 @@ export const materials: Material[] = [
     code: 'ST158',
     category: 'Stone',
     colour: 'White',
-    colourFamily: 'Pale',
     finish: 'Matte',
     texture: 'Smooth',
     image:
@@ -804,7 +744,6 @@ export const materials: Material[] = [
     code: 'W879',
     category: 'Wood',
     colour: 'Brown',
-    colourFamily: 'Natural',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -817,7 +756,6 @@ export const materials: Material[] = [
     code: 'SPW18',
     category: 'Wood',
     colour: 'Light Brown',
-    colourFamily: 'Natural',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -830,7 +768,6 @@ export const materials: Material[] = [
     code: 'APZ05',
     category: 'Metallic',
     colour: 'Gold',
-    colourFamily: 'Gold',
     finish: 'Matte',
     texture: 'Smooth',
     image:
@@ -843,7 +780,6 @@ export const materials: Material[] = [
     code: 'SC156',
     category: 'Solid Colour',
     colour: 'Beige',
-    colourFamily: 'Earth',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -856,7 +792,6 @@ export const materials: Material[] = [
     code: 'ST252',
     category: 'Stone',
     colour: 'Light Grey',
-    colourFamily: 'Industrial',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -869,7 +804,6 @@ export const materials: Material[] = [
     code: 'ZX126',
     category: 'Wood',
     colour: 'Brown',
-    colourFamily: 'Natural',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -882,7 +816,6 @@ export const materials: Material[] = [
     code: 'PZ613',
     category: 'Wood',
     colour: 'Dark Brown',
-    colourFamily: 'Dark',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -895,7 +828,6 @@ export const materials: Material[] = [
     code: 'PZ904',
     category: 'Wood',
     colour: 'Light Brown',
-    colourFamily: 'Natural',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -908,7 +840,6 @@ export const materials: Material[] = [
     code: 'W376',
     category: 'Wood',
     colour: 'Dark Brown',
-    colourFamily: 'Natural',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -921,7 +852,6 @@ export const materials: Material[] = [
     code: 'ZX148',
     category: 'Wood',
     colour: 'Beige',
-    colourFamily: 'Pale',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -935,7 +865,6 @@ export const materials: Material[] = [
     code: 'SC020',
     category: 'Solid Colour',
     colour: 'White',
-    colourFamily: 'White Series',
     finish: 'Matte',
     texture: 'Soft Touch',
     image:
@@ -948,7 +877,6 @@ export const materials: Material[] = [
     code: 'SC012',
     category: 'Solid Colour',
     colour: 'White',
-    colourFamily: 'White Series',
     finish: 'Matte',
     texture: 'Soft Touch',
     image:
@@ -961,7 +889,6 @@ export const materials: Material[] = [
     code: 'SC014',
     category: 'Solid Colour',
     colour: 'Grey',
-    colourFamily: 'Earth',
     finish: 'Matte',
     texture: 'Soft Touch',
     image:
@@ -974,7 +901,6 @@ export const materials: Material[] = [
     code: 'SC013',
     category: 'Solid Colour',
     colour: 'Grey',
-    colourFamily: 'Earth',
     finish: 'Matte',
     texture: 'Soft Touch',
     image:
@@ -987,7 +913,6 @@ export const materials: Material[] = [
     code: 'SC018',
     category: 'Solid Colour',
     colour: 'Beige',
-    colourFamily: 'Pale',
     finish: 'Matte',
     texture: 'Soft Touch',
     image:
@@ -1001,7 +926,6 @@ export const materials: Material[] = [
     code: 'W141',
     category: 'Wood',
     colour: 'Dark Brown',
-    colourFamily: 'Natural',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -1014,7 +938,6 @@ export const materials: Material[] = [
     code: 'W722',
     category: 'Wood',
     colour: 'Dark Brown',
-    colourFamily: 'Dark',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -1027,7 +950,6 @@ export const materials: Material[] = [
     code: 'W731',
     category: 'Wood',
     colour: 'Dark Brown',
-    colourFamily: 'Dark',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -1040,7 +962,6 @@ export const materials: Material[] = [
     code: 'W932',
     category: 'Wood',
     colour: 'Light Brown',
-    colourFamily: 'Natural',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -1054,7 +975,6 @@ export const materials: Material[] = [
     code: 'NS804',
     category: 'Stone',
     colour: 'Black',
-    colourFamily: 'Dark',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -1067,7 +987,6 @@ export const materials: Material[] = [
     code: 'W371',
     category: 'Wood',
     colour: 'Light Brown',
-    colourFamily: 'Natural',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -1081,7 +1000,6 @@ export const materials: Material[] = [
     code: 'ST060',
     category: 'Stone',
     colour: 'Grey',
-    colourFamily: 'Industrial',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1094,7 +1012,6 @@ export const materials: Material[] = [
     code: 'SC062',
     category: 'Solid Colour',
     colour: 'White',
-    colourFamily: 'Pale',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1108,7 +1025,6 @@ export const materials: Material[] = [
     code: 'WD018',
     category: 'Wood',
     colour: 'Brown',
-    colourFamily: 'Natural',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1121,7 +1037,6 @@ export const materials: Material[] = [
     code: 'W705',
     category: 'Wood',
     colour: 'Dark Grey',
-    colourFamily: 'Dark',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -1134,7 +1049,6 @@ export const materials: Material[] = [
     code: 'W276',
     category: 'Wood',
     colour: 'Red Brown',
-    colourFamily: 'Dark',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -1147,7 +1061,6 @@ export const materials: Material[] = [
     code: 'ST160',
     category: 'Stone',
     colour: 'Light Grey',
-    colourFamily: 'Pale',
     finish: 'Matte',
     texture: 'Soft Touch',
     image:
@@ -1160,7 +1073,6 @@ export const materials: Material[] = [
     code: 'ST163',
     category: 'Stone',
     colour: 'Dark Grey',
-    colourFamily: 'Dark',
     finish: 'Matte',
     texture: 'Smooth',
     image:
@@ -1174,7 +1086,6 @@ export const materials: Material[] = [
     code: 'ZX157',
     category: 'Wood',
     colour: 'Dark Brown',
-    colourFamily: 'Dark',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -1187,7 +1098,6 @@ export const materials: Material[] = [
     code: 'WD014',
     category: 'Wood',
     colour: 'Brown',
-    colourFamily: 'Natural',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1200,7 +1110,6 @@ export const materials: Material[] = [
     code: 'W171',
     category: 'Wood',
     colour: 'Red Brown',
-    colourFamily: 'Rustic',
     finish: 'Matte',
     texture: 'Smooth',
     image:
@@ -1213,7 +1122,6 @@ export const materials: Material[] = [
     code: 'ZX161',
     category: 'Wood',
     colour: 'Brown',
-    colourFamily: 'Natural',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -1227,7 +1135,6 @@ export const materials: Material[] = [
     code: 'ST009',
     category: 'Stone',
     colour: 'Grey',
-    colourFamily: 'Industrial',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1240,7 +1147,6 @@ export const materials: Material[] = [
     code: 'ST114',
     category: 'Stone',
     colour: 'Grey',
-    colourFamily: 'Natural',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1253,7 +1159,6 @@ export const materials: Material[] = [
     code: 'ST111',
     category: 'Stone',
     colour: 'Grey',
-    colourFamily: 'Natural',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1266,7 +1171,6 @@ export const materials: Material[] = [
     code: 'ST116',
     category: 'Stone',
     colour: 'Beige',
-    colourFamily: 'Natural',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1279,7 +1183,6 @@ export const materials: Material[] = [
     code: 'ST010',
     category: 'Stone',
     colour: 'Grey',
-    colourFamily: 'Industrial',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1292,7 +1195,6 @@ export const materials: Material[] = [
     code: 'ST115',
     category: 'Stone',
     colour: 'White',
-    colourFamily: 'Pale',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -1306,7 +1208,6 @@ export const materials: Material[] = [
     code: 'WD302',
     category: 'Wood',
     colour: 'Brown',
-    colourFamily: 'Natural',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1319,7 +1220,6 @@ export const materials: Material[] = [
     code: 'WD163',
     category: 'Wood',
     colour: 'Light Brown',
-    colourFamily: 'Pale',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -1332,7 +1232,6 @@ export const materials: Material[] = [
     code: 'WD401',
     category: 'Wood',
     colour: 'Brown',
-    colourFamily: 'Natural',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1345,7 +1244,6 @@ export const materials: Material[] = [
     code: 'WD209',
     category: 'Wood',
     colour: 'Light Brown',
-    colourFamily: 'Natural',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1358,7 +1256,6 @@ export const materials: Material[] = [
     code: 'WD227',
     category: 'Wood',
     colour: 'Light Brown',
-    colourFamily: 'Pale',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1371,7 +1268,6 @@ export const materials: Material[] = [
     code: 'WD402',
     category: 'Wood',
     colour: 'Brown',
-    colourFamily: 'Natural',
     finish: 'Matte',
     texture: 'Real Touch',
     image:
@@ -1384,7 +1280,6 @@ export const materials: Material[] = [
     code: 'WD208',
     category: 'Wood',
     colour: 'Light Brown',
-    colourFamily: 'Natural',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1398,7 +1293,6 @@ export const materials: Material[] = [
     code: 'ST117',
     category: 'Stone',
     colour: 'Grey',
-    colourFamily: 'Industrial',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1411,7 +1305,6 @@ export const materials: Material[] = [
     code: 'ST118',
     category: 'Stone',
     colour: 'Grey',
-    colourFamily: 'Industrial',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1424,7 +1317,6 @@ export const materials: Material[] = [
     code: 'ST113',
     category: 'Stone',
     colour: 'Grey',
-    colourFamily: 'Natural',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1438,7 +1330,6 @@ export const materials: Material[] = [
     code: 'ME006',
     category: 'Metallic',
     colour: 'Silver',
-    colourFamily: 'Silver',
     finish: 'Metallic',
     texture: 'Textured',
     image:
@@ -1451,7 +1342,6 @@ export const materials: Material[] = [
     code: 'ME003',
     category: 'Metallic',
     colour: 'Rose',
-    colourFamily: 'Elegance',
     finish: 'Metallic',
     texture: 'Textured',
     image:
@@ -1464,7 +1354,6 @@ export const materials: Material[] = [
     code: 'ME007',
     category: 'Metallic',
     colour: 'Rose',
-    colourFamily: 'Elegance',
     finish: 'Metallic',
     texture: 'Textured',
     image:
@@ -1478,7 +1367,6 @@ export const materials: Material[] = [
     code: 'WD019',
     category: 'Wood',
     colour: 'Brown',
-    colourFamily: 'Rustic',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1491,7 +1379,6 @@ export const materials: Material[] = [
     code: 'WD020',
     category: 'Wood',
     colour: 'Light Brown',
-    colourFamily: 'Rustic',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1505,7 +1392,6 @@ export const materials: Material[] = [
     code: 'ST057',
     category: 'Stone',
     colour: 'Beige',
-    colourFamily: 'Natural',
     finish: 'Satin',
     texture: 'Smooth',
     image:
@@ -1518,7 +1404,6 @@ export const materials: Material[] = [
     code: 'ST064',
     category: 'Stone',
     colour: 'Beige',
-    colourFamily: 'Natural',
     finish: 'Satin',
     texture: 'Smooth',
     image:
@@ -1531,7 +1416,6 @@ export const materials: Material[] = [
     code: 'ST058',
     category: 'Stone',
     colour: 'Beige',
-    colourFamily: 'Natural',
     finish: 'Satin',
     texture: 'Smooth',
     image:
@@ -1545,7 +1429,6 @@ export const materials: Material[] = [
     code: 'LE007',
     category: 'Leather',
     colour: 'Brown',
-    colourFamily: 'Earth',
     finish: 'Satin',
     texture: 'Textured',
     image:
@@ -1558,7 +1441,6 @@ export const materials: Material[] = [
     code: 'W207',
     category: 'Wood',
     colour: 'Dark Brown',
-    colourFamily: 'Dark',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -1571,7 +1453,6 @@ export const materials: Material[] = [
     code: 'S233',
     category: 'Solid Colour',
     colour: 'Green',
-    colourFamily: 'Forest',
     finish: 'Matte',
     texture: 'Textured',
     image:
@@ -1585,7 +1466,6 @@ export const materials: Material[] = [
     code: 'ME004',
     category: 'Metallic',
     colour: 'Silver',
-    colourFamily: 'Silver',
     finish: 'Metallic',
     texture: 'Textured',
     image:
@@ -1599,7 +1479,6 @@ export const materials: Material[] = [
     code: 'SC307',
     category: 'Solid Colour',
     colour: 'Green',
-    colourFamily: 'Green',
     finish: 'Satin-matt',
     texture: 'Textured',
     image:
@@ -1612,7 +1491,6 @@ export const materials: Material[] = [
     code: 'SC057',
     category: 'Solid Colour',
     colour: 'White',
-    colourFamily: 'White',
     finish: 'Satin-matt',
     texture: 'Textured',
     image:
@@ -1625,7 +1503,6 @@ export const materials: Material[] = [
     code: 'SC051',
     category: 'Solid Colour',
     colour: 'White',
-    colourFamily: 'White',
     finish: 'Satin-matt',
     texture: 'Textured',
     image:
@@ -1638,7 +1515,6 @@ export const materials: Material[] = [
     code: 'SC058',
     category: 'Solid Colour',
     colour: 'Soft Pink / Blush',
-    colourFamily: 'Pink',
     finish: 'Satin-matt',
     texture: 'Textured',
     image:
@@ -1651,7 +1527,6 @@ export const materials: Material[] = [
     code: 'SC059',
     category: 'Solid Colour',
     colour: 'Warm White / Cream',
-    colourFamily: 'Cream',
     finish: 'Satin-matt',
     texture: 'Textured',
     image:
