@@ -89,7 +89,6 @@ type Dict = {
   colour: string
   finish: string
   texture: string
-  colourFamily: string
   clear: string
   results: string
   noResults: string
@@ -339,7 +338,6 @@ materials: {
   colour: 'Kleur',
   finish: 'Afwerking',
   texture: 'Structuur',
-  colourFamily: 'Kleurfamilie',
   clear: 'Wis filters',
   results: 'resultaten',
   noResults: 'Geen afwerkingen gevonden.',
@@ -656,7 +654,6 @@ materials: {
   colour: 'Colour',
   finish: 'Finish',
   texture: 'Texture',
-  colourFamily: 'Colour family',
   clear: 'Clear filters',
   results: 'results',
   noResults: 'No finishes found.',
@@ -981,7 +978,6 @@ materials: {
   colour: 'Color',
   finish: 'Acabado',
   texture: 'Textura',
-  colourFamily: 'Familia de color',
   clear: 'Borrar filtros',
   results: 'resultados',
   noResults: 'No se han encontrado acabados.',
