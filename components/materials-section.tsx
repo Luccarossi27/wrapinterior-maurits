@@ -51,33 +51,13 @@ const colours = [
   'Light Blue',
 ]
 
-const finishes = [
-  'All',
-  'Matte',
-  'Satin',
-  'Gloss',
-  'Soft Touch',
-  'Metallic',
-]
-
-const textures = [
-  'All',
-  'Smooth',
-  'Real Touch',
-  'Textured',
-  'High Gloss',
-  'Soft Touch',
-]
-
-const ITEMS_PER_PAGE = 12
+const ITEMS_PER_PAGE = 24
 
 export function MaterialsSection() {
   const { t } = useLanguage()
 
   const [category, setCategory] = useState('All')
   const [colour, setColour] = useState('All')
-  const [finish, setFinish] = useState('All')
-  const [texture, setTexture] = useState('All')
   const [search, setSearch] = useState('')
   const [filtersOpen, setFiltersOpen] = useState(false)
   const [visibleCount, setVisibleCount] =
@@ -99,14 +79,6 @@ export function MaterialsSection() {
         colour === 'All' ||
         material.colour === colour
 
-      const finishMatch =
-        finish === 'All' ||
-        material.finish === finish
-
-      const textureMatch =
-        texture === 'All' ||
-        material.texture === texture
-
       const searchMatch =
         !query ||
         [
@@ -114,8 +86,6 @@ export function MaterialsSection() {
           material.code,
           material.category,
           material.colour,
-          material.finish,
-          material.texture,
         ]
           .join(' ')
           .toLowerCase()
@@ -124,18 +94,10 @@ export function MaterialsSection() {
       return (
         categoryMatch &&
         colourMatch &&
-        finishMatch &&
-        textureMatch &&
         searchMatch
       )
     })
-  }, [
-    category,
-    colour,
-    finish,
-    texture,
-    search,
-  ])
+  }, [category, colour, search,])
 
   const visibleMaterials = filteredMaterials.slice(
     0,
@@ -148,8 +110,6 @@ export function MaterialsSection() {
   const resetFilters = () => {
     setCategory('All')
     setColour('All')
-    setFinish('All')
-    setTexture('All')
     setSearch('')
     setVisibleCount(ITEMS_PER_PAGE)
   }
@@ -165,12 +125,10 @@ export function MaterialsSection() {
   const activeFilterCount = [
     category,
     colour,
-    finish,
-    texture,
   ].filter((value) => value !== 'All').length
 
   const quoteText = selectedMaterial
-    ? `Hi, I'm interested in having my interior wrapped. I'm interested in the ${selectedMaterial.name} (${selectedMaterial.code}) finish. I'd like to send some photos and get a quote.`
+    ? `Hi, I'm interested in having my interior wrapped. I'm interested in the ${selectedMaterial.name} (${selectedMaterial.code}) material. I'd like to send some photos and get a quote.`
     : t.contactPage.whatsappMessage
 
   return (
@@ -302,31 +260,13 @@ export function MaterialsSection() {
 
           {filtersOpen && (
             <div className="border-t border-border py-7">
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-8 sm:grid-cols-2">
                 <FilterGroup
                   label={t.materials.colour}
                   options={colours}
                   value={colour}
                   onChange={(value) =>
                     updateFilter(setColour, value)
-                  }
-                />
-
-                <FilterGroup
-                  label={t.materials.finish}
-                  options={finishes}
-                  value={finish}
-                  onChange={(value) =>
-                    updateFilter(setFinish, value)
-                  }
-                />
-
-                <FilterGroup
-                  label={t.materials.texture}
-                  options={textures}
-                  value={texture}
-                  onChange={(value) =>
-                    updateFilter(setTexture, value)
                   }
                 />
 
@@ -411,8 +351,6 @@ export function MaterialsSection() {
                     <span>{material.category}</span>
                     <span className="text-brass">·</span>
                     <span>{material.colour}</span>
-                    <span className="text-brass">·</span>
-                    <span>{material.finish}</span>
                   </div>
                 </div>
               </button>
@@ -447,18 +385,6 @@ export function MaterialsSection() {
                 setVisibleCount(filteredMaterials.length)
               }
               className="border-b border-brass pb-1 text-xs font-bold uppercase tracking-[0.15em] text-ink transition-colors hover:text-brass"
-            >
-              Load all materials ↓
-            </button>
-
-            <button
-              type="button"
-              onClick={() =>
-                setVisibleCount(
-                  (count) => count + ITEMS_PER_PAGE,
-                )
-              }
-              className="text-xs font-semibold text-muted-foreground underline underline-offset-4 transition-colors hover:text-brass"
             >
               {t.materials.loadMore}
             </button>
@@ -542,20 +468,10 @@ export function MaterialsSection() {
                 {selectedMaterial.code}
               </p>
 
-              <div className="mt-7 grid grid-cols-2 gap-px border border-border bg-border sm:grid-cols-3">
+              <div className="mt-7 border border-border bg-paper">
                 <MaterialDetail
                   label={t.materials.colour}
                   value={selectedMaterial.colour}
-                />
-
-                <MaterialDetail
-                  label={t.materials.finish}
-                  value={selectedMaterial.finish}
-                />
-
-                <MaterialDetail
-                  label={t.materials.texture}
-                  value={selectedMaterial.texture}
                 />
 
               </div>
