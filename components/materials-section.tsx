@@ -69,8 +69,6 @@ export function MaterialsSection() {
     const query = search.trim().toLowerCase()
 
     return materials.filter((material) => {
-      if (!material.available) return false
-
       const categoryMatch =
         category === 'All' ||
         material.category === category
@@ -97,7 +95,7 @@ export function MaterialsSection() {
         searchMatch
       )
     })
-  }, [category, colour, search,])
+  }, [category, colour, search])
 
   const visibleMaterials = filteredMaterials.slice(
     0,
@@ -160,7 +158,6 @@ export function MaterialsSection() {
         {/* SEARCH */}
         <Reveal delay={0.05}>
           <div className="mt-8 flex flex-col gap-5 border-b border-border pb-7 lg:flex-row lg:items-center lg:justify-between">
-
             <div className="relative w-full max-w-xl">
               <Search className="pointer-events-none absolute left-0 top-1/2 size-5 -translate-y-1/2 text-brass" />
 
@@ -253,7 +250,9 @@ export function MaterialsSection() {
             <ChevronDown
               className={[
                 'size-4 transition-transform duration-200',
-                filtersOpen ? 'rotate-180 text-brass' : '',
+                filtersOpen
+                  ? 'rotate-180 text-brass'
+                  : '',
               ].join(' ')}
             />
           </button>
@@ -269,7 +268,6 @@ export function MaterialsSection() {
                     updateFilter(setColour, value)
                   }
                 />
-
               </div>
 
               {activeFilterCount > 0 && (
@@ -331,7 +329,6 @@ export function MaterialsSection() {
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.035]"
                   />
 
-                  {/* BRASS HOVER LINE */}
                   <div className="absolute bottom-0 left-0 h-1 w-0 bg-brass transition-all duration-500 group-hover:w-full" />
                 </div>
 
@@ -376,9 +373,9 @@ export function MaterialsSection() {
           </div>
         )}
 
-        {/* LOAD MORE */}
+        {/* LOAD ALL */}
         {hasMore && (
-          <div className="mt-16 flex flex-col items-center gap-4 border-t border-border pt-10">
+          <div className="mt-16 flex justify-center border-t border-border pt-10">
             <button
               type="button"
               onClick={() =>
@@ -411,7 +408,9 @@ export function MaterialsSection() {
               </div>
 
               <a
-                href={whatsappLink(t.contactPage.whatsappMessage)}
+                href={whatsappLink(
+                  t.contactPage.whatsappMessage,
+                )}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex shrink-0 items-center justify-center gap-2 bg-paper px-6 py-3.5 text-sm font-bold text-pine transition-transform hover:-translate-y-0.5"
@@ -473,7 +472,6 @@ export function MaterialsSection() {
                   label={t.materials.colour}
                   value={selectedMaterial.colour}
                 />
-
               </div>
 
               <a
@@ -483,7 +481,7 @@ export function MaterialsSection() {
                 className="mt-7 inline-flex w-full items-center justify-center gap-2 bg-pine px-6 py-4 text-sm font-bold text-paper transition-transform hover:-translate-y-0.5 sm:w-auto"
               >
                 <MessageCircle className="size-4" />
-                {t.materials.useFinish}
+                {t.materials.useMaterial}
               </a>
             </div>
           </div>
