@@ -14,10 +14,7 @@ export type Material = {
   code: string
   category: MaterialCategory
   colour: string
-  finish: string
-  texture: string
   image: string
-  available: boolean
 }
 
 const imageUrl = (code: string) =>
@@ -30,11 +27,8 @@ export const materials: Material[] = [
     code: 'WD001',
     category: 'Wood',
     colour: 'Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/WD001-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'braeloft-wd022',
@@ -42,11 +36,8 @@ export const materials: Material[] = [
     code: 'WD022',
     category: 'Wood',
     colour: 'Light Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/WD022-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'spruns-wd017',
@@ -54,11 +45,8 @@ export const materials: Material[] = [
     code: 'WD017',
     category: 'Wood',
     colour: 'Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/WD017-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'caprea-w302',
@@ -66,10 +54,7 @@ export const materials: Material[] = [
     code: 'W302',
     category: 'Wood',
     colour: 'Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image: imageUrl('W302'),
-    available: true,
   },
   {
     id: 'hazel-w931',
@@ -77,10 +62,7 @@ export const materials: Material[] = [
     code: 'W931',
     category: 'Wood',
     colour: 'Dark Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image: imageUrl('W931'),
-    available: true,
   },
 
   {
@@ -89,11 +71,8 @@ export const materials: Material[] = [
     code: 'ST061',
     category: 'Stone',
     colour: 'Grey',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ST061-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'lumira-st062',
@@ -101,11 +80,8 @@ export const materials: Material[] = [
     code: 'ST062',
     category: 'Stone',
     colour: 'Grey',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ST062-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'pale-aura-st063',
@@ -113,11 +89,8 @@ export const materials: Material[] = [
     code: 'ST063',
     category: 'Stone',
     colour: 'White',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ST063-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'litus-2-st102',
@@ -125,11 +98,8 @@ export const materials: Material[] = [
     code: 'ST102',
     category: 'Stone',
     colour: 'Grey',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ST102-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'travertine-ns806',
@@ -137,10 +107,7 @@ export const materials: Material[] = [
     code: 'NS806',
     category: 'Stone',
     colour: 'Beige',
-    finish: 'Matte',
-    texture: 'Smooth',
     image: imageUrl('NS806'),
-    available: true,
   },
 
   {
@@ -149,10 +116,7 @@ export const materials: Material[] = [
     code: 'SC007',
     category: 'Solid Colour',
     colour: 'Beige',
-    finish: 'Matte',
-    texture: 'Soft Touch',
     image: imageUrl('SC007'),
-    available: false,
   },
   {
     id: 'autemo-2-spw96',
@@ -160,10 +124,7 @@ export const materials: Material[] = [
     code: 'SPW96',
     category: 'Wood',
     colour: 'White',
-    finish: 'Matte',
-    texture: 'Textured',
     image: imageUrl('SPW96'),
-    available: true,
   },
   {
     id: 'moss-s202',
@@ -171,10 +132,7 @@ export const materials: Material[] = [
     code: 'S202',
     category: 'Solid Colour',
     colour: 'Green',
-    finish: 'Satin',
-    texture: 'Textured',
     image: imageUrl('S202'),
-    available: false,
   },
   {
     id: 'mint-s214',
@@ -182,10 +140,7 @@ export const materials: Material[] = [
     code: 'S214',
     category: 'Solid Colour',
     colour: 'Light Green',
-    finish: 'Satin',
-    texture: 'Textured',
     image: imageUrl('S214'),
-    available: true,
   },
 
   {
@@ -194,11 +149,8 @@ export const materials: Material[] = [
     code: 'ME001',
     category: 'Metallic',
     colour: 'Gold',
-    finish: 'Metallic',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/ME403-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'syra-besh-me002',
@@ -206,11 +158,8 @@ export const materials: Material[] = [
     code: 'ME002',
     category: 'Metallic',
     colour: 'Beige/Gold',
-    finish: 'Metallic',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/ME404-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'corten-me005',
@@ -218,11 +167,8 @@ export const materials: Material[] = [
     code: 'ME005',
     category: 'Metallic',
     colour: 'Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ME005-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
 
   {
@@ -231,11 +177,8 @@ export const materials: Material[] = [
     code: 'LE012',
     category: 'Leather',
     colour: 'Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/LE012-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'riva-le013',
@@ -243,11 +186,8 @@ export const materials: Material[] = [
     code: 'LE013',
     category: 'Leather',
     colour: 'Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/LE013-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
 
   {
@@ -256,10 +196,7 @@ export const materials: Material[] = [
     code: 'RF007',
     category: 'Textile',
     colour: 'Grey',
-    finish: 'Matte',
-    texture: 'Textured',
     image: imageUrl('RF007'),
-    available: true,
   },
 
   {
@@ -268,11 +205,8 @@ export const materials: Material[] = [
     code: 'PW109',
     category: 'Painted Wood',
     colour: 'Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/PW109-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
 
   {
@@ -281,10 +215,7 @@ export const materials: Material[] = [
     code: 'SC053',
     category: 'Solid Colour',
     colour: 'White',
-    finish: 'Matte',
-    texture: 'Smooth',
     image: imageUrl('SC053'),
-    available: false,
   },
   {
     id: 'lion-2-sc153',
@@ -292,10 +223,7 @@ export const materials: Material[] = [
     code: 'SC153',
     category: 'Solid Colour',
     colour: 'Beige',
-    finish: 'Satin',
-    texture: 'Textured',
     image: imageUrl('SC153'),
-    available: false,
   },
 
   {
@@ -304,11 +232,8 @@ export const materials: Material[] = [
     code: 'WD016',
     category: 'Wood',
     colour: 'Brown',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/WD016-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'pictis-mud-2-pw106',
@@ -316,11 +241,8 @@ export const materials: Material[] = [
     code: 'PW106',
     category: 'Painted Wood',
     colour: 'Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/PW106-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'pictis-alnix-pw111',
@@ -328,11 +250,8 @@ export const materials: Material[] = [
     code: 'PW111',
     category: 'Painted Wood',
     colour: 'White',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/PW111-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
 
   {
@@ -341,11 +260,8 @@ export const materials: Material[] = [
     code: 'NS403',
     category: 'Stone',
     colour: 'Grey',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/NS403-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
 
   {
@@ -354,11 +270,8 @@ export const materials: Material[] = [
     code: 'SC015',
     category: 'Solid Colour',
     colour: 'White',
-    finish: 'Matte',
-    texture: 'Soft Touch',
     image:
       'https://www.resimdo.nl/shop/media/image/SC015-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
 
   {
@@ -367,11 +280,8 @@ export const materials: Material[] = [
     code: 'W823',
     category: 'Wood',
     colour: 'Dark Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/W823-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'eris-pz615',
@@ -379,11 +289,8 @@ export const materials: Material[] = [
     code: 'PZ615',
     category: 'Wood',
     colour: 'Dark Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/PZ615-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'arbor-pz010',
@@ -391,11 +298,8 @@ export const materials: Material[] = [
     code: 'PZ010',
     category: 'Wood',
     colour: 'Dark Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ZX125-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'milkshake-w944',
@@ -403,11 +307,8 @@ export const materials: Material[] = [
     code: 'W944',
     category: 'Wood',
     colour: 'Beige',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/W944-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'vetus-2-st156',
@@ -415,11 +316,8 @@ export const materials: Material[] = [
     code: 'ST156',
     category: 'Stone',
     colour: 'Grey',
-    finish: 'High Gloss',
-    texture: 'Smooth',
     image:
       'https://www.resimdo.nl/shop/media/image/ST156-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'calidum-2-wd307',
@@ -427,11 +325,8 @@ export const materials: Material[] = [
     code: 'WD307',
     category: 'Wood',
     colour: 'Brown',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/WD307-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
 
   {
@@ -440,11 +335,8 @@ export const materials: Material[] = [
     code: 'TE010',
     category: 'Textile',
     colour: 'White',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/TE010-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'woven-fina-te012',
@@ -452,11 +344,8 @@ export const materials: Material[] = [
     code: 'TE012',
     category: 'Textile',
     colour: 'Beige',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/TE012-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'woven-tana-te011',
@@ -464,11 +353,8 @@ export const materials: Material[] = [
     code: 'TE011',
     category: 'Textile',
     colour: 'Grey',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/TE011-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'woven-sable-te014',
@@ -476,11 +362,8 @@ export const materials: Material[] = [
     code: 'TE014',
     category: 'Textile',
     colour: 'Dark Brown',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/TE014-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'fibra-linen-te008',
@@ -488,11 +371,8 @@ export const materials: Material[] = [
     code: 'TE008',
     category: 'Textile',
     colour: 'Beige',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/TE202-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'fibra-stone-te005',
@@ -500,11 +380,8 @@ export const materials: Material[] = [
     code: 'TE005',
     category: 'Textile',
     colour: 'Grey',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/TE203-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'materia-ns820',
@@ -512,11 +389,8 @@ export const materials: Material[] = [
     code: 'NS820',
     category: 'Textile',
     colour: 'Dark Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/NS820-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'candor-pw011',
@@ -524,11 +398,8 @@ export const materials: Material[] = [
     code: 'PW011',
     category: 'Painted Wood',
     colour: 'White',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/PW011-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'albulus-pw012',
@@ -536,11 +407,8 @@ export const materials: Material[] = [
     code: 'PW012',
     category: 'Painted Wood',
     colour: 'White',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/PW012-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'pure-alba-ps502',
@@ -548,11 +416,8 @@ export const materials: Material[] = [
     code: 'PS502',
     category: 'Stone',
     colour: 'White',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/PS502-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'woven-liora-te009',
@@ -560,11 +425,8 @@ export const materials: Material[] = [
     code: 'TE009',
     category: 'Textile',
     colour: 'Grey',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/TE009-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'fibra-bride-te001',
@@ -572,11 +434,8 @@ export const materials: Material[] = [
     code: 'TE001',
     category: 'Textile',
     colour: 'White',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/TE201-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'tweed-beige-rf008',
@@ -584,11 +443,8 @@ export const materials: Material[] = [
     code: 'RF008',
     category: 'Textile',
     colour: 'Beige',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/RF008-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'tweed-day-2-te003',
@@ -596,24 +452,18 @@ export const materials: Material[] = [
     code: 'TE003',
     category: 'Textile',
     colour: 'Grey',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/TE003-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
-
+  
   {
     id: 'pictis-bone-2-pw103',
     name: 'Pictis Bone 2.0',
     code: 'PW103',
     category: 'Painted Wood',
     colour: 'Grey',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/PW103-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'pictis-tornado-2-pw108',
@@ -621,11 +471,8 @@ export const materials: Material[] = [
     code: 'PW108',
     category: 'Painted Wood',
     colour: 'Grey',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/PW108-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
 
   {
@@ -634,11 +481,8 @@ export const materials: Material[] = [
     code: 'WD003',
     category: 'Wood',
     colour: 'Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.de/shop/media/image/WD003-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'avia-clara-2-wd206',
@@ -646,11 +490,8 @@ export const materials: Material[] = [
     code: 'WD206',
     category: 'Wood',
     colour: 'Light Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ZX144-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'bar-2-wd212',
@@ -658,11 +499,8 @@ export const materials: Material[] = [
     code: 'WD212',
     category: 'Wood',
     colour: 'Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/WD212-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'lepus-2-wd316',
@@ -670,11 +508,8 @@ export const materials: Material[] = [
     code: 'WD316',
     category: 'Wood',
     colour: 'Light Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.de/shop/media/image/WD316-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
 
   {
@@ -683,11 +518,8 @@ export const materials: Material[] = [
     code: 'SC157',
     category: 'Solid Colour',
     colour: 'Beige',
-    finish: 'Matte',
-    texture: 'Soft Touch',
     image:
       'https://www.resimdo.de/shop/media/image/SC157-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'dune-sc160',
@@ -695,11 +527,8 @@ export const materials: Material[] = [
     code: 'SC160',
     category: 'Solid Colour',
     colour: 'Beige',
-    finish: 'Matte',
-    texture: 'Soft Touch',
     image:
       'https://www.resimdo.de/shop/media/image/SC160-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'cream-2-sc056',
@@ -707,11 +536,8 @@ export const materials: Material[] = [
     code: 'SC056',
     category: 'Solid Colour',
     colour: 'Beige',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/SC056-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'galaxy-2-sc109',
@@ -719,11 +545,8 @@ export const materials: Material[] = [
     code: 'SC109',
     category: 'Solid Colour',
     colour: 'Dark Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/SC109-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
 
   {
@@ -732,11 +555,8 @@ export const materials: Material[] = [
     code: 'ST158',
     category: 'Stone',
     colour: 'White',
-    finish: 'Matte',
-    texture: 'Smooth',
     image:
       'https://www.resimdo.nl/shop/media/image/ST158-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'resum-w879',
@@ -744,11 +564,8 @@ export const materials: Material[] = [
     code: 'W879',
     category: 'Wood',
     colour: 'Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/W879-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'legatus-spw18',
@@ -756,11 +573,8 @@ export const materials: Material[] = [
     code: 'SPW18',
     category: 'Wood',
     colour: 'Light Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/SPW18-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'gold-crack-apz05',
@@ -768,11 +582,8 @@ export const materials: Material[] = [
     code: 'APZ05',
     category: 'Metallic',
     colour: 'Gold',
-    finish: 'Matte',
-    texture: 'Smooth',
     image:
       'https://www.resimdo.nl/shop/media/image/APZ05-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'grit-2-sc156',
@@ -780,11 +591,8 @@ export const materials: Material[] = [
     code: 'SC156',
     category: 'Solid Colour',
     colour: 'Beige',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/SC156-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'fractura-grit-2-st252',
@@ -792,11 +600,8 @@ export const materials: Material[] = [
     code: 'ST252',
     category: 'Stone',
     colour: 'Light Grey',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ST104-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'glandis-zx126',
@@ -804,11 +609,8 @@ export const materials: Material[] = [
     code: 'ZX126',
     category: 'Wood',
     colour: 'Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ZX126-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'radiant-night-pz613',
@@ -816,11 +618,8 @@ export const materials: Material[] = [
     code: 'PZ613',
     category: 'Wood',
     colour: 'Dark Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ZX134-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'solvit-dark-pz904',
@@ -828,11 +627,8 @@ export const materials: Material[] = [
     code: 'PZ904',
     category: 'Wood',
     colour: 'Light Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/PZ904-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'bokido-w376',
@@ -840,11 +636,8 @@ export const materials: Material[] = [
     code: 'W376',
     category: 'Wood',
     colour: 'Dark Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/W376-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'popcorn-zx148',
@@ -852,11 +645,8 @@ export const materials: Material[] = [
     code: 'ZX148',
     category: 'Wood',
     colour: 'Beige',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ZX148-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
 
   {
@@ -865,11 +655,8 @@ export const materials: Material[] = [
     code: 'SC020',
     category: 'Solid Colour',
     colour: 'White',
-    finish: 'Matte',
-    texture: 'Soft Touch',
     image:
       'https://www.resimdo.es/shop/media/image/SC020-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'papilo-cotton-lux-sc012',
@@ -877,11 +664,8 @@ export const materials: Material[] = [
     code: 'SC012',
     category: 'Solid Colour',
     colour: 'White',
-    finish: 'Matte',
-    texture: 'Soft Touch',
     image:
       'https://www.resimdo.es/shop/media/image/SC012-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'papilo-shark-lux-sc014',
@@ -889,11 +673,8 @@ export const materials: Material[] = [
     code: 'SC014',
     category: 'Solid Colour',
     colour: 'Grey',
-    finish: 'Matte',
-    texture: 'Soft Touch',
     image:
       'https://www.resimdo.es/shop/media/image/SC014-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'papilo-stone-lux-sc013',
@@ -901,11 +682,8 @@ export const materials: Material[] = [
     code: 'SC013',
     category: 'Solid Colour',
     colour: 'Grey',
-    finish: 'Matte',
-    texture: 'Soft Touch',
     image:
       'https://www.resimdo.es/shop/media/image/SC013-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'papilo-bone-lux-sc018',
@@ -913,11 +691,8 @@ export const materials: Material[] = [
     code: 'SC018',
     category: 'Solid Colour',
     colour: 'Beige',
-    finish: 'Matte',
-    texture: 'Soft Touch',
     image:
       'https://www.resimdo.es/shop/media/image/SC018-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
 
   {
@@ -926,11 +701,8 @@ export const materials: Material[] = [
     code: 'W141',
     category: 'Wood',
     colour: 'Dark Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/W141-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'navis-w722',
@@ -938,11 +710,8 @@ export const materials: Material[] = [
     code: 'W722',
     category: 'Wood',
     colour: 'Dark Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/W722-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'terra-w731',
@@ -950,11 +719,8 @@ export const materials: Material[] = [
     code: 'W731',
     category: 'Wood',
     colour: 'Dark Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/W731-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'lupus-w932',
@@ -962,11 +728,8 @@ export const materials: Material[] = [
     code: 'W932',
     category: 'Wood',
     colour: 'Light Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/W932-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
 
   {
@@ -975,11 +738,8 @@ export const materials: Material[] = [
     code: 'NS804',
     category: 'Stone',
     colour: 'Black',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/NS804-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'lumen-w371',
@@ -987,11 +747,8 @@ export const materials: Material[] = [
     code: 'W371',
     category: 'Wood',
     colour: 'Light Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/W371-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
 
   {
@@ -1000,11 +757,8 @@ export const materials: Material[] = [
     code: 'ST060',
     category: 'Stone',
     colour: 'Grey',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ST060-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'ivory-lux-sc062',
@@ -1012,11 +766,8 @@ export const materials: Material[] = [
     code: 'SC062',
     category: 'Solid Colour',
     colour: 'White',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/SC062-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
 
   {
@@ -1025,11 +776,8 @@ export const materials: Material[] = [
     code: 'WD018',
     category: 'Wood',
     colour: 'Brown',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/WD018-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'noctis-w705',
@@ -1037,11 +785,8 @@ export const materials: Material[] = [
     code: 'W705',
     category: 'Wood',
     colour: 'Dark Grey',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/W705-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'ignis-w276',
@@ -1049,11 +794,8 @@ export const materials: Material[] = [
     code: 'W276',
     category: 'Wood',
     colour: 'Red Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/W276-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'petum-light-2-st160',
@@ -1061,11 +803,8 @@ export const materials: Material[] = [
     code: 'ST160',
     category: 'Stone',
     colour: 'Light Grey',
-    finish: 'Matte',
-    texture: 'Soft Touch',
     image:
       'https://www.resimdo.nl/shop/media/image/ST160-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'magusa-dark-2-st163',
@@ -1073,11 +812,8 @@ export const materials: Material[] = [
     code: 'ST163',
     category: 'Stone',
     colour: 'Dark Grey',
-    finish: 'Matte',
-    texture: 'Smooth',
     image:
       'https://www.resimdo.nl/shop/media/image/ST163-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
 
   {
@@ -1086,11 +822,8 @@ export const materials: Material[] = [
     code: 'ZX157',
     category: 'Wood',
     colour: 'Dark Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/ZX157-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'fabula-wd014',
@@ -1098,11 +831,8 @@ export const materials: Material[] = [
     code: 'WD014',
     category: 'Wood',
     colour: 'Brown',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/WO826-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'formica-w171',
@@ -1110,11 +840,8 @@ export const materials: Material[] = [
     code: 'W171',
     category: 'Wood',
     colour: 'Red Brown',
-    finish: 'Matte',
-    texture: 'Smooth',
     image:
       'https://www.resimdo.es/shop/media/image/W171-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'alius-zx161',
@@ -1122,11 +849,8 @@ export const materials: Material[] = [
     code: 'ZX161',
     category: 'Wood',
     colour: 'Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/ZX161-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
 
   {
@@ -1135,11 +859,8 @@ export const materials: Material[] = [
     code: 'ST009',
     category: 'Stone',
     colour: 'Grey',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/ST502-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'brava-st114',
@@ -1147,11 +868,8 @@ export const materials: Material[] = [
     code: 'ST114',
     category: 'Stone',
     colour: 'Grey',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ST114-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'liora-st111',
@@ -1159,11 +877,8 @@ export const materials: Material[] = [
     code: 'ST111',
     category: 'Stone',
     colour: 'Grey',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ST111-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'teras-st116',
@@ -1171,11 +886,8 @@ export const materials: Material[] = [
     code: 'ST116',
     category: 'Stone',
     colour: 'Beige',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ST116-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'rudis-vein-st010',
@@ -1183,11 +895,8 @@ export const materials: Material[] = [
     code: 'ST010',
     category: 'Stone',
     colour: 'Grey',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ST010-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'pale-vein-st115',
@@ -1195,11 +904,8 @@ export const materials: Material[] = [
     code: 'ST115',
     category: 'Stone',
     colour: 'White',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ST115-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
 
   {
@@ -1208,11 +914,8 @@ export const materials: Material[] = [
     code: 'WD302',
     category: 'Wood',
     colour: 'Brown',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/WO811-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'dusty-2-wd163',
@@ -1220,11 +923,8 @@ export const materials: Material[] = [
     code: 'WD163',
     category: 'Wood',
     colour: 'Light Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/WD163-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'ramus-wd401',
@@ -1232,11 +932,8 @@ export const materials: Material[] = [
     code: 'WD401',
     category: 'Wood',
     colour: 'Brown',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/WO818-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'lineus-2-wd209',
@@ -1244,11 +941,8 @@ export const materials: Material[] = [
     code: 'WD209',
     category: 'Wood',
     colour: 'Light Brown',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/WD209-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'irise-light-2-wd227',
@@ -1256,11 +950,8 @@ export const materials: Material[] = [
     code: 'WD227',
     category: 'Wood',
     colour: 'Light Brown',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/WD227-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'tibos-wd402',
@@ -1268,11 +959,8 @@ export const materials: Material[] = [
     code: 'WD402',
     category: 'Wood',
     colour: 'Brown',
-    finish: 'Matte',
-    texture: 'Real Touch',
     image:
       'https://www.resimdo.es/shop/media/image/WO821-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'spargo-wd208',
@@ -1280,11 +968,8 @@ export const materials: Material[] = [
     code: 'WD208',
     category: 'Wood',
     colour: 'Light Brown',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/WO820-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
 
   {
@@ -1293,11 +978,8 @@ export const materials: Material[] = [
     code: 'ST117',
     category: 'Stone',
     colour: 'Grey',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ST117-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'stone-veil-st118',
@@ -1305,11 +987,8 @@ export const materials: Material[] = [
     code: 'ST118',
     category: 'Stone',
     colour: 'Grey',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ST118-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'maris-st113',
@@ -1317,11 +996,8 @@ export const materials: Material[] = [
     code: 'ST113',
     category: 'Stone',
     colour: 'Grey',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ST113-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
 
   {
@@ -1330,11 +1006,8 @@ export const materials: Material[] = [
     code: 'ME006',
     category: 'Metallic',
     colour: 'Silver',
-    finish: 'Metallic',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ME006-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'syra-rose-me003',
@@ -1342,11 +1015,8 @@ export const materials: Material[] = [
     code: 'ME003',
     category: 'Metallic',
     colour: 'Rose',
-    finish: 'Metallic',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/ME405-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'pluma-rose-lux-me007',
@@ -1354,11 +1024,8 @@ export const materials: Material[] = [
     code: 'ME007',
     category: 'Metallic',
     colour: 'Rose',
-    finish: 'Metallic',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/ME007-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
 
   {
@@ -1367,11 +1034,8 @@ export const materials: Material[] = [
     code: 'WD019',
     category: 'Wood',
     colour: 'Brown',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/WD019-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'tarnwell-wd020',
@@ -1379,11 +1043,8 @@ export const materials: Material[] = [
     code: 'WD020',
     category: 'Wood',
     colour: 'Light Brown',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.nl/shop/media/image/WD020-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
 
   {
@@ -1392,11 +1053,8 @@ export const materials: Material[] = [
     code: 'ST057',
     category: 'Stone',
     colour: 'Beige',
-    finish: 'Satin',
-    texture: 'Smooth',
     image:
       'https://www.resimdo.nl/shop/media/image/ST057-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'olera-st064',
@@ -1404,11 +1062,8 @@ export const materials: Material[] = [
     code: 'ST064',
     category: 'Stone',
     colour: 'Beige',
-    finish: 'Satin',
-    texture: 'Smooth',
     image:
       'https://www.resimdo.nl/shop/media/image/ST064-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'pavira-st058',
@@ -1416,11 +1071,8 @@ export const materials: Material[] = [
     code: 'ST058',
     category: 'Stone',
     colour: 'Beige',
-    finish: 'Satin',
-    texture: 'Smooth',
     image:
       'https://www.resimdo.nl/shop/media/image/ST058-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
 
   {
@@ -1429,11 +1081,8 @@ export const materials: Material[] = [
     code: 'LE007',
     category: 'Leather',
     colour: 'Brown',
-    finish: 'Satin',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/LE301-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'chestnut-w207',
@@ -1441,11 +1090,8 @@ export const materials: Material[] = [
     code: 'W207',
     category: 'Wood',
     colour: 'Dark Brown',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/W207-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
   {
     id: 'ivy-s233',
@@ -1453,11 +1099,8 @@ export const materials: Material[] = [
     code: 'S233',
     category: 'Solid Colour',
     colour: 'Green',
-    finish: 'Matte',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/S233-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
 
   {
@@ -1466,11 +1109,8 @@ export const materials: Material[] = [
     code: 'ME004',
     category: 'Metallic',
     colour: 'Silver',
-    finish: 'Metallic',
-    texture: 'Textured',
     image:
       'https://www.resimdo.de/shop/media/image/ME401-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-    available: true,
   },
 
   {
@@ -1479,11 +1119,8 @@ export const materials: Material[] = [
     code: 'SC307',
     category: 'Solid Colour',
     colour: 'Green',
-    finish: 'Satin-matt',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/SC307-Uebersicht-Walltile-3000x2250j8tiCE7wL07WI.jpg',
-    available: true,
   },
   {
     id: 'pearl-sc057',
@@ -1491,11 +1128,8 @@ export const materials: Material[] = [
     code: 'SC057',
     category: 'Solid Colour',
     colour: 'White',
-    finish: 'Satin-matt',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/SC057-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'bride-2-0-sc051',
@@ -1503,11 +1137,8 @@ export const materials: Material[] = [
     code: 'SC051',
     category: 'Solid Colour',
     colour: 'White',
-    finish: 'Satin-matt',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/SC051-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'blossom-sc058',
@@ -1515,11 +1146,8 @@ export const materials: Material[] = [
     code: 'SC058',
     category: 'Solid Colour',
     colour: 'Soft Pink / Blush',
-    finish: 'Satin-matt',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/SC058-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
   {
     id: 'eggshell-2-0-sc059',
@@ -1527,11 +1155,8 @@ export const materials: Material[] = [
     code: 'SC059',
     category: 'Solid Colour',
     colour: 'Warm White / Cream',
-    finish: 'Satin-matt',
-    texture: 'Textured',
     image:
       'https://www.resimdo.es/shop/media/image/SC059-Uebersicht-Walltile-3000x2250.jpg',
-    available: true,
   },
 
 ]
