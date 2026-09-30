@@ -78,7 +78,6 @@ export function MaterialsSection() {
   const [colour, setColour] = useState('All')
   const [finish, setFinish] = useState('All')
   const [texture, setTexture] = useState('All')
-  const [colourFamily, setColourFamily] = useState('All')
   const [search, setSearch] = useState('')
   const [filtersOpen, setFiltersOpen] = useState(false)
   const [visibleCount, setVisibleCount] =
@@ -108,10 +107,6 @@ export function MaterialsSection() {
         texture === 'All' ||
         material.texture === texture
 
-      const colourFamilyMatch =
-        colourFamily === 'All' ||
-        material.colourFamily === colourFamily
-
       const searchMatch =
         !query ||
         [
@@ -119,7 +114,6 @@ export function MaterialsSection() {
           material.code,
           material.category,
           material.colour,
-          material.colourFamily,
           material.finish,
           material.texture,
         ]
@@ -132,7 +126,6 @@ export function MaterialsSection() {
         colourMatch &&
         finishMatch &&
         textureMatch &&
-        colourFamilyMatch &&
         searchMatch
       )
     })
@@ -141,7 +134,6 @@ export function MaterialsSection() {
     colour,
     finish,
     texture,
-    colourFamily,
     search,
   ])
 
@@ -158,7 +150,6 @@ export function MaterialsSection() {
     setColour('All')
     setFinish('All')
     setTexture('All')
-    setColourFamily('All')
     setSearch('')
     setVisibleCount(ITEMS_PER_PAGE)
   }
@@ -176,7 +167,6 @@ export function MaterialsSection() {
     colour,
     finish,
     texture,
-    colourFamily,
   ].filter((value) => value !== 'All').length
 
   const quoteText = selectedMaterial
@@ -312,7 +302,7 @@ export function MaterialsSection() {
 
           {filtersOpen && (
             <div className="border-t border-border py-7">
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <FilterGroup
                   label={t.materials.colour}
                   options={colours}
@@ -340,14 +330,6 @@ export function MaterialsSection() {
                   }
                 />
 
-                <FilterGroup
-                  label={t.materials.colourFamily}
-                  options={colourFamilies}
-                  value={colourFamily}
-                  onChange={(value) =>
-                    updateFilter(setColourFamily, value)
-                  }
-                />
               </div>
 
               {activeFilterCount > 0 && (
@@ -560,7 +542,7 @@ export function MaterialsSection() {
                 {selectedMaterial.code}
               </p>
 
-              <div className="mt-7 grid grid-cols-2 gap-px border border-border bg-border sm:grid-cols-4">
+              <div className="mt-7 grid grid-cols-2 gap-px border border-border bg-border sm:grid-cols-3">
                 <MaterialDetail
                   label={t.materials.colour}
                   value={selectedMaterial.colour}
@@ -576,10 +558,6 @@ export function MaterialsSection() {
                   value={selectedMaterial.texture}
                 />
 
-                <MaterialDetail
-                  label={t.materials.colourFamily}
-                  value={selectedMaterial.colourFamily}
-                />
               </div>
 
               <a
