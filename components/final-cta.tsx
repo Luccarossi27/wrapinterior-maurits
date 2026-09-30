@@ -102,7 +102,7 @@ export function FinalCta() {
           {/* Phone */}
           <Reveal delay={0.1}>
             <div className="flex h-full flex-col rounded-3xl border border-border bg-card p-6 sm:p-7">
-              <div className="flex size-12 items-center justify-center rounded-2xl bg-sand text-pine">
+              <div className="flex size-12 items-center justify-center rounded-2xl bg-pine text-paper">
                 <Phone className="size-5" />
               </div>
 
@@ -127,7 +127,7 @@ export function FinalCta() {
           {/* Email */}
           <Reveal delay={0.15}>
             <div className="flex h-full flex-col rounded-3xl border border-border bg-card p-6 sm:p-7">
-              <div className="flex size-12 items-center justify-center rounded-2xl bg-sand text-pine">
+              <div className="flex size-12 items-center justify-center rounded-2xl bg-pine text-paper">
                 <Mail className="size-5" />
               </div>
 
