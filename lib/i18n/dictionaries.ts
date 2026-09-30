@@ -87,15 +87,12 @@ type Dict = {
   clearSearch: string
   filter: string
   colour: string
-  finish: string
-  texture: string
   clear: string
   results: string
   noResults: string
   loadMore: string
   disclaimer: string
   close: string
-  useFinish: string
   ctaHeading: string
   ctaSub: string
 }
@@ -329,25 +326,24 @@ gallery: {
   ],
 },
 materials: {
-  eyebrow: 'Materialen & afwerkingen',
-  heading: 'KIES JE AFWERKING.',
-  sub: 'Ontdek onze selectie van kleuren, houtstructuren, steenlooks, metalen en andere afwerkingen voor jouw interieur.',
-  search: 'Zoek op afwerking, kleur of code...',
+  eyebrow: 'Materialen',
+  heading: 'KIES JE MATERIAAL.',
+  sub: 'Ontdek onze selectie van kleuren, houtstructuren, steenlooks, metalen en andere materialen voor jouw interieur.',
+  search: 'Zoek op materiaal, kleur of code...',
   clearSearch: 'Zoekopdracht wissen',
   filter: 'Filters',
   colour: 'Kleur',
-  finish: 'Afwerking',
-  texture: 'Structuur',
   clear: 'Wis filters',
   results: 'resultaten',
-  noResults: 'Geen afwerkingen gevonden.',
+  noResults: 'Geen materialen gevonden.',
   loadMore: 'Meer laden',
   disclaimer:
-  'Kleuren en structuren kunnen op het scherm iets afwijken van het echte materiaal. Fysieke samples zijn op aanvraag beschikbaar. Alle afwerkingen zijn onder voorbehoud van beschikbaarheid.',
+    'Kleuren en structuren kunnen op het scherm iets afwijken van het echte materiaal. Fysieke samples zijn op aanvraag beschikbaar.',
   close: 'Sluiten',
-  useFinish: 'Gebruik deze afwerking voor mijn offerte',
-  ctaHeading: 'EEN AFWERKING GEZIEN DIE JE MOOI VINDT?',
-  ctaSub: 'Stuur ons een foto van je interieur en vertel ons welke afwerking je aanspreekt. We helpen je de juiste folie voor jouw project te kiezen.',
+  useMaterial: 'Gebruik dit materiaal voor mijn offerte',
+  ctaHeading: 'EEN MATERIAAL GEZIEN DAT JE MOOI VINDT?',
+  ctaSub:
+    'Stuur ons een foto van je interieur en vertel ons welk materiaal je aanspreekt. We helpen je het juiste materiaal voor jouw project te kiezen.',
 },
     process: {
       heading: 'Onze werkwijze',
@@ -645,25 +641,24 @@ gallery: {
   ],
 },
 materials: {
-  eyebrow: 'Materials & finishes',
-  heading: 'CHOOSE YOUR FINISH.',
-  sub: 'Explore our selection of colours, woodgrains, stone effects, metals and other finishes available for your interior.',
-  search: 'Search finishes, colours or codes...',
+  eyebrow: 'Materials',
+  heading: 'CHOOSE YOUR MATERIAL.',
+  sub: 'Explore our selection of colours, woodgrains, stone effects, metals and other materials for your interior.',
+  search: 'Search materials, colours or codes...',
   clearSearch: 'Clear search',
   filter: 'Filters',
   colour: 'Colour',
-  finish: 'Finish',
-  texture: 'Texture',
   clear: 'Clear filters',
   results: 'results',
-  noResults: 'No finishes found.',
+  noResults: 'No materials found.',
   loadMore: 'Load more',
   disclaimer:
-  'Colours and textures may vary slightly on screen. Physical samples are available on request. All finishes are subject to availability.',
+    'Colours and textures may vary slightly on screen. Physical samples are available on request.',
   close: 'Close',
-  useFinish: 'Use this finish in my quote',
-  ctaHeading: 'SEEN A FINISH YOU LIKE?',
-  ctaSub: 'Send us a photo of your interior and tell us which finish caught your eye. We’ll help you choose the right film for your project.',
+  useMaterial: 'Use this material in my quote',
+  ctaHeading: 'SEEN A MATERIAL YOU LIKE?',
+  ctaSub:
+    'Send us a photo of your interior and tell us which material caught your eye. We’ll help you choose the right material for your project.',
 },
     process: {
       heading: 'Our process',
@@ -969,25 +964,24 @@ gallery: {
   ],
 },
 materials: {
-  eyebrow: 'Materiales y acabados',
-  heading: 'ELIGE TU ACABADO.',
-  sub: 'Descubre nuestra selección de colores, maderas, efectos piedra, metales y otros acabados disponibles para tu interior.',
-  search: 'Buscar acabados, colores o códigos...',
+  eyebrow: 'Materiales',
+  heading: 'ELIGE TU MATERIAL.',
+  sub: 'Descubre nuestra selección de colores, maderas, efectos piedra, metales y otros materiales para tu interior.',
+  search: 'Buscar materiales, colores o códigos...',
   clearSearch: 'Borrar búsqueda',
   filter: 'Filtros',
   colour: 'Color',
-  finish: 'Acabado',
-  texture: 'Textura',
   clear: 'Borrar filtros',
   results: 'resultados',
-  noResults: 'No se han encontrado acabados.',
+  noResults: 'No se han encontrado materiales.',
   loadMore: 'Cargar más',
   disclaimer:
-  'Los colores y las texturas pueden variar ligeramente en pantalla. Hay muestras físicas disponibles bajo petición. Todos los acabados están sujetos a disponibilidad.',
+    'Los colores y las texturas pueden variar ligeramente en pantalla. Hay muestras físicas disponibles bajo petición.',
   close: 'Cerrar',
-  useFinish: 'Usar este acabado en mi presupuesto',
-  ctaHeading: '¿HAS VISTO UN ACABADO QUE TE GUSTA?',
-  ctaSub: 'Envíanos una foto de tu interior y dinos qué acabado te gusta. Te ayudaremos a elegir el film adecuado para tu proyecto.',
+  useMaterial: 'Usar este material en mi presupuesto',
+  ctaHeading: '¿HAS VISTO UN MATERIAL QUE TE GUSTA?',
+  ctaSub:
+    'Envíanos una foto de tu interior y dinos qué material te gusta. Te ayudaremos a elegir el material adecuado para tu proyecto.',
 },
     process: {
       heading: 'Nuestro proceso',
