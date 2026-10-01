@@ -46,7 +46,7 @@ const colours = [
   'Brown',
 ]
 
-const ITEMS_PER_PAGE = 18
+const ITEMS_PER_PAGE = 16
 
 export function MaterialsSection() {
   const { t } = useLanguage()
