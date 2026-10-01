@@ -68,8 +68,6 @@ export function MaterialsSection() {
       : locale === 'es'
         ? 'Madera pintada'
         : 'Painted Wood',
-  Abstract:
-    locale === 'nl' ? 'Abstract' : locale === 'es' ? 'Abstracto' : 'Abstract',
 }
 
 const colourLabels: Record<string, string> = {
@@ -265,27 +263,27 @@ const colourLabels: Record<string, string> = {
 
           {filtersOpen && (
             <div className="border-t border-border py-5">
-              <div className="grid gap-5 sm:grid-cols-2">
-                <FilterGroup
-  label={t.materials.category}
-  options={categories}
-  labels={categoryLabels}
-  value={category}
-  onChange={(value) =>
-    updateFilter(setCategory, value)
-  }
-/>
+              <div className="space-y-5">
+  <FilterGroup
+    label={t.materials.category}
+    options={categories}
+    labels={categoryLabels}
+    value={category}
+    onChange={(value) =>
+      updateFilter(setCategory, value)
+    }
+  />
 
-<FilterGroup
-  label={t.materials.colour}
-  options={colours}
-  labels={colourLabels}
-  value={colour}
-  onChange={(value) =>
-    updateFilter(setColour, value)
-  }
-/>
-              </div>
+  <FilterGroup
+    label={t.materials.colour}
+    options={colours}
+    labels={colourLabels}
+    value={colour}
+    onChange={(value) =>
+      updateFilter(setColour, value)
+    }
+  />
+</div>
 
               {activeFilterCount > 0 && (
                 <div className="mt-7 flex items-center justify-between border-t border-border pt-5">
