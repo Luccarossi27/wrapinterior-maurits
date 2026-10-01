@@ -464,11 +464,6 @@ export function MaterialsSection() {
                 {selectedMaterial.code}
               </p>
 
-              <div className="mt-7 border border-border bg-paper">
-                <MaterialDetail
-                  label={t.materials.colour}
-                  value={selectedMaterial.colour}
-                />
               </div>
 
               <a
