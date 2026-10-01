@@ -524,22 +524,3 @@ function FilterGroup({
   )
 }
 
-function MaterialDetail({
-  label,
-  value,
-}: {
-  label: string
-  value: string
-}) {
-  return (
-    <div className="bg-paper p-3">
-      <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-muted-foreground">
-        {label}
-      </p>
-
-      <p className="mt-1 text-sm font-semibold text-ink">
-        {value}
-      </p>
-    </div>
-  )
-}
