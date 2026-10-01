@@ -791,7 +791,7 @@ export const materials: Material[] = [
     name: 'Formica',
     code: 'W171',
     category: 'Wood',
-    colour: ['Red Brown'],
+    colour: ['Red', 'Brown'],
     image:
       'https://www.resimdo.es/shop/media/image/W171-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
