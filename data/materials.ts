@@ -418,23 +418,13 @@ export const materials: Material[] = [
       'https://www.resimdo.nl/shop/media/image/RF008-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
   {
-    id: 'tweed-day-2-te003',
-    name: 'Tweed Day 2.0',
-    code: 'TE003',
-    category: 'Textile',
-    colour: ['Grey'],
-    image:
-      'https://www.resimdo.nl/shop/media/image/TE003-Uebersicht-Walltile-3000x2250.jpg',
-  },
-  
-  {
-    id: 'pictis-bone-2-pw103',
-    name: 'Pictis Bone 2.0',
-    code: 'PW103',
+    id: 'pictis-bone-pnt04',
+    name: 'Pictis Bone',
+    code: 'PNT04',
     category: 'Painted Wood',
     colour: ['Grey'],
     image:
-      'https://www.resimdo.nl/shop/media/image/PW103-Uebersicht-Walltile-3000x2250.jpg',
+      'https://www.resimdo.es/shop/media/image/PNT04-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
   {
     id: 'pictis-tornado-pnt09',
@@ -484,13 +474,13 @@ export const materials: Material[] = [
   },
 
   {
-    id: 'turtle-2-sc157',
-    name: 'Turtle 2.0',
-    code: 'SC157',
+    id: 'turtle-s157',
+    name: 'Turtle',
+    code: 'S157',
     category: 'Solid Colour',
     colour: ['Beige'],
     image:
-      'https://www.resimdo.de/shop/media/image/SC157-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+      'https://www.resimdo.es/shop/media/image/S157-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
   {
     id: 'dune-sc160',
@@ -769,13 +759,13 @@ export const materials: Material[] = [
       'https://www.resimdo.es/shop/media/image/W276-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
   {
-    id: 'petum-light-2-st160',
-    name: 'Petum Light 2.0',
-    code: 'ST160',
+    id: 'petum-light-pm016',
+    name: 'Petum Light',
+    code: 'PM016',
     category: 'Stone',
     colour: ['Grey'],
     image:
-      'https://www.resimdo.nl/shop/media/image/ST160-Uebersicht-Walltile-3000x2250.jpg',
+      'https://www.resimdo.es/shop/media/image/PM016-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
   {
     id: 'magusa-dark-2-st163',
@@ -1079,7 +1069,7 @@ export const materials: Material[] = [
     name: 'Syra Silver',
     code: 'ME004',
     category: 'Metallic',
-    colour: ['Silver'],
+    colour: ['Silver', 'Grey'],
     image:
       'https://www.resimdo.de/shop/media/image/ME401-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
