@@ -86,6 +86,7 @@ type Dict = {
   search: string
   clearSearch: string
   filter: string
+  category: string
   colour: string
   clear: string
   results: string
@@ -93,6 +94,7 @@ type Dict = {
   loadMore: string
   disclaimer: string
   close: string
+  useMaterial: string
   ctaHeading: string
   ctaSub: string
 }
