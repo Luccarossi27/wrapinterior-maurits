@@ -1119,5 +1119,320 @@ export const materials: Material[] = [
     image:
       'https://www.resimdo.es/shop/media/image/SC059-Uebersicht-Walltile-3000x2250.jpg',
   },
-
+{
+    id: 'lancea-silver-dm036',
+    name: 'Lancea Silver',
+    code: 'DM036',
+    category: 'Metallic',
+    colour: ['Silver', 'Grey'],
+    image:
+      'https://www.resimdo.es/shop/media/image/DM036-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'strawberry-s147',
+    name: 'Strawberry',
+    code: 'S147',
+    category: 'Solid Colour',
+    colour: ['Red'],
+    image:
+      'https://www.resimdo.es/shop/media/image/S147-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'cherry-s218',
+    name: 'Cherry',
+    code: 'S218',
+    category: 'Solid Colour',
+    colour: ['Red'],
+    image:
+      'https://www.resimdo.es/shop/media/image/S218-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'ignis-w276',
+    name: 'Ignis',
+    code: 'W276',
+    category: 'Wood',
+    colour: ['Red', 'Brown'],
+    image:
+      'https://www.resimdo.es/shop/media/image/W276-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'hibiscus-s232',
+    name: 'Hibiscus',
+    code: 'S232',
+    category: 'Solid Colour',
+    colour: ['Pink'],
+    image:
+      'https://www.resimdo.es/shop/media/image/S232-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'rosielle-sc360',
+    name: 'Rosielle',
+    code: 'SC360',
+    category: 'Solid Colour',
+    colour: ['Pink'],
+    image:
+      'https://www.resimdo.es/shop/media/image/SC360-Uebersicht-Walltile-3000x2250.jpg',
+  },
+{
+    id: 'petaline-sc361',
+    name: 'Petaline',
+    code: 'SC361',
+    category: 'Solid Colour',
+    colour: ['Pink'],
+    image:
+      'https://www.resimdo.es/shop/media/image/SC361-Uebersicht-Walltile-3000x2250.jpg',
+  },
+{
+    id: 'balm-rosé-s207',
+    name: 'Balm Rosé',
+    code: 'S207',
+    category: 'Solid Colour',
+    colour: ['Pink'],
+    image:
+      'https://www.resimdo.es/shop/media/image/S207-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'piggy-s217',
+    name: 'Piggy',
+    code: 'S217',
+    category: 'Solid Colour',
+    colour: ['Pink'],
+    image:
+      'https://www.resimdo.es/shop/media/image/S217-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'polar-2-sc303',
+    name: 'Polar 2.0',
+    code: 'SC303',
+    category: 'Solid Colour',
+    colour: ['Blue'],
+    image:
+      'https://www.resimdo.es/shop/media/image/SC303-Uebersicht-Walltile-3000x2250.jpg',
+  },
+{
+    id: 'bahamas-2-sc214',
+    name: 'Bahamas 2.0',
+    code: 'SC214',
+    category: 'Solid Colour',
+    colour: ['Blue'],
+    image:
+      'https://www.resimdo.es/shop/media/image/SC214-Uebersicht-Walltile-3000x2250.jpg',
+  },
+{
+    id: 'glacier-s186',
+    name: 'Glacier',
+    code: 'S186',
+    category: 'Solid Colour',
+    colour: ['Blue'],
+    image:
+      'https://www.resimdo.es/shop/media/image/S186-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'orsa-sc208',
+    name: 'Orsa',
+    code: 'SC208',
+    category: 'Solid Colour',
+    colour: ['Blue'],
+    image:
+      'https://www.resimdo.es/shop/media/image/SC602-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'nymora-sc220',
+    name: 'Nymora',
+    code: 'SC220',
+    category: 'Solid Colour',
+    colour: ['Blue'],
+    image:
+      'https://www.resimdo.es/shop/media/image/SC220-Uebersicht-Walltile-3000x2250.jpg',
+  },
+{
+    id: 'orange-s169',
+    name: 'Orange',
+    code: 'S169',
+    category: 'Solid Colour',
+    colour: ['Orange'],
+    image:
+      'https://www.resimdo.es/shop/media/image/S169-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'salmon-s213',
+    name: 'Salmon',
+    code: 'S213',
+    category: 'Solid Colour',
+    colour: ['Orange'],
+    image:
+      'https://www.resimdo.es/shop/media/image/S213-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'sunflower-s146',
+    name: 'Sunflower',
+    code: 'S146',
+    category: 'Solid Colour',
+    colour: ['Yellow'],
+    image:
+      'https://www.resimdo.es/shop/media/image/S146-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'mon-s188',
+    name: 'Mon',
+    code: 'S188',
+    category: 'Solid Colour',
+    colour: ['Yellow'],
+    image:
+      'https://www.resimdo.es/shop/media/image/S188-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'beach-2-sc351',
+    name: 'Beach 2.0',
+    code: 'SC351',
+    category: 'Solid Colour',
+    colour: ['Yellow'],
+    image:
+      'https://www.resimdo.es/shop/media/image/SC351-Uebersicht-Walltile-3000x2250.jpg',
+  },
+{
+    id: 'balm-cheese-2-sc364',
+    name: 'Balm Cheese 2.0',
+    code: 'SC364',
+    category: 'Solid Colour',
+    colour: ['Yellow'],
+    image:
+      'https://www.resimdo.es/shop/media/image/SC364-Uebersicht-Walltile-3000x2250.jpg',
+  },
+{
+    id: 'yella-sc357',
+    name: 'Yella',
+    code: 'SC357',
+    category: 'Solid Colour',
+    colour: ['Yellow'],
+    image:
+      'https://www.resimdo.es/shop/media/image/SC357-Uebersicht-Walltile-3000x2250.jpg',
+  },
+{
+    id: 'apple-s189',
+    name: 'Apple',
+    code: 'S189',
+    category: 'Solid Colour',
+    colour: ['Green'],
+    image:
+      'https://www.resimdo.es/shop/media/image/S189-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'aria-pw117',
+    name: 'Aria',
+    code: 'PW117',
+    category: 'Painted Wood',
+    colour: ['Green'],
+    image:
+      'https://www.resimdo.es/shop/media/image/PW708-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'pond-s201',
+    name: 'Pond',
+    code: 'S201',
+    category: 'Solid Colour',
+    colour: ['Green'],
+    image:
+      'https://www.resimdo.es/shop/media/image/S201-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'pine-sc258',
+    name: 'Pine',
+    code: 'SC258',
+    category: 'Solid Colour',
+    colour: ['Green'],
+    image:
+      'https://www.resimdo.es/shop/media/image/SC258-Uebersicht-Walltile-3000x2250.jpg',
+  },
+{
+    id: 'eucalyptus-s239',
+    name: 'Eucalyptus',
+    code: 'S239',
+    category: 'Solid Colour',
+    colour: ['Green'],
+    image:
+      'https://www.resimdo.es/shop/media/image/S239-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'alga-s200',
+    name: 'Alga',
+    code: 'S200',
+    category: 'Solid Colour',
+    colour: ['Green'],
+    image:
+      'https://www.resimdo.es/shop/media/image/S200-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'mandra-le008',
+    name: 'Mandra',
+    code: 'LE008',
+    category: 'Leather',
+    colour: ['Black'],
+    image:
+      'https://www.resimdo.es/shop/media/image/LE302-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'niversa-pw008',
+    name: 'Niversa',
+    code: 'PW008',
+    category: 'Painted Wood',
+    colour: ['Black'],
+    image:
+      'https://www.resimdo.es/shop/media/image/PW703-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },  
+{
+    id: 'draculos-st110',
+    name: 'Draculos',
+    code: 'ST110',
+    category: 'Stone',
+    colour: ['Black'],
+    image:
+      'https://www.resimdo.es/shop/media/image/ST504-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },  
+{
+    id: 'cateno-silver-rm005',
+    name: 'Cateno Silver',
+    code: 'RM005',
+    category: 'Metallic',
+    colour: ['Silver', 'Grey'],
+    image:
+      'https://www.resimdo.es/shop/media/image/RM005-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },  
+{
+    id: 'solis-gold-rm007',
+    name: 'Solis Gold',
+    code: 'RM007',
+    category: 'Metallic',
+    colour: ['Gold', 'Yellow'],
+    image:
+      'https://www.resimdo.es/shop/media/image/RM007-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'solis-copper-rm008',
+    name: 'Solis Copper',
+    code: 'RM008',
+    category: 'Metallic',
+    colour: ['Brown', 'Gold'],
+    image:
+      'https://www.resimdo.es/shop/media/image/RM008-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'intensio-ns428',
+    name: 'Intensio',
+    code: 'NS428',
+    category: 'Stone',
+    colour: ['Brown', 'Black'],
+    image:
+      'https://www.resimdo.es/shop/media/image/NS428-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'intensio-ns428',
+    name: 'Intensio',
+    code: 'NS428',
+    category: 'Stone',
+    colour: ['Brown', 'Black'],
+    image:
+      'https://www.resimdo.es/shop/media/image/NS428-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+  
 ]
