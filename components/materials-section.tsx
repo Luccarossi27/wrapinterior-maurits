@@ -40,14 +40,13 @@ const colours = [
   'Grey',
   'Orange',
   'Blue',
-  'Bronze',
   'Black',
   'Red',
   'Pink',
   'Brown',
 ]
 
-const ITEMS_PER_PAGE = 24
+const ITEMS_PER_PAGE = 18
 
 export function MaterialsSection() {
   const { t } = useLanguage()
