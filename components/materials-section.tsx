@@ -302,51 +302,55 @@ export function MaterialsSection() {
           ) : null}
         </div>
 
+        
         {/* MATERIAL GRID */}
-        <div className="mt-6 grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 lg:gap-x-6 lg:gap-y-14">
-          {visibleMaterials.map((material, index) => (
-            <Reveal
-              key={material.id}
-              delay={(index % 4) * 0.03}
-            >
-              <button
-                type="button"
-                onClick={() =>
-                  setSelectedMaterial(material)
-                }
-                className="group block w-full text-left focus:outline-none"
+        {filteredMaterials.length > 0 && (
+          <div className="mt-6 grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 lg:gap-x-6 lg:gap-y-14">
+            {visibleMaterials.map((material, index) => (
+              <Reveal
+                key={material.id}
+                delay={(index % 4) * 0.03}
               >
-                {/* IMAGE */}
-                <div className="relative aspect-[1.15/1] overflow-hidden bg-muted">
-                  <img
-                    src={material.image}
-                    alt={`${material.name} ${material.code}`}
-                    loading={index < 8 ? 'eager' : 'lazy'}
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.035]"
-                  />
+                <button
+                  type="button"
+                  onClick={() => setSelectedMaterial(material)}
+                  className="group block w-full text-left focus:outline-none"
+                >
+                  {/* IMAGE */}
+                  <div className="relative aspect-[1.15/1] overflow-hidden bg-muted">
+                    <img
+                      src={material.image}
+                      alt={`${material.name} ${material.code}`}
+                      loading={index < 8 ? 'eager' : 'lazy'}
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.035]"
+                    />
 
-                  <div className="absolute bottom-0 left-0 h-1 w-0 bg-brass transition-all duration-500 group-hover:w-full" />
-                </div>
+                    <div className="absolute bottom-0 left-0 h-1 w-0 bg-brass transition-all duration-500 group-hover:w-full" />
+                  </div>
 
-                {/* INFO */}
-  <div className="pt-4">
-    <div className="flex items-baseline justify-between gap-3">
-      <h2 className="font-serif text-base font-semibold uppercase leading-tight transition-colors group-hover:text-brass sm:text-lg">
-        {material.name}
-      </h2>
+                  {/* INFO */}
+                  <div className="pt-4">
+                    <div className="flex items-baseline justify-between gap-3">
+                      <h2 className="font-serif text-base font-semibold uppercase leading-tight transition-colors group-hover:text-brass sm:text-lg">
+                        {material.name}
+                      </h2>
 
-      <span className="shrink-0 text-[10px] font-bold uppercase tracking-[0.12em] text-muted-foreground">
-        {material.code}
-      </span>
-    </div>
+                      <span className="shrink-0 text-[10px] font-bold uppercase tracking-[0.12em] text-muted-foreground">
+                        {material.code}
+                      </span>
+                    </div>
 
-    <div className="mt-2 flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.1em] text-muted-foreground">
-      <span>{material.category}</span>
-      <span className="text-brass">·</span>
-      <span>{material.colour}</span>
-    </div>
-  </div>
-</button>
+                    <div className="mt-2 flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.1em] text-muted-foreground">
+                      <span>{material.category}</span>
+                      <span className="text-brass">·</span>
+                      <span>{material.colour}</span>
+                    </div>
+                  </div>
+                </button>
+              </Reveal>
+            ))}
+          </div>
+        )}
 
         {/* EMPTY */}
         {filteredMaterials.length === 0 && (
