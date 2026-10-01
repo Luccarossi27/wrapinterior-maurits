@@ -190,7 +190,7 @@ export function MaterialsSection() {
           </div>
         </Reveal>
 
-        {/* FILTERS */}
+                {/* FILTERS */}
         <div className="border-b border-border">
           <button
             type="button"
@@ -213,33 +213,32 @@ export function MaterialsSection() {
             <ChevronDown
               className={[
                 'size-4 transition-transform duration-200',
-                filtersOpen
-                  ? 'rotate-180 text-brass'
-                  : '',
+                filtersOpen ? 'rotate-180 text-brass' : '',
               ].join(' ')}
             />
           </button>
 
           {filtersOpen && (
-            <div className="grid gap-8 sm:grid-cols-2">
-  <FilterGroup
-    label={t.materials.category}
-    options={categories}
-    value={category}
-    onChange={(value) =>
-      updateFilter(setCategory, value)
-    }
-  />
+            <div className="border-t border-border py-7">
+              <div className="grid gap-8 sm:grid-cols-2">
+                <FilterGroup
+                  label="Category"
+                  options={categories}
+                  value={category}
+                  onChange={(value) =>
+                    updateFilter(setCategory, value)
+                  }
+                />
 
-  <FilterGroup
-    label={t.materials.colour}
-    options={colours}
-    value={colour}
-    onChange={(value) =>
-      updateFilter(setColour, value)
-    }
-  />
-</div>
+                <FilterGroup
+                  label={t.materials.colour}
+                  options={colours}
+                  value={colour}
+                  onChange={(value) =>
+                    updateFilter(setColour, value)
+                  }
+                />
+              </div>
 
               {activeFilterCount > 0 && (
                 <div className="mt-7 flex items-center justify-between border-t border-border pt-5">
