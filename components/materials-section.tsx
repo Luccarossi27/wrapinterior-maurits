@@ -49,7 +49,45 @@ const colours = [
 const ITEMS_PER_PAGE = 16
 
 export function MaterialsSection() {
-  const { t } = useLanguage()
+  const { locale, t } = useLanguage()
+  const categoryLabels: Record<string, string> = {
+  All: locale === 'nl' ? 'Alle' : locale === 'es' ? 'Todas' : 'All',
+  Wood: locale === 'nl' ? 'Hout' : locale === 'es' ? 'Madera' : 'Wood',
+  Stone: locale === 'nl' ? 'Steen' : locale === 'es' ? 'Piedra' : 'Stone',
+  'Solid Colour':
+    locale === 'nl' ? 'Effen kleur' : locale === 'es' ? 'Color liso' : 'Solid Colour',
+  Metallic:
+    locale === 'nl' ? 'Metaal' : locale === 'es' ? 'Metálico' : 'Metallic',
+  Leather:
+    locale === 'nl' ? 'Leer' : locale === 'es' ? 'Piel' : 'Leather',
+  Textile:
+    locale === 'nl' ? 'Textiel' : locale === 'es' ? 'Textil' : 'Textile',
+  'Painted Wood':
+    locale === 'nl'
+      ? 'Geschilderd hout'
+      : locale === 'es'
+        ? 'Madera pintada'
+        : 'Painted Wood',
+  Abstract:
+    locale === 'nl' ? 'Abstract' : locale === 'es' ? 'Abstracto' : 'Abstract',
+}
+
+const colourLabels: Record<string, string> = {
+  All: locale === 'nl' ? 'Alle' : locale === 'es' ? 'Todos' : 'All',
+  Silver: locale === 'nl' ? 'Zilver' : locale === 'es' ? 'Plata' : 'Silver',
+  Beige: 'Beige',
+  White: locale === 'nl' ? 'Wit' : locale === 'es' ? 'Blanco' : 'White',
+  Yellow: locale === 'nl' ? 'Geel' : locale === 'es' ? 'Amarillo' : 'Yellow',
+  Green: locale === 'nl' ? 'Groen' : locale === 'es' ? 'Verde' : 'Green',
+  Gold: locale === 'nl' ? 'Goud' : locale === 'es' ? 'Dorado' : 'Gold',
+  Grey: locale === 'nl' ? 'Grijs' : locale === 'es' ? 'Gris' : 'Grey',
+  Orange: locale === 'nl' ? 'Oranje' : locale === 'es' ? 'Naranja' : 'Orange',
+  Blue: locale === 'nl' ? 'Blauw' : locale === 'es' ? 'Azul' : 'Blue',
+  Black: locale === 'nl' ? 'Zwart' : locale === 'es' ? 'Negro' : 'Black',
+  Red: locale === 'nl' ? 'Rood' : locale === 'es' ? 'Rojo' : 'Red',
+  Pink: locale === 'nl' ? 'Roze' : locale === 'es' ? 'Rosa' : 'Pink',
+  Brown: locale === 'nl' ? 'Bruin' : locale === 'es' ? 'Marrón' : 'Brown',
+}
 
   const [category, setCategory] = useState('All')
   const [colour, setColour] = useState('All')
