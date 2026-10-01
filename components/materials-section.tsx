@@ -519,7 +519,7 @@ function FilterGroup({
               type="button"
               onClick={() => onChange(option)}
               className={[
-                'inline-flex items-center gap-1.5 border-b pb-1 text-xs transition-colors',
+                'whitespace-nowrap inline-flex items-center gap-1.5 border-b pb-1 text-xs transition-colors',
                 active
                   ? 'border-brass text-brass'
                   : 'border-transparent text-muted-foreground hover:border-brass hover:text-ink',
