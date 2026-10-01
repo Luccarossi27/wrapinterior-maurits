@@ -6,7 +6,6 @@ export type MaterialCategory =
   | 'Leather'
   | 'Textile'
   | 'Painted Wood'
-  | 'Abstract'
 
 export type Material = {
   id: string
