@@ -1106,7 +1106,7 @@ export const materials: Material[] = [
     name: 'Blossom',
     code: 'SC058',
     category: 'Solid Colour',
-    colour: ['Pink'],
+    colour: ['White'],
     image:
       'https://www.resimdo.es/shop/media/image/SC058-Uebersicht-Walltile-3000x2250.jpg',
   },
