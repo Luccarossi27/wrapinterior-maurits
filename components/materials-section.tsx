@@ -190,39 +190,6 @@ export function MaterialsSection() {
           </div>
         </Reveal>
 
-        {/* CATEGORY NAV */}
-        <Reveal delay={0.08}>
-          <div className="border-b border-border py-5">
-            <div className="flex flex-wrap gap-x-7 gap-y-3">
-              {categories.map((item) => {
-                const active = category === item
-
-                return (
-                  <button
-                    key={item}
-                    type="button"
-                    onClick={() =>
-                      updateFilter(setCategory, item)
-                    }
-                    className={[
-                      'relative pb-1 text-xs font-bold uppercase tracking-[0.12em] transition-colors',
-                      active
-                        ? 'text-brass'
-                        : 'text-muted-foreground hover:text-ink',
-                    ].join(' ')}
-                  >
-                    {item}
-
-                    {active && (
-                      <span className="absolute -bottom-[21px] left-0 right-0 h-px bg-brass" />
-                    )}
-                  </button>
-                )
-              })}
-            </div>
-          </div>
-        </Reveal>
-
         {/* FILTERS */}
         <div className="border-b border-border">
           <button
@@ -254,17 +221,25 @@ export function MaterialsSection() {
           </button>
 
           {filtersOpen && (
-            <div className="border-t border-border py-7">
-              <div className="grid gap-8 sm:grid-cols-2">
-                <FilterGroup
-                  label={t.materials.colour}
-                  options={colours}
-                  value={colour}
-                  onChange={(value) =>
-                    updateFilter(setColour, value)
-                  }
-                />
-              </div>
+            <div className="grid gap-8 sm:grid-cols-2">
+  <FilterGroup
+    label={t.materials.category}
+    options={categories}
+    value={category}
+    onChange={(value) =>
+      updateFilter(setCategory, value)
+    }
+  />
+
+  <FilterGroup
+    label={t.materials.colour}
+    options={colours}
+    value={colour}
+    onChange={(value) =>
+      updateFilter(setColour, value)
+    }
+  />
+</div>
 
               {activeFilterCount > 0 && (
                 <div className="mt-7 flex items-center justify-between border-t border-border pt-5">
