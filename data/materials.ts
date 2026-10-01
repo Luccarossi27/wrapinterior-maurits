@@ -13,7 +13,7 @@ export type Material = {
   name: string
   code: string
   category: MaterialCategory
-  colour: string
+  colour: string[]
   image: string
 }
 
@@ -26,7 +26,7 @@ export const materials: Material[] = [
     name: 'Logium 2.0',
     code: 'WD001',
     category: 'Wood',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.nl/shop/media/image/WD001-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -35,7 +35,7 @@ export const materials: Material[] = [
     name: 'Braeloft',
     code: 'WD022',
     category: 'Wood',
-    colour: 'Brown', 'Beige', 
+    colour: ['Brown', 'Beige'], 
     image:
       'https://www.resimdo.nl/shop/media/image/WD022-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -44,7 +44,7 @@ export const materials: Material[] = [
     name: 'Spruns',
     code: 'WD017',
     category: 'Wood',
-    colour: 'Beige', 
+    colour: ['Beige'], 
     image:
       'https://www.resimdo.nl/shop/media/image/WD017-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -53,7 +53,7 @@ export const materials: Material[] = [
     name: 'Caprea',
     code: 'W302',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image: 'https://www.resimdo.es/shop/media/image/W302-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
   {
@@ -61,7 +61,7 @@ export const materials: Material[] = [
     name: 'Hazel',
     code: 'W931',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image: 'https://www.resimdo.es/shop/media/image/W931-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
 
@@ -70,7 +70,7 @@ export const materials: Material[] = [
     name: 'Norvia',
     code: 'ST061',
     category: 'Stone',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST061-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -79,7 +79,7 @@ export const materials: Material[] = [
     name: 'Lumira',
     code: 'ST062',
     category: 'Stone',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST062-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -88,7 +88,7 @@ export const materials: Material[] = [
     name: 'Pale Aura',
     code: 'ST063',
     category: 'Stone',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST063-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -97,7 +97,7 @@ export const materials: Material[] = [
     name: 'Litus',
     code: 'NS121',
     category: 'Stone',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.es/shop/media/image/NS121-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -106,7 +106,7 @@ export const materials: Material[] = [
     name: 'Travertin',
     code: 'NS806',
     category: 'Stone',
-    colour: 'Beige',
+    colour: ['Beige'],
     image: 'https://www.resimdo.es/shop/media/image/NS806-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
 
@@ -115,7 +115,7 @@ export const materials: Material[] = [
     name: 'Papilo Sand',
     code: 'SMT04',
     category: 'Solid Colour',
-    colour: 'Beige',
+    colour: ['Beige'],
     image: 'https://www.resimdo.es/shop/media/image/SMT04-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
   {
@@ -123,7 +123,7 @@ export const materials: Material[] = [
     name: 'Autemo',
     code: 'SPW96',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image: 'https://www.resimdo.es/shop/media/image/SPW96-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
   {
@@ -131,7 +131,7 @@ export const materials: Material[] = [
     name: 'Moss',
     code: 'S202',
     category: 'Solid Colour',
-    colour: 'Green',
+    colour: ['Green'],
     image: imageUrl('S202'),
   },
   {
@@ -139,7 +139,7 @@ export const materials: Material[] = [
     name: 'Mint',
     code: 'S214',
     category: 'Solid Colour',
-    colour: 'Green',
+    colour: ['Green'],
     image: imageUrl('S214'),
   },
 
@@ -148,7 +148,7 @@ export const materials: Material[] = [
     name: 'Syra Gold',
     code: 'ME001',
     category: 'Metallic',
-    colour: 'Gold', 'Yellow', 
+    colour: ['Gold', 'Yellow'], 
     image:
       'https://www.resimdo.es/shop/media/image/ME403-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -157,7 +157,7 @@ export const materials: Material[] = [
     name: 'Syra Besh',
     code: 'ME002',
     category: 'Metallic',
-    colour: 'Gold', 'Yellow', 
+    colour: ['Gold', 'Yellow'], 
     image:
       'https://www.resimdo.es/shop/media/image/ME404-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -166,7 +166,7 @@ export const materials: Material[] = [
     name: 'Corten',
     code: 'ME005',
     category: 'Metallic',
-    colour: 'Beige', 'Gold', 
+    colour: ['Beige', 'Gold'], 
     image:
       'https://www.resimdo.nl/shop/media/image/ME005-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -176,7 +176,7 @@ export const materials: Material[] = [
     name: 'Mora',
     code: 'LE012',
     category: 'Leather',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.nl/shop/media/image/LE012-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -185,7 +185,7 @@ export const materials: Material[] = [
     name: 'Riva',
     code: 'LE013',
     category: 'Leather',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.nl/shop/media/image/LE013-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -195,7 +195,7 @@ export const materials: Material[] = [
     name: 'Tweed Night',
     code: 'RF007',
     category: 'Textile',
-    colour: 'Grey',
+    colour: ['Grey'],
     image: 'https://www.resimdo.es/shop/media/image/RF007-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
   {
@@ -203,7 +203,7 @@ export const materials: Material[] = [
     name: 'Lion',
     code: 'S215',
     category: 'Solid Colour',
-    colour: 'Beige',
+    colour: ['Beige'],
     image: 'https://www.resimdo.es/shop/media/image/S215-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
   {
@@ -211,7 +211,7 @@ export const materials: Material[] = [
     name: 'Pictis Mud 2.0',
     code: 'PW106',
     category: 'Painted Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.nl/shop/media/image/PW106-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -220,7 +220,7 @@ export const materials: Material[] = [
     name: 'Pictis Alnix',
     code: 'PW111',
     category: 'Painted Wood',
-    colour: 'White',
+    colour: ['White'],
     image:
       'https://www.resimdo.nl/shop/media/image/PW111-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -230,7 +230,7 @@ export const materials: Material[] = [
     name: 'Rudis Dark',
     code: 'NS403',
     category: 'Stone',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.nl/shop/media/image/NS403-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -240,7 +240,7 @@ export const materials: Material[] = [
     name: 'Papilo Snow Lux',
     code: 'SC015',
     category: 'Solid Colour',
-    colour: 'White',
+    colour: ['White'],
     image:
       'https://www.resimdo.nl/shop/media/image/SC015-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -250,7 +250,7 @@ export const materials: Material[] = [
     name: 'Ibis',
     code: 'W823',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.nl/shop/media/image/W823-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -259,7 +259,7 @@ export const materials: Material[] = [
     name: 'Eris',
     code: 'PZ615',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.nl/shop/media/image/PZ615-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -268,7 +268,7 @@ export const materials: Material[] = [
     name: 'Arbor',
     code: 'PZ010',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.nl/shop/media/image/ZX125-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -277,7 +277,7 @@ export const materials: Material[] = [
     name: 'Milkshake',
     code: 'W944',
     category: 'Wood',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.nl/shop/media/image/W944-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -286,7 +286,7 @@ export const materials: Material[] = [
     name: 'Vetus 2.0',
     code: 'ST156',
     category: 'Stone',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST156-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -295,7 +295,7 @@ export const materials: Material[] = [
     name: 'Calidum',
     code: 'SPW17',
     category: 'Wood',
-    colour: 'Brown', 'Beige', 
+    colour: ['Brown', 'Beige'], 
     image:
       'https://www.resimdo.es/shop/media/image/SPW17-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -305,7 +305,7 @@ export const materials: Material[] = [
     name: 'Woven Luma',
     code: 'TE010',
     category: 'Textile',
-    colour: 'White',
+    colour: ['White'],
     image:
       'https://www.resimdo.nl/shop/media/image/TE010-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -314,7 +314,7 @@ export const materials: Material[] = [
     name: 'Woven Fina',
     code: 'TE012',
     category: 'Textile',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.nl/shop/media/image/TE012-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -323,7 +323,7 @@ export const materials: Material[] = [
     name: 'Woven Tana',
     code: 'TE011',
     category: 'Textile',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.nl/shop/media/image/TE011-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -332,7 +332,7 @@ export const materials: Material[] = [
     name: 'Woven Sable',
     code: 'TE014',
     category: 'Textile',
-    colour: 'Beige', 'Grey', 
+    colour: ['Beige', 'Grey'], 
     image:
       'https://www.resimdo.nl/shop/media/image/TE014-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -341,7 +341,7 @@ export const materials: Material[] = [
     name: 'Fibra Linen',
     code: 'TE008',
     category: 'Textile',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.nl/shop/media/image/TE202-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -350,7 +350,7 @@ export const materials: Material[] = [
     name: 'Fibra Stone',
     code: 'TE005',
     category: 'Textile',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.nl/shop/media/image/TE203-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -359,7 +359,7 @@ export const materials: Material[] = [
     name: 'Materia',
     code: 'NS820',
     category: 'Textile',
-    colour: 'Brown', 'Grey', 
+    colour: ['Brown', 'Grey'], 
     image:
       'https://www.resimdo.nl/shop/media/image/NS820-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -368,7 +368,7 @@ export const materials: Material[] = [
     name: 'Candor',
     code: 'PW011',
     category: 'Painted Wood',
-    colour: 'White',
+    colour: ['White'],
     image:
       'https://www.resimdo.nl/shop/media/image/PW011-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -377,7 +377,7 @@ export const materials: Material[] = [
     name: 'Albulus',
     code: 'PW012',
     category: 'Painted Wood',
-    colour: 'White',
+    colour: ['White'],
     image:
       'https://www.resimdo.nl/shop/media/image/PW012-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -386,7 +386,7 @@ export const materials: Material[] = [
     name: 'Pure Alba',
     code: 'PS502',
     category: 'Stone',
-    colour: 'White',
+    colour: ['White'],
     image:
       'https://www.resimdo.nl/shop/media/image/PS502-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -395,7 +395,7 @@ export const materials: Material[] = [
     name: 'Woven Liora',
     code: 'TE009',
     category: 'Textile',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.nl/shop/media/image/TE009-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -404,7 +404,7 @@ export const materials: Material[] = [
     name: 'Fibra Bride',
     code: 'TE001',
     category: 'Textile',
-    colour: 'White',
+    colour: ['White'],
     image:
       'https://www.resimdo.nl/shop/media/image/TE201-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -413,7 +413,7 @@ export const materials: Material[] = [
     name: 'Tweed Beige',
     code: 'RF008',
     category: 'Textile',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.nl/shop/media/image/RF008-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -422,7 +422,7 @@ export const materials: Material[] = [
     name: 'Tweed Day 2.0',
     code: 'TE003',
     category: 'Textile',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.nl/shop/media/image/TE003-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -432,7 +432,7 @@ export const materials: Material[] = [
     name: 'Pictis Bone 2.0',
     code: 'PW103',
     category: 'Painted Wood',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.nl/shop/media/image/PW103-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -441,7 +441,7 @@ export const materials: Material[] = [
     name: 'Pictis Tornado',
     code: 'PNT09',
     category: 'Painted Wood',
-    colour: 'Blue',
+    colour: ['Blue'],
     image:
       'https://www.resimdo.es/shop/media/image/PNT09-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -451,7 +451,7 @@ export const materials: Material[] = [
     name: 'Animus',
     code: 'W358',
     category: 'Wood',
-    colour: 'Brown', 'Beige', 
+    colour: ['Brown', 'Beige'], 
     image:
       'https://www.resimdo.es/shop/media/image/W358-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -460,7 +460,7 @@ export const materials: Material[] = [
     name: 'Avia Clara',
     code: 'ZX144',
     category: 'Wood',
-    colour: 'Brown', 'Beige', 
+    colour: ['Brown', 'Beige'], 
     image:
       'https://www.resimdo.es/shop/media/image/ZX144-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -469,7 +469,7 @@ export const materials: Material[] = [
     name: 'Bar',
     code: 'ZX160',
     category: 'Wood',
-    colour: 'Brown', 'Beige', 
+    colour: ['Brown', 'Beige'], 
     image:
       'https://www.resimdo.es/shop/media/image/ZX160-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -478,7 +478,7 @@ export const materials: Material[] = [
     name: 'Lepus',
     code: 'W401',
     category: 'Wood',
-    colour: 'Brown', 'Beige', 
+    colour: ['Brown', 'Beige'], 
     image:
       'https://www.resimdo.es/shop/media/image/W401-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -488,7 +488,7 @@ export const materials: Material[] = [
     name: 'Turtle 2.0',
     code: 'SC157',
     category: 'Solid Colour',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.de/shop/media/image/SC157-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -497,7 +497,7 @@ export const materials: Material[] = [
     name: 'Dune',
     code: 'SC160',
     category: 'Solid Colour',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.de/shop/media/image/SC160-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -506,7 +506,7 @@ export const materials: Material[] = [
     name: 'Cream',
     code: 'S178',
     category: 'Solid Colour',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.es/shop/media/image/S178-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -515,7 +515,7 @@ export const materials: Material[] = [
     name: 'Galaxy',
     code: 'S211',
     category: 'Solid Colour',
-    colour: 'Grey', 'Black', 
+    colour: ['Grey', 'Black'], 
     image:
       'https://www.resimdo.es/shop/media/image/S211-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -525,7 +525,7 @@ export const materials: Material[] = [
     name: 'Scala Light 2.0',
     code: 'ST158',
     category: 'Stone',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST158-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -534,7 +534,7 @@ export const materials: Material[] = [
     name: 'Resum',
     code: 'W879',
     category: 'Wood',
-    colour: 'Brown', 'Beige', 
+    colour: ['Brown', 'Beige'], 
     image:
       'https://www.resimdo.nl/shop/media/image/W879-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -543,7 +543,7 @@ export const materials: Material[] = [
     name: 'Legatus',
     code: 'SPW18',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.nl/shop/media/image/SPW18-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -552,7 +552,7 @@ export const materials: Material[] = [
     name: 'Gold Crack',
     code: 'APZ05',
     category: 'Metallic',
-    colour: 'Gold', 'Yellow',
+    colour: ['Gold', 'Yellow'],
     image:
       'https://www.resimdo.nl/shop/media/image/APZ05-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -561,7 +561,7 @@ export const materials: Material[] = [
     name: 'Grit',
     code: 'S181',
     category: 'Solid Colour',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.es/shop/media/image/S181-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -570,7 +570,7 @@ export const materials: Material[] = [
     name: 'Fractura Grit',
     code: 'PNC50',
     category: 'Stone',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.es/shop/media/image/PNC50-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -579,7 +579,7 @@ export const materials: Material[] = [
     name: 'Glandis',
     code: 'ZX126',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.nl/shop/media/image/ZX126-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -588,7 +588,7 @@ export const materials: Material[] = [
     name: 'Radiant Night',
     code: 'PZ613',
     category: 'Wood',
-    colour: 'Black',
+    colour: ['Black'],
     image:
       'https://www.resimdo.es/shop/media/image/ZX134-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -597,7 +597,7 @@ export const materials: Material[] = [
     name: 'Solvit Dark',
     code: 'PZ904',
     category: 'Wood',
-    colour: 'Brown', 'Beige', 
+    colour: ['Brown', 'Beige'], 
     image:
       'https://www.resimdo.nl/shop/media/image/PZ904-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -606,7 +606,7 @@ export const materials: Material[] = [
     name: 'Bokido',
     code: 'W376',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.nl/shop/media/image/W376-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -615,7 +615,7 @@ export const materials: Material[] = [
     name: 'Popcorn',
     code: 'ZX148',
     category: 'Wood',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.nl/shop/media/image/ZX148-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -625,7 +625,7 @@ export const materials: Material[] = [
     name: 'Papilo Loxo Lux',
     code: 'SC020',
     category: 'Solid Colour',
-    colour: 'White',
+    colour: ['White'],
     image:
       'https://www.resimdo.es/shop/media/image/SC020-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -634,7 +634,7 @@ export const materials: Material[] = [
     name: 'Papilo Cotton Lux',
     code: 'SC012',
     category: 'Solid Colour',
-    colour: 'White',
+    colour: ['White'],
     image:
       'https://www.resimdo.es/shop/media/image/SC012-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -643,7 +643,7 @@ export const materials: Material[] = [
     name: 'Papilo Shark Lux',
     code: 'SC014',
     category: 'Solid Colour',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.es/shop/media/image/SC014-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -652,7 +652,7 @@ export const materials: Material[] = [
     name: 'Papilo Stone Lux',
     code: 'SC013',
     category: 'Solid Colour',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.es/shop/media/image/SC013-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -661,7 +661,7 @@ export const materials: Material[] = [
     name: 'Papilo Bone Lux',
     code: 'SC018',
     category: 'Solid Colour',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.es/shop/media/image/SC018-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -671,7 +671,7 @@ export const materials: Material[] = [
     name: 'Atrox',
     code: 'W141',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.es/shop/media/image/W141-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -680,7 +680,7 @@ export const materials: Material[] = [
     name: 'Navis',
     code: 'W722',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.es/shop/media/image/W722-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -689,7 +689,7 @@ export const materials: Material[] = [
     name: 'Terra',
     code: 'W731',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.es/shop/media/image/W731-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -698,7 +698,7 @@ export const materials: Material[] = [
     name: 'Lupus',
     code: 'W932',
     category: 'Wood',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.es/shop/media/image/W932-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -708,7 +708,7 @@ export const materials: Material[] = [
     name: 'Nero Marquina',
     code: 'NS804',
     category: 'Stone',
-    colour: 'Black',
+    colour: ['Black'],
     image:
       'https://www.resimdo.es/shop/media/image/NS804-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -717,7 +717,7 @@ export const materials: Material[] = [
     name: 'Lumen',
     code: 'W371',
     category: 'Wood',
-    colour: 'Brown', 'Beige', 
+    colour: ['Brown', 'Beige'], 
     image:
       'https://www.resimdo.es/shop/media/image/W371-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -727,7 +727,7 @@ export const materials: Material[] = [
     name: 'Alvoro',
     code: 'ST060',
     category: 'Stone',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST060-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -736,7 +736,7 @@ export const materials: Material[] = [
     name: 'Ivory Lux',
     code: 'SC062',
     category: 'Solid Colour',
-    colour: 'White',
+    colour: ['White'],
     image:
       'https://www.resimdo.nl/shop/media/image/SC062-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -746,7 +746,7 @@ export const materials: Material[] = [
     name: 'Mapilo',
     code: 'WD018',
     category: 'Wood',
-    colour: 'Brown', 'Beige', 
+    colour: ['Brown', 'Beige'], 
     image:
       'https://www.resimdo.nl/shop/media/image/WD018-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -755,7 +755,7 @@ export const materials: Material[] = [
     name: 'Noctis',
     code: 'W705',
     category: 'Wood',
-    colour: 'Black',
+    colour: ['Black'],
     image:
       'https://www.resimdo.es/shop/media/image/W705-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -764,7 +764,7 @@ export const materials: Material[] = [
     name: 'Ignis',
     code: 'W276',
     category: 'Wood',
-    colour: 'Red Brown',
+    colour: ['Red', 'Brown'],
     image:
       'https://www.resimdo.es/shop/media/image/W276-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -773,7 +773,7 @@ export const materials: Material[] = [
     name: 'Petum Light 2.0',
     code: 'ST160',
     category: 'Stone',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST160-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -782,7 +782,7 @@ export const materials: Material[] = [
     name: 'Magusa Dark 2.0',
     code: 'ST163',
     category: 'Stone',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST163-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -792,7 +792,7 @@ export const materials: Material[] = [
     name: 'Vikings',
     code: 'ZX157',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.es/shop/media/image/ZX157-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -801,7 +801,7 @@ export const materials: Material[] = [
     name: 'Fabula',
     code: 'WD014',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.es/shop/media/image/WO826-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -810,7 +810,7 @@ export const materials: Material[] = [
     name: 'Formica',
     code: 'W171',
     category: 'Wood',
-    colour: 'Red Brown',
+    colour: ['Red Brown'],
     image:
       'https://www.resimdo.es/shop/media/image/W171-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -819,7 +819,7 @@ export const materials: Material[] = [
     name: 'Alius',
     code: 'ZX161',
     category: 'Wood',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.es/shop/media/image/ZX161-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -829,7 +829,7 @@ export const materials: Material[] = [
     name: 'Muras',
     code: 'ST009',
     category: 'Stone',
-    colour: 'Brown', 'Red', 
+    colour: ['Brown', 'Red'], 
     image:
       'https://www.resimdo.es/shop/media/image/ST502-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -838,7 +838,7 @@ export const materials: Material[] = [
     name: 'Brava',
     code: 'ST114',
     category: 'Stone',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST114-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -847,7 +847,7 @@ export const materials: Material[] = [
     name: 'Liora',
     code: 'ST111',
     category: 'Stone',
-    colour: 'Grey', 'Beige', 
+    colour: ['Grey', 'Beige'], 
     image:
       'https://www.resimdo.nl/shop/media/image/ST111-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -856,7 +856,7 @@ export const materials: Material[] = [
     name: 'Teras',
     code: 'ST116',
     category: 'Stone',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST116-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -865,7 +865,7 @@ export const materials: Material[] = [
     name: 'Rudis Vein',
     code: 'ST010',
     category: 'Stone',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST010-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -874,7 +874,7 @@ export const materials: Material[] = [
     name: 'Pale Vein',
     code: 'ST115',
     category: 'Stone',
-    colour: 'White',
+    colour: ['White'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST115-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -884,7 +884,7 @@ export const materials: Material[] = [
     name: 'Fagis',
     code: 'WD302',
     category: 'Wood',
-    colour: 'Brown', 'Beige', 
+    colour: ['Brown', 'Beige'], 
     image:
       'https://www.resimdo.es/shop/media/image/WO811-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -893,7 +893,7 @@ export const materials: Material[] = [
     name: 'Dusty',
     code: 'W948',
     category: 'Wood',
-    colour: 'Beige', 'Brown', 
+    colour: ['Beige', 'Brown'], 
     image:
       'https://www.resimdo.es/shop/media/image/W948-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -902,7 +902,7 @@ export const materials: Material[] = [
     name: 'Ramus',
     code: 'WD401',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.es/shop/media/image/WO818-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -911,7 +911,7 @@ export const materials: Material[] = [
     name: 'Lineus 2.0',
     code: 'WD209',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.nl/shop/media/image/WD209-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -920,7 +920,7 @@ export const materials: Material[] = [
     name: 'Irise Light',
     code: 'ZX135',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.es/shop/media/image/ZX135-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -929,7 +929,7 @@ export const materials: Material[] = [
     name: 'Tibos',
     code: 'WD402',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.es/shop/media/image/WO821-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -938,7 +938,7 @@ export const materials: Material[] = [
     name: 'Spargo',
     code: 'WD208',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.es/shop/media/image/WO820-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -948,7 +948,7 @@ export const materials: Material[] = [
     name: 'Rock Veil',
     code: 'ST117',
     category: 'Stone',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST117-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -957,7 +957,7 @@ export const materials: Material[] = [
     name: 'Stone Veil',
     code: 'ST118',
     category: 'Stone',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST118-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -966,7 +966,7 @@ export const materials: Material[] = [
     name: 'Maris',
     code: 'ST113',
     category: 'Stone',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST113-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -976,7 +976,7 @@ export const materials: Material[] = [
     name: 'Elara',
     code: 'ME006',
     category: 'Metallic',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.nl/shop/media/image/ME006-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -985,7 +985,7 @@ export const materials: Material[] = [
     name: 'Syra Rosé',
     code: 'ME003',
     category: 'Metallic',
-    colour: 'Pink',
+    colour: ['Pink'],
     image:
       'https://www.resimdo.es/shop/media/image/ME405-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -994,7 +994,7 @@ export const materials: Material[] = [
     name: 'Pluma Rosé Lux',
     code: 'ME007',
     category: 'Metallic',
-    colour: 'Rose',
+    colour: ['Pink'],
     image:
       'https://www.resimdo.nl/shop/media/image/ME007-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -1004,7 +1004,7 @@ export const materials: Material[] = [
     name: 'Rustlin',
     code: 'WD019',
     category: 'Wood',
-    colour: 'Beige',
+    colour: ['Beige'],
     image:
       'https://www.resimdo.nl/shop/media/image/WD019-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -1013,7 +1013,7 @@ export const materials: Material[] = [
     name: 'Tarnwell',
     code: 'WD020',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.nl/shop/media/image/WD020-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -1023,7 +1023,7 @@ export const materials: Material[] = [
     name: 'Nival',
     code: 'ST057',
     category: 'Stone',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST057-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -1032,7 +1032,7 @@ export const materials: Material[] = [
     name: 'Olera',
     code: 'ST064',
     category: 'Stone',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST064-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -1041,7 +1041,7 @@ export const materials: Material[] = [
     name: 'Pavira',
     code: 'ST058',
     category: 'Stone',
-    colour: 'Grey',
+    colour: ['Grey'],
     image:
       'https://www.resimdo.nl/shop/media/image/ST058-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -1051,7 +1051,7 @@ export const materials: Material[] = [
     name: 'Tedra',
     code: 'LE007',
     category: 'Leather',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.es/shop/media/image/LE301-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -1060,7 +1060,7 @@ export const materials: Material[] = [
     name: 'Chestnut',
     code: 'W207',
     category: 'Wood',
-    colour: 'Brown',
+    colour: ['Brown'],
     image:
       'https://www.resimdo.es/shop/media/image/W207-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -1069,7 +1069,7 @@ export const materials: Material[] = [
     name: 'Ivy',
     code: 'S233',
     category: 'Solid Colour',
-    colour: 'Green',
+    colour: ['Green'],
     image:
       'https://www.resimdo.es/shop/media/image/S233-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -1079,7 +1079,7 @@ export const materials: Material[] = [
     name: 'Syra Silver',
     code: 'ME004',
     category: 'Metallic',
-    colour: 'Silver',
+    colour: ['Silver'],
     image:
       'https://www.resimdo.de/shop/media/image/ME401-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
@@ -1089,7 +1089,7 @@ export const materials: Material[] = [
     name: 'Borealis',
     code: 'SC307',
     category: 'Solid Colour',
-    colour: 'Blue',
+    colour: ['Blue'],
     image:
       'https://www.resimdo.es/shop/media/image/SC307-Uebersicht-Walltile-3000x2250j8tiCE7wL07WI.jpg',
   },
@@ -1098,7 +1098,7 @@ export const materials: Material[] = [
     name: 'Pearl',
     code: 'SC057',
     category: 'Solid Colour',
-    colour: 'White',
+    colour: ['White'],
     image:
       'https://www.resimdo.es/shop/media/image/SC057-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -1107,7 +1107,7 @@ export const materials: Material[] = [
     name: 'Bride 2.0',
     code: 'SC051',
     category: 'Solid Colour',
-    colour: 'White',
+    colour: ['White'],
     image:
       'https://www.resimdo.es/shop/media/image/SC051-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -1116,7 +1116,7 @@ export const materials: Material[] = [
     name: 'Blossom',
     code: 'SC058',
     category: 'Solid Colour',
-    colour: 'Soft Pink / Blush',
+    colour: ['Pink'],
     image:
       'https://www.resimdo.es/shop/media/image/SC058-Uebersicht-Walltile-3000x2250.jpg',
   },
@@ -1125,7 +1125,7 @@ export const materials: Material[] = [
     name: 'Eggshell 2.0',
     code: 'SC059',
     category: 'Solid Colour',
-    colour: 'Warm White / Cream',
+    colour: ['White'],
     image:
       'https://www.resimdo.es/shop/media/image/SC059-Uebersicht-Walltile-3000x2250.jpg',
   },
