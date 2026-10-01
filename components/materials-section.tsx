@@ -158,9 +158,17 @@ const colourLabels: Record<string, string> = {
     colour,
   ].filter((value) => value !== 'All').length
 
-  const quoteText = selectedMaterial
-    ? `Hi, I'm interested in having my interior wrapped. I'm interested in the ${selectedMaterial.name} (${selectedMaterial.code}) material. I'd like to send some photos and get a quote.`
-    : t.contactPage.whatsappMessage
+  const getWhatsAppMessage = (material?: Material) => {
+  if (locale === 'nl') {
+    return material
+      ? `Hoi Maurits, ik ben geïnteresseerd in interieurwrapping. Ik vind het materiaal ${material.name} (${material.code}) mooi. Ik stuur graag een paar foto's en ontvang graag een offerte.`
+      : 'Hoi Maurits, ik wil graag een offerte aanvragen. Ik heb een aantal foto’s van mijn project bijgevoegd.'
+  }
+
+  return material
+    ? `Hi Maurits, I'm interested in having my interior wrapped. I like the ${material.name} (${material.code}) material. I'd like to send some photos and get a quote.`
+    : 'Hi Maurits, I’d like to request a quote. I’ve attached some photos of my project.'
+}
 
   return (
     <section
@@ -259,22 +267,24 @@ const colourLabels: Record<string, string> = {
             <div className="border-t border-border py-5">
               <div className="grid gap-5 sm:grid-cols-2">
                 <FilterGroup
-                  label="Category"
-                  options={categories}
-                  value={category}
-                  onChange={(value) =>
-                    updateFilter(setCategory, value)
-                  }
-                />
+  label={t.materials.category}
+  options={categories}
+  labels={categoryLabels}
+  value={category}
+  onChange={(value) =>
+    updateFilter(setCategory, value)
+  }
+/>
 
-                <FilterGroup
-                  label={t.materials.colour}
-                  options={colours}
-                  value={colour}
-                  onChange={(value) =>
-                    updateFilter(setColour, value)
-                  }
-                />
+<FilterGroup
+  label={t.materials.colour}
+  options={colours}
+  labels={colourLabels}
+  value={colour}
+  onChange={(value) =>
+    updateFilter(setColour, value)
+  }
+/>
               </div>
 
               {activeFilterCount > 0 && (
@@ -335,10 +345,16 @@ const colourLabels: Record<string, string> = {
                     </div>
 
                     <div className="mt-2 flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.1em] text-muted-foreground">
-                      <span>{material.category}</span>
-                      <span className="text-brass">·</span>
-                      <span>{material.colour.join(' / ')}</span>
-                    </div>
+  <span>
+    {categoryLabels[material.category] ?? material.category}
+  </span>
+  <span className="text-brass">·</span>
+  <span>
+    {material.colour
+      .map((colour) => colourLabels[colour] ?? colour)
+      .join(' / ')}
+  </span>
+</div>
                   </div>
                 </button>
               </Reveal>
@@ -399,9 +415,7 @@ const colourLabels: Record<string, string> = {
               </div>
 
               <a
-                href={whatsappLink(
-                  t.contactPage.whatsappMessage,
-                )}
+                href={whatsappLink(getWhatsAppMessage())}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex shrink-0 items-center justify-center gap-2 bg-paper px-6 py-3.5 text-sm font-bold text-pine transition-transform hover:-translate-y-0.5"
@@ -447,8 +461,9 @@ const colourLabels: Record<string, string> = {
 
             <div className="p-6 sm:p-8">
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-brass">
-                {selectedMaterial.category}
-              </p>
+  {categoryLabels[selectedMaterial.category] ??
+    selectedMaterial.category}
+</p>
 
               <h2 className="mt-2 font-serif text-3xl font-semibold uppercase sm:text-4xl">
                 {selectedMaterial.name}
@@ -459,7 +474,7 @@ const colourLabels: Record<string, string> = {
               </p>
 
               <a
-                href={whatsappLink(quoteText)}
+                href={whatsappLink(getWhatsAppMessage(selectedMaterial))}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-7 inline-flex w-full items-center justify-center gap-2 bg-pine px-6 py-4 text-sm font-bold text-paper transition-transform hover:-translate-y-0.5 sm:w-auto"
@@ -478,11 +493,13 @@ const colourLabels: Record<string, string> = {
 function FilterGroup({
   label,
   options,
+  labels,
   value,
   onChange,
 }: {
   label: string
   options: string[]
+  labels: Record<string, string>
   value: string
   onChange: (value: string) => void
 }) {
@@ -509,7 +526,7 @@ function FilterGroup({
               ].join(' ')}
             >
               {active && <Check className="size-3" />}
-              {option}
+              {labels[option] ?? option}
             </button>
           )
         })}
