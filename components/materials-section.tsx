@@ -416,7 +416,7 @@ export function MaterialsSection() {
         </Reveal>
       </div>
 
-      </* MATERIAL MODAL */>
+      {/* MATERIAL MODAL */}
       {selectedMaterial && (
         <div
           className="fixed inset-0 z-[100] flex items-center justify-center bg-ink/80 p-4 backdrop-blur-sm"
