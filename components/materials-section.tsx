@@ -464,8 +464,6 @@ export function MaterialsSection() {
                 {selectedMaterial.code}
               </p>
 
-              </div>
-
               <a
                 href={whatsappLink(quoteText)}
                 target="_blank"
