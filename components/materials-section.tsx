@@ -71,7 +71,7 @@ export function MaterialsSection() {
 
       const colourMatch =
         colour === 'All' ||
-        material.colour === colour
+        material.colour.includes(colour)
 
       const searchMatch =
         !query ||
@@ -79,7 +79,7 @@ export function MaterialsSection() {
           material.name,
           material.code,
           material.category,
-          material.colour,
+          material.colour.join(' '),
         ]
           .join(' ')
           .toLowerCase()
@@ -317,7 +317,7 @@ export function MaterialsSection() {
                     <div className="mt-2 flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.1em] text-muted-foreground">
                       <span>{material.category}</span>
                       <span className="text-brass">·</span>
-                      <span>{material.colour}</span>
+                      <span>{material.colour.join(' / ')}</span>
                     </div>
                   </div>
                 </button>
