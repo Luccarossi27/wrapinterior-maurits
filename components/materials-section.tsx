@@ -130,17 +130,17 @@ export function MaterialsSection() {
       id="materials"
       className="border-t border-border bg-paper text-ink"
     >
-      <div className="mx-auto w-full max-w-7xl px-5 pb-20 pt-10 sm:px-8 sm:pb-28 sm:pt-14 lg:px-10 lg:pt-20">
+      <div className="mx-auto w-full max-w-7xl px-5 pb-20 pt-6 sm:px-8 sm:pb-28 sm:pt-8 lg:px-10 lg:pt-10">
 
         {/* HEADER */}
         <Reveal>
-          <div className="grid gap-8 border-b border-border pb-10 lg:grid-cols-[1fr_2fr] lg:items-end">
+          <div className="grid gap-5 border-b border-border pb-6 lg:grid-cols-[1fr_2fr] lg:items-end">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-brass">
                 {t.materials.eyebrow}
               </p>
 
-              <h1 className="mt-3 font-serif text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+              <h1 className="mt-2 font-serif text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
                 {t.materials.heading}
               </h1>
             </div>
@@ -151,11 +151,11 @@ export function MaterialsSection() {
           </div>
         </Reveal>
 
-        {/* SEARCH */}
+                {/* SEARCH */}
         <Reveal delay={0.05}>
-          <div className="mt-8 flex flex-col gap-5 border-b border-border pb-7 lg:flex-row lg:items-center lg:justify-between">
+          <div className="flex flex-col gap-3 border-b border-border py-4 lg:flex-row lg:items-center lg:justify-between">
             <div className="relative w-full max-w-xl">
-              <Search className="pointer-events-none absolute left-0 top-1/2 size-5 -translate-y-1/2 text-brass" />
+              <Search className="pointer-events-none absolute left-0 top-1/2 size-4 -translate-y-1/2 text-brass" />
 
               <input
                 type="search"
@@ -166,7 +166,7 @@ export function MaterialsSection() {
                 }}
                 placeholder={t.materials.search}
                 aria-label={t.materials.search}
-                className="h-12 w-full border-0 border-b border-border bg-transparent pl-8 pr-10 text-sm text-ink outline-none transition-colors placeholder:text-muted-foreground focus:border-brass focus:ring-0"
+                className="h-10 w-full border-0 border-b border-border bg-transparent pl-7 pr-9 text-sm text-ink outline-none transition-colors placeholder:text-muted-foreground focus:border-brass focus:ring-0"
               />
 
               {search && (
@@ -179,12 +179,12 @@ export function MaterialsSection() {
                   aria-label={t.materials.clearSearch}
                   className="absolute right-0 top-1/2 -translate-y-1/2 text-muted-foreground transition-colors hover:text-brass"
                 >
-                  <X className="size-5" />
+                  <X className="size-4" />
                 </button>
               )}
             </div>
 
-            <p className="shrink-0 text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground">
+            <p className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.15em] text-muted-foreground">
               {filteredMaterials.length} {t.materials.results}
             </p>
           </div>
@@ -198,7 +198,7 @@ export function MaterialsSection() {
               setFiltersOpen((open) => !open)
             }
             aria-expanded={filtersOpen}
-            className="flex w-full items-center justify-between py-5 text-xs font-bold uppercase tracking-[0.15em] text-ink transition-colors hover:text-brass"
+            className="flex w-full items-center justify-between py-3.5 text-xs font-bold uppercase tracking-[0.15em] text-ink transition-colors hover:text-brass"
           >
             <span className="flex items-center gap-3">
               <span>{t.materials.filter}</span>
@@ -219,8 +219,8 @@ export function MaterialsSection() {
           </button>
 
           {filtersOpen && (
-            <div className="border-t border-border py-7">
-              <div className="grid gap-8 sm:grid-cols-2">
+            <div className="border-t border-border py-5">
+              <div className="grid gap-5 sm:grid-cols-2">
                 <FilterGroup
                   label="Category"
                   options={categories}
@@ -259,27 +259,10 @@ export function MaterialsSection() {
             </div>
           )}
         </div>
-
-        {/* RESULTS / CLEAR */}
-        <div className="mt-8 flex items-center justify-between">
-          <div />
-
-          {activeFilterCount > 0 || search ? (
-            <button
-              type="button"
-              onClick={resetFilters}
-              className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground transition-colors hover:text-brass"
-            >
-              <RotateCcw className="size-3.5" />
-              {t.materials.clear}
-            </button>
-          ) : null}
-        </div>
-
         
         {/* MATERIAL GRID */}
         {filteredMaterials.length > 0 && (
-          <div className="mt-6 grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 lg:gap-x-6 lg:gap-y-14">
+          <div className="mt-5 grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 lg:gap-x-6 lg:gap-y-14">
             {visibleMaterials.map((material, index) => (
               <Reveal
                 key={material.id}
@@ -468,11 +451,11 @@ function FilterGroup({
 }) {
   return (
     <div>
-      <p className="mb-4 text-[10px] font-bold uppercase tracking-[0.16em] text-muted-foreground">
+      <p className="mb-2.5 text-[10px] font-bold uppercase tracking-[0.16em] text-muted-foreground">
         {label}
       </p>
 
-      <div className="flex flex-wrap gap-x-4 gap-y-2">
+      <div className="flex flex-wrap gap-x-3 gap-y-1.5">
         {options.map((option) => {
           const active = value === option
 
