@@ -750,15 +750,6 @@ export const materials: Material[] = [
       'https://www.resimdo.es/shop/media/image/W705-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
   {
-    id: 'ignis-w276',
-    name: 'Ignis',
-    code: 'W276',
-    category: 'Wood',
-    colour: ['Red', 'Brown'],
-    image:
-      'https://www.resimdo.es/shop/media/image/W276-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-  },
-  {
     id: 'petum-light-pm016',
     name: 'Petum Light',
     code: 'PM016',
@@ -1415,15 +1406,6 @@ export const materials: Material[] = [
     colour: ['Brown', 'Gold'],
     image:
       'https://www.resimdo.es/shop/media/image/RM008-Uebersicht-Walltile-3000x2250_72dpi.jpg',
-  },
-{
-    id: 'intensio-ns428',
-    name: 'Intensio',
-    code: 'NS428',
-    category: 'Stone',
-    colour: ['Brown', 'Black'],
-    image:
-      'https://www.resimdo.es/shop/media/image/NS428-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
 {
     id: 'intensio-ns428',
