@@ -343,6 +343,7 @@ materials: {
     'Kleuren en structuren kunnen op het scherm iets afwijken van het echte materiaal. Fysieke samples zijn op aanvraag beschikbaar.',
   close: 'Sluiten',
   useMaterial: 'Gebruik dit materiaal voor mijn offerte',
+  category: 'Categorie', 
   ctaHeading: 'EEN MATERIAAL GEZIEN DAT JE MOOI VINDT?',
   ctaSub:
     'Stuur ons een foto van je interieur en vertel ons welk materiaal je aanspreekt. We helpen je het juiste materiaal voor jouw project te kiezen.',
@@ -658,6 +659,7 @@ materials: {
     'Colours and textures may vary slightly on screen. Physical samples are available on request.',
   close: 'Close',
   useMaterial: 'Use this material in my quote',
+  category: 'Category', 
   ctaHeading: 'SEEN A MATERIAL YOU LIKE?',
   ctaSub:
     'Send us a photo of your interior and tell us which material caught your eye. We’ll help you choose the right material for your project.',
@@ -981,6 +983,7 @@ materials: {
     'Los colores y las texturas pueden variar ligeramente en pantalla. Hay muestras físicas disponibles bajo petición.',
   close: 'Cerrar',
   useMaterial: 'Usar este material en mi presupuesto',
+  category: 'Categoría', 
   ctaHeading: '¿HAS VISTO UN MATERIAL QUE TE GUSTA?',
   ctaSub:
     'Envíanos una foto de tu interior y dinos qué material te gusta. Te ayudaremos a elegir el material adecuado para tu proyecto.',
