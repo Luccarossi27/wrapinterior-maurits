@@ -3,51 +3,17 @@
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
+import { useLanguage } from '@/lib/i18n/provider'
 
 const links = [
-  {
-    number: '01',
-    title: 'Portfolio',
-    description: 'See completed transformations and finishes.',
-    href: '/portfolio',
-  },
-  {
-    number: '02',
-    title: 'Materials',
-    description: 'Explore our range of colours, woodgrains, stone, metals and more.',
-    href: '/materials',
-  },
-  {
-    number: '03',
-    title: 'Process',
-    description: 'See how a project goes from first contact to final finish.',
-    href: '/process',
-  },
-  {
-    number: '04',
-    title: 'Pricing',
-    description: 'Understand typical project costs before getting in touch.',
-    href: '/pricing',
-  },
-  {
-    number: '05',
-    title: 'Reviews',
-    description: 'Read what clients have said about their experience.',
-    href: '/reviews',
-  },
-  {
-    number: '06',
-    title: 'FAQ',
-    description: 'Answers to the questions we hear most often.',
-    href: '/faq',
-  },
-  {
-    number: '07',
-    title: 'Contact',
-    description: 'Send photos of your space and start your enquiry.',
-    href: '/contact',
-  },
-]
+  { number: '01', key: 'portfolio', href: '/portfolio' },
+  { number: '02', key: 'materials', href: '/materials' },
+  { number: '03', key: 'process', href: '/process' },
+  { number: '04', key: 'pricing', href: '/pricing' },
+  { number: '05', key: 'reviews', href: '/reviews' },
+  { number: '06', key: 'faq', href: '/faq' },
+  { number: '07', key: 'contact', href: '/contact' },
+] as const
 
 export function HomepageExplore() {
   return (
