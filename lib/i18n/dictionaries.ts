@@ -441,7 +441,7 @@ materials: {
   quoteMessage: 'Hoi Maurits, ik wil graag een offerte aanvragen voor een project.',
 },
     reviews: {
-  eyebrow: 'Testimonials',
+  eyebrow: 'Klantervaringen',
 heading: 'WAT ONZE KLANTEN ZEGGEN',
 sub: 'Ontdek wat onze klanten zeggen over hun ervaring met Maurits.',
 googleBadge: 'Google Reviews',
