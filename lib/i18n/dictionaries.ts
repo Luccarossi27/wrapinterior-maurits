@@ -929,7 +929,7 @@ googleReviews: 'Google Reviews',
 },
     footer: {
   tagline: 'Fresh interiors. Without the renovation.',
-  basedIn: 'Based in Jávea',
+  basedIn: 'Based in Selta',
   coveringArea: 'Covering the Costa Blanca',
   serviceAreaTitle: 'Service area',
   serviceArea: `${areas} and the wider Costa Blanca / Alicante province.`,
