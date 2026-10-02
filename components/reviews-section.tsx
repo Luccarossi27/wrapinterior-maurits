@@ -129,72 +129,77 @@ export function ReviewsSection() {
                     className="w-full shrink-0"
                   >
                     <div className="relative flex min-h-[420px] items-center justify-center px-5 py-10 sm:h-[440px] sm:px-10 sm:py-9 lg:h-[460px] lg:px-20 lg:py-10">
-  {/* Opening decorative quotation mark */}
-  <div
-    className="pointer-events-none absolute left-5 top-5 select-none font-serif text-6xl font-light leading-none text-[#F4F1E8]/15 sm:left-8 sm:text-7xl"
-    aria-hidden="true"
-  >
-    “
-  </div>
+                      {/* Opening decorative quotation mark */}
+                      <div
+                        className="pointer-events-none absolute left-5 top-5 select-none font-serif text-6xl font-light leading-none text-[#F4F1E8]/15 sm:left-8 sm:text-7xl"
+                        aria-hidden="true"
+                      >
+                        “
+                      </div>
 
-  {/* Closing decorative quotation mark */}
-  <div
-    className="pointer-events-none absolute bottom-5 right-5 select-none font-serif text-6xl font-light leading-none text-[#F4F1E8]/15 sm:bottom-8 sm:right-8 sm:text-7xl"
-    aria-hidden="true"
-  >
-    ”
-  </div>
+                      {/* Closing decorative quotation mark */}
+                      <div
+                        className="pointer-events-none absolute bottom-5 right-5 select-none font-serif text-6xl font-light leading-none text-[#F4F1E8]/15 sm:bottom-8 sm:right-8 sm:text-7xl"
+                        aria-hidden="true"
+                      >
+                        ”
+                      </div>
 
-  <div className="relative mx-auto flex max-w-3xl flex-col items-center justify-center text-center">
-    {/* Quote */}
-    <blockquote className="max-w-[32rem] font-serif text-lg font-light italic leading-[1.5] tracking-tight text-[#F4F1E8] sm:text-xl lg:text-2xl">
-      “{displayedQuote}”
-    </blockquote>
+                      <div className="relative mx-auto flex max-w-3xl flex-col items-center justify-center text-center">
+                        {/* Quote */}
+                        <blockquote className="max-w-[32rem] font-serif text-lg font-light italic leading-[1.5] tracking-tight text-[#F4F1E8] sm:text-xl lg:text-2xl">
+                          “{displayedQuote}”
+                        </blockquote>
 
-    {/* Translation toggle */}
-    {hasTranslation && (
-      <div className="mt-6 flex justify-center">
-        <button
-          type="button"
-          onClick={() => {
-            setShowOriginal((current) => !current)
-          }}
-          className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#F4F1E8]/75 underline-offset-4 transition-colors hover:text-[#F4F1E8] hover:underline"
-        >
-          {showOriginal
-            ? t.reviews.showTranslation
-            : t.reviews.showOriginal}
-        </button>
-      </div>
-    )}
+                        {/* Translation toggle */}
+                        {hasTranslation && (
+                          <div className="mt-6 flex justify-center">
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setShowOriginal(
+                                  (current) => !current,
+                                )
+                              }}
+                              className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#F4F1E8]/75 underline-offset-4 transition-colors hover:text-[#F4F1E8] hover:underline"
+                            >
+                              {showOriginal
+                                ? t.reviews.showTranslation
+                                : t.reviews.showOriginal}
+                            </button>
+                          </div>
+                        )}
 
-    {/* Author */}
-    <div className="mt-6">
-      <div className="mx-auto mb-4 h-px w-8 bg-[#F4F1E8]/40" />
+                        {/* Author */}
+                        <div className="mt-6">
+                          <div className="mx-auto mb-4 h-px w-8 bg-[#F4F1E8]/40" />
 
-      <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#F4F1E8]">
-        {review.name}
-      </p>
+                          <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#F4F1E8]">
+                            {review.name}
+                          </p>
 
-      <div
-        className="mt-2 flex justify-center gap-1"
-        aria-label={`${review.rating} out of 5 stars`}
-      >
-        {Array.from({ length: 5 }).map((_, starIndex) => (
-          <Star
-            key={starIndex}
-            className={
-              starIndex < review.rating
-                ? 'size-3 fill-[#F4F1E8] text-[#F4F1E8]'
-                : 'size-3 text-[#F4F1E8]/30'
-            }
-            aria-hidden="true"
-          />
-        ))}
-      </div>
-    </div>
-  </div>
-</div>
+                          <div
+                            className="mt-2 flex justify-center gap-1"
+                            aria-label={`${review.rating} out of 5 stars`}
+                          >
+                            {Array.from({ length: 5 }).map(
+                              (_, starIndex) => (
+                                <Star
+                                  key={starIndex}
+                                  className={
+                                    starIndex < review.rating
+                                      ? 'size-3 fill-[#F4F1E8] text-[#F4F1E8]'
+                                      : 'size-3 text-[#F4F1E8]/30'
+                                  }
+                                  aria-hidden="true"
+                                />
+                              ),
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 )
               })}
             </div>
@@ -244,47 +249,47 @@ export function ReviewsSection() {
       </Reveal>
 
       {/* Google rating + CTA */}
-<div className="mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10">
-  <Reveal delay={0.2}>
-    <div className="flex justify-center py-8">
-      <a
-        href={googleReviewsUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group inline-flex min-w-[220px] bg-[#EAE0D0] flex-col items-center gap-3 border border-pine px-8 py-5 text-pine transition-all hover:bg-pine hover:text-paper"
-      >
-        {/* Rating */}
-        <div className="flex items-center gap-3">
-          <span className="font-serif text-3xl font-light leading-none tracking-tight">
-            4.9
-          </span>
+      <div className="mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10">
+        <Reveal delay={0.2}>
+          <div className="flex justify-center py-8">
+            <a
+              href={googleReviewsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex min-w-[220px] flex-col items-center gap-3 border border-pine bg-[#EAE0D0] px-8 py-5 text-pine transition-all hover:bg-pine hover:text-paper"
+            >
+              {/* Rating */}
+              <div className="flex items-center gap-3">
+                <span className="font-serif text-3xl font-light leading-none tracking-tight">
+                  4.9
+                </span>
 
-          <div className="flex gap-1">
-            {Array.from({ length: 5 }).map((_, index) => (
-              <Star
-                key={index}
-                className="size-3.5 fill-brass text-brass transition-colors group-hover:fill-paper group-hover:text-paper"
-                aria-hidden="true"
-              />
-            ))}
+                <div className="flex gap-1">
+                  {Array.from({ length: 5 }).map((_, index) => (
+                    <Star
+                      key={index}
+                      className="size-3.5 fill-brass text-brass transition-colors group-hover:fill-paper group-hover:text-paper"
+                      aria-hidden="true"
+                    />
+                  ))}
+                </div>
+              </div>
+
+              {/* Google Reviews */}
+              <div className="flex items-center gap-3">
+                <span className="text-[10px] font-bold uppercase tracking-[0.18em]">
+                  {t.reviews.googleBadge}
+                </span>
+
+                <ArrowUpRight
+                  className="size-3.5 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  aria-hidden="true"
+                />
+              </div>
+            </a>
           </div>
-        </div>
-
-        {/* Google Reviews */}
-        <div className="flex items-center gap-3">
-          <span className="text-[10px] font-bold uppercase tracking-[0.18em]">
-            {t.reviews.googleBadge}
-          </span>
-
-          <ArrowUpRight
-            className="size-3.5 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-            aria-hidden="true"
-          />
-        </div>
-      </a>
-    </div>
-  </Reveal>
-</div>
+        </Reveal>
+      </div>
     </section>
   )
 }
