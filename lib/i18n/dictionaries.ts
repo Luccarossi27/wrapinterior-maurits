@@ -68,6 +68,20 @@ type Dict = {
     imageBeforeAlt: string
     imageAfterAlt: string
   }
+  homepageExplore: {
+  eyebrow: string
+  heading: string
+  sub: string
+  links: {
+    portfolio: { title: string; description: string }
+    materials: { title: string; description: string }
+    process: { title: string; description: string }
+    pricing: { title: string; description: string }
+    reviews: { title: string; description: string }
+    faq: { title: string; description: string }
+    contact: { title: string; description: string }
+  }
+}
   gallery: {
     heading: string
     sub: string
@@ -279,6 +293,41 @@ export const dictionaries: Record<Locale, Dict> = {
       imageBeforeAlt: 'Kastdeur vóór het wrappen',
       imageAfterAlt: 'Kastdeur getransformeerd met premium interieurfolie',
     },
+    homepageExplore: {
+  eyebrow: 'Ontdek Wrap Interior',
+  heading: 'Alles wat je nodig hebt, op één plek.',
+  sub: 'Bekijk ons werk, ontdek hoe het proces verloopt, bekijk de richtprijzen en vind antwoorden op je vragen voordat je begint.',
+  links: {
+    portfolio: {
+      title: 'Projecten',
+      description: 'Bekijk afgeronde transformaties en verschillende afwerkingen.',
+    },
+    materials: {
+      title: 'Materialen',
+      description: 'Ontdek ons aanbod aan kleuren, houtstructuren, steen, metaal en meer.',
+    },
+    process: {
+      title: 'Werkwijze',
+      description: 'Ontdek hoe een project verloopt van het eerste contact tot de laatste afwerking.',
+    },
+    pricing: {
+      title: 'Prijzen',
+      description: 'Bekijk de richtprijzen van projecten voordat je contact opneemt.',
+    },
+    reviews: {
+      title: 'Reviews',
+      description: 'Lees wat klanten vertellen over hun ervaring.',
+    },
+    faq: {
+      title: 'Veelgestelde vragen',
+      description: 'Antwoorden op de vragen die we het vaakst krijgen.',
+    },
+    contact: {
+      title: 'Contact',
+      description: 'Stuur foto’s van je ruimte en neem contact met ons op.',
+    },
+  },
+},
 gallery: {
   heading: 'Voor & na',
   sub: 'Echte transformaties. Sleep de schuifregelaar om het verschil te zien.',
@@ -595,6 +644,41 @@ googleReviews: 'Google Reviews',
       imageBeforeAlt: 'Wardrobe door before interior wrapping',
       imageAfterAlt: 'Wardrobe door transformed with premium interior wrapping film',
     },
+    homepageExplore: {
+  eyebrow: 'Explore Wrap Interior',
+  heading: 'Everything you need, in one place.',
+  sub: 'Explore our work, understand the process, see typical pricing, and find answers before you get started.',
+  links: {
+    portfolio: {
+      title: 'Portfolio',
+      description: 'See completed transformations and finishes.',
+    },
+    materials: {
+      title: 'Materials',
+      description: 'Explore our range of colours, woodgrains, stone, metals and more.',
+    },
+    process: {
+      title: 'Process',
+      description: 'See how a project goes from first contact to final finish.',
+    },
+    pricing: {
+      title: 'Pricing',
+      description: 'Understand typical project costs before getting in touch.',
+    },
+    reviews: {
+      title: 'Reviews',
+      description: 'Read what clients have said about their experience.',
+    },
+    faq: {
+      title: 'FAQ',
+      description: 'Answers to the questions we hear most often.',
+    },
+    contact: {
+      title: 'Contact',
+      description: 'Send photos of your space and start your enquiry.',
+    },
+  },
+},
 gallery: {
   heading: 'Before & after',
   sub: 'Real transformations. Drag the slider to see the difference.',
@@ -919,6 +1003,41 @@ googleReviews: 'Google Reviews',
       imageBeforeAlt: 'Puerta de armario antes del vinilado',
       imageAfterAlt: 'Puerta de armario transformada con film decorativo premium',
     },
+    homepageExplore: {
+  eyebrow: 'Descubre Wrap Interior',
+  heading: 'Todo lo que necesitas, en un solo lugar.',
+  sub: 'Descubre nuestros proyectos, conoce el proceso, consulta los precios orientativos y encuentra respuestas antes de empezar.',
+  links: {
+    portfolio: {
+      title: 'Proyectos',
+      description: 'Descubre transformaciones y acabados de proyectos realizados.',
+    },
+    materials: {
+      title: 'Materiales',
+      description: 'Explora nuestra gama de colores, maderas, piedra, metales y mucho más.',
+    },
+    process: {
+      title: 'Proceso',
+      description: 'Descubre cómo se desarrolla un proyecto desde el primer contacto hasta el acabado final.',
+    },
+    pricing: {
+      title: 'Precios',
+      description: 'Consulta los precios orientativos de nuestros proyectos antes de contactar.',
+    },
+    reviews: {
+      title: 'Opiniones',
+      description: 'Lee lo que nuestros clientes cuentan sobre su experiencia.',
+    },
+    faq: {
+      title: 'Preguntas frecuentes',
+      description: 'Respuestas a las preguntas que recibimos con más frecuencia.',
+    },
+    contact: {
+      title: 'Contacto',
+      description: 'Envíanos fotos de tu espacio y empieza tu consulta.',
+    },
+  },
+},
 gallery: {
   heading: 'Antes y después',
   sub: 'Transformaciones reales. Arrastra el deslizador para ver la diferencia.',
