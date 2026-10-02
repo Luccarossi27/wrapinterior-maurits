@@ -76,7 +76,7 @@ export function SiteFooter() {
 
               <li>
   <a
-    href="https://www.google.com/maps/search/?api=1&query=Avinguda+del+Trenc+d%27Alba%2C+6%2C+03730+X%C3%A0bia%2C+Alicante"
+    href="https://www.google.com/maps/place/Wrap+Interior/@38.849869,0.0155916,17z/data=!3m1!4b1!4m6!3m5!1s0x129e1dc9832c8049:0x7629ec59b5ef870c!8m2!3d38.8498649!4d0.0181665!16s%2Fg%2F11zh9hv0gb!5m2!1e4!1e1?entry=ttu&g_ep=EgoyMDI2MDkyOS4wIKXMDSoASAFQAw%3D%3D"
     target="_blank"
     rel="noopener noreferrer"
     className="flex gap-2.5 text-paper/60 transition-colors hover:text-paper"
