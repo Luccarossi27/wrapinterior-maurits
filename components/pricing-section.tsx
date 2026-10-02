@@ -12,7 +12,7 @@ export function PricingSection() {
   return (
     <section
       id="pricing"
-      className="mx-auto w-full max-w-6xl px-5 pt-4 pb-20 sm:px-8 lg:pt-10 lg:pb-28"
+      className="mx-auto w-full max-w-6xl px-5 pt-10 pb-20 sm:px-8 lg:pt-10 lg:pb-28"
     >
       <div className="mx-auto max-w-2xl text-center">
         <Reveal>
