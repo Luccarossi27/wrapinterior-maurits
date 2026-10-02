@@ -145,15 +145,15 @@ export function ReviewsSection() {
   ”
 </div>
 
-                      <div className="relative mx-auto flex max-w-3xl flex-col items-center justify-center text-center">
+                      <div className="relative mx-auto flex w-full max-w-3xl flex-col items-center text-center">
                         {/* Quote */}
-                        <blockquote className="font-serif text-lg font-light italic leading-[1.5] tracking-tight text-[#F4F1E8] sm:text-xl lg:text-2xl">
+                        <blockquote className="max-w-[32rem] font-serif text-lg font-light italic leading-[1.5] tracking-tight text-[#F4F1E8] sm:text-xl lg:text-2xl">
                           “{displayedQuote}”
                         </blockquote>
 
                         {/* Translation toggle */}
                         {hasTranslation && (
-                          <div className="mt-6 flex justify-center">
+                          <div className="mt-5 flex justify-center">
                             <button
                               type="button"
                               onClick={() => {
@@ -171,7 +171,7 @@ export function ReviewsSection() {
                         )}
 
                         {/* Author */}
-                        <div className="mt-6">
+                        <div className="mt-5">
                           <div className="mx-auto mb-4 h-px w-8 bg-[#F4F1E8]/40" />
 
                           <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#F4F1E8]">
