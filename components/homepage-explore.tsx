@@ -16,6 +16,8 @@ const links = [
 ] as const
 
 export function HomepageExplore() {
+  const { t } = useLanguage()
+
   return (
     <section className="border-t border-border bg-ink text-paper">
       <div className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 lg:py-24">
@@ -23,20 +25,19 @@ export function HomepageExplore() {
           <div>
             <Reveal>
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brass">
-                Explore Wrap Interior
+                {t.homepageExplore.eyebrow}
               </p>
             </Reveal>
 
             <Reveal delay={0.05}>
               <h2 className="mt-3 max-w-md text-balance font-serif text-3xl font-semibold leading-tight tracking-tight text-paper sm:text-4xl">
-                Everything you need, in one place.
+                {t.homepageExplore.heading}
               </h2>
             </Reveal>
 
             <Reveal delay={0.1}>
               <p className="mt-4 max-w-md text-pretty text-base leading-relaxed text-paper/65">
-                Explore our work, understand the process, see typical pricing,
-                and find answers before you get started.
+                {t.homepageExplore.sub}
               </p>
             </Reveal>
           </div>
@@ -54,12 +55,12 @@ export function HomepageExplore() {
 
                   <div>
                     <h3 className="font-serif text-lg font-semibold text-paper sm:text-xl">
-                      {link.title}
-                    </h3>
+  {t.homepageExplore.links[link.key].title}
+</h3>
 
-                    <p className="mt-1 text-sm leading-relaxed text-paper/50">
-                      {link.description}
-                    </p>
+<p className="mt-1 text-sm leading-relaxed text-paper/50">
+  {t.homepageExplore.links[link.key].description}
+</p>
                   </div>
 
                   <ArrowRight className="size-5 text-paper/40 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-brass" />
