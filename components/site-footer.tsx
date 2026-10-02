@@ -74,14 +74,21 @@ export function SiteFooter() {
                 </a>
               </li>
 
-              <li className="flex gap-2.5 text-paper/60">
-                <MapPin className="mt-0.5 size-4 shrink-0 text-brass" />
-                <span>
-                  Avinguda del Trenc d'Alba, 6
-                  <br />
-                  03730 Xàbia, Alicante
-                </span>
-              </li>
+              <li>
+  <a
+    href="https://www.google.com/maps/search/?api=1&query=Avinguda+del+Trenc+d%27Alba%2C+6%2C+03730+X%C3%A0bia%2C+Alicante"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex gap-2.5 text-paper/60 transition-colors hover:text-paper"
+  >
+    <MapPin className="mt-0.5 size-4 shrink-0 text-brass" />
+    <span>
+      Avinguda del Trenc d'Alba, 6
+      <br />
+      03730 Xàbia, Alicante
+    </span>
+  </a>
+</li>
             </ul>
           </div>
         </div>
