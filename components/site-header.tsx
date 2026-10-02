@@ -77,7 +77,7 @@ export function SiteHeader() {
 
       <div
         className={cn(
-          'fixed inset-0 top-[96px] z-40 origin-top bg-pine transition-all duration-300 lg:hidden',
+          'fixed inset-0 top-[64px] z-40 origin-top bg-pine transition-all duration-300 lg:hidden',
           open
             ? 'pointer-events-auto opacity-100'
             : 'pointer-events-none opacity-0',
