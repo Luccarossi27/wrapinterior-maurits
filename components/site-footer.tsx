@@ -19,7 +19,7 @@ export function SiteFooter() {
   <Logo />
 
   <p className="mt-3 max-w-xs font-serif text-sm font-medium leading-snug text-paper/80">
-    Fresh interiors. Without the renovation.
+    {t.footer.tagline}
   </p>
 
   <div className="mt-5">
@@ -38,10 +38,10 @@ export function SiteFooter() {
 
               <div>
                 <p className="font-medium text-paper">
-                  Based in Jávea
+                  {t.footer.basedIn}
                 </p>
                 <p className="mt-0.5">
-                  Covering the Costa Blanca
+                  {t.footer.coveringArea}
                 </p>
               </div>
             </div>
