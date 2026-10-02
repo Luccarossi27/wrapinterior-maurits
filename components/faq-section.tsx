@@ -13,7 +13,7 @@ export function FaqSection() {
   return (
     <section
       id="faq"
-      className="mx-auto w-full max-w-3xl px-5 pt-4 pb-20 sm:px-8 lg:pt-10 lg:pb-28"
+      className="mx-auto w-full max-w-3xl px-5 pt-10 pb-20 sm:px-8 lg:pt-10 lg:pb-28"
     >
       <Reveal>
         <div className="text-center">
