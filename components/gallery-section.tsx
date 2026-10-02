@@ -105,13 +105,13 @@ export function GallerySection() {
                 <article className="group">
 
                   <div
-                    className={cn(
-                      'relative mx-auto overflow-hidden',
-                      media.aspectRatio === 'aspect-[4/5]'
-                        ? 'w-[55%]'
-                        : 'w-[75%]',
-                    )}
-                  >
+  className={cn(
+    'relative mx-auto w-[92%] overflow-hidden sm:w-[75%]',
+    media.aspectRatio === 'aspect-[4/5]'
+      ? 'sm:w-[55%]'
+      : 'sm:w-[75%]',
+  )}
+>
                     <BeforeAfterSlider
                       beforeSrc={media.before}
                       afterSrc={media.after}
