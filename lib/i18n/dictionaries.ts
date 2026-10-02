@@ -212,6 +212,8 @@ type Dict = {
 },
   footer: {
     tagline: string,
+    basedIn: string
+    coveringArea: string
     serviceAreaTitle: string
     serviceArea: string
     languagesTitle: string
@@ -565,14 +567,16 @@ googleReviews: 'Google Reviews',
   },
 },
     footer: {
-      tagline: '',
-      serviceAreaTitle: 'Werkgebied',
-      serviceArea: `${areas} en de wijdere Costa Blanca / provincie Alicante.`,
-      languagesTitle: 'Talen',
-      contactTitle: 'Contact',
-      legal: 'Privacy · Cookies · Prijzen incl. IVA · [VERIFY] KvK/CIF',
-      rights: 'Alle rechten voorbehouden.',
-    },
+  tagline: 'Frisse interieurs. Zonder de verbouwing.',
+  basedIn: 'Gevestigd in Jávea',
+  coveringArea: 'Werkzaam aan de Costa Blanca',
+  serviceAreaTitle: 'Werkgebied',
+  serviceArea: `${areas} en de wijdere Costa Blanca / provincie Alicante.`,
+  languagesTitle: 'Talen',
+  contactTitle: 'Contact',
+  legal: 'Privacy · Cookies · Prijzen incl. IVA · [VERIFY] KvK/CIF',
+  rights: 'Alle rechten voorbehouden.',
+},
   },
 
   en: {
@@ -924,14 +928,16 @@ googleReviews: 'Google Reviews',
   },
 },
     footer: {
-      tagline: '',
-      serviceAreaTitle: 'Service area',
-      serviceArea: `${areas} and the wider Costa Blanca / Alicante province.`,
-      languagesTitle: 'Languages',
-      contactTitle: 'Contact',
-      legal: 'Privacy · Cookies · Prices incl. VAT · [VERIFY] Company/CIF',
-      rights: 'All rights reserved.',
-    },
+  tagline: 'Fresh interiors. Without the renovation.',
+  basedIn: 'Based in Jávea',
+  coveringArea: 'Covering the Costa Blanca',
+  serviceAreaTitle: 'Service area',
+  serviceArea: `${areas} and the wider Costa Blanca / Alicante province.`,
+  languagesTitle: 'Languages',
+  contactTitle: 'Contact',
+  legal: 'Privacy · Cookies · Prices incl. VAT · [VERIFY] Company/CIF',
+  rights: 'All rights reserved.',
+},
   },
 
   es: {
@@ -1281,7 +1287,9 @@ googleReviews: 'Reseñas de Google',
   },
 },
     footer: {
-  tagline: '',
+  tagline: 'Interiores renovados. Sin obras.',
+  basedIn: 'Con base en Jávea',
+  coveringArea: 'Trabajamos en toda la Costa Blanca',
   serviceAreaTitle: 'Zona de servicio',
   serviceArea: `${areas} y toda la Costa Blanca / provincia de Alicante.`,
   languagesTitle: 'Idiomas',
