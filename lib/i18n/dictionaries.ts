@@ -266,7 +266,7 @@ export const dictionaries: Record<Locale, Dict> = {
         homepageServices: {
       eyebrow: 'Wat we wrappen',
       heading: 'MEER DAN ALLEEN KEUKENS.',
-      sub: 'Premium interieurfolie kan bestaande oppervlakken in je hele woning transformeren — van keukens en kasten tot deuren en andere interieurelementen, zonder ze te vervangen.',
+      sub: 'Hoogwaardige interieurfolie kan oppervlakken in je hele woning transformeren en keukens, kasten, deuren en andere interieurelementen een compleet nieuwe uitstraling geven, zonder dat ze vervangen hoeven te worden.',
       items: [
         'Keukens',
         'Kasten',
@@ -582,7 +582,7 @@ googleReviews: 'Google Reviews',
     homepageServices: {
       eyebrow: 'What we wrap',
       heading: 'MORE THAN JUST KITCHENS.',
-      sub: 'Premium interior film can transform existing surfaces throughout your home — giving kitchens, cabinetry, doors and other interiors a completely new look without replacing them.',
+      sub: 'Premium interior film can transform surfaces throughout your home, giving kitchens, cabinetry, doors and other interiors a completely new look without the need for replacement..',
       items: [
         'Kitchens',
         'Cabinetry',
@@ -906,7 +906,7 @@ googleReviews: 'Google Reviews',
     homepageServices: {
       eyebrow: 'Qué vinilamos',
       heading: 'MUCHO MÁS QUE COCINAS.',
-      sub: 'El film decorativo premium puede transformar superficies existentes en toda tu vivienda — desde cocinas y armarios hasta puertas y otros elementos del interior, sin necesidad de sustituirlos.',
+      sub: 'El vinilo para interiores de alta calidad puede transformar las superficies de tu hogar y dar a cocinas, armarios, puertas y otros elementos interiores un aspecto completamente nuevo, sin necesidad de sustituirlos.',
       items: [
         'Cocinas',
         'Muebles',
