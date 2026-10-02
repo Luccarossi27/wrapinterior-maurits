@@ -97,7 +97,7 @@ export function ReviewsSection() {
         </Reveal>
       </div>
 
-      {/* Reviews carousel — full width */}
+      {/* Reviews carousel */}
       <Reveal delay={0.15}>
         <div className="mt-0 overflow-hidden border-y border-[#A1A58D] bg-[#858B72]">
           <div
@@ -128,10 +128,10 @@ export function ReviewsSection() {
                     key={`${review.name}-${index}`}
                     className="w-full shrink-0"
                   >
-                    <div className="relative flex min-h-[420px] items-center justify-center px-5 py-10 sm:h-[440px] sm:px-10 sm:py-9 lg:h-[460px] lg:px-20 lg:py-10">
+                    <div className="relative flex min-h-[420px] items-center justify-center px-5 py-10 sm:h-[420px] sm:px-10 sm:py-8 lg:h-[420px] lg:px-20 lg:py-8">
                       {/* Opening decorative quotation mark */}
                       <div
-                        className="pointer-events-none absolute left-5 top-5 select-none font-serif text-6xl font-light leading-none text-[#F4F1E8]/15 sm:left-8 sm:text-7xl"
+                        className="pointer-events-none absolute left-5 top-5 select-none font-serif text-5xl font-light leading-none text-[#F4F1E8]/10 sm:left-8 sm:top-6"
                         aria-hidden="true"
                       >
                         “
@@ -139,21 +139,21 @@ export function ReviewsSection() {
 
                       {/* Closing decorative quotation mark */}
                       <div
-                        className="pointer-events-none absolute bottom-5 right-5 select-none font-serif text-6xl font-light leading-none text-[#F4F1E8]/15 sm:bottom-8 sm:right-8 sm:text-7xl"
+                        className="pointer-events-none absolute bottom-5 right-5 select-none font-serif text-5xl font-light leading-none text-[#F4F1E8]/10 sm:bottom-6 sm:right-8"
                         aria-hidden="true"
                       >
                         ”
                       </div>
 
-                      <div className="relative mx-auto flex max-w-3xl flex-col items-center justify-center text-center">
+                      <div className="relative mx-auto flex w-full max-w-3xl flex-col items-center justify-center text-center">
                         {/* Quote */}
-                        <blockquote className="max-w-[32rem] font-serif text-lg font-light italic leading-[1.5] tracking-tight text-[#F4F1E8] sm:text-xl lg:text-2xl">
+                        <blockquote className="max-w-[42rem] font-serif text-lg font-light italic leading-[1.5] tracking-tight text-[#F4F1E8] sm:text-xl lg:text-[1.35rem]">
                           “{displayedQuote}”
                         </blockquote>
 
                         {/* Translation toggle */}
                         {hasTranslation && (
-                          <div className="mt-6 flex justify-center">
+                          <div className="mt-5 flex justify-center">
                             <button
                               type="button"
                               onClick={() => {
@@ -171,7 +171,7 @@ export function ReviewsSection() {
                         )}
 
                         {/* Author */}
-                        <div className="mt-6">
+                        <div className="mt-5">
                           <div className="mx-auto mb-4 h-px w-8 bg-[#F4F1E8]/40" />
 
                           <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#F4F1E8]">
