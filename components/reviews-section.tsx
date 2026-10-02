@@ -147,7 +147,7 @@ export function ReviewsSection() {
 
                       <div className="relative mx-auto flex w-full max-w-3xl flex-col items-center justify-center text-center">
                         {/* Quote */}
-                        <blockquote className="max-w-[42rem] font-serif text-lg font-light italic leading-[1.5] tracking-tight text-[#F4F1E8] sm:text-xl lg:text-[1.35rem]">
+                        <blockquote className="max-w-[56rem] font-serif text-lg font-light italic leading-[1.5] tracking-tight text-[#F4F1E8] sm:text-xl lg:text-[1.35rem]">
                           “{displayedQuote}”
                         </blockquote>
 
