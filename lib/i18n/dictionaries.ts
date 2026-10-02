@@ -344,7 +344,7 @@ materials: {
   close: 'Sluiten',
   useMaterial: 'Gebruik dit materiaal voor mijn offerte',
   category: 'Categorie', 
-  ctaHeading: 'EEN MATERIAAL GEZIEN DAT JE MOOI VINDT?',
+  ctaHeading: 'EEN MATERIAAL GEVONDEN DAT JE MOOI VINDT?',
   ctaSub:
     'Stuur ons een foto van je interieur en vertel ons welk materiaal je aanspreekt. We helpen je het juiste materiaal voor jouw project te kiezen.',
 },
@@ -660,7 +660,7 @@ materials: {
   close: 'Close',
   useMaterial: 'Use this material in my quote',
   category: 'Category', 
-  ctaHeading: 'SEEN A MATERIAL YOU LIKE?',
+  ctaHeading: 'FOUND A MATERIAL YOU LIKE?',
   ctaSub:
     'Send us a photo of your interior and tell us which material caught your eye. We’ll help you choose the right material for your project.',
 },
@@ -984,7 +984,7 @@ materials: {
   close: 'Cerrar',
   useMaterial: 'Usar este material en mi presupuesto',
   category: 'Categoría', 
-  ctaHeading: '¿HAS VISTO UN MATERIAL QUE TE GUSTA?',
+  ctaHeading: '¿HAS ENCONTRADO UN MATERIAL QUE TE GUSTA?',
   ctaSub:
     'Envíanos una foto de tu interior y dinos qué material te gusta. Te ayudaremos a elegir el material adecuado para tu proyecto.',
 },
