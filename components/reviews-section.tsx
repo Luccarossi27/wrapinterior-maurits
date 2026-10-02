@@ -100,7 +100,7 @@ export function ReviewsSection() {
       {/* Editorial testimonial field */}
       <Reveal delay={0.12}>
         <div
-          className="border-y border-[#A1A58D] bg-[#858B72] text-[#F4F1E8]"
+          className="border-y border-[#B5B9A3] bg-[#9A9F86] text-[#F4F1E8]"
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
