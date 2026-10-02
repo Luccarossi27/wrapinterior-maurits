@@ -393,13 +393,6 @@ const colourLabels: Record<string, string> = {
           </div>
         )}
 
-        {/* MATERIAL SELECTION NOTE */}
-        <Reveal delay={0.03}>
-          <p className="border-b border-border py-4 text-sm leading-relaxed text-muted-foreground">
-            {t.materials.selectionNote}
-          </p>
-        </Reveal>
-
         {/* DISCLAIMER */}
         <p className="mx-auto mt-12 max-w-2xl text-center text-xs leading-relaxed text-muted-foreground">
           {t.materials.disclaimer}
