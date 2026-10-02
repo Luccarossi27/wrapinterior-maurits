@@ -344,7 +344,7 @@ materials: {
   close: 'Sluiten',
   useMaterial: 'Gebruik dit materiaal voor mijn offerte',
   category: 'Categorie', 
-  ctaHeading: 'HEB JE EEN MATERIAAL GEVONDEN DAT JE MOOI VINDT OF NOG NIET HET JUISTE GEVONDEN?',
+  ctaHeading: 'IETS ANDERS IN GEDACHT?',
   ctaSub:
     'We hebben meer dan 500 afwerkingen om uit te kiezen. Staat jouw ideale materiaal er hier niet tussen? Vraag het ons gerust. Stuur ons een foto van je interieur en vertel ons wat je in gedachten hebt. We helpen je graag het juiste materiaal voor jouw project te vinden.',
 },
@@ -660,7 +660,7 @@ materials: {
   close: 'Close',
   useMaterial: 'Use this material in my quote',
   category: 'Category', 
-  ctaHeading: 'FOUND A MATERIAL YOU LIKE OR HAVEN’T FOUND THE RIGHT ONE YET?',
+  ctaHeading: 'ENVISIONED SOMETHING ELSE?',
   ctaSub:
     'We have over 500 finishes to choose from, so if you don’t see what you’re looking for here, just ask. Send us a photo of your interior and tell us what you have in mind. We’ll help you find the right material for your project.',
 },
@@ -984,7 +984,7 @@ materials: {
   close: 'Cerrar',
   useMaterial: 'Usar este material en mi presupuesto',
   category: 'Categoría', 
-  ctaHeading: '¿HAS ENCONTRADO UN MATERIAL QUE TE GUSTA O TODAVÍA NO HAS ENCONTRADO EL ADECUADO?',
+  ctaHeading: '¿TIENES ALGO DISTINTO EN MENTE?',
   ctaSub:
     'Tenemos más de 500 acabados entre los que elegir. Si no encuentras aquí lo que buscas, pregúntanos. Envíanos una foto de tu interior y cuéntanos qué tienes en mente. Te ayudaremos a encontrar el material adecuado para tu proyecto.',
 },
