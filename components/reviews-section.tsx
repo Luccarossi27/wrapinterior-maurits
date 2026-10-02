@@ -136,6 +136,14 @@ export function ReviewsSection() {
                       >
                         “
                       </div>
+                      
+                    {/* Closing decorative quotation mark */}
+<div
+  className="pointer-events-none absolute bottom-5 right-5 select-none font-serif text-6xl font-light leading-none text-[#F4F1E8]/15 sm:bottom-8 sm:right-8 sm:text-7xl"
+  aria-hidden="true"
+>
+  ”
+</div>
 
                       <div className="relative mx-auto flex max-w-3xl flex-col items-center justify-center text-center">
                         {/* Quote */}
