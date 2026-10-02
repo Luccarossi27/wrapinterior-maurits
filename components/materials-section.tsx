@@ -378,20 +378,20 @@ const colourLabels: Record<string, string> = {
           </div>
         )}
 
-        {/* LOAD ALL */}
-        {hasMore && (
-          <div className="mt-16 flex justify-center border-t border-border pt-10">
-            <button
-              type="button"
-              onClick={() =>
-                setVisibleCount(filteredMaterials.length)
-              }
-              className="border-b border-brass pb-1 text-xs font-bold uppercase tracking-[0.15em] text-ink transition-colors hover:text-brass"
-            >
-              {t.materials.loadMore}
-            </button>
-          </div>
-        )}
+        {/* LOAD MORE */}
+{hasMore && (
+  <div className="mt-16 flex justify-center border-t border-border pt-10">
+    <button
+      type="button"
+      onClick={() =>
+        setVisibleCount((count) => count + ITEMS_PER_PAGE)
+      }
+      className="border-b border-brass pb-1 text-xs font-bold uppercase tracking-[0.15em] text-ink transition-colors hover:text-brass"
+    >
+      {t.materials.loadMore}
+    </button>
+  </div>
+)}
 
         {/* DISCLAIMER */}
         <p className="mx-auto mt-12 max-w-2xl text-center text-xs leading-relaxed text-muted-foreground">
