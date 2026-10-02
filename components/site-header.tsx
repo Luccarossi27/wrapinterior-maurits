@@ -51,7 +51,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <LanguageSwitcher className="hidden sm:inline-flex" />
+          <LanguageSwitcher />
 
           <a
             href={whatsappLink(t.contactPage.whatsappMessage)}
@@ -97,11 +97,6 @@ export function SiteHeader() {
               {link.label}
             </a>
           ))}
-
-          <div className="mt-6 flex items-center justify-between">
-            <LanguageSwitcher />
-
-          </div>
 
           <a
             href={whatsappLink(t.contactPage.whatsappMessage)}
