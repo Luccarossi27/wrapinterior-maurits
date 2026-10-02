@@ -99,7 +99,8 @@ export function ReviewsSection() {
 
       {/* Reviews carousel */}
       <Reveal delay={0.15}>
-        <div className="mt-0 overflow-hidden border-y border-[#A1A58D] bg-[#858B72]">
+  <div className="mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10">
+    <div className="overflow-hidden border-y border-[#A1A58D] bg-[#858B72]">
           <div
             className="overflow-hidden touch-pan-y"
             onTouchStart={handleTouchStart}
@@ -244,9 +245,10 @@ export function ReviewsSection() {
 
               <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" />
             </button>
-          </div>
+                    </div>
         </div>
-      </Reveal>
+      </div>
+    </Reveal>
 
       {/* Google rating + CTA */}
       <div className="mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10">
