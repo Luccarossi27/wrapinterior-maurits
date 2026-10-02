@@ -51,6 +51,31 @@ export function BeforeAfterSlider({
     setPos(Math.min(100, Math.max(0, next)))
   }, [])
 
+  const handlePointerDown = (
+    e: React.PointerEvent<HTMLDivElement>,
+  ) => {
+    dragging.current = true
+    e.currentTarget.setPointerCapture(e.pointerId)
+    setFromClientX(e.clientX)
+  }
+
+  const handlePointerMove = (
+    e: React.PointerEvent<HTMLDivElement>,
+  ) => {
+    if (!dragging.current) return
+    setFromClientX(e.clientX)
+  }
+
+  const handlePointerUp = (
+    e: React.PointerEvent<HTMLDivElement>,
+  ) => {
+    dragging.current = false
+
+    if (e.currentTarget.hasPointerCapture(e.pointerId)) {
+      e.currentTarget.releasePointerCapture(e.pointerId)
+    }
+  }
+
   const imageFitClass =
     fit === 'contain' ? 'object-contain' : 'object-cover'
 
@@ -66,25 +91,10 @@ export function BeforeAfterSlider({
         aspectRatio,
         className,
       )}
-      onPointerDown={(e) => {
-        dragging.current = true
-        ;(e.target as Element).setPointerCapture?.(e.pointerId)
-        setFromClientX(e.clientX)
-      }}
-      onPointerMove={(e) => {
-        if (dragging.current) {
-          setFromClientX(e.clientX)
-        }
-      }}
-      onPointerUp={() => {
-        dragging.current = false
-      }}
-      onPointerCancel={() => {
-        dragging.current = false
-      }}
-      onPointerLeave={() => {
-        dragging.current = false
-      }}
+      onPointerDown={handlePointerDown}
+      onPointerMove={handlePointerMove}
+      onPointerUp={handlePointerUp}
+      onPointerCancel={handlePointerUp}
     >
       {/* AFTER IMAGE */}
       <Image
@@ -145,7 +155,7 @@ export function BeforeAfterSlider({
       {/* MAIN DIVIDER */}
       <div
         className={cn(
-          'absolute inset-y-0 z-30 w-[2px]',
+          'pointer-events-none absolute inset-y-0 z-30 w-[2px]',
           dividerClass,
         )}
         style={{
@@ -153,8 +163,11 @@ export function BeforeAfterSlider({
           transform: 'translateX(-50%)',
         }}
       >
-        {/* SLIDER HANDLE */}
-        <div className="pointer-events-none absolute left-1/2 top-1/2 z-30 flex h-10 w-5 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2px] bg-pine">
+        {/* LARGE INVISIBLE TOUCH TARGET */}
+        <div className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2" />
+
+        {/* VISIBLE SLIDER HANDLE */}
+        <div className="absolute left-1/2 top-1/2 flex h-10 w-5 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2px] bg-pine shadow-md">
           <span className="flex items-center gap-1">
             {/* LEFT TRIANGLE */}
             <span className="h-0 w-0 border-b-[3px] border-r-[5px] border-t-[3px] border-b-transparent border-t-transparent border-r-white" />
@@ -163,17 +176,6 @@ export function BeforeAfterSlider({
             <span className="h-0 w-0 border-b-[3px] border-l-[5px] border-t-[3px] border-b-transparent border-t-transparent border-l-white" />
           </span>
         </div>
-
-        {/* INVISIBLE DRAG CONTROL */}
-        <input
-          type="range"
-          min={0}
-          max={100}
-          value={Math.round(pos)}
-          onChange={(e) => setPos(Number(e.target.value))}
-          aria-label={dragHint}
-          className="absolute left-1/2 top-1/2 h-[120%] w-[90px] -translate-x-1/2 -translate-y-1/2 cursor-ew-resize opacity-0"
-        />
       </div>
 
       {/* DRAG HINT */}
