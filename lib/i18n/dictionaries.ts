@@ -83,7 +83,6 @@ type Dict = {
   eyebrow: string
   heading: string
   sub: string
-  selectionNote: string
   search: string
   clearSearch: string
   filter: string
@@ -332,8 +331,6 @@ materials: {
   eyebrow: 'Materialen',
   heading: 'KIES JE MATERIAAL.',
   sub: 'Ontdek onze selectie van kleuren, houtstructuren, steenlooks, metalen en andere materialen voor jouw interieur.',
-  selectionNote:
-  'Dit is slechts een selectie van onze beschikbare afwerkingen. We hebben meer dan 500 om uit te kiezen. Zie je niet wat je zoekt? Vraag het ons gerust.',
   search: 'Zoek op materiaal, kleur of code...',
   clearSearch: 'Zoekopdracht wissen',
   filter: 'Filters',
@@ -650,8 +647,6 @@ materials: {
   eyebrow: 'Materials',
   heading: 'CHOOSE YOUR MATERIAL.',
   sub: 'Explore our selection of colours, woodgrains, stone effects, metals and other materials for your interior.',
-  selectionNote:
-  "This is just a selection of our available finishes. We have over 500 to choose from. Don't see what you're looking for? Just ask.",
   search: 'Search materials, colours or codes...',
   clearSearch: 'Clear search',
   filter: 'Filters',
@@ -976,8 +971,6 @@ materials: {
   eyebrow: 'Materiales',
   heading: 'ELIGE TU MATERIAL.',
   sub: 'Descubre nuestra selección de colores, maderas, efectos piedra, metales y otros materiales para tu interior.',
-  selectionNote:
-  'Esta es solo una selección de nuestros acabados disponibles. Tenemos más de 500 para elegir. ¿No encuentras lo que buscas? Pregúntanos.',
   search: 'Buscar materiales, colores o códigos...',
   clearSearch: 'Borrar búsqueda',
   filter: 'Filtros',
