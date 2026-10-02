@@ -173,7 +173,7 @@ const colourLabels: Record<string, string> = {
       id="materials"
       className="border-t border-border bg-paper text-ink"
     >
-      <div className="mx-auto w-full max-w-7xl px-5 pb-20 pt-6 sm:px-8 sm:pb-28 sm:pt-8 lg:px-10 lg:pt-10">
+      <div className="mx-auto w-full max-w-7xl px-5 pb-20 pt-10 sm:px-8 sm:pb-28 sm:pt-8 lg:px-10 lg:pt-10">
 
         {/* HEADER */}
         <Reveal>
