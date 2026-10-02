@@ -8,10 +8,10 @@ export const contact = {
   phoneDisplay: '+34 675 153 105',
   phoneHref: '+34675153105',
   email: 'info@wrap-interior.com',
-  city: 'Jávea',
-  region: 'Costa Blanca, Alicante',
-  address: "Avinguda del Trenc d'Alba, 6",
-  postcode: '03730',
+  city: 'Setla',
+  region: 'Alicante',
+  address: 'Avinguda Jaume I, 23b',
+  postcode: '03779',
   province: 'Alicante',
 } as const
 
@@ -553,11 +553,11 @@ googleReviews: 'Google Reviews',
 
   location: {
     eyebrow: 'ONZE WERKPLAATS',
-    heading: 'Bezoek ons in Jávea.',
-    sub: 'Onze werkplaats bevindt zich in Jávea, aan de Costa Blanca.',
+    heading: 'Bezoek ons in Setla.',
+    sub: 'Onze werkplaats bevindt zich in Setla, aan de Costa Blanca.',
     addressLabel: 'Adres',
     directions: 'Plan je route',
-    mapTitle: 'Wrap Interior workshop in Jávea',
+    mapTitle: 'Wrap Interior workshop in Selta',
   },
 
   bottomCta: {
@@ -568,7 +568,7 @@ googleReviews: 'Google Reviews',
 },
     footer: {
   tagline: 'Frisse interieurs. Zonder de verbouwing.',
-  basedIn: 'Gevestigd in Jávea',
+  basedIn: 'Gevestigd in Selta',
   coveringArea: 'Werkzaam aan de Costa Blanca',
   serviceAreaTitle: 'Werkgebied',
   serviceArea: `${areas} en de wijdere Costa Blanca / provincie Alicante.`,
@@ -914,8 +914,8 @@ googleReviews: 'Google Reviews',
 
   location: {
     eyebrow: 'OUR WORKSHOP',
-    heading: 'Visit us in Jávea.',
-    sub: 'Our workshop is based in Jávea, on the Costa Blanca.',
+    heading: 'Visit us in Setla.',
+    sub: 'Our workshop is based in Setla, on the Costa Blanca.',
     addressLabel: 'Address',
     directions: 'Get directions',
     mapTitle: 'Wrap Interior workshop in Jávea',
@@ -1273,11 +1273,11 @@ googleReviews: 'Reseñas de Google',
 
   location: {
     eyebrow: 'NUESTRO TALLER',
-    heading: 'Visítanos en Jávea.',
-    sub: 'Nuestro taller está en Jávea, en la Costa Blanca.',
+    heading: 'Visítanos en Setla.',
+    sub: 'Nuestro taller está en Setla, en la Costa Blanca.',
     addressLabel: 'Dirección',
     directions: 'Cómo llegar',
-    mapTitle: 'Taller de Wrap Interior en Jávea',
+    mapTitle: 'Taller de Wrap Interior en Selta',
   },
 
   bottomCta: {
@@ -1288,7 +1288,7 @@ googleReviews: 'Reseñas de Google',
 },
     footer: {
   tagline: 'Interiores renovados. Sin obras.',
-  basedIn: 'Con base en Jávea',
+  basedIn: 'Con base en Selta',
   coveringArea: 'Trabajamos en toda la Costa Blanca',
   serviceAreaTitle: 'Zona de servicio',
   serviceArea: `${areas} y toda la Costa Blanca / provincia de Alicante.`,
