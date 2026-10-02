@@ -194,7 +194,14 @@ const colourLabels: Record<string, string> = {
           </div>
         </Reveal>
 
-                {/* SEARCH */}
+                        {/* MATERIAL SELECTION NOTE */}
+        <Reveal delay={0.03}>
+          <p className="border-b border-border py-4 text-sm leading-relaxed text-muted-foreground">
+            {t.materials.selectionNote}
+          </p>
+        </Reveal>
+
+        {/* SEARCH */}
         <Reveal delay={0.05}>
           <div className="flex flex-col gap-3 border-b border-border py-4 lg:flex-row lg:items-center lg:justify-between">
             <div className="relative w-full max-w-xl">
