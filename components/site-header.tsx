@@ -13,14 +13,14 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false)
 
   const links = [
-    { href: '/portfolio', label: 'Portfolio' },
-    { href: '/materials', label: t.nav.materials,},
-    { href: '/process', label: 'Process' },
-    { href: '/pricing', label: 'Pricing' },
-    { href: '/reviews', label: 'Reviews' },
-    { href: '/faq', label: 'FAQ' },
-    { href: '/contact', label: 'Contact' },
-  ]
+  { href: '/portfolio', label: t.nav.portfolio },
+  { href: '/materials', label: t.nav.materials },
+  { href: '/process', label: t.nav.process },
+  { href: '/pricing', label: t.nav.pricing },
+  { href: '/reviews', label: t.nav.reviews },
+  { href: '/faq', label: t.nav.faq },
+  { href: '/contact', label: t.nav.contact },
+]
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : ''
