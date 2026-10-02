@@ -101,12 +101,6 @@ export function SiteHeader() {
           <div className="mt-6 flex items-center justify-between">
             <LanguageSwitcher />
 
-            <a
-              href={`tel:${contact.phoneHref}`}
-              className="text-sm font-medium text-white/80"
-            >
-              {contact.phoneDisplay}
-            </a>
           </div>
 
           <a
