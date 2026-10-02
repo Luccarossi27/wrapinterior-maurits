@@ -77,7 +77,7 @@ export function SiteHeader() {
 
       <div
         className={cn(
-          'fixed inset-0 top-[64px] z-40 origin-top bg-pine transition-all duration-300 lg:hidden',
+          'fixed inset-0 top-[64px] z-40 origin-top overflow-y-auto bg-pine transition-all duration-300 lg:hidden',
           open
             ? 'pointer-events-auto opacity-100'
             : 'pointer-events-none opacity-0',
@@ -85,7 +85,7 @@ export function SiteHeader() {
       >
         <nav
           aria-label={t.a11y.primaryNav}
-          className="mx-auto flex w-full max-w-6xl flex-col gap-1 px-5 py-6 sm:px-8"
+          className="mx-auto flex w-full max-w-6xl flex-col gap-1 px-5 pb-10 pt-6 sm:px-8"
         >
           {links.map((link) => (
             <a
