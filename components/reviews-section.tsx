@@ -77,7 +77,7 @@ export function ReviewsSection() {
       className="border-t border-border bg-paper text-ink"
     >
       {/* Header */}
-      <div className="mx-auto w-full max-w-6xl px-5 pt-6 pb-0 sm:px-8 sm:pt-10 sm:pb-0 lg:px-10 lg:pt-8">
+      <div className="mx-auto w-full max-w-6xl px-5 pt-10 pb-0 sm:px-8 sm:pt-10 sm:pb-0 lg:px-10 lg:pt-8">
         <Reveal>
           <div className="grid gap-5 border-b border-border pb-8 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
