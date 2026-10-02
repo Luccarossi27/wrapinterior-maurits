@@ -128,7 +128,7 @@ export function ReviewsSection() {
                     key={`${review.name}-${index}`}
                     className="w-full shrink-0"
                   >
-                    <div className="relative flex h-[420px] items-center justify-center px-5 py-7 sm:h-[440px] sm:px-10 sm:py-9 lg:h-[460px] lg:px-20 lg:py-10">
+                    <div className="relative flex min-h-[420px] items-center justify-center px-5 py-10 sm:h-[440px] sm:px-10 sm:py-9 lg:h-[460px] lg:px-20 lg:py-10">
                       {/* Decorative quotation mark */}
                       <div
                         className="pointer-events-none absolute left-5 top-5 select-none font-serif text-6xl font-light leading-none text-[#F4F1E8]/15 sm:left-8 sm:text-7xl"
@@ -139,7 +139,7 @@ export function ReviewsSection() {
 
                       <div className="relative mx-auto flex max-w-3xl flex-col items-center justify-center text-center">
                         {/* Quote */}
-                        <blockquote className="font-serif text-lg font-light italic leading-[1.6] tracking-tight text-[#F4F1E8] sm:text-xl lg:text-2xl">
+                        <blockquote className="font-serif text-lg font-light italic leading-[1.5] tracking-tight text-[#F4F1E8] sm:text-xl lg:text-2xl">
                           “{displayedQuote}”
                         </blockquote>
 
