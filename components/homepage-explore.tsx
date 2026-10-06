@@ -24,7 +24,7 @@ export function HomepageExplore() {
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div>
             <Reveal>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brass">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-ink">
                 {t.homepageExplore.eyebrow}
               </p>
             </Reveal>
@@ -49,7 +49,7 @@ export function HomepageExplore() {
                   href={link.href}
                   className="group grid grid-cols-[2.5rem_1fr_auto] items-center gap-4 border-b border-paper/15 py-5 transition-colors hover:bg-paper/[0.04] sm:grid-cols-[3rem_1fr_auto] sm:gap-5 sm:py-6"
                 >
-                  <span className="font-mono text-xs tracking-[0.12em] text-brass">
+                  <span className="font-mono text-xs tracking-[0.12em] text-ink">
                     {link.number}
                   </span>
 
@@ -63,7 +63,7 @@ export function HomepageExplore() {
 </p>
                   </div>
 
-                  <ArrowRight className="size-5 text-paper/40 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-brass" />
+                  <ArrowRight className="size-5 text-paper/40 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-ink" />
                 </Link>
               </Reveal>
             ))}
