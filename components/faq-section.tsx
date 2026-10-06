@@ -36,7 +36,7 @@ export function FaqSection() {
               <div
                 className={cn(
                   'transition-colors duration-300',
-                  isOpen && 'bg-[#F0ECE7]',
+                  isOpen && 'bg-[#D8D0C7]',
                 )}
               >
                 <h3>
