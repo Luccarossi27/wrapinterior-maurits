@@ -36,7 +36,7 @@ export function FaqSection() {
               <div
                 className={cn(
                   'transition-colors duration-300',
-                  isOpen && 'bg-[#8F8277]',
+                  isOpen && 'bg-[#F0ECE7]',
                 )}
               >
                 <h3>
@@ -46,19 +46,14 @@ export function FaqSection() {
                     aria-expanded={isOpen}
                     className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
                   >
-                    <span
-                      className={cn(
-                        'font-serif text-lg font-medium transition-colors duration-300',
-                        isOpen ? 'text-[#F4F1E8]' : 'text-ink',
-                      )}
-                    >
+                    <span className="font-serif text-lg font-medium text-ink">
                       {item.q}
                     </span>
 
                     <ChevronDown
                       className={cn(
-                        'size-5 shrink-0 text-brass transition-transform duration-300',
-                        isOpen && 'rotate-180',
+                        'size-5 shrink-0 text-brass transition-all duration-300',
+                        isOpen && 'rotate-180 text-[#8F8277]',
                       )}
                     />
                   </button>
@@ -74,26 +69,14 @@ export function FaqSection() {
                 >
                   <div className="overflow-hidden">
                     <div className="px-6 pb-6">
-                      <p
-                        className={cn(
-                          'text-pretty leading-relaxed transition-colors duration-300',
-                          isOpen
-                            ? 'text-[#F4F1E8]/80'
-                            : 'text-muted-foreground',
-                        )}
-                      >
+                      <p className="text-pretty leading-relaxed text-muted-foreground">
                         {item.a}
                       </p>
 
                       {item.link && (
                         <a
                           href={item.link.href}
-                          className={cn(
-                            'group mt-4 inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.18em] transition-colors',
-                            isOpen
-                              ? 'text-[#F4F1E8] hover:text-[#F4F1E8]/70'
-                              : 'text-pine hover:text-brass',
-                          )}
+                          className="group mt-4 inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.18em] text-pine transition-colors hover:text-brass"
                         >
                           {item.link.label}
 
