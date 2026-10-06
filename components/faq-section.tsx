@@ -1,3 +1,4 @@
+```tsx
 'use client'
 
 import { useState } from 'react'
@@ -33,7 +34,12 @@ export function FaqSection() {
 
           return (
             <Reveal key={item.q}>
-              <div>
+              <div
+                className={cn(
+                  'transition-colors duration-300',
+                  isOpen && 'bg-[#8F8277]',
+                )}
+              >
                 <h3>
                   <button
                     type="button"
@@ -41,7 +47,12 @@ export function FaqSection() {
                     aria-expanded={isOpen}
                     className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
                   >
-                    <span className="font-serif text-lg font-medium text-ink">
+                    <span
+                      className={cn(
+                        'font-serif text-lg font-medium transition-colors duration-300',
+                        isOpen ? 'text-[#F4F1E8]' : 'text-ink',
+                      )}
+                    >
                       {item.q}
                     </span>
 
@@ -64,14 +75,26 @@ export function FaqSection() {
                 >
                   <div className="overflow-hidden">
                     <div className="px-6 pb-6">
-                      <p className="text-pretty leading-relaxed text-muted-foreground">
+                      <p
+                        className={cn(
+                          'text-pretty leading-relaxed transition-colors duration-300',
+                          isOpen
+                            ? 'text-[#F4F1E8]/80'
+                            : 'text-muted-foreground',
+                        )}
+                      >
                         {item.a}
                       </p>
 
                       {item.link && (
                         <a
                           href={item.link.href}
-                          className="group mt-4 inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.18em] text-pine transition-colors hover:text-brass"
+                          className={cn(
+                            'group mt-4 inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.18em] transition-colors',
+                            isOpen
+                              ? 'text-[#F4F1E8] hover:text-[#F4F1E8]/70'
+                              : 'text-pine hover:text-brass',
+                          )}
                         >
                           {item.link.label}
 
@@ -112,3 +135,4 @@ export function FaqSection() {
     </section>
   )
 }
+```
