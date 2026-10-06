@@ -46,7 +46,12 @@ export function FaqSection() {
                     aria-expanded={isOpen}
                     className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
                   >
-                    <span className="font-serif text-lg font-medium text-ink">
+                    <span
+                      className={cn(
+                        'font-serif text-lg font-medium transition-colors duration-300',
+                        isOpen ? 'text-[#6F6258]' : 'text-ink',
+                      )}
+                    >
                       {item.q}
                     </span>
 
