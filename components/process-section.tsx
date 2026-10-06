@@ -20,7 +20,7 @@ export function ProcessSection() {
         <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-16">
           <div>
             <Reveal>
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-brass">
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-pine">
                 {t.nav.process}
               </p>
             </Reveal>
@@ -38,7 +38,7 @@ export function ProcessSection() {
             <ol className="mt-9 space-y-6">
               {t.process.steps.map((step, i) => (
                 <Reveal as="li" key={step.title} delay={i * 0.06} className="flex gap-4">
-                  <span className="flex size-9 shrink-0 items-center justify-center rounded-full border border-brass/40 bg-brass/10 font-serif text-base font-semibold text-brass">
+                  <span className="flex size-9 shrink-0 items-center justify-center rounded-full border border-pine/40 bg-pine/10 font-serif text-base font-semibold text-pine">
                     {i + 1}
                   </span>
                   <div>
