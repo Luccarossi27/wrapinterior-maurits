@@ -106,7 +106,7 @@ export function ReviewsSection() {
           onTouchEnd={handleTouchEnd}
         >
           <div className="mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10">
-            <div className="relative flex min-h-[460px] flex-col justify-between py-12 sm:min-h-[440px] sm:py-14 lg:min-h-[460px] lg:py-16">
+            <div className="relative flex min-h-[400px] flex-col justify-between py-10 sm:min-h-[380px] sm:py-12 lg:min-h-[400px] lg:py-14">
               {/* Decorative quotation mark */}
               <div
                 className="pointer-events-none absolute -left-1 -top-2 select-none font-serif text-[7rem] font-light leading-none text-[#F4F1E8]/10 sm:left-1 sm:-top-4 sm:text-[8rem]"
