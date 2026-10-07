@@ -67,7 +67,7 @@ const galleryMedia = [
     after: '/images/hans-after.jpg',
     aspectRatio: 'aspect-[5/4]',
     colour: 'CHALK',
-    code: 'CODE TBC',
+    code: 'S141',
   },
 ]
 
