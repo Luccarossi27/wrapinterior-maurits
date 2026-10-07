@@ -62,7 +62,7 @@ export function SiteHeader() {
             href={whatsappLink(t.contactPage.whatsappMessage)}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden h-9 w-[172px] items-center justify-center gap-2 rounded-full bg-white/10 px-4 text-sm font-semibold text-white shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white/20 md:inline-flex"
+            className="hidden h-9 w-[210px] items-center justify-center gap-2 rounded-full bg-white/10 px-4 text-sm font-semibold text-white shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white/20 md:inline-flex"
           >
             <MessageCircle className="size-4 shrink-0" />
             <span className="whitespace-nowrap">
