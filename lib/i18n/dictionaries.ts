@@ -255,7 +255,7 @@ export const dictionaries: Record<Locale, Dict> = {
     hero: {
       eyebrow: 'Interieurfolie zonder verbouwen — Jávea & Costa Blanca',
       h1: 'FRISSE INTERIEURS. ZONDER DE VERBOUWING.',
-      sub: 'Geef je keuken, meubels, deuren of badkamerkasten een compleet nieuwe uitstraling, zonder de kosten, rommel of overlast van een volledige renovatie. Premium interieurfolie is een slim en kosteneffectief alternatief voor vervanging en geeft je bestaande interieur een tweede leven met een verfijnde, duurzame afwerking. \nGevestigd in Jávea, werkzaam aan de Costa Blanca.',
+      sub: 'Geef je keuken, meubels, deuren of badkamerkasten een compleet nieuwe uitstraling, zonder de kosten, rommel of overlast van een volledige renovatie. Premium interieurfolie is een slim en kosteneffectief alternatief voor vervanging en geeft je bestaande interieur een tweede leven met een verfijnde, duurzame afwerking. \nGevestigd in Setla, werkzaam aan de Costa Blanca.',
       chips: [
         'Vanaf €1.400 incl. IVA',
         'Honderden kleuren & structuren',
@@ -512,7 +512,7 @@ googleReviews: 'Google Reviews',
     sub: 'Onze werkplaats bevindt zich in Setla, aan de Costa Blanca.',
     addressLabel: 'Adres',
     directions: 'Plan je route',
-    mapTitle: 'Wrap Interior workshop in Selta',
+    mapTitle: 'Wrap Interior workshop in Setla',
   },
 
   bottomCta: {
@@ -523,7 +523,7 @@ googleReviews: 'Google Reviews',
 },
     footer: {
   tagline: 'Frisse interieurs. Zonder de verbouwing.',
-  basedIn: 'Gevestigd in Selta',
+  basedIn: 'Gevestigd in Setla',
   coveringArea: 'Werkzaam aan de Costa Blanca',
   serviceAreaTitle: 'Werkgebied',
   serviceArea: `${areas} en de wijdere Costa Blanca / provincie Alicante.`,
@@ -567,7 +567,7 @@ googleReviews: 'Google Reviews',
     hero: {
       eyebrow: 'Interior wrapping without renovation — Jávea & Costa Blanca',
       h1: 'FRESH INTERIORS. WITHOUT THE RENOVATION.',
-      sub: 'Give your kitchen, furniture, doors or bathroom cabinets a completely new look, without the cost, mess or disruption of a full renovation. Premium interior film is a smart, cost-effective alternative to replacement, giving your existing interiors a second life with a refined, durable finish. \nBased in Jávea, covering the Costa Blanca.',
+      sub: 'Give your kitchen, furniture, doors or bathroom cabinets a completely new look, without the cost, mess or disruption of a full renovation. Premium interior film is a smart, cost-effective alternative to replacement, giving your existing interiors a second life with a refined, durable finish. \nBased in Setla, covering the Costa Blanca.',
       chips: [
         'From €1,400 incl. VAT',
         'Hundreds of colours & textures',
@@ -832,7 +832,7 @@ googleReviews: 'Google Reviews',
     sub: 'Our workshop is based in Setla, on the Costa Blanca.',
     addressLabel: 'Address',
     directions: 'Get directions',
-    mapTitle: 'Wrap Interior workshop in Jávea',
+    mapTitle: 'Wrap Interior workshop in Setla',
   },
 
   bottomCta: {
@@ -843,7 +843,7 @@ googleReviews: 'Google Reviews',
 },
     footer: {
   tagline: 'Fresh interiors. Without the renovation.',
-  basedIn: 'Based in Selta',
+  basedIn: 'Based in Setla',
   coveringArea: 'Covering the Costa Blanca',
   serviceAreaTitle: 'Service area',
   serviceArea: `${areas} and the wider Costa Blanca / Alicante province.`,
@@ -887,7 +887,7 @@ googleReviews: 'Google Reviews',
     hero: {
       eyebrow: 'Vinilado de interiores sin obras — Jávea y Costa Blanca',
       h1: 'INTERIORES RENOVADOS. SIN OBRAS.',
-      sub: 'Dale un aspecto completamente nuevo a tu cocina, muebles, puertas o armarios de baño, sin los costes, el desorden ni las molestias de una reforma completa. El revestimiento con film decorativo premium es una alternativa inteligente y rentable a la sustitución, dando una segunda vida a tus interiores con un acabado elegante y duradero. \nCon base en Jávea, trabajamos en toda la Costa Blanca.',
+      sub: 'Dale un aspecto completamente nuevo a tu cocina, muebles, puertas o armarios de baño, sin los costes, el desorden ni las molestias de una reforma completa. El revestimiento con film decorativo premium es una alternativa inteligente y rentable a la sustitución, dando una segunda vida a tus interiores con un acabado elegante y duradero. \nCon base en Setla, trabajamos en toda la Costa Blanca.',
       chips: [
         'Desde 1.400 € IVA incl.',
         'Cientos de colores y texturas',
@@ -1150,7 +1150,7 @@ googleReviews: 'Reseñas de Google',
     sub: 'Nuestro taller está en Setla, en la Costa Blanca.',
     addressLabel: 'Dirección',
     directions: 'Cómo llegar',
-    mapTitle: 'Taller de Wrap Interior en Selta',
+    mapTitle: 'Taller de Wrap Interior en Setla',
   },
 
   bottomCta: {
@@ -1161,7 +1161,7 @@ googleReviews: 'Reseñas de Google',
 },
     footer: {
   tagline: 'Interiores renovados. Sin obras.',
-  basedIn: 'Con base en Selta',
+  basedIn: 'Con base en Setla',
   coveringArea: 'Trabajamos en toda la Costa Blanca',
   serviceAreaTitle: 'Zona de servicio',
   serviceArea: `${areas} y toda la Costa Blanca / provincia de Alicante.`,
