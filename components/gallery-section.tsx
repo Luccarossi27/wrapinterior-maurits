@@ -147,8 +147,7 @@ export function GallerySection() {
 
                 </article>
               </Reveal>
-            )
-          })}
+          ))}
         </div>
       </div>
     </section>
