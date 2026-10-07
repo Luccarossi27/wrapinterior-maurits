@@ -1442,5 +1442,13 @@ export const materials: Material[] = [
     image:
       'https://www.resimdo.es/shop/media/image/W945-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
-
+{
+    id: 'chalk-s141',
+    name: 'Chalk',
+    code: 'S141',
+    category: 'Solid Colour',
+    colour: ['Beige', 'Yellow'],
+    image:
+      'https://www.resimdo.es/shop/media/image/S141-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
 ]
