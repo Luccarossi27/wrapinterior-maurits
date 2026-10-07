@@ -16,7 +16,7 @@ export function ProcessSection() {
 
   return (
     <section id="process" className="border-y border-border bg-[#8F8277] text-paper">
-      <div className="mx-auto w-full max-w-6xl px-5 pt-10 pb-20 sm:px-8 lg:pt-2 lg:pb-28">
+      <div className="mx-auto w-full max-w-6xl px-5 pt-10 pb-20 sm:px-8 lg:pt-8 lg:pb-28">
         <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-start lg:gap-16">
           <div>
             <Reveal>
