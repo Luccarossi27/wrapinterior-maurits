@@ -9,22 +9,25 @@ export function Hero() {
   const { t } = useLanguage()
 
   return (
-    <section id="top" className="relative min-h-[calc(100svh-64px)] overflow-hidden">
+    <section
+      id="top"
+      className="relative min-h-[620px] overflow-hidden lg:min-h-[700px]"
+    >
       {/* Kitchen background */}
       <img
-        src="/images/homepage.jpg"
+        src="/images/homepage.jpeg"
         alt=""
         className="absolute inset-0 h-full w-full object-cover"
       />
 
-      {/* Dark overlay */}
+      {/* Subtle gradient for text readability */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-pine/55"
+        className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/20 to-transparent"
       />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex min-h-[calc(100svh-64px)] w-full max-w-6xl items-center px-5 py-16 sm:px-8 lg:py-24">
+      <div className="relative z-10 mx-auto flex min-h-[620px] w-full max-w-6xl items-center px-5 py-16 sm:px-8 lg:min-h-[700px] lg:py-24">
         <div className="max-w-2xl">
 
           {/* Main heading */}
@@ -36,7 +39,7 @@ export function Hero() {
 
           {/* Supporting copy */}
           <Reveal delay={0.1}>
-            <p className="mt-6 max-w-xl whitespace-pre-line text-pretty text-base leading-[1.7] text-white/85 sm:text-lg">
+            <p className="mt-6 max-w-xl whitespace-pre-line text-pretty text-base leading-[1.7] text-white/90 sm:text-lg">
               {t.hero.sub}
             </p>
           </Reveal>
@@ -56,7 +59,7 @@ export function Hero() {
 
               <a
                 href="/portfolio"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/50 bg-white/10 px-6 py-3.5 text-base font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-pine"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/60 bg-white/10 px-6 py-3.5 text-base font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-pine"
               >
                 {t.cta.viewProjects}
                 <ArrowRight className="size-4" />
