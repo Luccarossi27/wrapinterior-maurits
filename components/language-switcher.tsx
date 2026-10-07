@@ -37,7 +37,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
             aria-pressed={active}
             aria-label={`Switch to ${language.name}`}
             className={cn(
-              'inline-flex min-w-9 items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold tracking-wide transition-colors outline-none focus-visible:ring-2 focus-visible:ring-brass',
+              'flex h-7 w-10 items-center justify-center rounded-full text-xs font-semibold tracking-wide transition-colors outline-none focus-visible:ring-2 focus-visible:ring-brass',
               active
                 ? 'bg-pine text-paper'
                 : 'text-muted-foreground hover:text-ink',
