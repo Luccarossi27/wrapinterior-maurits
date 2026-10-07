@@ -3,14 +3,13 @@
 import { ArrowRight, MessageCircle } from 'lucide-react'
 import { whatsappLink } from '@/lib/i18n/dictionaries'
 import { useLanguage } from '@/lib/i18n/provider'
-import { BeforeAfterSlider } from '@/components/before-after-slider'
 import { Reveal } from '@/components/reveal'
 
 export function Hero() {
   const { t } = useLanguage()
 
   return (
-    <section id="top" className="relative overflow-hidden">
+    <section id="top" className="relative min-h-[calc(100svh-64px)] overflow-hidden">
       {/* Kitchen background */}
       <img
         src="/images/homepage.jpg"
@@ -24,12 +23,13 @@ export function Hero() {
         className="absolute inset-0 bg-pine/55"
       />
 
-      <div className="relative z-10 mx-auto grid w-full max-w-6xl items-center gap-10 px-5 pb-14 pt-10 sm:px-8 lg:grid-cols-[1.05fr_1fr] lg:gap-14 lg:pb-24 lg:pt-16">
-        <div>
+      {/* Content */}
+      <div className="relative z-10 mx-auto flex min-h-[calc(100svh-64px)] w-full max-w-6xl items-center px-5 py-16 sm:px-8 lg:py-24">
+        <div className="max-w-2xl">
 
           {/* Main heading */}
           <Reveal delay={0.05}>
-            <h1 className="mt-6 max-w-2xl text-balance font-serif text-[2.9rem] font-bold uppercase leading-[0.94] tracking-[-0.045em] text-white sm:text-5xl lg:text-[4.65rem]">
+            <h1 className="max-w-2xl text-balance font-serif text-[2.9rem] font-bold uppercase leading-[0.94] tracking-[-0.045em] text-white sm:text-5xl lg:text-[4.65rem]">
               {t.hero.h1}
             </h1>
           </Reveal>
@@ -65,20 +65,6 @@ export function Hero() {
           </Reveal>
 
         </div>
-
-        {/* Before / After */}
-        <Reveal delay={0.15}>
-          <BeforeAfterSlider
-            priority
-            beforeSrc="/images/ben-before.jpeg"
-            afterSrc="/images/ben-after.jpeg"
-            beforeAlt="Dated kitchen fronts before interior wrapping"
-            afterAlt="The same kitchen after wrapping the fronts in interior film"
-            beforeLabel={t.hero.beforeLabel}
-            afterLabel={t.hero.afterLabel}
-            dragHint={t.hero.dragHint}
-          />
-        </Reveal>
       </div>
     </section>
   )
