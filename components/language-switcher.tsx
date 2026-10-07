@@ -6,11 +6,11 @@ import { cn } from '@/lib/utils'
 
 const languages: Record<
   Locale,
-  { label: string; flag: string }
+  { label: string; flag: string; name: string }
 > = {
-  nl: { label: 'NL', flag: '🇳🇱' },
-  en: { label: 'EN', flag: '🇬🇧' },
-  es: { label: 'ES', flag: '🇪🇸' },
+  nl: { label: 'NL', flag: '🇳🇱', name: 'Dutch' },
+  en: { label: 'EN', flag: '🇬🇧', name: 'English' },
+  es: { label: 'ES', flag: '🇪🇸', name: 'Spanish' },
 }
 
 export function LanguageSwitcher({ className }: { className?: string }) {
@@ -35,21 +35,24 @@ export function LanguageSwitcher({ className }: { className?: string }) {
             type="button"
             onClick={() => setLocale(l)}
             aria-pressed={active}
-            aria-label={language.label}
+            aria-label={`Switch to ${language.name}`}
             className={cn(
-              'inline-flex min-w-11 items-center justify-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold tracking-wide transition-colors outline-none focus-visible:ring-2 focus-visible:ring-brass',
+              'inline-flex min-w-9 items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold tracking-wide transition-colors outline-none focus-visible:ring-2 focus-visible:ring-brass',
               active
                 ? 'bg-pine text-paper'
                 : 'text-muted-foreground hover:text-ink',
             )}
           >
-            <span
-              aria-hidden="true"
-              className="text-[13px] leading-none"
-            >
-              {language.flag}
-            </span>
-            {language.label}
+            {active ? (
+              <span
+                aria-hidden="true"
+                className="text-[15px] leading-none"
+              >
+                {language.flag}
+              </span>
+            ) : (
+              language.label
+            )}
           </button>
         )
       })}
