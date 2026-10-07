@@ -14,11 +14,11 @@ const galleryMedia = [
     code: 'ZX160',
   },
   {
-    before: '/images/bernard-before.jpg',
-    after: '/images/bernard-after.jpg',
+    before: '/images/arch-before.jpg',
+    after: '/images/arch-after.jpg',
     aspectRatio: 'aspect-[5/4]',
-    colour: 'ARIUM',
-    code: 'W251',
+    colour: 'SYRA GOLD',
+    code: 'ME001',
   },
   {
     before: '/images/chantal-before.JPEG',
@@ -68,6 +68,13 @@ const galleryMedia = [
     aspectRatio: 'aspect-[5/4]',
     colour: 'CHALK',
     code: 'S141',
+  },
+  {
+    before: '/images/bernard-before.jpg',
+    after: '/images/bernard-after.jpg',
+    aspectRatio: 'aspect-[5/4]',
+    colour: 'ARIUM',
+    code: 'W251',
   },
 ]
 
