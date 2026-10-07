@@ -16,7 +16,7 @@ export function ProcessSection() {
 
   return (
     <section id="process" className="border-y border-border bg-[#8F8277] text-paper">
-      <div className="mx-auto w-full max-w-6xl px-5 pt-10 pb-20 sm:px-8 lg:pt-2 lg:pb-28">
+      <div className="mx-auto w-full max-w-6xl px-5 py-12 sm:py-16 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-16">
           <div>
             <Reveal>
@@ -60,9 +60,7 @@ export function ProcessSection() {
   key={i}
   className={`relative overflow-hidden rounded-3xl border border-paper/10 ${
     i % 3 === 0 ? 'aspect-[3/4]' : 'aspect-square'
-  } ${i === 0 ? '-translate-y-0' : ''} ${i === 1 ? 'translate-y-[85px]' : ''} ${
-    i === 3 ? '-translate-y-0' : ''
-  }`}
+  } ${i === 1 ? 'translate-y-[85px]' : ''} `}
 >
       <Image
         src={src || '/placeholder.svg'}
