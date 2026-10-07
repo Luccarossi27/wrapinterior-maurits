@@ -15,7 +15,7 @@ export function Hero() {
     >
       {/* Kitchen background */}
       <img
-        src="/images/homepage.jpeg"
+        src="/images/homepage.jpg"
         alt=""
         className="absolute inset-0 h-full w-full object-cover"
       />
