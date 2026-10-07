@@ -23,7 +23,7 @@ export function Hero() {
       {/* Responsive cinematic overlay */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent sm:bg-gradient-to-r sm:from-black/60 sm:via-black/20 sm:to-transparent"
+        className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 via-60% to-black/10 sm:bg-gradient-to-r sm:from-black/60 sm:via-black/20 sm:to-transparent"
       />
 
       {/* Content */}
@@ -32,7 +32,7 @@ export function Hero() {
 
           {/* Main heading */}
           <Reveal delay={0.05}>
-            <h1 className="max-w-3xl text-balance font-serif text-[3.2rem] font-bold uppercase leading-[0.9] tracking-[-0.05em] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)] sm:text-6xl lg:text-[5.4rem]">
+            <h1 className="max-w-3xl text-balance font-serif text-[3.2rem] font-bold uppercase leading-[0.9] tracking-[-0.05em] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)] sm:text-6xl lg:text-[5.4rem]">
               {t.hero.h1}
             </h1>
           </Reveal>
