@@ -30,9 +30,9 @@
   --color-brass: var(--brass);
   --color-sand: var(--sand);
 
-/* Typography */
---font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
---font-serif: var(--font-oswald), ui-sans-serif, system-ui, sans-serif;
+  /* Typography */
+  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-oswald), ui-sans-serif, system-ui, sans-serif;
 
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
@@ -103,8 +103,23 @@
   }
 }
 
+/* Cinematic Hero animation */
+@keyframes heroZoom {
+  from {
+    transform: scale(1.04);
+  }
+
+  to {
+    transform: scale(1.07);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .animate-\[heroZoom_14s_ease-out_forwards\] {
+    animation: none;
   }
 }
