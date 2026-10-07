@@ -87,11 +87,7 @@ type Dict = {
     sub: string
     locationLabel: string
     beforeAfter: string
-    items: {
-      title: string
-      location: string
-      alt: string
-    }[]
+    alt: string
   }
   materials: {
   eyebrow: string
@@ -335,48 +331,7 @@ gallery: {
   sub: 'Echte transformaties. Sleep de schuifregelaar om het verschil te zien.',
   locationLabel: 'Locatie',
   beforeAfter: 'Voor / na',
-  items: [
-    {
-      title: 'Ben',
-      location: 'Costa Blanca',
-      alt: 'Interieur vóór en na het wrappen',
-    },
-    {
-      title: 'Bernard',
-      location: 'Costa Blanca',
-      alt: 'Interieur vóór en na het wrappen',
-    },
-    {
-      title: 'Chantal',
-      location: 'Costa Blanca',
-      alt: 'Interieur vóór en na het wrappen',
-    },
-    {
-      title: 'Griffioen — Deuren 1',
-      location: 'Costa Blanca',
-      alt: 'Deuren vóór en na het wrappen',
-    },
-    {
-      title: 'Griffioen — Deuren 3',
-      location: 'Costa Blanca',
-      alt: 'Deuren vóór en na het wrappen',
-    },
-    {
-      title: 'Griffioen — Keuken',
-      location: 'Costa Blanca',
-      alt: 'Keuken vóór en na het wrappen',
-    },
-    {
-      title: 'Hans',
-      location: 'Costa Blanca',
-      alt: 'Interieur vóór en na het wrappen',
-    },
-    {
-      title: 'Minja',
-      location: 'Costa Blanca',
-      alt: 'Interieur vóór en na het wrappen',
-    },
-  ],
+  alt: 'Interieur vóór en na het wrappen',
 },
 materials: {
   eyebrow: 'Materialen',
@@ -688,48 +643,7 @@ gallery: {
   sub: 'Real transformations. Drag the slider to see the difference.',
   locationLabel: 'Location',
   beforeAfter: 'Before / after',
-  items: [
-    {
-      title: 'Ben',
-      location: 'Costa Blanca',
-      alt: 'Interior before and after wrapping',
-    },
-    {
-      title: 'Bernard',
-      location: 'Costa Blanca',
-      alt: 'Interior before and after wrapping',
-    },
-    {
-      title: 'Chantal',
-      location: 'Costa Blanca',
-      alt: 'Interior before and after wrapping',
-    },
-    {
-      title: 'Griffioen — Doors 1',
-      location: 'Costa Blanca',
-      alt: 'Doors before and after wrapping',
-    },
-    {
-      title: 'Griffioen — Doors 3',
-      location: 'Costa Blanca',
-      alt: 'Doors before and after wrapping',
-    },
-    {
-      title: 'Griffioen — Kitchen',
-      location: 'Costa Blanca',
-      alt: 'Kitchen before and after wrapping',
-    },
-    {
-      title: 'Hans',
-      location: 'Costa Blanca',
-      alt: 'Interior before and after wrapping',
-    },
-    {
-      title: 'Minja',
-      location: 'Costa Blanca',
-      alt: 'Interior before and after wrapping',
-    },
-  ],
+  alt: 'Interior before and after wrapping',
 },
 materials: {
   eyebrow: 'Materials',
@@ -1049,48 +963,7 @@ gallery: {
   sub: 'Transformaciones reales. Arrastra el deslizador para ver la diferencia.',
   locationLabel: 'Localidad',
   beforeAfter: 'Antes / después',
-  items: [
-    {
-      title: 'Ben',
-      location: 'Costa Blanca',
-      alt: 'Interior antes y después del vinilado',
-    },
-    {
-      title: 'Bernard',
-      location: 'Costa Blanca',
-      alt: 'Interior antes y después del vinilado',
-    },
-    {
-      title: 'Chantal',
-      location: 'Costa Blanca',
-      alt: 'Interior antes y después del vinilado',
-    },
-    {
-      title: 'Griffioen — Puertas 1',
-      location: 'Costa Blanca',
-      alt: 'Puertas antes y después del vinilado',
-    },
-    {
-      title: 'Griffioen — Puertas 3',
-      location: 'Costa Blanca',
-      alt: 'Puertas antes y después del vinilado',
-    },
-    {
-      title: 'Griffioen — Cocina',
-      location: 'Costa Blanca',
-      alt: 'Cocina antes y después del vinilado',
-    },
-    {
-      title: 'Hans',
-      location: 'Costa Blanca',
-      alt: 'Interior antes y después del vinilado',
-    },
-    {
-      title: 'Minja',
-      location: 'Costa Blanca',
-      alt: 'Interior antes y después del vinilado',
-    },
-  ],
+  alt: 'Interior antes y después del vinilado',
 },
 materials: {
   eyebrow: 'Materiales',
