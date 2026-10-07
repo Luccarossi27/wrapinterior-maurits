@@ -20,10 +20,10 @@ export function Hero() {
         className="absolute inset-0 h-full w-full object-cover object-center animate-[heroZoom_14s_ease-out_forwards]"
       />
 
-      {/* Responsive cinematic overlay */}
+      {/* Subtle cinematic overlay */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 via-55% to-transparent sm:bg-gradient-to-r sm:from-black/60 sm:via-black/20 sm:to-transparent"
+        className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/15 via-55% to-transparent sm:bg-gradient-to-r sm:from-black/45 sm:via-black/10 sm:to-transparent"
       />
 
       {/* Content */}
@@ -32,14 +32,14 @@ export function Hero() {
 
           {/* Main heading */}
           <Reveal delay={0.05}>
-            <h1 className="max-w-3xl text-balance font-serif text-[3.2rem] font-bold uppercase leading-[0.9] tracking-[-0.05em] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)] sm:text-6xl lg:text-[5.4rem]">
+            <h1 className="max-w-3xl text-balance font-serif text-[3.2rem] font-bold uppercase leading-[0.9] tracking-[-0.05em] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.5)] sm:text-6xl lg:text-[5.4rem]">
               {t.hero.h1}
             </h1>
           </Reveal>
 
           {/* Supporting copy */}
           <Reveal delay={0.1}>
-            <p className="mt-7 max-w-xl whitespace-pre-line text-pretty text-base leading-[1.65] text-white/95 sm:text-lg">
+            <p className="mt-7 max-w-xl whitespace-pre-line text-pretty text-base leading-[1.65] text-white/95 drop-shadow-[0_1px_8px_rgba(0,0,0,0.4)] sm:text-lg">
               {t.hero.sub}
             </p>
           </Reveal>
