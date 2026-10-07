@@ -17,7 +17,7 @@ export function Hero() {
       <img
         src="/images/homepage.jpg"
         alt=""
-        className="absolute inset-0 h-full w-full scale-[1.04] object-cover object-center animate-[heroZoom_14s_ease-out_forwards]"
+        className="absolute inset-0 h-full w-full object-cover object-center animate-[heroZoom_14s_ease-out_forwards]"
       />
 
       {/* Cinematic overlay */}
