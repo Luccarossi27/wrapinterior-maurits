@@ -32,16 +32,16 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-pine">
-      <div className="relative mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5 py-1.5 sm:px-8">
+      <div className="mx-auto grid w-full max-w-6xl grid-cols-[1fr_auto_1fr] items-center gap-4 px-5 py-1.5 sm:px-8">
         {/* Logo */}
-        <div className="shrink-0">
+        <div className="justify-self-start">
           <Logo />
         </div>
 
-        {/* Desktop navigation — centred to the full header */}
+        {/* Desktop navigation */}
         <nav
           aria-label={t.a11y.primaryNav}
-          className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-7 lg:flex"
+          className="hidden items-center justify-center gap-7 lg:flex"
         >
           {links.map((link) => (
             <a
@@ -55,7 +55,7 @@ export function SiteHeader() {
         </nav>
 
         {/* Right controls */}
-        <div className="ml-auto flex shrink-0 items-center gap-2">
+        <div className="flex items-center justify-self-end gap-2">
           <LanguageSwitcher />
 
           <a
@@ -70,7 +70,6 @@ export function SiteHeader() {
             </span>
           </a>
 
-          {/* Mobile menu button */}
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -83,7 +82,6 @@ export function SiteHeader() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       <div
         className={cn(
           'fixed inset-0 top-[64px] z-40 origin-top overflow-y-auto bg-pine transition-all duration-300 lg:hidden',
