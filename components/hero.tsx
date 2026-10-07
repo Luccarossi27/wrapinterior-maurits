@@ -11,35 +11,41 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative h-[520px] overflow-hidden sm:h-[560px] lg:h-[600px]"
+      className="relative h-[560px] overflow-hidden sm:h-[620px] lg:h-[680px]"
     >
       {/* Kitchen background */}
       <img
         src="/images/homepage.jpg"
         alt=""
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full scale-[1.04] object-cover object-center animate-[heroZoom_14s_ease-out_forwards]"
       />
 
-      {/* Subtle gradient for text readability */}
+      {/* Cinematic overlay */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/20 to-transparent"
+        className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent"
+      />
+
+      {/* Subtle bottom fade */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/20 to-transparent"
       />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex h-full w-full max-w-6xl items-center px-5 py-16 sm:px-8 lg:py-20">
-        <div className="max-w-2xl">
+      <div className="relative z-10 mx-auto flex h-full w-full max-w-6xl items-end px-5 pb-16 sm:px-8 sm:pb-20 lg:pb-24">
+        <div className="max-w-3xl">
 
           {/* Main heading */}
           <Reveal delay={0.05}>
-            <h1 className="max-w-2xl text-balance font-serif text-[2.9rem] font-bold uppercase leading-[0.94] tracking-[-0.045em] text-white sm:text-5xl lg:text-[4.65rem]">
+            <h1 className="max-w-3xl text-balance font-serif text-[3.2rem] font-bold uppercase leading-[0.9] tracking-[-0.05em] text-white sm:text-6xl lg:text-[5.4rem]">
               {t.hero.h1}
             </h1>
           </Reveal>
 
           {/* Supporting copy */}
           <Reveal delay={0.1}>
-            <p className="mt-6 max-w-xl whitespace-pre-line text-pretty text-base leading-[1.7] text-white/90 sm:text-lg">
+            <p className="mt-7 max-w-xl whitespace-pre-line text-pretty text-base leading-[1.65] text-white/85 sm:text-lg">
               {t.hero.sub}
             </p>
           </Reveal>
@@ -51,7 +57,7 @@ export function Hero() {
                 href={whatsappLink(t.contactPage.whatsappMessage)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-base font-semibold text-pine shadow-lg transition-transform hover:-translate-y-0.5 hover:bg-paper"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-base font-semibold text-pine shadow-xl transition-all hover:-translate-y-0.5 hover:bg-paper"
               >
                 <MessageCircle className="size-5" />
                 {t.cta.sendPhotos}
@@ -59,7 +65,7 @@ export function Hero() {
 
               <a
                 href="/portfolio"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/60 bg-white/10 px-6 py-3.5 text-base font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-pine"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/50 px-6 py-3.5 text-base font-semibold text-white transition-all hover:border-white hover:bg-white/10"
               >
                 {t.cta.viewProjects}
                 <ArrowRight className="size-4" />
