@@ -4,7 +4,14 @@ import { locales, type Locale } from '@/lib/i18n/dictionaries'
 import { useLanguage } from '@/lib/i18n/provider'
 import { cn } from '@/lib/utils'
 
-const labels: Record<Locale, string> = { nl: 'NL', en: 'EN', es: 'ES' }
+const languages: Record<
+  Locale,
+  { label: string; flag: string }
+> = {
+  nl: { label: 'NL', flag: '🇳🇱' },
+  en: { label: 'EN', flag: '🇬🇧' },
+  es: { label: 'ES', flag: '🇪🇸' },
+}
 
 export function LanguageSwitcher({ className }: { className?: string }) {
   const { locale, setLocale, t } = useLanguage()
@@ -20,20 +27,29 @@ export function LanguageSwitcher({ className }: { className?: string }) {
     >
       {locales.map((l) => {
         const active = l === locale
+        const language = languages[l]
+
         return (
           <button
             key={l}
             type="button"
             onClick={() => setLocale(l)}
             aria-pressed={active}
+            aria-label={language.label}
             className={cn(
-              'min-w-9 rounded-full px-2.5 py-1 text-xs font-semibold tracking-wide transition-colors outline-none focus-visible:ring-2 focus-visible:ring-brass',
+              'inline-flex min-w-11 items-center justify-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold tracking-wide transition-colors outline-none focus-visible:ring-2 focus-visible:ring-brass',
               active
                 ? 'bg-pine text-paper'
                 : 'text-muted-foreground hover:text-ink',
             )}
           >
-            {labels[l]}
+            <span
+              aria-hidden="true"
+              className="text-[13px] leading-none"
+            >
+              {language.flag}
+            </span>
+            {language.label}
           </button>
         )
       })}
