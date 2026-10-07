@@ -23,7 +23,7 @@ export function Hero() {
       {/* Responsive cinematic overlay */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 via-60% to-black/10 sm:bg-gradient-to-r sm:from-black/60 sm:via-black/20 sm:to-transparent"
+        className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 via-55% to-transparent sm:bg-gradient-to-r sm:from-black/60 sm:via-black/20 sm:to-transparent"
       />
 
       {/* Content */}
