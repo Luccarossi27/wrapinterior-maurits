@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative h-[560px] overflow-hidden sm:h-[620px] lg:h-[680px]"
+      className="relative h-[640px] overflow-hidden sm:h-[620px] lg:h-[680px]"
     >
       {/* Kitchen background */}
       <img
@@ -27,7 +27,7 @@ export function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex h-full w-full max-w-6xl items-end px-5 pb-16 sm:px-8 sm:pb-20 lg:pb-24">
+      <div className="relative z-10 mx-auto flex h-full w-full max-w-6xl items-start px-5 pt-20 pb-16 sm:items-end sm:px-8 sm:pt-0 sm:pb-20 lg:pb-24">
         <div className="w-full max-w-3xl rounded-2xl bg-black/20 p-5 backdrop-blur-[2px] sm:bg-transparent sm:p-0 sm:backdrop-blur-none">
 
           {/* Main heading */}
