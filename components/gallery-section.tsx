@@ -102,10 +102,8 @@ export function GallerySection() {
 
         {/* GALLERY GRID */}
         <div className="mt-12 grid gap-x-10 gap-y-14 lg:mt-16 lg:grid-cols-2 lg:gap-x-14 lg:gap-y-20">
-          {t.gallery.items.map((item, i) => {
+          {galleryMedia.map((media, i) => {
             const media = galleryMedia[i]
-
-            if (!media) return null
 
             return (
               <Reveal key={item.title} delay={(i % 2) * 0.06}>
@@ -122,8 +120,8 @@ export function GallerySection() {
                     <BeforeAfterSlider
                       beforeSrc={media.before}
                       afterSrc={media.after}
-                      beforeAlt={item.alt}
-                      afterAlt={item.alt}
+                      beforeAlt={t.gallery.alt}
+                      afterAlt={t.gallery.alt}
                       beforeLabel={t.hero.beforeLabel}
                       afterLabel={t.hero.afterLabel}
                       dragHint={t.hero.dragHint}
