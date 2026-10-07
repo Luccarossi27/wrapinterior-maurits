@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { MessageCircle, Menu, X } from 'lucide-react'
-import { contact, whatsappLink } from '@/lib/i18n/dictionaries'
+import { whatsappLink } from '@/lib/i18n/dictionaries'
 import { useLanguage } from '@/lib/i18n/provider'
 import { Logo } from '@/components/logo'
 import { LanguageSwitcher } from '@/components/language-switcher'
@@ -13,14 +13,14 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false)
 
   const links = [
-  { href: '/portfolio', label: t.nav.portfolio },
-  { href: '/materials', label: t.nav.materials },
-  { href: '/process', label: t.nav.process },
-  { href: '/pricing', label: t.nav.pricing },
-  { href: '/reviews', label: t.nav.reviews },
-  { href: '/faq', label: t.nav.faq },
-  { href: '/contact', label: t.nav.contact },
-]
+    { href: '/portfolio', label: t.nav.portfolio },
+    { href: '/materials', label: t.nav.materials },
+    { href: '/process', label: t.nav.process },
+    { href: '/pricing', label: t.nav.pricing },
+    { href: '/reviews', label: t.nav.reviews },
+    { href: '/faq', label: t.nav.faq },
+    { href: '/contact', label: t.nav.contact },
+  ]
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : ''
@@ -32,35 +32,42 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-pine">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5 py-1.5 sm:px-8">
-        <Logo />
+      <div className="mx-auto grid w-full max-w-6xl grid-cols-[1fr_auto_1fr] items-center gap-4 px-5 py-1.5 sm:px-8">
+        {/* Logo */}
+        <div className="justify-self-start">
+          <Logo />
+        </div>
 
+        {/* Desktop navigation */}
         <nav
           aria-label={t.a11y.primaryNav}
-          className="hidden items-center gap-7 lg:flex"
+          className="hidden items-center justify-center gap-7 lg:flex"
         >
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="relative text-sm font-medium text-white/90 transition-colors hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-brass after:transition-all hover:after:w-full"
+              className="relative whitespace-nowrap text-sm font-medium text-white/90 transition-colors hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-brass after:transition-all hover:after:w-full"
             >
               {link.label}
             </a>
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
+        {/* Right controls */}
+        <div className="flex items-center justify-self-end gap-2">
           <LanguageSwitcher />
 
           <a
             href={whatsappLink(t.contactPage.whatsappMessage)}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white/20 md:inline-flex"
+            className="hidden h-9 w-[172px] items-center justify-center gap-2 rounded-full bg-white/10 px-4 text-sm font-semibold text-white shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-white/20 md:inline-flex"
           >
-            <MessageCircle className="size-4" />
-            {t.cta.whatsappQuote}
+            <MessageCircle className="size-4 shrink-0" />
+            <span className="whitespace-nowrap">
+              {t.cta.whatsappQuote}
+            </span>
           </a>
 
           <button
