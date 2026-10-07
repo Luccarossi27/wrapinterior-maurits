@@ -768,7 +768,7 @@ materials: {
     pricing: {
   heading: 'Transparent pricing',
   sub: 'Guide prices for kitchen wrapping, VAT included. For doors and other interior surfaces, contact us for a tailored quote.',
-  popularLabel: 'Most chosen',
+  popularLabel: 'Most popular',
   vat: 'incl. VAT',
   cards: [
     {
