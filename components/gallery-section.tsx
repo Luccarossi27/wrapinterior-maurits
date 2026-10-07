@@ -102,11 +102,11 @@ export function GallerySection() {
 
         {/* GALLERY GRID */}
         <div className="mt-12 grid gap-x-10 gap-y-14 lg:mt-16 lg:grid-cols-2 lg:gap-x-14 lg:gap-y-20">
-          {galleryMedia.map((media, i) => {
-            const media = galleryMedia[i]
-
-            return (
-              <Reveal key={item.title} delay={(i % 2) * 0.06}>
+          {galleryMedia.map((media, i) => (
+  <Reveal
+    key={`${media.colour}-${i}`}
+    delay={(i % 2) * 0.06}
+  >
                 <article className="group">
 
                   <div
