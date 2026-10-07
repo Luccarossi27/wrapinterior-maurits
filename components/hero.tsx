@@ -26,15 +26,9 @@ export function Hero() {
         className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent sm:bg-gradient-to-r sm:from-black/60 sm:via-black/20 sm:to-transparent"
       />
 
-      {/* Subtle bottom fade */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/20 to-transparent"
-      />
-
       {/* Content */}
       <div className="relative z-10 mx-auto flex h-full w-full max-w-6xl items-end px-5 pb-16 sm:px-8 sm:pb-20 lg:pb-24">
-        <div className="max-w-3xl rounded-2xl bg-black/20 p-5 -ml-5 backdrop-blur-[2px] sm:bg-transparent sm:p-0 sm:backdrop-blur-none">
+        <div className="w-full max-w-3xl rounded-2xl bg-black/20 p-5 backdrop-blur-[2px] sm:bg-transparent sm:p-0 sm:backdrop-blur-none">
 
           {/* Main heading */}
           <Reveal delay={0.05}>
