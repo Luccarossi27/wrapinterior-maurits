@@ -1415,5 +1415,32 @@ export const materials: Material[] = [
     image:
       'https://www.resimdo.es/shop/media/image/NS428-Uebersicht-Walltile-3000x2250_72dpi.jpg',
   },
-  
+{
+    id: 'papilo-vella-lux-sc017',
+    name: 'Papilo Vella Lux',
+    code: 'SC017',
+    category: 'Solid Colour',
+    colour: ['White'],
+    image:
+      'https://www.resimdo.es/shop/media/image/SC017-Uebersicht-Walltile-3000x2250.jpg',
+  },
+{
+    id: 'arium-w251',
+    name: 'Arium',
+    code: 'W251',
+    category: 'Wood',
+    colour: ['Brown'],
+    image:
+      'https://www.resimdo.es/shop/media/image/W251-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+{
+    id: 'agri-w251',
+    name: 'Agri',
+    code: 'W945',
+    category: 'Wood',
+    colour: ['Brown'],
+    image:
+      'https://www.resimdo.es/shop/media/image/W945-Uebersicht-Walltile-3000x2250_72dpi.jpg',
+  },
+
 ]
