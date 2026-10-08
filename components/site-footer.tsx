@@ -85,7 +85,7 @@ export function SiteFooter() {
     <span>
       Avinguda Jaume I, 23b
       <br />
-      03779 Setla, Alicante
+      03779 Els Poblets, Alicante
     </span>
   </a>
 </li>
