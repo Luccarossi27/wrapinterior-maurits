@@ -22,9 +22,9 @@ export function Hero() {
 
       {/* Subtle cinematic overlay */}
       <div
-        aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/15 via-55% to-transparent sm:bg-gradient-to-r sm:from-black/45 sm:via-black/10 sm:to-transparent"
-      />
+  aria-hidden="true"
+  className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-transparent sm:bg-gradient-to-r sm:from-black/45 sm:via-black/10 sm:to-transparent"
+/>
 
       {/* Content */}
       <div className="relative z-10 mx-auto flex h-full w-full max-w-6xl items-start px-5 pt-20 pb-16 sm:px-8 sm:pt-20 lg:pt-20">
