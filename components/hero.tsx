@@ -10,9 +10,9 @@ export function Hero() {
 
   return (
     <section
-      id="top"
-      className="relative h-[640px] overflow-hidden sm:h-[620px] lg:h-[680px]"
-    >
+  id="top"
+  className="relative h-[760px] overflow-hidden sm:h-[620px] lg:h-[680px]"
+>
       {/* Kitchen background */}
       <img
         src="/images/homepage.jpg"
