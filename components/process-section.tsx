@@ -5,10 +5,10 @@ import { useLanguage } from '@/lib/i18n/provider'
 import { Reveal } from '@/components/reveal'
 
 const stepImages = [
-  '/images/process1.jpeg',
-  '/images/process4.png',
+  '/images/process6.JPEG',
   '/images/process5.png',
   '/images/process2.jpeg',
+  '/images/process1.jpeg',
 ]
 
 export function ProcessSection() {
