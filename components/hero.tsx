@@ -27,7 +27,7 @@ export function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex h-full w-full max-w-6xl items-start px-5 pt-20 pb-16 sm:px-8 sm:pt-24 lg:pt-24">
+      <div className="relative z-10 mx-auto flex h-full w-full max-w-6xl items-start px-5 pt-20 pb-16 sm:px-8 sm:pt-20 lg:pt-20">
         <div className="w-full max-w-3xl">
 
           {/* Main heading */}
