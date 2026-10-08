@@ -8,7 +8,7 @@ export const contact = {
   phoneDisplay: '+34 675 153 105',
   phoneHref: '+34675153105',
   email: 'info@wrap-interior.com',
-  city: 'Setla',
+  city: 'Els Poblets',
   region: 'Alicante',
   address: 'Avinguda Jaume I, 23b',
   postcode: '03779',
@@ -508,11 +508,11 @@ googleReviews: 'Google Reviews',
 
   location: {
     eyebrow: 'ONZE WERKPLAATS',
-    heading: 'Bezoek ons in Setla.',
-    sub: 'Onze werkplaats bevindt zich in Setla, aan de Costa Blanca.',
+    heading: 'Bezoek ons in op afspraak Els Poblets.',
+    sub: 'Onze werkplaats is in Els Poblets, tussen Dénia en Ondara.',
     addressLabel: 'Adres',
     directions: 'Plan je route',
-    mapTitle: 'Wrap Interior workshop in Setla',
+    mapTitle: 'Werkplaats van Wrap Interior in Els Poblets',
   },
 
   bottomCta: {
@@ -828,11 +828,11 @@ googleReviews: 'Google Reviews',
 
   location: {
     eyebrow: 'OUR WORKSHOP',
-    heading: 'Visit us in Setla.',
-    sub: 'Our workshop is based in Setla, on the Costa Blanca.',
+    heading: 'Visit us by appointment only in Els Poblets.',
+    sub: 'Our workshop is located in Els Poblets, between Dénia and Ondara.',
     addressLabel: 'Address',
     directions: 'Get directions',
-    mapTitle: 'Wrap Interior workshop in Setla',
+    mapTitle: 'Wrap Interior workshop in Els Poblets',
   },
 
   bottomCta: {
@@ -1146,11 +1146,11 @@ googleReviews: 'Reseñas de Google',
 
   location: {
     eyebrow: 'NUESTRO TALLER',
-    heading: 'Visítanos en Setla.',
-    sub: 'Nuestro taller está en Setla, en la Costa Blanca.',
+    heading: 'Visítanos solo con cita previa en Els Poblets.',
+    sub: 'Nuestro taller está situado en Els Poblets, entre Dénia y Ondara.',
     addressLabel: 'Dirección',
     directions: 'Cómo llegar',
-    mapTitle: 'Taller de Wrap Interior en Setla',
+    mapTitle: 'Taller de Wrap Interior en Els Poblets',
   },
 
   bottomCta: {
