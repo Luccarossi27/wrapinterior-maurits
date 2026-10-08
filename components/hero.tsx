@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <section
   id="top"
-  className="relative h-[900px] overflow-hidden sm:h-[620px] lg:h-[680px]"
+  className="relative h-[760px] overflow-hidden sm:h-[620px] lg:h-[680px]"
 >
       {/* Kitchen background */}
       <img
