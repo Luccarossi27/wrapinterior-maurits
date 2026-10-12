@@ -251,7 +251,7 @@ const areas = 'Jávea · Moraira · Calpe · Benissa · Altea · Dénia'
 export const dictionaries: Record<Locale, Dict> = {
   nl: {
     meta: {
-      title: 'Wrap Interior — Interieurfolie zonder verbouwen | Jávea & Costa Blanca',
+      title: 'Wrap Interior | Interieur Wrappen',
       description:
         'Premium interieurwrapping voor keukens, meubels, deuren en badkamermeubels in Jávea, Moraira, Calpe en de Costa Blanca. Strakke afwerking, meestal binnen enkele dagen, zonder hak- of breekwerk.',
     },
@@ -768,7 +768,7 @@ googleReviews: 'Google Reviews',
 
   en: {
     meta: {
-      title: 'Wrap Interior — Interior wrapping without renovation | Jávea & Costa Blanca',
+      title: 'Wrap Interior | Premium Interior Wrapping',
       description:
         'Premium interior wrapping for kitchens, furniture, doors and bathroom cabinets in Jávea, Moraira, Calpe and the Costa Blanca. Crisp finish, usually within a few days, with no demolition.',
     },
@@ -1296,7 +1296,7 @@ googleReviews: 'Google Reviews',
 
   es: {
     meta: {
-      title: 'Wrap Interior — Vinilado de interiores sin obras | Jávea y Costa Blanca',
+      title: 'Wrap Interior | Vinilado de Interiores',
       description:
         'Vinilado premium de interiores para cocinas, muebles, puertas y muebles de baño en Jávea, Moraira, Calpe y la Costa Blanca. Acabado impecable, normalmente en pocos días y sin obras.',
     },
