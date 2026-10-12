@@ -603,7 +603,7 @@ googleReviews: 'Google Reviews',
       {
         title: 'Intellectueel eigendom',
         paragraphs: [
-          'De inhoud van deze website, waaronder teksten, foto's, afbeeldingen, grafische elementen, huisstijl en logo's, kan beschermd zijn door intellectuele-eigendomsrechten. Deze rechten behoren toe aan de respectieve rechthebbenden. Materialen van derden worden weergegeven of gebruikt in overeenstemming met de toepasselijke toestemmingen en licenties. Voor het verveelvoudigen of hergebruiken van beschermd materiaal is de vereiste toestemming nodig, tenzij een wettelijke uitzondering van toepassing is.',
+          "De inhoud van deze website, waaronder teksten, foto's, afbeeldingen, grafische elementen, huisstijl en logo's, kan beschermd zijn door intellectuele-eigendomsrechten. Deze rechten behoren toe aan de respectieve rechthebbenden. Materialen van derden worden weergegeven of gebruikt in overeenstemming met de toepasselijke toestemmingen en licenties. Voor het verveelvoudigen of hergebruiken van beschermd materiaal is de vereiste toestemming nodig, tenzij een wettelijke uitzondering van toepassing is.",
           'Je mag de website bekijken en gebruiken voor persoonlijke en informatieve doeleinden. Het zonder voorafgaande toestemming kopiëren, verspreiden, wijzigen of commercieel gebruiken van inhoud van deze website is niet toegestaan.',
         ],
       },
