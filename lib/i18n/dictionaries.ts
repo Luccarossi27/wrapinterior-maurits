@@ -603,7 +603,7 @@ googleReviews: 'Google Reviews',
       {
         title: 'Intellectueel eigendom',
         paragraphs: [
-          'Tenzij anders vermeld, zijn de inhoud van deze website, waaronder teksten, foto’s, afbeeldingen, huisstijl, logo’s en ander oorspronkelijk materiaal, eigendom van Wrap Interior of worden deze met toestemming gebruikt.',
+          'De inhoud van deze website, waaronder teksten, foto's, afbeeldingen, grafische elementen, huisstijl en logo's, kan beschermd zijn door intellectuele-eigendomsrechten. Deze rechten behoren toe aan de respectieve rechthebbenden. Materialen van derden worden weergegeven of gebruikt in overeenstemming met de toepasselijke toestemmingen en licenties. Voor het verveelvoudigen of hergebruiken van beschermd materiaal is de vereiste toestemming nodig, tenzij een wettelijke uitzondering van toepassing is.',
           'Je mag de website bekijken en gebruiken voor persoonlijke en informatieve doeleinden. Het zonder voorafgaande toestemming kopiëren, verspreiden, wijzigen of commercieel gebruiken van inhoud van deze website is niet toegestaan.',
         ],
       },
@@ -1131,7 +1131,7 @@ googleReviews: 'Google Reviews',
       {
         title: 'Intellectual property',
         paragraphs: [
-          'Unless otherwise stated, the content of this website, including text, photographs, graphics, branding, logos and other original material, belongs to Wrap Interior or is used with permission.',
+          'Website content, including text, photographs, graphics, branding and logos, may be protected by intellectual property rights. Such rights belong to their respective owners. Third-party materials are reproduced or displayed subject to the applicable permissions and licences. Reproduction or reuse of protected material requires the relevant authorisation, unless an exception under applicable law applies.',
           'You may view and use the website for personal and informational purposes. Reproduction, distribution, modification or commercial use of website content without prior permission is not permitted.',
         ],
       },
@@ -1654,7 +1654,7 @@ googleReviews: 'Reseñas de Google',
       {
         title: 'Propiedad intelectual',
         paragraphs: [
-          'Salvo que se indique lo contrario, los contenidos de este sitio web, incluidos textos, fotografías, imágenes, identidad visual, logotipos y demás material original, pertenecen a Wrap Interior o se utilizan con autorización.',
+          'Los contenidos de este sitio web, incluidos los textos, las fotografías, las imágenes, los elementos gráficos, la identidad visual y los logotipos, pueden estar protegidos por derechos de propiedad intelectual. Dichos derechos pertenecen a sus respectivos titulares. Los materiales de terceros se reproducen o muestran de conformidad con las autorizaciones y licencias aplicables. La reproducción o reutilización de material protegido requiere la autorización correspondiente, salvo que resulte aplicable una excepción legal.',
           'Puedes consultar y utilizar el sitio web con fines personales e informativos. No está permitida la reproducción, distribución, modificación o utilización comercial de los contenidos del sitio sin autorización previa.',
         ],
       },
