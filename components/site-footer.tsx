@@ -1,6 +1,7 @@
 'use client'
 
 import { Mail, MapPin, Phone } from 'lucide-react'
+import Link from 'next/link'
 import { contact } from '@/lib/i18n/dictionaries'
 import { useLanguage } from '@/lib/i18n/provider'
 import { Logo } from '@/components/logo'
@@ -10,22 +11,26 @@ export function SiteFooter() {
   const { t } = useLanguage()
   const year = new Date().getFullYear()
 
+  const mapQuery = encodeURIComponent(
+    `${contact.address}, ${contact.postcode} ${contact.city}, ${contact.province}, Spain`,
+  )
+
   return (
     <footer className="bg-pine text-paper">
       <div className="mx-auto w-full max-w-6xl px-5 py-10 sm:px-8 sm:py-12">
         <div className="grid gap-8 md:grid-cols-[1.4fr_1fr_1fr] md:gap-10">
           {/* Brand */}
           <div className="flex flex-col items-center text-center">
-  <Logo />
+            <Logo />
 
-  <p className="mt-3 max-w-xs font-serif text-sm font-medium leading-snug text-paper/80">
-    {t.footer.tagline}
-  </p>
+            <p className="mt-3 max-w-xs font-serif text-sm font-medium leading-snug text-paper/80">
+              {t.footer.tagline}
+            </p>
 
-  <div className="mt-5">
-    <LanguageSwitcher />
-  </div>
-</div>
+            <div className="mt-5">
+              <LanguageSwitcher />
+            </div>
+          </div>
 
           {/* Service area */}
           <div>
@@ -75,30 +80,60 @@ export function SiteFooter() {
               </li>
 
               <li>
-  <a
-    href="https://www.google.com/maps/search/?api=1&query=Avinguda+Jaume+I%2C+23b%2C+03779+Setla%2C+Alicante"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex gap-2.5 text-paper/60 transition-colors hover:text-paper"
-  >
-    <MapPin className="mt-0.5 size-4 shrink-0 text-brass" />
-    <span>
-      Avinguda Jaume I, 23b
-      <br />
-      03779 Els Poblets, Alicante
-    </span>
-  </a>
-</li>
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-2.5 text-paper/60 transition-colors hover:text-paper"
+                >
+                  <MapPin className="mt-0.5 size-4 shrink-0 text-brass" />
+
+                  <span>
+                    {contact.address}
+                    <br />
+                    {contact.postcode} {contact.city}, {contact.province}
+                  </span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-8 flex flex-col gap-2 border-t border-white/10 pt-5 text-xs text-paper/45 sm:flex-row sm:items-center sm:justify-between">
+        {/* Legal / copyright */}
+        <div className="mt-8 flex flex-col gap-3 border-t border-white/10 pt-5 text-xs text-paper/45 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            &copy; {year} Wrap Interior. {t.footer.rights}
+            &copy; {year} Wrap Interior
           </p>
 
-          <p>{t.footer.legal}</p>
+          <nav
+            aria-label="Legal"
+            className="flex flex-wrap items-center gap-x-2.5 gap-y-1"
+          >
+            <Link
+              href="/legal"
+              className="transition-colors hover:text-paper"
+            >
+              {t.footer.legalNotice}
+            </Link>
+
+            <span aria-hidden="true">·</span>
+
+            <Link
+              href="/privacy"
+              className="transition-colors hover:text-paper"
+            >
+              {t.footer.privacy}
+            </Link>
+
+            <span aria-hidden="true">·</span>
+
+            <Link
+              href="/cookies"
+              className="transition-colors hover:text-paper"
+            >
+              {t.footer.cookies}
+            </Link>
+          </nav>
         </div>
       </div>
 
