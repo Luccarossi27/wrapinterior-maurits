@@ -422,6 +422,12 @@ googleReviews: 'Google Reviews',
     },
     {
       quote:
+        'Maurits werkt netjes, snel en het resultaat is goed! De communicatie is goed en het werken met Maurits is betrouwbaar. Hij is erg behulpzaam en kundig! Ik kan regelmatig bij hem terecht.',
+      name: 'Chantal Dijkhuizen',
+      rating: 5,
+    },
+    {
+      quote:
         'He tenido muy buena experiencia con Maurits. Le pedimos que nos buscara y pusiera cortinas de lamelas y enrollables en varias habitaciones y el resultado fue perfecto. A raíz de eso, le pedimos que también nos pidiese e instalase una persiana para una puerta y nos consiguió un modelo que además tiene mando a distancia. Estamos muy contentos con la calidad de su trabajo, la prioridad y rapidez que pone en sus proyectos y, cómo no, el precio comedido. Desde ese momento hemos decidido que es nuestro punto de contacto para nuestras reformas y actualizaciones y ya van varias. Espero que en el futuro pueda mantener la dedicación que ahora mismo tiene.',
       translatedQuote:
         'Ik heb een zeer goede ervaring gehad met Maurits. We vroegen hem om lamellen- en rolgordijnen voor verschillende kamers te zoeken en te plaatsen en het resultaat was perfect. Daarna vroegen we hem ook om een rolluik voor een deur te zoeken en te installeren, en hij vond een model dat bovendien met een afstandsbediening werkt. We zijn erg tevreden over de kwaliteit van zijn werk, de prioriteit en snelheid waarmee hij zijn projecten uitvoert en natuurlijk de redelijke prijs. Sindsdien hebben we besloten dat hij ons aanspreekpunt is voor onze verbouwingen en updates, en dat zijn er inmiddels meerdere. Ik hoop dat hij deze toewijding in de toekomst kan behouden.',
@@ -745,6 +751,14 @@ googleReviews: 'Google Reviews',
       translatedQuote:
         "I’m absolutely delighted with Maurits’s work. I asked him to transform the countertop at my beauty salon using interior wrapping film, and the result is stunning! It went from a dull grey to an elegant gold finish that perfectly complements Onix’s look and feel. The work was clean, the finish is flawless, and Maurits was professional throughout. On top of that, it’s a much more affordable option than replacing the furniture. 100% recommended! ⭐⭐⭐⭐⭐",
       name: 'Oana Onix',
+      rating: 5,
+    },
+    {
+      quote:
+        'Maurits werkt netjes, snel en het resultaat is goed! De communicatie is goed en het werken met Maurits is betrouwbaar. Hij is erg behulpzaam en kundig! Ik kan regelmatig bij hem terecht.',
+      name: 'Chantal Dijkhuizen',
+      translatedQuote: 
+        "Maurits works neatly and efficiently, and the results are excellent! Communication is great, and Maurits is reliable and trustworthy to work with. He’s very helpful and knowledgeable, and I can always count on him when I need him.", 
       rating: 5,
     },
     {
@@ -1079,6 +1093,14 @@ googleReviews: 'Reseñas de Google',
       quote:
         'Estoy encantada con el trabajo de Maurits. Le pedí cambiar el color del mostrador de mi centro de estética con vinilo y el resultado ha sido espectacular: pasó de un gris apagado a un tono dorado elegante que encaja perfectamente con la imagen de Onix. Trabajo limpio, acabados impecables y muy profesional en todo momento. Además, es una opción mucho más económica que cambiar el mueble. ¡100% recomendable! ⭐⭐⭐⭐⭐',
       name: 'Oana Onix',
+      rating: 5,
+    },
+    {
+      quote:
+        'Maurits werkt netjes, snel en het resultaat is goed! De communicatie is goed en het werken met Maurits is betrouwbaar. Hij is erg behulpzaam en kundig! Ik kan regelmatig bij hem terecht.',
+      name: 'Chantal Dijkhuizen',
+      translatedQuote: 
+        "¡Maurits trabaja de forma limpia y eficiente, y el resultado es excelente! La comunicación es muy buena y trabajar con él es una garantía de confianza. Es muy atento, servicial y profesional, y siempre puedo contar con él cuando lo necesito.", 
       rating: 5,
     },
     {
