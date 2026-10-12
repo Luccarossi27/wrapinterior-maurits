@@ -1,6 +1,6 @@
 'use client'
 
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { Mail, MapPin, Phone, Instagram } from 'lucide-react'
 import Link from 'next/link'
 import { contact } from '@/lib/i18n/dictionaries'
 import { useLanguage } from '@/lib/i18n/provider'
@@ -28,8 +28,19 @@ export function SiteFooter() {
             </p>
 
             <div className="mt-5">
-              <LanguageSwitcher />
-            </div>
+  <LanguageSwitcher />
+</div>
+
+<a
+  href="https://www.instagram.com/wrapinterior.costablanca/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Follow Wrap Interior on Instagram"
+  className="mt-5 inline-flex items-center gap-2 text-sm text-paper/70 transition-colors hover:text-paper"
+>
+  <Instagram className="size-5 shrink-0 text-brass" strokeWidth={1.8} />
+  <span>@wrapinterior.costablanca</span>
+</a>
           </div>
 
           {/* Service area */}
