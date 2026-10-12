@@ -471,7 +471,7 @@ googleReviews: 'Google Reviews',
     },
     {
       q: 'Bieden jullie garantie?',
-      a: 'Wij bieden 5 jaar garantie op materiaal- en montagefouten van de door ons aangebrachte interieurfolie. Schade door verkeerd gebruik of onderhoud, krassen, stoten, scherpe voorwerpen of direct contact met hete voorwerpen valt buiten de garantie.',
+      a: 'Wij bieden 5 jaar garantie op materiaal- en montagefouten van de door ons aangebrachte interieurfolie. Schade door verkeerd gebruik of onderhoud, krassen, stoten, scherpe voorwerpen of direct contact met hete voorwerpen valt buiten de garantie. Deze garantie doet geen afbreuk aan de wettelijke rechten van de consument.',
     },
     {
       q: 'Moet ik mijn meubels of keuken zelf demonteren?',
@@ -795,7 +795,7 @@ googleReviews: 'Google Reviews',
     },
     {
       q: 'Do you offer a warranty?',
-      a: 'We provide a 5-year warranty covering material defects and installation faults in the interior film we apply. Damage caused by improper use or cleaning, scratches, impacts, sharp objects or direct contact with hot items is not covered.',
+      a: 'We provide a 5-year warranty covering material defects and installation faults in the interior film we apply. Damage caused by improper use or cleaning, scratches, impacts, sharp objects or direct contact with hot items is not covered. This warranty does not affect the consumer's statutory rights.',
     },
 
     {
