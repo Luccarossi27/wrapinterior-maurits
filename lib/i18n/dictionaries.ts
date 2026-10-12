@@ -470,6 +470,10 @@ googleReviews: 'Google Reviews',
       },
     },
     {
+      q: 'Bieden jullie garantie?',
+      a: 'Wij bieden 5 jaar garantie op materiaal- en montagefouten van de door ons aangebrachte interieurfolie. Schade door verkeerd gebruik of onderhoud, krassen, stoten, scherpe voorwerpen of direct contact met hete voorwerpen valt buiten de garantie.',
+    },
+    {
       q: 'Moet ik mijn meubels of keuken zelf demonteren?',
       a: 'Nee. Waar nodig nemen wij de demontage voor onze rekening. Losse en eenvoudig te vervoeren delen nemen we zorgvuldig mee naar onze werkplaats, waar ze worden voorbereid en gewrapt. Vaste delen worden op locatie afgewerkt.',
     },
@@ -790,6 +794,11 @@ googleReviews: 'Google Reviews',
       },
     },
     {
+      q: 'Do you offer a warranty?',
+      a: 'We provide a 5-year warranty covering material defects and installation faults in the interior film we apply. Damage caused by improper use or cleaning, scratches, impacts, sharp objects or direct contact with hot items is not covered.',
+    },
+
+    {
       q: 'Do I need to dismantle my furniture or kitchen?',
       a: 'No. We take care of the dismantling where required. Removable and easily transportable parts are carefully taken to our workshop, where they are prepared and wrapped. Fixed elements are finished on site.',
     },
@@ -1106,6 +1115,10 @@ googleReviews: 'Reseñas de Google',
         label: 'Ver nuestros precios',
         href: '/pricing',
       },
+    },
+    {
+  q: '¿Ofrecéis garantía?',
+  a: 'Ofrecemos 5 años de garantía frente a defectos del material y errores de instalación del vinilo decorativo aplicado por nosotros. Quedan excluidos los daños causados por un uso o mantenimiento inadecuado, arañazos, golpes, objetos afilados o el contacto directo con objetos calientes. Esta garantía no afecta a los derechos legales del consumidor.',
     },
     {
       q: '¿Tengo que desmontar yo los muebles o la cocina?',
