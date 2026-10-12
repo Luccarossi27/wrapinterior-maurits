@@ -795,7 +795,7 @@ googleReviews: 'Google Reviews',
     },
     {
       q: 'Do you offer a warranty?',
-      a: 'We provide a 5-year warranty covering material defects and installation faults in the interior film we apply. Damage caused by improper use or cleaning, scratches, impacts, sharp objects or direct contact with hot items is not covered. This warranty does not affect the consumer's statutory rights.',
+      a: "We provide a 5-year warranty covering material defects and installation faults in the interior film we apply. Damage caused by improper use or cleaning, scratches, impacts, sharp objects or direct contact with hot items is not covered. This warranty does not affect the consumer's statutory rights.",
     },
 
     {
