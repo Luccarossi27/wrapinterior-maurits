@@ -32,7 +32,7 @@ export function ProofBar() {
 
         <Reveal
           delay={0.18}
-          className="flex flex-col items-center justify-center gap-1 px-2 text-center"
+          className="flex items-center justify-center px-2"
         >
           <WarrantyBadge />
         </Reveal>
