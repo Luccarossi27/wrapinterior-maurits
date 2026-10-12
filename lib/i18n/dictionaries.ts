@@ -206,17 +206,44 @@ type Dict = {
     button: string
   }
 },
-  footer: {
-    tagline: string,
-    basedIn: string
-    coveringArea: string
-    serviceAreaTitle: string
-    serviceArea: string
-    languagesTitle: string
-    contactTitle: string
-    legal: string
-    rights: string
+  legal: {
+  legalNotice: {
+    title: string
+    intro: string
+    sections: {
+      title: string
+      paragraphs: string[]
+    }[]
   }
+  privacy: {
+    title: string
+    intro: string
+    sections: {
+      title: string
+      paragraphs: string[]
+    }[]
+  }
+  cookies: {
+    title: string
+    intro: string
+    sections: {
+      title: string
+      paragraphs: string[]
+    }[]
+  }
+}
+  footer: {
+  tagline: string
+  basedIn: string
+  coveringArea: string
+  serviceAreaTitle: string
+  serviceArea: string
+  languagesTitle: string
+  contactTitle: string
+  legalNotice: string
+  privacy: string
+  cookies: string
+}
 }
 
 const areas = 'Jávea · Moraira · Calpe · Benissa · Altea · Dénia'
@@ -542,6 +569,189 @@ googleReviews: 'Google Reviews',
     button: 'Stuur foto’s via WhatsApp',
   },
 },
+    legal: {
+  legalNotice: {
+    title: 'Juridische informatie',
+    intro:
+      'Deze website wordt beheerd door Maurits van der Aa, handelend onder de naam Wrap Interior, als autónomo gevestigd in Spanje.',
+
+    sections: [
+      {
+        title: 'Exploitant van de website',
+        paragraphs: [
+          'Naam: Maurits van der Aa',
+          'Handelsnaam: Wrap Interior',
+          'NIE / NIF: [NIE/NIF]',
+          'Bedrijfsadres: Avinguda Jaume I, 23b, 03779 Els Poblets, Alicante, Spanje',
+          'E-mail: info@wrap-interior.com',
+          'Telefoon: +34 675 153 105',
+        ],
+      },
+      {
+        title: 'Over deze website',
+        paragraphs: [
+          'Wrap Interior biedt informatie over interieurwrapping en aanverwante diensten voor keukens, meubels, deuren, badkamermeubels en andere interieuroppervlakken.',
+          'De website is bedoeld om informatie te geven over onze diensten, materialen, werkwijze, richtprijzen, uitgevoerde projecten en contactmogelijkheden.',
+        ],
+      },
+      {
+        title: 'Prijzen en btw',
+        paragraphs: [
+          'De prijzen op deze website zijn inclusief toepasselijke btw, tenzij uitdrukkelijk anders vermeld. Richtprijzen zijn indicatief en worden bevestigd na beoordeling van het specifieke project, de gekozen materialen en de benodigde werkzaamheden.',
+        ],
+      },
+      {
+        title: 'Intellectueel eigendom',
+        paragraphs: [
+          'Tenzij anders vermeld, zijn de inhoud van deze website, waaronder teksten, foto’s, afbeeldingen, huisstijl, logo’s en ander oorspronkelijk materiaal, eigendom van Wrap Interior of worden deze met toestemming gebruikt.',
+          'Je mag de website bekijken en gebruiken voor persoonlijke en informatieve doeleinden. Het zonder voorafgaande toestemming kopiëren, verspreiden, wijzigen of commercieel gebruiken van inhoud van deze website is niet toegestaan.',
+        ],
+      },
+      {
+        title: 'Gebruik van de website',
+        paragraphs: [
+          'Bezoekers dienen deze website op een rechtmatige manier te gebruiken en mogen de werking of beveiliging ervan niet verstoren en geen rechten van Wrap Interior of derden schenden.',
+          'De informatie op deze website is bedoeld als algemene informatie. Hoewel we proberen de informatie actueel en correct te houden, moeten de geschiktheid van een bepaalde oplossing, prijzen, materialen en planning vóór het aangaan van een opdracht rechtstreeks met Wrap Interior worden bevestigd.',
+        ],
+      },
+      {
+        title: 'Externe links',
+        paragraphs: [
+          'Deze website kan links bevatten naar diensten of websites van derden, waaronder communicatie-, kaart- en socialmediaplatforms. Deze diensten hanteren hun eigen voorwaarden en privacybeleid. Wrap Interior is niet verantwoordelijk voor hun inhoud of werkwijze.',
+        ],
+      },
+      {
+        title: 'Aansprakelijkheid',
+        paragraphs: [
+          'Wrap Interior doet er redelijkerwijs alles aan om de website beschikbaar en de informatie correct te houden. We kunnen echter niet garanderen dat de website altijd beschikbaar, foutloos of vrij van technische problemen is.',
+          'Niets op deze website vormt een garantie dat een bepaalde oplossing, materiaalkeuze of dienst geschikt is voor ieder project. De geschiktheid wordt per project beoordeeld.',
+        ],
+      },
+      {
+        title: 'Toepasselijk recht',
+        paragraphs: [
+          'Op deze website en het gebruik ervan is het toepasselijke Spaanse recht van toepassing, onverminderd dwingende consumentenrechten die volgens de toepasselijke wetgeving gelden.',
+        ],
+      },
+    ],
+  },
+
+  privacy: {
+    title: 'Privacybeleid',
+    intro:
+      'Wrap Interior respecteert je privacy en verwerkt persoonsgegevens volgens de toepasselijke privacywetgeving, waaronder de Algemene Verordening Gegevensbescherming (AVG/GDPR) en de Spaanse privacywetgeving.',
+
+    sections: [
+      {
+        title: 'Wie is verantwoordelijk voor je gegevens?',
+        paragraphs: [
+          'Verwerkingsverantwoordelijke: Maurits van der Aa, handelend onder de naam Wrap Interior.',
+          'NIE / NIF: [NIE/NIF]',
+          'Bedrijfsadres: Avinguda Jaume I, 23b, 03779 Els Poblets, Alicante, Spanje',
+          'E-mail: info@wrap-interior.com',
+          'Telefoon: +34 675 153 105',
+        ],
+      },
+      {
+        title: 'Welke persoonsgegevens kunnen we ontvangen?',
+        paragraphs: [
+          'Wanneer je contact opneemt met Wrap Interior kunnen we gegevens ontvangen zoals je naam, e-mailadres, telefoonnummer, de inhoud van je vraag en informatie over je project.',
+          'Als je foto’s, informatie over de woning, afmetingen, een adres of andere projectgegevens verstrekt in verband met een aanvraag of offerte, kunnen ook deze gegevens worden verwerkt voor zover dat nodig is om je te antwoorden of de gevraagde dienst voor te bereiden.',
+        ],
+      },
+      {
+        title: 'Hoe ontvangen we je gegevens?',
+        paragraphs: [
+          'Deze website gebruikt momenteel geen contactformulier en heeft geen nieuwsbriefinschrijving.',
+          'Je kunt rechtstreeks contact opnemen met Wrap Interior via e-mail, telefoon of WhatsApp. Informatie die je via deze kanalen verstrekt, wordt verwerkt om met je te communiceren en je aanvraag te behandelen.',
+        ],
+      },
+      {
+        title: 'Waarom gebruiken we je gegevens?',
+        paragraphs: [
+          'We gebruiken persoonsgegevens om vragen te beantwoorden, mogelijke projecten te bespreken, informatie te verstrekken, offertes op te stellen, diensten te plannen of uit te voeren, met klanten en potentiële klanten te communiceren en te voldoen aan wettelijke verplichtingen.',
+          'Afhankelijk van de situatie kan verwerking noodzakelijk zijn om op jouw verzoek stappen te zetten vóór het sluiten van een overeenkomst, om een overeenkomst uit te voeren, om aan een wettelijke verplichting te voldoen of op basis van een gerechtvaardigd belang. Wanneer specifieke toestemming vereist is, wordt deze afzonderlijk gevraagd.',
+        ],
+      },
+      {
+        title: 'Website-analyse',
+        paragraphs: [
+          'Deze website gebruikt Vercel Web Analytics om inzicht te krijgen in het gebruik van de website, bijvoorbeeld welke pagina’s worden bekeken en algemene verkeerspatronen.',
+          'Volgens Vercel gebruikt Web Analytics geen cookies. Er wordt gebruikgemaakt van een kortstondige identificatie op basis van het binnenkomende verzoek, ontworpen om permanente tracking over verschillende websites te voorkomen. Analytische informatie kan onder meer bestaan uit paginaweergaven, verwijzende informatie en algemene informatie over browser, apparaat, besturingssysteem en geografische locatie.',
+        ],
+      },
+      {
+        title: 'Met wie kunnen we je gegevens delen?',
+        paragraphs: [
+          'Persoonsgegevens kunnen worden verwerkt door dienstverleners die nodig zijn om de website te laten functioneren of om met je te communiceren. Dit kan onder meer hosting- en analysediensten omvatten en communicatiediensten die je zelf kiest, zoals WhatsApp.',
+          'We verkopen je persoonsgegevens niet en gebruiken deze niet voor advertenties of marketingdoeleinden.',
+        ],
+      },
+      {
+        title: 'Hoe lang bewaren we je gegevens?',
+        paragraphs: [
+          'Persoonsgegevens worden alleen bewaard zolang dit redelijkerwijs nodig is voor het doel waarvoor ze zijn verzameld, waaronder het behandelen van een aanvraag, het leveren van diensten en het voldoen aan wettelijke, administratieve of contractuele verplichtingen.',
+          'Wanneer persoonsgegevens niet langer nodig zijn, worden ze waar passend verwijderd of veilig vernietigd.',
+        ],
+      },
+      {
+        title: 'Je rechten',
+        paragraphs: [
+          'Afhankelijk van de toepasselijke wetgeving kun je het recht hebben om inzage, correctie, verwijdering, beperking van verwerking, bezwaar tegen bepaalde verwerkingen en dataportabiliteit te verzoeken.',
+          'Je kunt je rechten uitoefenen door contact op te nemen via info@wrap-interior.com. We kunnen redelijke informatie vragen om je identiteit te verifiëren voordat we een verzoek verwerken.',
+          'Je hebt ook het recht om een klacht in te dienen bij de Spaanse privacytoezichthouder, de Agencia Española de Protección de Datos (AEPD), wanneer je van mening bent dat je privacyrechten niet zijn gerespecteerd.',
+        ],
+      },
+      {
+        title: 'Wijzigingen in dit privacybeleid',
+        paragraphs: [
+          'Dit privacybeleid kan van tijd tot tijd worden aangepast om wijzigingen in de website, diensten of toepasselijke wetgeving weer te geven. De meest recente versie wordt altijd op deze pagina gepubliceerd.',
+        ],
+      },
+    ],
+  },
+
+  cookies: {
+    title: 'Cookies',
+    intro:
+      'Deze website is ontworpen om slechts beperkt gebruik te maken van browsertechnologieën en gebruikt momenteel geen advertentie- of marketingcookies.',
+
+    sections: [
+      {
+        title: 'Cookies op deze website',
+        paragraphs: [
+          'Wrap Interior gebruikt momenteel geen advertentie-, marketing- of socialmediatrackingcookies op deze website.',
+          'Voor website-statistieken wordt Vercel Web Analytics gebruikt. Volgens Vercel maakt Web Analytics geen gebruik van cookies, maar van een kortstondige identificatie op basis van het inkomende verzoek.',
+        ],
+      },
+      {
+        title: 'Taalvoorkeur',
+        paragraphs: [
+          'De website slaat je gekozen taal lokaal op in je browser met behulp van localStorage. Hierdoor kan de website onthouden of je Nederlands, Engels of Spaans hebt geselecteerd wanneer je terugkomt.',
+          'Deze informatie wordt lokaal in je browser opgeslagen en is geen cookie of marketingtracker.',
+        ],
+      },
+      {
+        title: 'Diensten van derden',
+        paragraphs: [
+          'Deze website kan links bevatten naar diensten van derden, zoals WhatsApp, Google Maps of andere externe platforms. Zodra je de website van Wrap Interior verlaat of rechtstreeks met deze diensten communiceert, kunnen hun eigen cookies, privacybeleid en technologieën van toepassing zijn.',
+        ],
+      },
+      {
+        title: 'Browseropslag beheren',
+        paragraphs: [
+          'Je kunt localStorage en andere browsergegevens verwijderen via de instellingen van je browser. Wanneer je browseropslag blokkeert of wist, kan dit invloed hebben op de mogelijkheid van de website om je taalvoorkeur te onthouden.',
+        ],
+      },
+      {
+        title: 'Wijzigingen',
+        paragraphs: [
+          'Als in de toekomst aanvullende cookies of vergelijkbare technologieën worden toegevoegd, wordt deze pagina bijgewerkt en worden eventuele toepasselijke toestemmingsvereisten nageleefd.',
+        ],
+      },
+    ],
+  },
+},
     footer: {
   tagline: 'Frisse interieurs. Zonder de verbouwing.',
   basedIn: 'Gevestigd in Jávea',
@@ -550,8 +760,9 @@ googleReviews: 'Google Reviews',
   serviceArea: `${areas} en de wijdere Costa Blanca / provincie Alicante.`,
   languagesTitle: 'Talen',
   contactTitle: 'Contact',
-  legal: 'Juridische informatie · Privacybeleid · Cookies',
-  rights: 'Alle rechten voorbehouden.',
+  legalNotice: 'Juridische informatie',
+  privacy: 'Privacybeleid',
+  cookies: 'Cookies',
 },
   },
 
@@ -886,6 +1097,189 @@ googleReviews: 'Google Reviews',
     button: 'Send photos via WhatsApp',
   },
 },
+    legal: {
+  legalNotice: {
+    title: 'Legal Notice',
+    intro:
+      'This website is operated by Maurits van der Aa, trading as Wrap Interior, an autónomo based in Spain.',
+
+    sections: [
+      {
+        title: 'Website operator',
+        paragraphs: [
+          'Name: Maurits van der Aa',
+          'Business name: Wrap Interior',
+          'NIE / NIF: [NIE/NIF]',
+          'Business address: Avinguda Jaume I, 23b, 03779 Els Poblets, Alicante, Spain',
+          'Email: info@wrap-interior.com',
+          'Telephone: +34 675 153 105',
+        ],
+      },
+      {
+        title: 'About this website',
+        paragraphs: [
+          'Wrap Interior provides information about interior wrapping and related services for kitchens, furniture, doors, bathroom furniture and other interior surfaces.',
+          'The website is intended to provide information about our services, materials, process, indicative pricing, completed projects and ways to contact us.',
+        ],
+      },
+      {
+        title: 'Prices and VAT',
+        paragraphs: [
+          'Prices displayed on this website include applicable VAT unless expressly stated otherwise. Prices shown as indicative are subject to confirmation following assessment of the specific project, materials and work required.',
+        ],
+      },
+      {
+        title: 'Intellectual property',
+        paragraphs: [
+          'Unless otherwise stated, the content of this website, including text, photographs, graphics, branding, logos and other original material, belongs to Wrap Interior or is used with permission.',
+          'You may view and use the website for personal and informational purposes. Reproduction, distribution, modification or commercial use of website content without prior permission is not permitted.',
+        ],
+      },
+      {
+        title: 'Use of the website',
+        paragraphs: [
+          'Visitors agree to use this website lawfully and in a way that does not interfere with its operation, compromise its security or infringe the rights of Wrap Interior or third parties.',
+          'Information on this website is provided for general information. While we aim to keep it accurate and up to date, specific project suitability, pricing, materials and timescales should be confirmed directly with Wrap Interior before work is agreed.',
+        ],
+      },
+      {
+        title: 'External links',
+        paragraphs: [
+          'This website may contain links to third-party services or websites, including communication, mapping and social-media services. These services operate under their own terms and privacy policies, and Wrap Interior is not responsible for their content or practices.',
+        ],
+      },
+      {
+        title: 'Liability',
+        paragraphs: [
+          'Wrap Interior takes reasonable care to ensure that the website is available and that its content is accurate. However, we cannot guarantee that the website will always be available, error-free or free from technical issues.',
+          'Nothing on this website constitutes a guarantee that a particular result, material or service will be suitable for every project. Suitability is assessed on a project-by-project basis.',
+        ],
+      },
+      {
+        title: 'Applicable law',
+        paragraphs: [
+          'This website and its use are governed by applicable Spanish law, without prejudice to any mandatory rights that may apply to consumers under applicable legislation.',
+        ],
+      },
+    ],
+  },
+
+  privacy: {
+    title: 'Privacy Policy',
+    intro:
+      'Wrap Interior respects your privacy and processes personal data in accordance with applicable data-protection legislation, including the EU General Data Protection Regulation (GDPR) and Spanish data-protection law.',
+
+    sections: [
+      {
+        title: 'Who is responsible for your data?',
+        paragraphs: [
+          'Data controller: Maurits van der Aa, trading as Wrap Interior.',
+          'NIE / NIF: [NIE/NIF]',
+          'Business address: Avinguda Jaume I, 23b, 03779 Els Poblets, Alicante, Spain',
+          'Email: info@wrap-interior.com',
+          'Telephone: +34 675 153 105',
+        ],
+      },
+      {
+        title: 'What personal data may we receive?',
+        paragraphs: [
+          'If you contact Wrap Interior, we may receive information such as your name, email address, telephone number, the content of your enquiry and information about your project.',
+          'If you provide photographs, property information, measurements, an address or other project details in connection with an enquiry or quotation, those details may also be processed where necessary to respond to you or prepare the requested service.',
+        ],
+      },
+      {
+        title: 'How do we receive your information?',
+        paragraphs: [
+          'This website does not currently use a contact form or newsletter subscription.',
+          'You may contact Wrap Interior directly by email, telephone or WhatsApp. Information you choose to provide through those channels is processed in order to communicate with you and deal with your enquiry.',
+        ],
+      },
+      {
+        title: 'Why do we use your data?',
+        paragraphs: [
+          'We use personal data to respond to enquiries, discuss potential projects, provide information, prepare quotations, arrange or provide services, communicate with customers and prospective customers, and comply with applicable legal obligations.',
+          'Depending on the circumstances, processing may be necessary to take steps at your request before entering into a contract, to perform a contract, to comply with a legal obligation or on the basis of a legitimate interest. Where consent is specifically required, it will be requested separately.',
+        ],
+      },
+      {
+        title: 'Website analytics',
+        paragraphs: [
+          'This website uses Vercel Web Analytics to understand how visitors use the website, such as which pages are viewed and general traffic patterns.',
+          'Vercel states that its Web Analytics does not use cookies. It uses a short-lived identifier derived from the incoming request and is designed to prevent persistent cross-site tracking. Analytics information may include information such as page views, referrer information and general browser, device, operating-system and geographic information.',
+        ],
+      },
+      {
+        title: 'Who may receive your data?',
+        paragraphs: [
+          'Personal data may be processed by service providers used to operate the website or communicate with you, where necessary for those services to function. This may include website hosting and analytics providers and communication services that you choose to use, such as WhatsApp.',
+          'We do not sell your personal data or use it for advertising or marketing purposes.',
+        ],
+      },
+      {
+        title: 'How long do we keep your data?',
+        paragraphs: [
+          'Personal data is kept only for as long as reasonably necessary for the purpose for which it was collected, including dealing with an enquiry, providing services and meeting applicable legal, accounting or contractual obligations.',
+          'When personal data is no longer required, it will be deleted or securely disposed of where appropriate.',
+        ],
+      },
+      {
+        title: 'Your rights',
+        paragraphs: [
+          'Subject to applicable law, you may have the right to request access to your personal data, correction of inaccurate data, deletion, restriction of processing, objection to certain processing and portability of data where applicable.',
+          'To exercise your rights, contact us at info@wrap-interior.com. We may need to request reasonable information to verify your identity before processing a request.',
+          'You also have the right to lodge a complaint with the Spanish Data Protection Agency (Agencia Española de Protección de Datos — AEPD) if you believe your data-protection rights have not been respected.',
+        ],
+      },
+      {
+        title: 'Changes to this policy',
+        paragraphs: [
+          'This Privacy Policy may be updated from time to time to reflect changes to the website, services or applicable legal requirements. The latest version will always be published on this page.',
+        ],
+      },
+    ],
+  },
+
+  cookies: {
+    title: 'Cookies',
+    intro:
+      'This website is designed to use only limited browser technologies and does not currently use advertising or marketing cookies.',
+
+    sections: [
+      {
+        title: 'Cookies used by this website',
+        paragraphs: [
+          'Wrap Interior does not currently use advertising, marketing or social-media tracking cookies on this website.',
+          'Vercel Web Analytics is used for website statistics. Vercel states that its Web Analytics does not use cookies and instead uses a short-lived request-based identifier for analytics purposes.',
+        ],
+      },
+      {
+        title: 'Language preference',
+        paragraphs: [
+          'The website stores your selected language in your browser using localStorage. This allows the website to remember whether you selected Dutch, English or Spanish when you return.',
+          'This information is stored locally in your browser and is not a cookie or a marketing tracker.',
+        ],
+      },
+      {
+        title: 'Third-party services',
+        paragraphs: [
+          'This website may link to third-party services such as WhatsApp, Google Maps or other external platforms. Once you leave the Wrap Interior website or interact directly with those services, their own cookies, privacy policies and technologies may apply.',
+        ],
+      },
+      {
+        title: 'Managing browser storage',
+        paragraphs: [
+          'You can clear localStorage and other browser data through your browser settings. Blocking or clearing browser storage may affect the website’s ability to remember your language preference.',
+        ],
+      },
+      {
+        title: 'Updates',
+        paragraphs: [
+          'If additional cookies or similar technologies are introduced in the future, this page will be updated and any consent requirements that apply will be addressed.',
+        ],
+      },
+    ],
+  },
+},
     footer: {
   tagline: 'Fresh interiors. Without the renovation.',
   basedIn: 'Based in Jávea',
@@ -894,8 +1288,9 @@ googleReviews: 'Google Reviews',
   serviceArea: `${areas} and the wider Costa Blanca / Alicante province.`,
   languagesTitle: 'Languages',
   contactTitle: 'Contact',
-  legal: 'Legal Notice · Privacy Policy · Cookies',
-  rights: 'All rights reserved.',
+  legalNotice: 'Legal Notice',
+  privacy: 'Privacy Policy',
+  cookies: 'Cookies',
 },
   },
 
@@ -1225,6 +1620,189 @@ googleReviews: 'Reseñas de Google',
     button: 'Enviar fotos por WhatsApp',
   },
 },
+    legal: {
+  legalNotice: {
+    title: 'Aviso Legal',
+    intro:
+      'Este sitio web es gestionado por Maurits van der Aa, que desarrolla su actividad como autónomo bajo el nombre comercial Wrap Interior.',
+
+    sections: [
+      {
+        title: 'Titular del sitio web',
+        paragraphs: [
+          'Nombre: Maurits van der Aa',
+          'Nombre comercial: Wrap Interior',
+          'NIE / NIF: [NIE/NIF]',
+          'Domicilio/establecimiento: Avinguda Jaume I, 23b, 03779 Els Poblets, Alicante, España',
+          'Email: info@wrap-interior.com',
+          'Teléfono: +34 675 153 105',
+        ],
+      },
+      {
+        title: 'Sobre este sitio web',
+        paragraphs: [
+          'Wrap Interior ofrece información sobre servicios de vinilado y revestimiento de interiores para cocinas, muebles, puertas, muebles de baño y otras superficies interiores.',
+          'El sitio web tiene como finalidad informar sobre nuestros servicios, materiales, proceso de trabajo, precios orientativos, proyectos realizados y formas de contacto.',
+        ],
+      },
+      {
+        title: 'Precios e IVA',
+        paragraphs: [
+          'Los precios mostrados en este sitio web incluyen el IVA aplicable, salvo que se indique expresamente lo contrario. Los precios orientativos están sujetos a confirmación después de valorar el proyecto concreto, los materiales elegidos y el trabajo necesario.',
+        ],
+      },
+      {
+        title: 'Propiedad intelectual',
+        paragraphs: [
+          'Salvo que se indique lo contrario, los contenidos de este sitio web, incluidos textos, fotografías, imágenes, identidad visual, logotipos y demás material original, pertenecen a Wrap Interior o se utilizan con autorización.',
+          'Puedes consultar y utilizar el sitio web con fines personales e informativos. No está permitida la reproducción, distribución, modificación o utilización comercial de los contenidos del sitio sin autorización previa.',
+        ],
+      },
+      {
+        title: 'Uso del sitio web',
+        paragraphs: [
+          'Los visitantes deben utilizar este sitio web de forma lícita y no podrán interferir en su funcionamiento, comprometer su seguridad ni infringir los derechos de Wrap Interior o de terceros.',
+          'La información de este sitio web se proporciona con carácter general. Aunque procuramos mantenerla actualizada y correcta, la idoneidad de una solución, los precios, materiales y plazos deben confirmarse directamente con Wrap Interior antes de contratar un servicio.',
+        ],
+      },
+      {
+        title: 'Enlaces externos',
+        paragraphs: [
+          'Este sitio web puede incluir enlaces a servicios o sitios web de terceros, incluidos servicios de comunicación, mapas y redes sociales. Estos servicios tienen sus propias condiciones y políticas de privacidad, y Wrap Interior no se responsabiliza de sus contenidos o prácticas.',
+        ],
+      },
+      {
+        title: 'Responsabilidad',
+        paragraphs: [
+          'Wrap Interior procura razonablemente que el sitio web esté disponible y que su contenido sea correcto. Sin embargo, no podemos garantizar que el sitio esté siempre disponible, libre de errores o de problemas técnicos.',
+          'Nada de lo indicado en este sitio web constituye una garantía de que un determinado resultado, material o servicio sea adecuado para todos los proyectos. La idoneidad se valora en cada proyecto de forma individual.',
+        ],
+      },
+      {
+        title: 'Legislación aplicable',
+        paragraphs: [
+          'Este sitio web y su utilización se rigen por la legislación española aplicable, sin perjuicio de los derechos imperativos que correspondan a los consumidores conforme a la normativa aplicable.',
+        ],
+      },
+    ],
+  },
+
+  privacy: {
+    title: 'Política de Privacidad',
+    intro:
+      'Wrap Interior respeta tu privacidad y trata los datos personales de acuerdo con la normativa aplicable en materia de protección de datos, incluido el Reglamento General de Protección de Datos (RGPD) y la legislación española.',
+
+    sections: [
+      {
+        title: '¿Quién es el responsable del tratamiento?',
+        paragraphs: [
+          'Responsable: Maurits van der Aa, que desarrolla su actividad bajo el nombre comercial Wrap Interior.',
+          'NIE / NIF: [NIE/NIF]',
+          'Domicilio/establecimiento: Avinguda Jaume I, 23b, 03779 Els Poblets, Alicante, España',
+          'Email: info@wrap-interior.com',
+          'Teléfono: +34 675 153 105',
+        ],
+      },
+      {
+        title: '¿Qué datos personales podemos recibir?',
+        paragraphs: [
+          'Cuando contactas con Wrap Interior, podemos recibir información como tu nombre, dirección de email, número de teléfono, el contenido de tu consulta y datos relacionados con tu proyecto.',
+          'Si proporcionas fotografías, información sobre la vivienda, medidas, una dirección u otros datos del proyecto en relación con una consulta o presupuesto, estos datos también podrán tratarse cuando sean necesarios para responderte o preparar el servicio solicitado.',
+        ],
+      },
+      {
+        title: '¿Cómo recibimos tus datos?',
+        paragraphs: [
+          'Este sitio web no utiliza actualmente un formulario de contacto ni ofrece una suscripción a newsletter.',
+          'Puedes contactar directamente con Wrap Interior por email, teléfono o WhatsApp. La información que decidas proporcionar a través de estos canales se tratará para comunicarnos contigo y gestionar tu consulta.',
+        ],
+      },
+      {
+        title: '¿Para qué utilizamos tus datos?',
+        paragraphs: [
+          'Utilizamos los datos personales para responder consultas, hablar sobre posibles proyectos, proporcionar información, preparar presupuestos, organizar o prestar servicios, comunicarnos con clientes y potenciales clientes y cumplir obligaciones legales aplicables.',
+          'Dependiendo de la situación, el tratamiento puede ser necesario para adoptar medidas a petición tuya antes de formalizar un contrato, ejecutar un contrato, cumplir una obligación legal o atender un interés legítimo. Cuando sea necesario obtener un consentimiento específico, se solicitará por separado.',
+        ],
+      },
+      {
+        title: 'Analítica web',
+        paragraphs: [
+          'Este sitio web utiliza Vercel Web Analytics para comprender cómo se utiliza la web, por ejemplo, qué páginas se visitan y cuáles son los patrones generales de tráfico.',
+          'Según Vercel, Web Analytics no utiliza cookies. Utiliza un identificador de corta duración derivado de la solicitud recibida y diseñado para evitar el seguimiento persistente entre diferentes sitios web. La información analítica puede incluir datos como páginas visitadas, información de referencia y datos generales sobre navegador, dispositivo, sistema operativo y ubicación geográfica.',
+        ],
+      },
+      {
+        title: '¿Con quién podemos compartir tus datos?',
+        paragraphs: [
+          'Los datos personales pueden ser tratados por proveedores de servicios necesarios para el funcionamiento de la web o para comunicarnos contigo. Esto puede incluir proveedores de alojamiento y analítica y servicios de comunicación que tú decidas utilizar, como WhatsApp.',
+          'No vendemos tus datos personales ni los utilizamos con fines publicitarios o de marketing.',
+        ],
+      },
+      {
+        title: '¿Cuánto tiempo conservamos tus datos?',
+        paragraphs: [
+          'Los datos personales se conservarán únicamente durante el tiempo razonablemente necesario para la finalidad para la que fueron recogidos, incluida la gestión de consultas, la prestación de servicios y el cumplimiento de obligaciones legales, administrativas o contractuales.',
+          'Cuando los datos personales ya no sean necesarios, se eliminarán o destruirán de forma segura cuando corresponda.',
+        ],
+      },
+      {
+        title: 'Tus derechos',
+        paragraphs: [
+          'De acuerdo con la legislación aplicable, puedes tener derecho a solicitar el acceso a tus datos personales, su rectificación, supresión, limitación del tratamiento, oposición a determinados tratamientos y portabilidad de los datos cuando corresponda.',
+          'Para ejercer tus derechos, puedes contactar con nosotros en info@wrap-interior.com. Podemos solicitar información razonable para verificar tu identidad antes de tramitar una solicitud.',
+          'También tienes derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD) si consideras que no se han respetado tus derechos en materia de protección de datos.',
+        ],
+      },
+      {
+        title: 'Cambios en esta política',
+        paragraphs: [
+          'Esta Política de Privacidad puede actualizarse ocasionalmente para reflejar cambios en el sitio web, los servicios o la legislación aplicable. La versión más reciente estará siempre publicada en esta página.',
+        ],
+      },
+    ],
+  },
+
+  cookies: {
+    title: 'Cookies',
+    intro:
+      'Este sitio web está diseñado para utilizar únicamente tecnologías limitadas del navegador y actualmente no utiliza cookies publicitarias ni de marketing.',
+
+    sections: [
+      {
+        title: 'Cookies utilizadas en este sitio web',
+        paragraphs: [
+          'Wrap Interior no utiliza actualmente cookies publicitarias, de marketing ni de seguimiento de redes sociales en este sitio web.',
+          'Para obtener estadísticas de uso se utiliza Vercel Web Analytics. Según Vercel, su servicio de analítica no utiliza cookies, sino un identificador de corta duración basado en la solicitud recibida.',
+        ],
+      },
+      {
+        title: 'Preferencia de idioma',
+        paragraphs: [
+          'El sitio web guarda el idioma seleccionado en el navegador mediante localStorage. Esto permite recordar si has elegido neerlandés, inglés o español cuando vuelves a visitar la web.',
+          'Esta información se almacena localmente en tu navegador y no es una cookie ni un sistema de seguimiento con fines comerciales.',
+        ],
+      },
+      {
+        title: 'Servicios de terceros',
+        paragraphs: [
+          'Este sitio web puede enlazar con servicios de terceros como WhatsApp, Google Maps u otras plataformas externas. Cuando abandonas el sitio web de Wrap Interior o interactúas directamente con estos servicios, pueden aplicarse sus propias cookies, políticas de privacidad y tecnologías.',
+        ],
+      },
+      {
+        title: 'Gestión del almacenamiento del navegador',
+        paragraphs: [
+          'Puedes eliminar localStorage y otros datos del navegador desde la configuración de tu navegador. Bloquear o eliminar el almacenamiento del navegador puede afectar a la capacidad de la web para recordar tu preferencia de idioma.',
+        ],
+      },
+      {
+        title: 'Actualizaciones',
+        paragraphs: [
+          'Si en el futuro se añaden cookies o tecnologías similares, esta página se actualizará y se aplicarán los requisitos de consentimiento que correspondan.',
+        ],
+      },
+    ],
+  },
+},
     footer: {
   tagline: 'Interiores renovados. Sin obras.',
   basedIn: 'Con base en Jávea',
@@ -1233,8 +1811,9 @@ googleReviews: 'Reseñas de Google',
   serviceArea: `${areas} y toda la Costa Blanca / provincia de Alicante.`,
   languagesTitle: 'Idiomas',
   contactTitle: 'Contacto',
-  legal: 'Aviso Legal · Política de Privacidad · Cookies',
-  rights: 'Todos los derechos reservados.',
+  legalNotice: 'Aviso Legal',
+  privacy: 'Política de Privacidad',
+  cookies: 'Cookies',
 },
   },
 }
