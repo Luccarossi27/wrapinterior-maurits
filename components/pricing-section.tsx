@@ -1,9 +1,11 @@
+```tsx
 'use client'
 
-import { MessageCircle, ShieldCheck } from 'lucide-react'
+import { MessageCircle } from 'lucide-react'
 import { whatsappLink } from '@/lib/i18n/dictionaries'
 import { useLanguage } from '@/lib/i18n/provider'
 import { Reveal } from '@/components/reveal'
+import { WarrantyBadge } from '@/components/warranty-badge'
 import { cn } from '@/lib/utils'
 
 export function PricingSection() {
@@ -94,9 +96,9 @@ export function PricingSection() {
 
       {/* FIVE-YEAR WARRANTY */}
       <Reveal delay={0.1}>
-        <div className="mt-10 flex flex-col items-center gap-4 rounded-3xl border border-[#D8C5AA]/70 bg-[#D8C5AA]/20 px-6 py-7 text-center sm:flex-row sm:gap-5 sm:px-8 sm:py-8 sm:text-left">
-          <div className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-pine/10 text-pine">
-            <ShieldCheck className="size-7" strokeWidth={1.7} />
+        <div className="mt-10 flex flex-col items-center gap-5 rounded-3xl border border-[#D8C5AA]/70 bg-[#D8C5AA]/20 px-6 py-7 text-center sm:flex-row sm:gap-6 sm:px-8 sm:py-8 sm:text-left">
+          <div className="flex shrink-0 items-center justify-center">
+            <WarrantyBadge />
           </div>
 
           <div className="flex-1">
@@ -143,3 +145,4 @@ export function PricingSection() {
     </section>
   )
 }
+```
