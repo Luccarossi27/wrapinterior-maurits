@@ -1,6 +1,6 @@
 'use client'
 
-import { Mail, MapPin, Phone, Instagram } from 'lucide-react'
+import { Mail, MapPin, Phone } from 'lucide-react'
 import Link from 'next/link'
 import { contact } from '@/lib/i18n/dictionaries'
 import { useLanguage } from '@/lib/i18n/provider'
@@ -38,7 +38,21 @@ export function SiteFooter() {
   aria-label="Follow Wrap Interior on Instagram"
   className="mt-5 inline-flex items-center gap-2 text-sm text-paper/70 transition-colors hover:text-paper"
 >
-  <Instagram className="size-5 shrink-0 text-brass" strokeWidth={1.8} />
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  strokeWidth="1.8"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  className="size-5 shrink-0 text-brass"
+  aria-hidden="true"
+>
+  <rect x="3" y="3" width="18" height="18" rx="5" />
+  <circle cx="12" cy="12" r="4" />
+  <circle cx="18" cy="6" r="0.8" fill="currentColor" stroke="none" />
+</svg>
   <span>@wrapinterior.costablanca</span>
 </a>
           </div>
