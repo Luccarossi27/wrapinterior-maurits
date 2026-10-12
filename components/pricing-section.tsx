@@ -1,4 +1,3 @@
-```tsx
 'use client'
 
 import { MessageCircle } from 'lucide-react'
@@ -145,4 +144,3 @@ export function PricingSection() {
     </section>
   )
 }
-```
