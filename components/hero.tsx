@@ -20,11 +20,13 @@ export function Hero() {
         className="absolute inset-0 h-full w-full object-cover object-center animate-[heroZoom_14s_ease-out_forwards]"
       />
 
-      {/* Subtle cinematic overlay */}
-      <div
+      
+{/* Cinematic overlay — stronger on mobile for text readability */}
+<div
   aria-hidden="true"
-  className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-transparent sm:bg-gradient-to-r sm:from-black/45 sm:via-black/10 sm:to-transparent"
+  className="absolute inset-0 bg-gradient-to-r from-black/35 via-black/10 to-transparent sm:bg-gradient-to-r sm:from-black/45 sm:via-black/10 sm:to-transparent"
 />
+
 
       {/* Content */}
       <div className="relative z-10 mx-auto flex h-full w-full max-w-6xl items-start px-5 pt-20 pb-16 sm:px-8 sm:pt-20 lg:pt-20">
