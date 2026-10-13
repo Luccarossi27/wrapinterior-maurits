@@ -17,13 +17,13 @@ export function FinalCta() {
   const { t } = useLanguage()
 
   
-  const mapAddress =
-    'Avinguda Jaume I, 23b, 03779 Setla, Alicante, Spain'
 
-  const encodedAddress = encodeURIComponent(mapAddress)
+  const latitude = 38.84987399541571
+  const longitude = 0.018164300801624813
 
-  const mapSrc = `https://www.google.com/maps?q=${encodedAddress}&output=embed`
-  const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`
+  const mapSrc = `https://www.google.com/maps?q=${latitude},${longitude}&z=18&output=embed`
+  const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`
+
 
 
   return (
