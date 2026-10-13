@@ -11,9 +11,12 @@ export function SiteFooter() {
   const { t } = useLanguage()
   const year = new Date().getFullYear()
 
-  const mapQuery = encodeURIComponent(
-    `${contact.address}, ${contact.postcode} ${contact.city}, ${contact.province}, Spain`,
-  )
+
+  const mapAddress =
+    'Avinguda Jaume I, 23b, 03779 Setla, Alicante, Spain'
+
+  const mapQuery = encodeURIComponent(mapAddress)
+
 
   return (
     <footer className="bg-pine text-paper">
@@ -106,7 +109,7 @@ export function SiteFooter() {
 
               <li>
                 <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`}
+                  href={`https://www.google.com/maps/dir/?api=1&destination=${mapQuery}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex gap-2.5 text-paper/60 transition-colors hover:text-paper"
