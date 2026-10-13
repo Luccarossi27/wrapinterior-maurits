@@ -16,11 +16,15 @@ import { Reveal } from '@/components/reveal'
 export function FinalCta() {
   const { t } = useLanguage()
 
-  const fullAddress = `${contact.address}, ${contact.postcode} ${contact.city}, ${contact.province}, Spain`
-  const encodedAddress = encodeURIComponent(fullAddress)
+  
+  const mapAddress =
+    'Avinguda Jaume I, 23b, 03779 Setla, Alicante, Spain'
+
+  const encodedAddress = encodeURIComponent(mapAddress)
 
   const mapSrc = `https://www.google.com/maps?q=${encodedAddress}&output=embed`
   const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`
+
 
   return (
     <section
