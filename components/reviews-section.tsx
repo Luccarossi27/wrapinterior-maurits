@@ -6,7 +6,7 @@ import { useLanguage } from '@/lib/i18n/provider'
 import { Reveal } from '@/components/reveal'
 
 const googleReviewsUrl =
-  'https://maps.app.goo.gl/EyFc7M5abQFYoVk67'
+  'https://www.google.com/maps/place/Wrap+Interior/@38.8503697,0.0171533,17z/data=!4m17!1m8!3m7!1s0x129e1d6d1392e355:0x4f2eb66129c011bb!2sAvinguda+en+Jaume+I,+23,+03779+Setla,+Alacant!3b1!8m2!3d38.8503697!4d0.0171533!16s%2Fg%2F11y4h13qpb!3m7!1s0x129e1dc9832c8049:0x7629ec59b5ef870c!8m2!3d38.8498649!4d0.0181665!9m1!1b1!16s%2Fg%2F11zh9hv0gb!5m2!1e4!1e1?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D'
 
 export function ReviewsSection() {
   const { t } = useLanguage()
