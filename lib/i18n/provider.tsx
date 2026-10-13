@@ -35,9 +35,12 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     }
   }, [])
 
-  useEffect(() => {
-    document.documentElement.lang = locale
-  }, [locale])
+  
+useEffect(() => {
+  document.documentElement.lang = locale
+  document.title = dictionaries[locale].meta.title
+}, [locale])
+
 
   const setLocale = useCallback((next: Locale) => {
     setLocaleState(next)
