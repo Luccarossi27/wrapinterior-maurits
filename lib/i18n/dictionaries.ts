@@ -251,10 +251,10 @@ const areas = 'Jávea · Moraira · Calpe · Benissa · Altea · Dénia'
 export const dictionaries: Record<Locale, Dict> = {
   nl: {
     meta: {
-      title: 'Wrap Interior | Interieur Wrappen',
-      description:
-        'Premium interieurwrapping voor keukens, meubels, deuren en badkamermeubels in Jávea, Moraira, Calpe en de Costa Blanca. Strakke afwerking, meestal binnen enkele dagen, zonder hak- of breekwerk.',
-    },
+      title: 'Wrap Interior | Keuken Wrappen Costa Blanca',
+    description:
+      'Geef je keuken, meubels en deuren een nieuwe look met interieurfolie, zonder grote verbouwing. Actief in Jávea, Dénia, Moraira en de Costa Blanca.',
+  },
     nav: {
       portfolio: 'Portfolio',
       materials: 'Materialen',
@@ -768,10 +768,10 @@ googleReviews: 'Google Reviews',
 
   en: {
     meta: {
-      title: 'Wrap Interior | Premium Interior Wrapping',
-      description:
-        'Premium interior wrapping for kitchens, furniture, doors and bathroom cabinets in Jávea, Moraira, Calpe and the Costa Blanca. Crisp finish, usually within a few days, with no demolition.',
-    },
+    title: 'Wrap Interior | Kitchen Wrapping Costa Blanca',
+    description:
+      'Transform kitchens, furniture and doors with premium interior wrapping, without a full renovation. Serving Jávea, Dénia, Moraira and the Costa Blanca.',
+  },
     nav: {
       portfolio: 'Portfolio',
       materials: 'Materials',
@@ -1295,11 +1295,11 @@ googleReviews: 'Google Reviews',
   },
 
   es: {
-    meta: {
-      title: 'Wrap Interior | Vinilado de Interiores',
-      description:
-        'Vinilado premium de interiores para cocinas, muebles, puertas y muebles de baño en Jávea, Moraira, Calpe y la Costa Blanca. Acabado impecable, normalmente en pocos días y sin obras.',
-    },
+  meta: {
+    title: 'Wrap Interior | Vinilado de Cocinas',
+    description:
+      'Renueva cocinas, muebles y puertas con vinilo decorativo, sin una reforma integral. Servicio en Jávea, Dénia, Moraira y toda la Costa Blanca.',
+  },
     nav: {
       portfolio: 'Portfolio',
       materials: 'Materiales',
